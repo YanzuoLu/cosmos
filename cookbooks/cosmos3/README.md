@@ -24,7 +24,7 @@ backend you want to run and follow that one section.
   export HF_TOKEN=<your_token>
   ```
 
-- For the Cosmos Framework and vLLM backends: access to `git@github.com:nvidia/cosmos-framework.git`.
+- For the Cosmos Framework and vLLM backends: access to `git@github.com:NVIDIA/cosmos-framework.git`.
 - Enough local disk for the venv/image, the uv cache, and the model cache. Nano
   downloads plus CUDA dependencies can take tens of GiB.
 
@@ -48,11 +48,11 @@ Native PyTorch inference through the Cosmos Framework checkout. Used by the
 `run_*_with_cosmos_framework.ipynb` notebooks and the Cosmos Framework
 quickstarts.
 
-From the `cosmos-simplified` repo root, clone (or reuse) the framework checkout:
+From the `cosmos` repo root, clone (or reuse) the framework checkout:
 
 ```bash
 mkdir -p packages
-git clone https://github.com/nvidia/cosmos-framework.git packages/cosmos3
+git clone https://github.com/NVIDIA/cosmos-framework.git packages/cosmos3
 cd packages/cosmos3
 ```
 
@@ -118,11 +118,11 @@ source .venv/bin/activate
 
 # CUDA 13 driver:
 uv pip install --torch-backend=cu130 "vllm==0.21.0" \
-  "vllm-cosmos3 @ git+https://github.com/nvidia/cosmos-framework.git#subdirectory=packages/vllm-cosmos3"
+  "vllm-cosmos3 @ git+https://github.com/NVIDIA/cosmos-framework.git#subdirectory=packages/vllm-cosmos3"
 
 # CUDA 12.x driver:
 # uv pip install --torch-backend=cu128 "vllm==0.19.1" \
-#   "vllm-cosmos3 @ git+https://github.com/nvidia/cosmos-framework.git#subdirectory=packages/vllm-cosmos3"
+#   "vllm-cosmos3 @ git+https://github.com/NVIDIA/cosmos-framework.git#subdirectory=packages/vllm-cosmos3"
 ```
 
 The vLLM version and the torch backend are paired — see
