@@ -13,6 +13,7 @@ import json
 import math
 import os
 import statistics
+import sys
 import time
 from pathlib import Path
 from typing import Any
@@ -64,6 +65,29 @@ def load_prompt(path: Path | None, fallback: str) -> str:
     with path.open("r", encoding="utf-8") as handle:
         return json.dumps(json.load(handle))
 
+
+
+def ensure_local_diffusers_source() -> Path:
+    repo_root = Path(__file__).resolve().parents[1]
+    src_dir = repo_root / "src"
+    package_dir = src_dir / "diffusers"
+    if not package_dir.is_dir():
+        raise RuntimeError(f"Local Diffusers source not found: {package_dir}")
+    src_text = str(src_dir)
+    if sys.path[0] != src_text:
+        sys.path.insert(0, src_text)
+    return package_dir.resolve()
+
+
+def assert_local_diffusers(module_file: str | None, package_dir: Path) -> str:
+    if module_file is None:
+        raise RuntimeError("Imported diffusers has no __file__; local source check failed")
+    resolved = Path(module_file).resolve()
+    try:
+        resolved.relative_to(package_dir)
+    except ValueError as exc:
+        raise RuntimeError(f"Imported external diffusers from {resolved}, expected under {package_dir}") from exc
+    return str(resolved)
 
 
 
@@ -152,9 +176,14 @@ def main() -> None:
     if args.runs < 1:
         raise ValueError("--runs must be at least 1")
 
+    local_diffusers_dir = ensure_local_diffusers_source()
+
+    import diffusers
     import torch
     from diffusers import Cosmos3OmniPipeline
     from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler
+
+    diffusers_source = assert_local_diffusers(diffusers.__file__, local_diffusers_dir)
 
     prompt = load_prompt(args.prompt_json, args.prompt)
     negative_prompt = load_prompt(args.negative_prompt_json, args.negative_prompt)
@@ -180,6 +209,7 @@ def main() -> None:
                 "profile_steps": args.profile_steps,
                 "warmup_runs": args.warmup_runs,
                 "runs": args.runs,
+                "diffusers_source": diffusers_source,
                 "pid": os.getpid(),
             },
             indent=2,
