@@ -1,0 +1,18 @@
+# Cosmos3 Diffusers T2V runtime for lrc-alpha H200 experiments.
+# README recommends Python 3.13 and installing Diffusers from GitHub main for Cosmos3OmniPipeline.
+diffusers @ git+https://github.com/huggingface/diffusers.git@main
+accelerate
+av
+cosmos_guardrail
+debugpy
+huggingface_hub
+imageio
+imageio-ffmpeg
+ipykernel
+opencv-python-headless
+protobuf
+sentencepiece
+tiktoken
+torch
+torchvision
+transformers

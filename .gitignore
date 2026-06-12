@@ -175,6 +175,8 @@ secrets.yaml
 
 # Recipe env files (contain API keys and machine-specific paths)
 **/env.sh
+# Cluster-local launch scripts are authored per machine and copied out-of-band.
+tools/srun*.sh
 
 # Cookbook runtime checkouts and generated artifacts
 packages/
