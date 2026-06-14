@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "playful Samoyed running through a futuristic neon city",
+      "appearance_details": "fluffy white dog with bright eyes, open smiling mouth, thick coat catching pink, blue, and violet neon reflections",
+      "relationship": "one of two canine companions frolicking together",
+      "location": "foreground street level between glowing skyscrapers",
+      "relative_size": "medium dog, small compared with the towering cityscape",
+      "orientation": "running diagonally across frame beside the golden retriever",
+      "pose": "bounding forward with lifted paws and wagging tail",
+      "action": "frolics energetically through the neon-lit street",
+      "state_changes": "white fur shifts through colored highlights; paws splash through small reflective puddles; tail arcs as it turns",
+      "clothing": "",
+      "expression": "joyful and playful",
+      "gender": "Unknown",
+      "age": "adult dog",
+      "skin_tone_and_texture": "dense white fur with soft volume and glossy neon color casts",
+      "facial_features": "dark eyes, black nose, upright ears, and smiling open mouth",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    },
+    {
+      "description": "golden retriever playing beside the Samoyed",
+      "appearance_details": "golden coat, friendly face, floppy ears, wagging tail, and warm fur shimmering with neon reflections",
+      "relationship": "second canine companion sharing the playful run",
+      "location": "foreground near the Samoyed on the futuristic street",
+      "relative_size": "medium dog, similar scale to the Samoyed",
+      "orientation": "angled toward the Samoyed while moving forward",
+      "pose": "leaping lightly with head turned toward its companion",
+      "action": "runs, bounds, and playfully veers through the city lights",
+      "state_changes": "coat flashes gold and magenta; ears bounce with each stride; paws create small splashes on reflective ground",
+      "clothing": "",
+      "expression": "happy, open-mouthed, and playful",
+      "gender": "Unknown",
+      "age": "adult dog",
+      "skin_tone_and_texture": "soft golden fur with detailed strands and saturated neon highlights",
+      "facial_features": "kind dark eyes, broad black nose, floppy ears, and cheerful mouth",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "A sleek futuristic city with towering skyscrapers, neon signs, glowing billboards, reflective streets, drones, and advanced urban technology in the distance.",
+  "lighting": {
+    "conditions": "Vibrant pink, blue, cyan, and violet neon light, glossy street reflections, rim highlights on fur, and cool ambient night haze.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Vibrant pink, blue, cyan, and violet neon light, glossy street reflections, rim highlights on fur, and cool ambient night haze."
+  },
+  "aesthetics": {
+    "composition": "Joyful dogs against advanced cyber city scale, shimmering fur, energetic movement, saturated neon, and clean futuristic architecture.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Joyful dogs against advanced cyber city scale, shimmering fur, energetic movement, saturated neon, and clean futuristic architecture.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low tracking shot at dog height, moving beside the pair with a wide neon city backdrop and shallow foreground reflections.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic futuristic animal text-to-video.",
+  "artistic_style": "Playful cyberpunk realism with clean high-tech design and warm canine emotion.",
+  "context": "A Samoyed and a Golden Retriever bring natural playfulness into a bustling neon future city.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The Samoyed and Golden Retriever burst into view at street level, fur glowing under neon signs."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "They frolic side by side, veering around reflective pavement as skyscrapers and billboards tower above."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The dogs glance toward each other and bound forward together, joyful against the futuristic skyline."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "large animated neon signs and digital billboards with abstract futuristic glyphs, no readable brands",
+      "category": "scene_sign",
+      "appearance": "visible scene text or signage",
+      "spatial_temporal": "visible during the relevant shot interval",
+      "context": "environmental detail"
+    },
+    {
+      "text": "small glowing transit icons and holographic panels in the background",
+      "category": "scene_sign",
+      "appearance": "visible scene text or signage",
+      "spatial_temporal": "visible during the relevant shot interval",
+      "context": "environmental detail"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the two dogs entering a neon futuristic street.",
+      "key_changes": "dogs enter frame; fur catches colored light; reflective pavement brightens",
+      "camera": "low dog-height tracking shot"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow their playful run through skyscraper lights and busy high-tech atmosphere.",
+      "key_changes": "dogs weave together; billboards flicker; paws splash through reflections",
+      "camera": "smooth side tracking with wide background parallax"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the joyful pair as they bound deeper into the city.",
+      "key_changes": "dogs synchronize stride; tails wag; neon skyline expands behind them",
+      "camera": "low forward chase shot with slight upward angle"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A Samoyed and a Golden Retriever frolic happily through a sleek neon futuristic cityscape.",
+  "audio_description": "Happy dog panting, paws tapping wet pavement, faint splashes, distant city hum, soft drone buzz, and electronic sign ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "blooming flower beds in a sunrise garden",
+      "appearance_details": "roses, lavender, tulips, and mixed blooms in soft pink, purple, yellow, and red, dew beads on petals, varied leaf textures",
+      "relationship": "main visual subject filling the garden with color and morning freshness",
+      "location": "foreground and middle ground along winding garden paths",
+      "relative_size": "small individual flowers forming broad dense beds",
+      "orientation": "stems upright, many blossoms angled toward the sunrise",
+      "pose": "open petals and clustered blooms",
+      "action": "sway lightly as dew glistens and catches the morning light",
+      "state_changes": "petals brighten from cool dawn tones to warm sunrise colors",
+      "clothing": "",
+      "expression": "fresh and vibrant",
+      "gender": "",
+      "age": "fresh seasonal bloom",
+      "skin_tone_and_texture": "soft petals, velvety rose surfaces, fine lavender stems, glossy dew droplets",
+      "facial_features": "",
+      "number_of_subjects": 500,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "winding maintained garden paths",
+      "appearance_details": "clean pale stone paths with crisp borders, damp morning texture, curves threading through flower beds",
+      "relationship": "guides the viewer through the garden composition",
+      "location": "lower foreground curving into the middle distance",
+      "relative_size": "medium visual pathway through the floral scene",
+      "orientation": "curving from lower left toward center background",
+      "pose": "fixed and neatly maintained",
+      "action": "reflects soft sunrise highlights along damp edges",
+      "state_changes": "path surface warms as sunlight spreads across it",
+      "clothing": "",
+      "expression": "orderly and inviting",
+      "gender": "",
+      "age": "well kept garden feature",
+      "skin_tone_and_texture": "light stone, fine gravel, damp matte surface",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "neatly maintained garden at sunrise with winding paths, dense flower beds of roses, lavender, tulips, and mixed blooms, early mist and dew across leaves and petals",
+  "lighting": {
+    "conditions": "warm sunrise light spreading low across the garden, golden highlights on dew, soft pink sky glow, gentle shadows",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "warm sunrise light spreading low across the garden, golden highlights on dew, soft pink sky glow, gentle shadows"
+  },
+  "aesthetics": {
+    "composition": "vibrant, fresh, delicate, peaceful, botanical beauty",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "vibrant, fresh, delicate, peaceful, botanical beauty",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "low slow glide along the garden path with shallow foreground detail on dew and gradual reveal of wider flower beds",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "photorealistic text to video garden scene",
+  "artistic_style": "soft cinematic botanical realism with luminous morning color",
+  "context": "a carefully tended garden wakes at sunrise as flowers, dew, and paths glow in the first warm light",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "close foreground flowers sparkle with dew as the first sunrise light touches their petals"
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "the camera glides along the winding path, revealing roses, lavender, and tulips in layered beds"
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "the garden brightens fully, with warm light spreading over colorful flowers and neat paths"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "close foreground flowers sparkle with dew as the first sunrise light touches their petals",
+      "key_changes": "close foreground flowers sparkle with dew as the first sunrise light touches their petals",
+      "camera": "low slow glide along the garden path with shallow foreground detail on dew and gradual reveal of wider flower beds"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "the camera glides along the winding path, revealing roses, lavender, and tulips in layered beds",
+      "key_changes": "the camera glides along the winding path, revealing roses, lavender, and tulips in layered beds",
+      "camera": "low slow glide along the garden path with shallow foreground detail on dew and gradual reveal of wider flower beds"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "the garden brightens fully, with warm light spreading over colorful flowers and neat paths",
+      "key_changes": "the garden brightens fully, with warm light spreading over colorful flowers and neat paths",
+      "camera": "low slow glide along the garden path with shallow foreground detail on dew and gradual reveal of wider flower beds"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A sunrise garden brightens as dew glistens on roses, lavender, tulips, and colorful flowers beside winding paths.",
+  "audio_description": "morning birdsong, light breeze through leaves, faint insects, quiet garden ambience",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

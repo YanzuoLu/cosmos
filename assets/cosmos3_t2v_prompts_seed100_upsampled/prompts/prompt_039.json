@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "Great Wall of China emerging from dawn mist",
+      "appearance_details": "ancient stone and brick wall, crenellated edges, watchtowers at intervals, damp surfaces gradually revealed by sunrise",
+      "relationship": "central historic landmark winding through the hills",
+      "location": "middle ground and background following the ridgeline",
+      "relative_size": "large, stretching far across the landscape",
+      "orientation": "serpentine path receding diagonally over rolling hills",
+      "pose": "fixed along mountain ridges",
+      "action": "is gradually revealed as mist thins and sunlight spreads across the stones",
+      "state_changes": "details move from hidden gray mist to warm golden clarity under the rising sun",
+      "clothing": "",
+      "expression": "ancient and monumental",
+      "gender": "",
+      "age": "ancient landmark",
+      "skin_tone_and_texture": "weathered gray bricks, rough stone blocks, damp morning surfaces",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "rolling hills around the wall at sunrise",
+      "appearance_details": "layered green brown ridges, low fog in valleys, orange and pink horizon glow, scattered shrubs and trees",
+      "relationship": "natural terrain carrying and framing the wall",
+      "location": "surrounding foreground, middle ground, and far horizon",
+      "relative_size": "very large landscape around the wall",
+      "orientation": "undulating ridges running diagonally and horizontally through the frame",
+      "pose": "still hills under moving mist",
+      "action": "mist drifts slowly while the horizon brightens",
+      "state_changes": "valleys shift from blue gray shadow to warm sunrise color",
+      "clothing": "",
+      "expression": "quiet and expansive",
+      "gender": "",
+      "age": "ancient natural landscape",
+      "skin_tone_and_texture": "vegetated slopes, rocky ridges, soft fog layers",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "Great Wall winding over rolling hills at dawn, initially wrapped in mist, with watchtowers, ancient brickwork, valley fog, and an orange pink sunrise horizon",
+  "lighting": {
+    "conditions": "accelerated dawn light from cool misty blue to warm golden sunrise, first rays touching the wall and hills",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "accelerated dawn light from cool misty blue to warm golden sunrise, first rays touching the wall and hills"
+  },
+  "aesthetics": {
+    "composition": "historic, majestic, calm, atmospheric, dawn timelapse",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "historic, majestic, calm, atmospheric, dawn timelapse",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "steady elevated wide shot with slow forward drift along the wall, timelapse mist movement and brightening sky",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "photorealistic text to video historic landmark timelapse",
+  "artistic_style": "cinematic travel documentary realism with mist, golden dawn, and clear architectural detail",
+  "context": "dawn breaks over the Great Wall as mist lifts, watchtowers emerge, and golden sunlight fills the hills",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "the wall is mostly shrouded in cool morning mist, with only watchtower silhouettes and ridge lines visible"
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "orange and pink dawn light spreads across the sky while fog drifts aside to reveal brickwork and crenellations"
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "the sun fully illuminates the wall and rolling hills in warm gold, ending with the landmark clear and expansive"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "the wall is mostly shrouded in cool morning mist, with only watchtower silhouettes and ridge lines visible",
+      "key_changes": "the wall is mostly shrouded in cool morning mist, with only watchtower silhouettes and ridge lines visible",
+      "camera": "steady elevated wide shot with slow forward drift along the wall, timelapse mist movement and brightening sky"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "orange and pink dawn light spreads across the sky while fog drifts aside to reveal brickwork and crenellations",
+      "key_changes": "orange and pink dawn light spreads across the sky while fog drifts aside to reveal brickwork and crenellations",
+      "camera": "steady elevated wide shot with slow forward drift along the wall, timelapse mist movement and brightening sky"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "the sun fully illuminates the wall and rolling hills in warm gold, ending with the landmark clear and expansive",
+      "key_changes": "the sun fully illuminates the wall and rolling hills in warm gold, ending with the landmark clear and expansive",
+      "camera": "steady elevated wide shot with slow forward drift along the wall, timelapse mist movement and brightening sky"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A dawn timelapse reveals the Great Wall of China as mist lifts and golden sunlight spreads over rolling hills.",
+  "audio_description": "soft morning wind, distant birds, faint rustling vegetation, quiet open landscape ambience",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

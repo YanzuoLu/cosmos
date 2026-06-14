@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "little boy running joyfully across a park lawn",
+      "appearance_details": "small energetic child with bright clothing, open laughter, and quick playful strides through sunlit grass",
+      "relationship": "primary human subject playing with the dog",
+      "location": "foreground on a lush green lawn in a picturesque park",
+      "relative_size": "small child scale, central and slightly ahead of the dog",
+      "orientation": "running forward across the lawn with head turned slightly back toward the dog",
+      "pose": "mid-run with arms bent, knees lifted, and body leaning into motion",
+      "action": "runs joyfully across the grass while laughing in the sunlight",
+      "state_changes": "feet press into grass, shirt moves in the breeze, smile grows as he looks back",
+      "clothing": "bright red t-shirt, blue shorts, and casual play shoes",
+      "expression": "laughing, excited, and carefree",
+      "gender": "Male",
+      "age": "little boy",
+      "skin_tone_and_texture": "natural sunlit child skin with soft realistic texture",
+      "facial_features": "round youthful cheeks, bright eyes, wide open smile",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "playful golden retriever chasing the boy",
+      "appearance_details": "healthy dog with gleaming golden fur, floppy ears, open mouth, and energetic tail",
+      "relationship": "companion following closely behind the boy",
+      "location": "just behind and to one side of the boy on the lawn",
+      "relative_size": "medium dog, lower than the boy but visually prominent",
+      "orientation": "running in the same direction as the boy",
+      "pose": "bounding with front paws lifted and tail raised",
+      "action": "leaps and runs after the boy with playful enthusiasm",
+      "state_changes": "tail wags, fur catches sunlight, paws compress the grass, ears bounce with each stride",
+      "clothing": "",
+      "expression": "happy, eager, and playful",
+      "gender": "Unknown",
+      "age": "adult dog",
+      "skin_tone_and_texture": "golden fur with warm highlights and soft realistic texture",
+      "facial_features": "dark friendly eyes, black nose, open panting mouth, floppy ears",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "Picturesque park with lush green lawn, colorful flowers, scattered trees, open sunny space, and warm golden rays moving across the grass.",
+  "lighting": {
+    "conditions": "Bright overhead sunlight with warm highlights on grass, clothing, fur, and flowers.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Bright overhead sunlight with warm highlights on grass, clothing, fur, and flowers."
+  },
+  "aesthetics": {
+    "composition": "Cheerful family-park realism, saturated greens, red and blue clothing accents, golden fur, and sunny carefree motion.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Cheerful family-park realism, saturated greens, red and blue clothing accents, golden fur, and sunny carefree motion.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low tracking shot moving with the boy and dog, crisp foreground motion and soft park background.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action text-to-video.",
+  "artistic_style": "Warm joyful outdoor realism with playful movement and bright natural color.",
+  "context": "A little boy runs across a sunny park lawn while a golden retriever follows close behind, both enjoying the open day.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The boy bursts across the green lawn in a red t-shirt as the golden retriever starts after him."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The dog bounds closer, tail wagging, while the boy laughs and glances back over his shoulder."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "They continue across the sunlit grass together, flowers and trees glowing in the background."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the boy sprinting onto the lush lawn with the dog following.",
+      "key_changes": "Grass bends under quick steps, sunlight flashes on the red shirt and golden fur.",
+      "camera": "Low forward tracking shot."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow the playful chase across the park.",
+      "key_changes": "Dog tail wags faster, boy laughs and turns his face back, flowers pass in soft blur.",
+      "camera": "Smooth side-tracking camera at child height."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the joyful run as both subjects move deeper into the sunny park.",
+      "key_changes": "Their pace stays lively, warm light broadens across the lawn.",
+      "camera": "Slight widening shot keeping both centered."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A laughing little boy in a red t-shirt runs across a sunny green park lawn while a playful golden retriever bounds after him.",
+  "audio_description": "Child laughter, light dog panting, paws and footsteps through grass, faint birds, and soft park breeze.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

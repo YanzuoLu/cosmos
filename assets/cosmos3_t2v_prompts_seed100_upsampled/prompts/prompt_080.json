@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "warm steaming cup of coffee on a wooden table",
+      "appearance_details": "classic ceramic cup with a slight curved rim, dark coffee surface, thin rising steam, soft highlights on glaze, and a small shadow on the wood",
+      "relationship": "main cozy still-life subject beside the open book",
+      "location": "foreground on a light wooden table near the window glow",
+      "relative_size": "small tabletop object, dominant in close still-life framing",
+      "orientation": "cup upright, rim visible from a slightly elevated angle",
+      "pose": "still cup with moving steam rising vertically then curling",
+      "action": "releases warm steam that curls through sunlight above the tabletop",
+      "state_changes": "steam thickens in the light; coffee surface trembles subtly; highlights shift as the camera moves",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "freshly poured coffee",
+      "skin_tone_and_texture": "smooth ceramic glaze, dark liquid surface, translucent steam, and warm reflected light",
+      "facial_features": "curved rim, cup handle, and circular coffee surface",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "open hardcover book with a deep blue cover",
+      "appearance_details": "book lying face up, slightly creased pages, deep blue hardcover visible at the edges, fine paper texture, and relaxed open spine",
+      "relationship": "quiet reading companion placed beside the coffee",
+      "location": "foreground to midground on the same wooden table, beside the cup",
+      "relative_size": "larger than the cup but lower and flatter in frame",
+      "orientation": "open pages facing upward, angled slightly across the table grain",
+      "pose": "resting open with pages lightly curved",
+      "action": "pages lift faintly at the edges in a soft indoor draft while sunlight crosses the paper",
+      "state_changes": "page edges flutter lightly; sunlight shifts across the open spread; paper texture becomes more visible",
+      "clothing": "deep blue hardcover binding",
+      "expression": "",
+      "gender": "",
+      "age": "used hardcover book",
+      "skin_tone_and_texture": "matte blue cover, cream paper, small creases, and fibrous page texture",
+      "facial_features": "open spine, page edges, and blank readable texture without visible text",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "sunlit window and warm room shadows",
+      "appearance_details": "simple elegant window frame, soft sunlight entering the room, gentle shadows across the table, and faint out-of-focus interior details",
+      "relationship": "lighting and background element shaping the cozy atmosphere",
+      "location": "background behind the wooden table",
+      "relative_size": "large background frame compared with the tabletop objects",
+      "orientation": "vertical window frame casting diagonal light onto the table",
+      "pose": "stationary architectural backdrop",
+      "action": "filters sunlight into the room and casts soft shifting shadows over coffee and book",
+      "state_changes": "sunbeam becomes more visible through steam; table shadows drift subtly; background glow warms the scene",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "timeless cozy interior",
+      "skin_tone_and_texture": "painted window frame, glass glow, soft dust motes, and warm room surfaces",
+      "facial_features": "simple vertical and horizontal window lines",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet cozy room with a wooden table beside an elegant window, soft sunlight, a steaming ceramic coffee cup, an open hardcover book with a deep blue cover, and gentle shadows across warm wood.",
+  "lighting": {
+    "conditions": "Soft sunlight filtered through the window, warm highlights on ceramic and wood, visible steam in the sunbeam, and gentle low-contrast room shadows.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Soft sunlight filtered through the window, warm highlights on ceramic and wood, visible steam in the sunbeam, and gentle low-contrast room shadows."
+  },
+  "aesthetics": {
+    "composition": "Cozy reading atmosphere, warm still life, tactile wood and paper textures, quiet morning or afternoon calm, and simple refined composition.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Cozy reading atmosphere, warm still life, tactile wood and paper textures, quiet morning or afternoon calm, and simple refined composition.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Close tabletop still-life shot from a slightly elevated angle, shallow depth of field, slow push in, and delicate focus on steam, cup rim, and book pages.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic cozy interior still-life text-to-video.",
+  "artistic_style": "Natural cinematic realism with warm sunlight, soft shadows, and intimate tabletop detail.",
+  "context": "A fresh cup of coffee steams beside an open blue hardcover book on a wooden table, lit by sunlight from a nearby window.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera opens on the steaming coffee cup and open blue hardcover book resting on the wooden table."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Steam curls through the window sunlight while soft shadows stretch across the pages and wood grain."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "A page edge flutters slightly and the camera settles into a warm close view of cup, book, and sunlit table."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the cozy tabletop with coffee, open book, wooden surface, and window light.",
+      "key_changes": "Steam becomes visible and the book cover color anchors the composition.",
+      "camera": "Close slightly elevated still-life shot with slow push in."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Focus on steam curling upward through sunlight while shadows and wood grain become clearer.",
+      "key_changes": "Steam movement intensifies, sunlight glows through it, and page texture sharpens.",
+      "camera": "Gentle macro push with shallow depth of field on cup rim and steam."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the calm reading scene as a page edge flutters and warm light settles over the table.",
+      "key_changes": "Motion softens to steam, tiny page flutter, and drifting shadows.",
+      "camera": "Stable close hold with slight rack focus from coffee to open book."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A steaming ceramic cup of coffee sits beside an open blue hardcover book on a sunlit wooden table in a cozy room.",
+  "audio_description": "Quiet room tone, faint steam hiss, soft page flutter, distant outdoor ambience through the window, and subtle wooden room warmth.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

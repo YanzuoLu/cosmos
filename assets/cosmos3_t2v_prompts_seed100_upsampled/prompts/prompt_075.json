@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "golden mature rice field ready for harvest",
+      "appearance_details": "dense rows of ripe rice plants, heavy honey-gold grain heads, slender green-gold leaves, and wave-like movement across the field",
+      "relationship": "central natural subject showing harvest season abundance",
+      "location": "sprawling field stretching from foreground to horizon",
+      "relative_size": "landscape-scale crop field filling nearly the entire frame",
+      "orientation": "rice rows run diagonally into the distance, grain heads bowed by weight",
+      "pose": "standing crop swaying together in the breeze",
+      "action": "ripples in waves as wind passes over the mature grain and sunlight glints along the heads",
+      "state_changes": "wind wave travels across the field; grain heads bend and rise; golden highlights move with the breeze",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "mature harvest-ready rice crop",
+      "skin_tone_and_texture": "dry golden grain, flexible leaves, fine awns, and layered field texture",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "warm harvest sun over the rice fields",
+      "appearance_details": "low golden sun, soft haze, long shadows between rows, and glowing highlights along ripened ears",
+      "relationship": "lighting element that defines the harvest mood",
+      "location": "upper background and reflected across the field surface",
+      "relative_size": "small visible light source with large influence across the landscape",
+      "orientation": "low in the sky, angled across the crop rows",
+      "pose": "steady warm glow",
+      "action": "casts amber light over the rice and makes the moving grains shimmer",
+      "state_changes": "field glow deepens; haze brightens near the horizon; moving shadows sweep between rows",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "late afternoon sun",
+      "skin_tone_and_texture": "warm light, soft haze, and radiant sky color",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A vast expanse of golden rice fields at harvest time, with ripened grains stretching to the horizon, soft rural haze, faint field paths, and a warm sun bathing the crop in honey color.",
+  "lighting": {
+    "conditions": "Low warm sunlight with golden highlights, soft atmospheric haze, long gentle shadows, and shimmering reflections on the ripened grain heads.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Low warm sunlight with golden highlights, soft atmospheric haze, long gentle shadows, and shimmering reflections on the ripened grain heads."
+  },
+  "aesthetics": {
+    "composition": "Harvest abundance, simple rural beauty, rhythmic crop motion, warm gold palette, calm seasonal atmosphere, and tactile grain detail.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Harvest abundance, simple rural beauty, rhythmic crop motion, warm gold palette, calm seasonal atmosphere, and tactile grain detail.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low field-level wide shot with slow dolly movement through the rice, shallow foreground detail, and visible wind waves crossing the crop surface.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic agricultural landscape text-to-video.",
+  "artistic_style": "Cinematic rural realism with rich golden color, gentle motion, and meditative harvest mood.",
+  "context": "A mature rice field glows in late sunlight, its heavy grain heads swaying in the breeze and signaling the coming harvest.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera opens low over a vast honey-gold rice field, showing mature grain heads bowed and ready for harvest."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "A breeze crosses the field, making the ripened rice sway in broad wave-like motion under warm sunlight."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Golden highlights slide over the grain as the camera glides forward, ending on dense textured rice ears."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish a sweeping golden rice field under warm sun, full of mature grain heads.",
+      "key_changes": "The field scale becomes clear and the first wind movement appears.",
+      "camera": "Low wide field-level shot with slow forward glide."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Wind moves across the field, creating rolling waves through the ripened crop.",
+      "key_changes": "Rice heads bend together and sunlight shimmers across the moving surface.",
+      "camera": "Smooth lateral dolly just above the crop tops."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Focus on close grain texture, heavy ears, and warm harvest glow.",
+      "key_changes": "The wide field resolves into detailed foreground rice and rich golden highlights.",
+      "camera": "Gentle push into close foreground rice with soft horizon blur."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A mature golden rice field sways in warm sunlight, its heavy grain heads moving in harvest-season waves.",
+  "audio_description": "Gentle wind through rice stalks, soft rustling grain, distant rural ambience, and a quiet open-field atmosphere.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

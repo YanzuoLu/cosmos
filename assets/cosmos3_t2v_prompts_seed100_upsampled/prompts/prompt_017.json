@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "girl standing on a lush green island surrounded by deep blue sea",
+      "appearance_details": "casual summer attire, relaxed stance, hair and light fabric moving gently in the sea breeze",
+      "relationship": "single figure placed within a wide natural island landscape",
+      "location": "near the center of a verdant island overlooking the horizon",
+      "relative_size": "medium figure at first, becoming small as the camera pulls away",
+      "orientation": "facing the horizon with body angled slightly away from the camera",
+      "pose": "standing still with calm posture and arms relaxed by her sides",
+      "action": "looks out over the sea while the camera slowly pulls back to reveal the full island",
+      "state_changes": "starts dominant in a low angle view, becomes a small part of the broader island and ocean vista",
+      "clothing": "casual summer top, light shorts or skirt, comfortable shoes or sandals",
+      "expression": "calm, curious, contemplative",
+      "gender": "Female",
+      "age": "young person",
+      "skin_tone_and_texture": "natural skin texture under bright outdoor light, exact tone unspecified",
+      "facial_features": "soft features partly turned toward the horizon, hair moving lightly in wind",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Lush island filled with vibrant plants and small signs of wildlife, encircled by vast deep blue sea under a clear open sky.",
+  "lighting": {
+    "conditions": "Clean daylight with sunlit greenery, mild ocean haze, and bright highlights on the water surface.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Clean daylight with sunlit greenery, mild ocean haze, and bright highlights on the water surface."
+  },
+  "aesthetics": {
+    "composition": "Expansive natural beauty, serene island isolation, cinematic scale, realistic immersive atmosphere.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Expansive natural beauty, serene island isolation, cinematic scale, realistic immersive atmosphere.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low angle opening on the girl, then a slow smooth pull back and rise to reveal the island shape and surrounding sea.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic text to video",
+  "artistic_style": "epic nature travel film style with smooth camera movement, detailed foliage, and stable horizon line",
+  "context": "A girl stands quietly on a lush island as the camera reveals the vast sea around her.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Low angle view frames the girl against sky and greenery as she looks toward the horizon."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Camera begins to pull away, widening from her figure to the plants and shoreline around her."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The full island and deep blue sea come into view while the girl remains a small calm figure."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Start with a low angle cinematic shot of the girl and lush greenery.",
+      "key_changes": "Start with a low angle cinematic shot of the girl and lush greenery.",
+      "camera": "Low angle opening on the girl, then a slow smooth pull back and rise to reveal the island shape and surrounding sea."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Pull back slowly to include shoreline, flora, and surrounding ocean.",
+      "key_changes": "Pull back slowly to include shoreline, flora, and surrounding ocean.",
+      "camera": "Low angle opening on the girl, then a slow smooth pull back and rise to reveal the island shape and surrounding sea."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Reveal the whole island in the blue sea with the girl still visible for scale.",
+      "key_changes": "Reveal the whole island in the blue sea with the girl still visible for scale.",
+      "camera": "Low angle opening on the girl, then a slow smooth pull back and rise to reveal the island shape and surrounding sea."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Over seven seconds, a low angle shot of a girl on a green island slowly pulls away to reveal the entire island surrounded by deep blue sea.",
+  "audio_description": "Ocean breeze, distant waves, faint birds, soft natural ambience, no dialogue.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

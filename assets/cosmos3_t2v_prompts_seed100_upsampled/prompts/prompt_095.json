@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "orange and yellow hot air balloon ascending over a verdant valley",
+      "appearance_details": "large rounded envelope painted in vibrant orange and yellow panels, woven basket suspended below, smooth upward lift",
+      "relationship": "main aerial subject rising above the valley landscape",
+      "location": "above a green valley with stream, trees, rolling hills, and distant mountains",
+      "relative_size": "large in the sky but small compared with the broad valley and mountains",
+      "orientation": "vertical ascent with basket centered beneath the envelope",
+      "pose": "floating upright and stable",
+      "action": "ascends slowly and gracefully into the sky",
+      "state_changes": "balloon rises higher, reflection shifts in the stream, valley floor recedes beneath it",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "modern hot air balloon",
+      "skin_tone_and_texture": "taut woven fabric panels with warm color and subtle seam texture",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A lush valley filled with trees, a winding stream in the foreground, rolling hills, distant mountains, and clear sunlight reflecting the balloon colors in the water.",
+  "lighting": {
+    "conditions": "Clear warm daylight with crisp highlights on the balloon fabric, sparkling stream reflections, and soft shadows across the valley.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Clear warm daylight with crisp highlights on the balloon fabric, sparkling stream reflections, and soft shadows across the valley."
+  },
+  "aesthetics": {
+    "composition": "High definition scenic travel imagery, peaceful aerial motion, vivid orange and yellow against deep green, expansive depth.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "High definition scenic travel imagery, peaceful aerial motion, vivid orange and yellow against deep green, expansive depth.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Wide cinematic landscape shot with a slow upward tilt and subtle drone like rise to keep the balloon centered above the valley.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic high definition text to video.",
+  "artistic_style": "Serene landscape realism with vibrant color and graceful aerial composition.",
+  "context": "A hot air balloon lifts off over a beautiful green valley, turning the quiet landscape into a calm aerial spectacle.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The orange and yellow balloon floats just above the valley, its color reflected in the stream below."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It rises steadily while treetops and rolling hills drop lower in the frame."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The balloon ascends against distant mountains, appearing calm and majestic in the open sky."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the balloon above the stream and lush valley floor.",
+      "key_changes": "Balloon begins visible ascent, water reflection trembles softly.",
+      "camera": "Wide valley shot from a slightly elevated viewpoint."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Track the graceful rise over trees and rolling hills.",
+      "key_changes": "Altitude increases, valley details recede, balloon remains central.",
+      "camera": "Slow upward pan with steady framing."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Frame the balloon against distant mountains and open sky.",
+      "key_changes": "Balloon clears more of the valley, color contrast strengthens against the horizon.",
+      "camera": "Gentle drone like lift and hold."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A vibrant orange and yellow hot air balloon rises slowly over a green valley with a stream, hills, and distant mountains.",
+  "audio_description": "Soft wind, distant birds, faint burner whoosh, and gentle stream ambience below.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

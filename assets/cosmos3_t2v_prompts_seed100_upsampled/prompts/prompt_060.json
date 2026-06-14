@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "middle-aged Chinese scholar strolling through ancient scenery",
+      "appearance_details": "scholar in traditional Chinese attire with layered flowing robes, tied hair or scholarly headwear, calm bearing, and measured steps",
+      "relationship": "main traveler moving peacefully through the ancient landscape",
+      "location": "on a winding path in ancient China between misty mountains, rivers, and blooming flowers",
+      "relative_size": "small to medium figure within a grand landscape",
+      "orientation": "walking along the path into the scenery, occasionally looking toward mountains and river",
+      "pose": "upright and composed, hands relaxed within or beside the robes",
+      "action": "strolls slowly along the path while observing mountains, rivers, flowers, and drifting mist",
+      "state_changes": "robe hems move with each step, posture remains calm, and the figure advances along the curving path",
+      "clothing": "traditional Chinese scholar robes with layered fabric, sash, cloth shoes, and understated period details",
+      "expression": "tranquil, reflective, and serene",
+      "gender": "Male",
+      "age": "middle-aged",
+      "skin_tone_and_texture": "natural East Asian skin tone softly lit by misty daylight",
+      "facial_features": "calm eyes, composed mouth, mature facial structure, possibly a short mustache or neat beard",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "blooming flowers along the ancient path",
+      "appearance_details": "clusters of delicate pink and vibrant yellow blossoms with green stems and petals moving in the breeze",
+      "relationship": "foreground natural detail surrounding the scholars walk",
+      "location": "along both sides of the winding path and near the riverbank",
+      "relative_size": "small foreground plants compared with the scholar and mountains",
+      "orientation": "upright flower stems leaning slightly toward the path",
+      "pose": "rooted with blossoms open to the air",
+      "action": "sway gently as the scholar passes and the breeze moves through the valley",
+      "state_changes": "petals flutter, color catches light, and a few blossoms bend in the wind",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "flowering plants",
+      "skin_tone_and_texture": "soft pink and yellow petals, green stems, moist natural leaves",
+      "facial_features": "",
+      "number_of_subjects": 60,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An ancient Chinese landscape with a winding path, dramatic mist-shrouded mountains, clear sparkling rivers, lush greenery, and flowers blooming in pink and yellow.",
+  "lighting": {
+    "conditions": "soft misty daylight with gentle highlights on river water, mountain edges, robe folds, and flower petals",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "soft misty daylight with gentle highlights on river water, mountain edges, robe folds, and flower petals"
+  },
+  "aesthetics": {
+    "composition": "classical serenity, poetic mountains and rivers, traditional robes, floral fragrance, calm scholarly reflection",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "classical serenity, poetic mountains and rivers, traditional robes, floral fragrance, calm scholarly reflection",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "wide scenic tracking shot that follows the scholar along the path, with layered foreground flowers, river reflections, and misty mountain depth",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic historical landscape text-to-video with classical Chinese atmosphere and natural environmental motion",
+  "artistic_style": "poetic ancient Chinese realism inspired by landscape painting composition",
+  "context": "The video follows a middle-aged scholar in traditional Chinese attire as he strolls through a peaceful ancient landscape of mountains, rivers, and blooming flowers.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The scholar enters along the winding path, framed by flowers and misty mountains."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "He walks slowly beside sparkling river water as robe fabric and flower petals move in the breeze."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera widens to show mountains, river, blossoms, and the scholar continuing peacefully onward."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "A winding path in ancient China reveals the scholar walking through flowers and mist.",
+      "key_changes": "The scholar becomes visible against the mountain backdrop as foreground blossoms sway.",
+      "camera": "wide tracking shot from path level"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "The scholar continues beside clear river water with mountains rising behind him.",
+      "key_changes": "Robe fabric shifts with each step and river reflections shimmer under soft light.",
+      "camera": "smooth side-follow tracking with layered depth"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The scene expands into a full poetic landscape of scholar, blossoms, river, and misty peaks.",
+      "key_changes": "The camera reveals more of the valley while the scholar keeps a calm walking rhythm.",
+      "camera": "gentle pullback to a balanced wide composition"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A middle-aged scholar in traditional Chinese robes strolls along a winding ancient path beside flowers, clear rivers, and mist-shrouded mountains.",
+  "audio_description": "soft birdsong, river water flowing, leaves rustling, robe fabric shifting, quiet breeze through flowers",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

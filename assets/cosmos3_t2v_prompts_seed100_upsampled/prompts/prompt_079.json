@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "large cruise ship sailing through the cold Arctic sea",
+      "appearance_details": "white multi-deck passenger vessel, rows of windows, dark hull accents, radar mast, lifeboats, icy spray on the bow, and cold reflections on wet metal",
+      "relationship": "main moving vessel that collides head-on with the iceberg",
+      "location": "center-left of the long shot on the Arctic sea",
+      "relative_size": "huge ship, still smaller than the towering iceberg ahead",
+      "orientation": "bow pointed directly toward the iceberg across choppy water",
+      "pose": "advancing at steady speed with bow cutting through cold waves",
+      "action": "sails forward, impacts the iceberg head-on, and throws up a dramatic burst of seawater",
+      "state_changes": "bow approaches rapidly; impact spray erupts; ship momentum appears checked by the collision",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "modern cruise ship",
+      "skin_tone_and_texture": "painted steel, wet glass, icy spray, dark hull surfaces, and cold reflective highlights",
+      "facial_features": "bow windows, deck lines, railings, and navigation lights",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "huge iceberg glowing in cold blue light",
+      "appearance_details": "towering blue-white ice mass, jagged ridges, translucent faces, wet surfaces, fractured edges, and dark submerged base",
+      "relationship": "immovable obstacle struck by the cruise ship",
+      "location": "center-right foreground to midground in the Arctic sea",
+      "relative_size": "enormous, taller and broader than the approaching ship",
+      "orientation": "front face angled toward the ship, base rooted in cold water",
+      "pose": "stationary looming wall of ice",
+      "action": "reflects blue light, sheds small ice chips at impact, and channels splashing seawater around its base",
+      "state_changes": "blue reflections brighten; spray explodes at the collision point; small ice fragments break off",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "ancient polar ice formation",
+      "skin_tone_and_texture": "layered ice, translucent blue planes, rough ridges, frost, cracks, and wet reflective surfaces",
+      "facial_features": "jagged ridgelines, crevices, and shadowed ice cavities",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "cold Arctic sea surrounding the collision",
+      "appearance_details": "dark steel-blue water, whitecaps, floating ice pieces, explosive spray, mist, and distant low polar horizon",
+      "relationship": "environment that amplifies the impact and intense atmosphere",
+      "location": "entire foreground and background around ship and iceberg",
+      "relative_size": "vast ocean surface filling the frame",
+      "orientation": "horizontal water plane broken by waves and collision spray",
+      "pose": "rough cold sea with active wave motion",
+      "action": "churns, splashes high at impact, and sends ripples outward through floating ice",
+      "state_changes": "waves build at the bow; spray rises sharply; water settles into chaotic foam",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "polar sea environment",
+      "skin_tone_and_texture": "cold water, foam, ice fragments, mist, and reflective blue light",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A cold Arctic seascape in a long shot, with a large cruise ship approaching a massive blue iceberg, dark water, floating ice, misty horizon, and harsh polar atmosphere.",
+  "lighting": {
+    "conditions": "Cold blue polar lighting with icy reflections from the iceberg, muted sky glow, bright white spray highlights, and cinematic contrast on the ship hull.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Cold blue polar lighting with icy reflections from the iceberg, muted sky glow, bright white spray highlights, and cinematic contrast on the ship hull."
+  },
+  "aesthetics": {
+    "composition": "Intense disaster-film tension, Arctic scale, cold blue palette, dramatic collision spray, long-shot spectacle, and crisp icy textures.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Intense disaster-film tension, Arctic scale, cold blue palette, dramatic collision spray, long-shot spectacle, and crisp icy textures.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Long shot with a slow telephoto push, stable horizon, dramatic framing of ship and iceberg, and high-speed water splash detail at impact.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic cinematic maritime disaster text-to-video.",
+  "artistic_style": "Large-scale Arctic realism with cold color grading, intense impact energy, and non-graphic disaster spectacle.",
+  "context": "A cruise ship in the Arctic sea sails directly into a huge iceberg, creating a dramatic head-on collision with seawater splashing under cold blue light.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "A long shot shows the cruise ship cutting through cold Arctic water toward a towering blue iceberg."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The bow collides head-on with the iceberg, throwing seawater and ice chips into the air."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Spray falls back into the churning sea as the iceberg reflects cold blue light and the ship slows at the impact point."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the cruise ship and huge iceberg in a cold Arctic long shot with tense forward motion.",
+      "key_changes": "The gap between ship and iceberg closes and water builds around the bow.",
+      "camera": "Long telephoto shot with slow push and stable horizon."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "The ship impacts the iceberg head-on, creating a high burst of seawater, foam, and small ice fragments.",
+      "key_changes": "Collision occurs, spray erupts, and blue ice reflections intensify.",
+      "camera": "Maintained long shot with slight impact shake and crisp splash detail."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "After impact, spray collapses into rough water and the ship remains pressed near the iceberg.",
+      "key_changes": "Water churns into foam, ice chips drift, and the ship visibly slows.",
+      "camera": "Slow push holds the aftermath in a cinematic wide composition."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A cruise ship sails through the cold Arctic sea and collides head-on with a huge blue-lit iceberg, sending seawater into the air.",
+  "audio_description": "Cold wind, heavy ship engine rumble, waves hitting the hull, a deep impact boom, ice cracking, and seawater crashing back down.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

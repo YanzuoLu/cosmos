@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "sleek silver robot on two large wheels",
+      "appearance_details": "compact rounded body, polished silver shell, front-mounted camera, balanced two-wheel base",
+      "relationship": "autonomous explorer moving through the park",
+      "location": "center foreground on a gravel path",
+      "relative_size": "small machine scale, lower than nearby trees and benches",
+      "orientation": "front camera pointed down the path, body angled slightly along the curve",
+      "pose": "upright on two wheels with stable self-balancing posture",
+      "action": "navigates steadily along the park path and scans its surroundings",
+      "state_changes": "wheels rotate over gravel; camera angle makes small corrections; body glints as light shifts",
+      "clothing": "no clothing",
+      "expression": "curious and neutral through camera orientation",
+      "gender": "Unknown",
+      "age": "new compact robot",
+      "skin_tone_and_texture": "smooth metallic silver casing with rounded edges and subtle reflections",
+      "facial_features": "single camera lens as the main face-like feature",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "Peaceful park with tall trees, lush greenery, colorful flowers, a winding gravel path, and a clear blue sky overhead.",
+  "lighting": {
+    "conditions": "Warm clear daylight with bright sky illumination, small metallic highlights on the robot, and soft shadows across gravel.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Warm clear daylight with bright sky illumination, small metallic highlights on the robot, and soft shadows across gravel."
+  },
+  "aesthetics": {
+    "composition": "Friendly near-future technology in a natural park, combining polished silver surfaces with vivid plants and calm outdoor space.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Friendly near-future technology in a natural park, combining polished silver surfaces with vivid plants and calm outdoor space.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low tracking shot near wheel height, keeping the robot centered while the gravel path and flower beds slide past.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action science and technology video.",
+  "artistic_style": "Clean realistic robotics vignette with soft cinematic color and precise mechanical detail.",
+  "context": "A small autonomous robot explores a quiet park path under clear daylight.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The silver robot rolls into view on the gravel path with its front camera aimed ahead."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It moves steadily past flowers and trees, wheels crunching softly while the camera scans."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The robot continues along the curve, catching warm highlights on its rounded body."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the compact robot, large wheels, camera lens, and quiet park path.",
+      "key_changes": "Introduce the compact robot, large wheels, camera lens, and quiet park path.",
+      "camera": "Low tracking shot near wheel height, keeping the robot centered while the gravel path and flower beds slide past."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow the robot at low angle as it navigates gravel and passes green foliage.",
+      "key_changes": "Follow the robot at low angle as it navigates gravel and passes green foliage.",
+      "camera": "Low tracking shot near wheel height, keeping the robot centered while the gravel path and flower beds slide past."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the steady exploration moment with blue sky and flowers in the background.",
+      "key_changes": "Hold the steady exploration moment with blue sky and flowers in the background.",
+      "camera": "Low tracking shot near wheel height, keeping the robot centered while the gravel path and flower beds slide past."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A sleek two-wheeled silver robot steadily explores a lush park path on a clear day.",
+  "audio_description": "Gentle wheel hum, light gravel crunch, quiet servo adjustments, birdsong, and soft breeze through trees.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

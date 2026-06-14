@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "diverse succulent garden arrangement",
+      "appearance_details": "rosette succulents, fleshy pointed leaves, rounded compact clusters, deep green, soft pink, lavender purple, and muted blue-green tones",
+      "relationship": "grouped as a designed botanical display within raised beds and ground plantings",
+      "location": "meticulously arranged garden beds surrounded by lush greenery",
+      "relative_size": "small plants filling the foreground and midground in repeating patterns",
+      "orientation": "leaves radiate outward and upward from each plant center",
+      "pose": "rooted in patterned clusters",
+      "action": "remain still while their textures and colors are revealed by camera movement and filtered sunlight",
+      "state_changes": "dappled highlights shift gently across leaves as the breeze moves nearby foliage",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "mixed mature and young plants",
+      "skin_tone_and_texture": "thick waxy leaves with matte and subtly glossy surfaces",
+      "facial_features": "",
+      "number_of_subjects": 30,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A designed garden combines raised beds, ground-level plantings, clean edging, and surrounding lush greenery. The succulent patterns create layered color blocks and varied textures across the frame.",
+  "lighting": {
+    "conditions": "soft natural sunlight filtered through overhead leaves, gentle dappled shadows, warm but not harsh",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "soft natural sunlight filtered through overhead leaves, gentle dappled shadows, warm but not harsh"
+  },
+  "aesthetics": {
+    "composition": "botanical harmony, clean garden design, vibrant but natural colors, tactile plant textures, tranquil mood",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "botanical harmony, clean garden design, vibrant but natural colors, tactile plant textures, tranquil mood",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "slow macro-to-medium garden glide, shallow depth of field on foreground rosettes, subtle rack focus between plant clusters",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic botanical text-to-video, high detail plant photography look",
+  "artistic_style": "serene garden showcase with precise composition and natural color fidelity",
+  "context": "The scene highlights the variety and adaptability of succulent species through a carefully composed garden display.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera opens on colorful succulent rosettes arranged in a tidy pattern."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "A slow lateral glide reveals raised beds, ground plantings, and shifting dappled light over the leaves."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Focus settles on pink and purple succulents framed by deep green foliage."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Close view of fleshy leaves and rosette shapes in green, pink, and purple tones.",
+      "key_changes": "Close view of fleshy leaves and rosette shapes in green, pink, and purple tones.",
+      "camera": "slow macro-to-medium garden glide, shallow depth of field on foreground rosettes, subtle rack focus between plant clusters"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "The camera tracks along the patterned beds, showing varied plant shapes and textures.",
+      "key_changes": "The camera tracks along the patterned beds, showing varied plant shapes and textures.",
+      "camera": "slow macro-to-medium garden glide, shallow depth of field on foreground rosettes, subtle rack focus between plant clusters"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Dappled sunlight crosses the succulent display as the shot holds on the balanced garden layout.",
+      "key_changes": "Dappled sunlight crosses the succulent display as the shot holds on the balanced garden layout.",
+      "camera": "slow macro-to-medium garden glide, shallow depth of field on foreground rosettes, subtle rack focus between plant clusters"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A slow garden glide presents colorful succulents arranged in raised and ground-level beds, with filtered sunlight revealing their varied shapes and textures.",
+  "audio_description": "quiet garden ambience, faint rustle of leaves, distant birds, soft breeze",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

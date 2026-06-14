@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "woman hiking along a winding mountain trail at sunset",
+      "appearance_details": "adult woman moving with purposeful steps, face warmed by low golden light, hair and shirt edges lightly stirred by the mountain breeze",
+      "relationship": "primary human subject appreciating the landscape while walking alone",
+      "location": "center frame on a narrow trail bordered by wildflowers and green slopes",
+      "relative_size": "medium human scale, smaller than the towering peaks behind her",
+      "orientation": "walking forward along the trail, occasionally turning her gaze toward the mountains",
+      "pose": "upright stride with relaxed shoulders and attentive posture",
+      "action": "walks down the winding path and looks across the glowing mountain view",
+      "state_changes": "steps advance along the trail, facial expression softens with awe, sunlight shifts across her face",
+      "clothing": "striking blue shirt layered over a crisp white t shirt, practical walking clothes",
+      "expression": "quiet awe and appreciation",
+      "gender": "Female",
+      "age": "adult",
+      "skin_tone_and_texture": "natural skin with warm sunset highlights and realistic outdoor texture",
+      "facial_features": "softly lit face, attentive eyes, relaxed mouth",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A winding mountain trail lined with vibrant wildflowers, lush green vegetation, distant towering peaks, and a fiery sunset sky spreading orange and gold over the landscape.",
+  "lighting": {
+    "conditions": "Low golden hour sunlight with warm rim light on the woman, flowers, trail dust, and distant peaks.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Low golden hour sunlight with warm rim light on the woman, flowers, trail dust, and distant peaks."
+  },
+  "aesthetics": {
+    "composition": "Peaceful alpine realism, vivid wildflower color, warm sunset atmosphere, natural textures, and a sense of open air wonder.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Peaceful alpine realism, vivid wildflower color, warm sunset atmosphere, natural textures, and a sense of open air wonder.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Medium tracking shot at trail height, gentle forward motion behind and beside the woman, shallow depth on the subject with clear mountain silhouettes in the distance.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action text to video.",
+  "artistic_style": "Cinematic nature travel realism with warm contrast and crisp landscape detail.",
+  "context": "A solitary hiker takes in the beauty of a mountainous trail as the sun sets.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The woman enters the winding trail, blue shirt catching warm sunset light as wildflowers frame the path."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "She walks purposefully forward while the camera tracks with her, revealing green slopes and towering peaks ahead."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "She slows slightly and gazes toward the fiery sky, her face glowing with quiet awe."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the hiker on the flower lined mountain trail at sunset.",
+      "key_changes": "Subject begins forward motion, warm light intensifies on her clothing and face.",
+      "camera": "Steady medium tracking shot from slightly behind and to the side."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow her along the curve while the landscape opens to distant peaks.",
+      "key_changes": "Trail curve and wildflowers pass by, mountain silhouettes become more prominent.",
+      "camera": "Smooth lateral tracking with mild handheld natural movement."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold on her awed expression against the glowing sky.",
+      "key_changes": "Walking pace eases, expression turns contemplative, sunset glow wraps the scene.",
+      "camera": "Slow push into a medium close view with mountains still visible."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A woman in a blue shirt walks along a wildflower mountain trail at sunset and pauses in awe of the glowing peaks.",
+  "audio_description": "Soft footfalls on dirt, faint mountain breeze, light rustle of wildflowers and distant open air ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

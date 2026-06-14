@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "24-year-old man holding an intense gaze just beyond the camera",
+      "appearance_details": "young adult man with well-defined jawline, expressive eyebrows, thick dark lashes, deep brown eyes with subtle gold flecks, and crisp skin detail",
+      "relationship": "single human subject in an intimate portrait close-up",
+      "location": "center frame, face filling the image with eyes as the focal point",
+      "relative_size": "large extreme close-up, eyes and upper face dominate the frame",
+      "orientation": "facing camera directly while focusing slightly beyond the lens",
+      "pose": "still portrait pose with minimal head movement and relaxed facial tension",
+      "action": "maintains a steady intense gaze and blinks subtly",
+      "state_changes": "eyelids blink once or twice; catchlights shift faintly; micro expression stays focused",
+      "clothing": "not visible in the tight close-up",
+      "expression": "intense, focused, and calm",
+      "gender": "Male",
+      "age": "24-year-old adult",
+      "skin_tone_and_texture": "natural skin tone with visible pores, fine texture, and high-resolution cinematic clarity",
+      "facial_features": "well-defined jawline, expressive eyebrows, thick lashes, deep brown irises with gold flecks, and sharp eyelid detail",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A softly blurred neutral background with no distracting objects, designed to draw attention entirely to the man's eyes and subtle facial movement.",
+  "lighting": {
+    "conditions": "Controlled cinematic portrait lighting with soft catchlights in the eyes, gentle skin highlights, and smooth falloff into the blurred background.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Controlled cinematic portrait lighting with soft catchlights in the eyes, gentle skin highlights, and smooth falloff into the blurred background."
+  },
+  "aesthetics": {
+    "composition": "High-resolution 70mm film portrait feel, vivid natural eye color, shallow depth of field, intimate stillness, and exceptional facial detail.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "High-resolution 70mm film portrait feel, vivid natural eye color, shallow depth of field, intimate stillness, and exceptional facial detail.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Static extreme close-up portrait, 70mm film look, very shallow depth of field, locked camera, and prolonged focus on the eyes.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic cinematic portrait text-to-video.",
+  "artistic_style": "70mm film-inspired realism with vivid color, precise eye detail, and quiet emotional intensity.",
+  "context": "An intimate portrait studies a young man's focused gaze, using minimal motion so the viewer notices blinks and tiny eye movements.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The man holds a steady gaze just beyond the lens as the camera remains perfectly still."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "A subtle blink and minute eyelid movement reveal deep brown eyes with gold flecks in sharp focus."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "He resumes the calm intense gaze while the blurred background stays soft and unobtrusive."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the static extreme close-up with the man's eyes as the central focus.",
+      "key_changes": "catchlights settle; background remains blurred; gaze holds steady",
+      "camera": "locked static 70mm-style close-up"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Hold the portrait as he blinks subtly and the eye color detail remains crisp.",
+      "key_changes": "eyelids close and reopen; gold flecks flash briefly; facial muscles stay calm",
+      "camera": "unchanged static close-up with shallow depth of field"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "End on the prolonged intimate gaze with vivid irises and soft background separation.",
+      "key_changes": "gaze steadies again; catchlights shimmer faintly; background blur stays constant",
+      "camera": "locked portrait framing without movement"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A 24-year-old man holds an intense close-up gaze, blinking subtly while his deep brown eyes remain in crisp 70mm-style focus.",
+  "audio_description": "Quiet studio room tone, faint breath, subtle eyelid movement, and no music or dialogue.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

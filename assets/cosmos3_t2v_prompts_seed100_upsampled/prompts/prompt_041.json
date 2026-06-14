@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "towering solitary oak tree",
+      "appearance_details": "broad rounded canopy with dense green leaves, thick sturdy brown trunk, irregular natural branching visible from above",
+      "relationship": "central landmark surrounded by symmetrical crop rows",
+      "location": "near the center of a vast cultivated farm field",
+      "relative_size": "much taller and wider than the crop rows, small within the drone panorama",
+      "orientation": "upright, canopy spreading evenly in all directions",
+      "pose": "rooted and still",
+      "action": "stands motionless as the aerial camera glides above and around it",
+      "state_changes": "canopy remains stable while perspective reveals more of the surrounding field",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "mature tree",
+      "skin_tone_and_texture": "rough brown bark with leafy green crown",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A vast neatly cultivated farm field stretches to the horizon, with parallel green crop rows forming clean geometric lines around the lone oak. The sky is clear bright blue, and rich brown soil is visible between the rows.",
+  "lighting": {
+    "conditions": "crisp daylight with high visibility, even sun across the fields, mild leaf shadows under the oak canopy",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "crisp daylight with high visibility, even sun across the fields, mild leaf shadows under the oak canopy"
+  },
+  "aesthetics": {
+    "composition": "orderly agricultural geometry contrasted with organic natural form, vivid greens, earthy browns, clean rural calm",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "orderly agricultural geometry contrasted with organic natural form, vivid greens, earthy browns, clean rural calm",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "drone aerial footage, high wide establishing view, slow forward glide with a slight descending orbit that keeps the oak centered",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic text-to-video, natural color grading, high detail aerial landscape",
+  "artistic_style": "documentary rural panorama with calm contemplative pacing",
+  "context": "The video presents the harmony between a single old tree and a carefully managed farm landscape.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The drone opens high above the field, revealing the oak as a prominent point within symmetrical crop rows."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The camera glides closer and slightly lowers, making the broad canopy and sturdy trunk more distinct."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The shot widens subtly to show the tree's solitary presence against the repeating green rows and blue sky."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "High aerial view of a patterned farm field with a lone oak at the center of the composition.",
+      "key_changes": "High aerial view of a patterned farm field with a lone oak at the center of the composition.",
+      "camera": "drone aerial footage, high wide establishing view, slow forward glide with a slight descending orbit that keeps the oak centered"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Smooth drone movement brings the canopy forward while the crop lines slide beneath the frame.",
+      "key_changes": "Smooth drone movement brings the canopy forward while the crop lines slide beneath the frame.",
+      "camera": "drone aerial footage, high wide establishing view, slow forward glide with a slight descending orbit that keeps the oak centered"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The tree remains centered as the field geometry and clear sky create a balanced final view.",
+      "key_changes": "The tree remains centered as the field geometry and clear sky create a balanced final view.",
+      "camera": "drone aerial footage, high wide establishing view, slow forward glide with a slight descending orbit that keeps the oak centered"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A drone surveys a solitary mature oak standing within precise green crop rows, then glides closer to show the quiet balance of nature and agriculture.",
+  "audio_description": "soft drone hum, light rural breeze moving through crops, distant birds over open farmland",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

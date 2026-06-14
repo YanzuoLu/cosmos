@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "casual man riding a classic bicycle through a city park",
+      "appearance_details": "adult cyclist relaxed but confident, moving smoothly along a winding path",
+      "relationship": "rider using the bicycle for a peaceful park ride",
+      "location": "center frame on the park path",
+      "relative_size": "medium human scale, balanced with the bicycle in the foreground",
+      "orientation": "facing forward along the curving path",
+      "pose": "seated upright with hands on handlebars and feet on pedals",
+      "action": "pedals steadily through the park while enjoying the breeze",
+      "state_changes": "legs cycle rhythmically; shirt and hair react to breeze; posture remains confident",
+      "clothing": "jeans and a t-shirt",
+      "expression": "calm, content, quietly focused on the path",
+      "gender": "Male",
+      "age": "adult",
+      "skin_tone_and_texture": "natural skin with soft outdoor highlights",
+      "facial_features": "relaxed face, attentive eyes, slight easy smile",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "classic single-speed bicycle with wooden front basket",
+      "appearance_details": "simple frame, two thin wheels, rustic wooden basket mounted on the handlebars",
+      "relationship": "vehicle ridden by the man",
+      "location": "under the rider on the winding park path",
+      "relative_size": "bicycle scale matched to rider, slimmer than human body",
+      "orientation": "front wheel pointed along the curve of the path",
+      "pose": "upright and rolling smoothly",
+      "action": "carries the rider forward over the path",
+      "state_changes": "wheels rotate; basket vibrates subtly; frame glints in sunlight",
+      "clothing": "wooden basket attachment",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "classic bicycle",
+      "skin_tone_and_texture": "painted metal frame and warm wood basket texture",
+      "facial_features": "handlebar curve, wheel spokes, simple saddle",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "Picturesque city park with lush greenery, tall trees, a winding path lined with colorful flowers, and modern buildings visible beyond the natural setting.",
+  "lighting": {
+    "conditions": "Clear daytime sun with soft tree-filtered shadows and bright highlights on leaves, flowers, and bicycle spokes.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Clear daytime sun with soft tree-filtered shadows and bright highlights on leaves, flowers, and bicycle spokes."
+  },
+  "aesthetics": {
+    "composition": "Peaceful urban nature contrast, rustic basket charm, fresh green palette, and relaxed recreational energy.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Peaceful urban nature contrast, rustic basket charm, fresh green palette, and relaxed recreational energy.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Smooth side tracking medium-wide shot that follows the rider, with the path curve and city skyline adding depth.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action park video.",
+  "artistic_style": "Clean lifestyle realism with gentle motion and balanced city-nature composition.",
+  "context": "A man enjoys a simple bicycle ride through a green park framed by modern city buildings.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The cyclist enters the winding park path, framed by flowers and tall trees."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "He pedals confidently as the wooden basket bounces lightly with the path texture."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Modern buildings appear through the trees as he continues into the calm park scene."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the lush park, path, rider, bicycle, and front wooden basket.",
+      "key_changes": "Establish the lush park, path, rider, bicycle, and front wooden basket.",
+      "camera": "Smooth side tracking medium-wide shot that follows the rider, with the path curve and city skyline adding depth."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Track the rider smoothly past colorful flowers with leaves moving in a light breeze.",
+      "key_changes": "Track the rider smoothly past colorful flowers with leaves moving in a light breeze.",
+      "camera": "Smooth side tracking medium-wide shot that follows the rider, with the path curve and city skyline adding depth."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Reveal the distant modern buildings behind the greenery as the ride continues.",
+      "key_changes": "Reveal the distant modern buildings behind the greenery as the ride continues.",
+      "camera": "Smooth side tracking medium-wide shot that follows the rider, with the path curve and city skyline adding depth."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A casually dressed man rides a classic bicycle with a wooden basket through a peaceful city park.",
+  "audio_description": "Soft tire sound on the path, faint bicycle chain movement, rustling leaves, distant city hum, and birds in the park.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

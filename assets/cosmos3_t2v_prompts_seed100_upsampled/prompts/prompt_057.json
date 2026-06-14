@@ -1,0 +1,144 @@
+{
+  "subjects": [
+    {
+      "description": "woman reading a harmless flaming book",
+      "appearance_details": "woman standing calmly with an open book whose pages glow orange and appear to burn without smoke, damage, or injury",
+      "relationship": "main magical subject isolated by attention while the city moves around her",
+      "location": "on a busy city sidewalk or plaza amid pedestrians and neon-lit street activity",
+      "relative_size": "medium foreground figure, larger than distant pedestrians",
+      "orientation": "facing the open book, body slightly angled away from passing crowds",
+      "pose": "standing still with both hands holding the book close to chest level",
+      "action": "reads intently while warm flame-like light flickers across her face and hands",
+      "state_changes": "pages glow brighter, orange light pulses, and the harmless flame effect ripples without spreading",
+      "clothing": "everyday city clothing suitable for walking outdoors",
+      "expression": "absorbed, calm, and unaware of the surrounding rush",
+      "gender": "Female",
+      "age": "adult",
+      "skin_tone_and_texture": "natural human skin warmed by orange book light and colored city reflections",
+      "facial_features": "focused eyes lowered to the pages, calm mouth, softly lit cheekbones",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "magical glowing book",
+      "appearance_details": "open book with pages emitting warm orange fire-like light, glowing page edges, and controlled flame shapes that do not char the paper",
+      "relationship": "mystical object being read by the woman",
+      "location": "held in the womans hands at chest height",
+      "relative_size": "small compared with the woman but brightest object in the foreground",
+      "orientation": "open toward the womans face and angled slightly toward the camera",
+      "pose": "open and steady between both hands",
+      "action": "flickers with harmless magical fire while the pages remain readable in silhouette",
+      "state_changes": "orange glow pulses, small flame tongues rise and recede, and the paper stays intact",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "book age not specified",
+      "skin_tone_and_texture": "warm glowing paper, dark cover edges, light like contained fire",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "city pedestrians",
+      "appearance_details": "people of varied ages and ethnicities moving through the city, carrying bags, phones, and everyday accessories",
+      "relationship": "unaware crowd surrounding the magical reading moment",
+      "location": "sidewalks and crosswalk space around the woman",
+      "relative_size": "smaller background and midground figures",
+      "orientation": "walking in multiple directions, mostly not looking at the woman",
+      "pose": "walking, passing, checking phones, and talking among themselves",
+      "action": "move around the woman while staying oblivious to the glowing book",
+      "state_changes": "pedestrians pass behind and beside her, adding motion contrast to her stillness",
+      "clothing": "varied urban coats, jackets, shirts, dresses, bags, and shoes",
+      "expression": "busy, neutral, and distracted",
+      "gender": "Unknown",
+      "age": "children, teenagers, and adults",
+      "skin_tone_and_texture": "varied human skin tones under neon and streetlight colors",
+      "facial_features": "small moving faces, mostly blurred or turned away",
+      "number_of_subjects": 20,
+      "number_of_arms": 40,
+      "number_of_legs": 40
+    }
+  ],
+  "background_setting": "A bustling city street or plaza at dusk or night, filled with pedestrians, neon signs, streetlights, storefront color, and constant urban motion.",
+  "lighting": {
+    "conditions": "warm orange light from the book mixed with neon blues, pinks, greens, and streetlight highlights across wet or reflective urban surfaces",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "warm orange light from the book mixed with neon blues, pinks, greens, and streetlight highlights across wet or reflective urban surfaces"
+  },
+  "aesthetics": {
+    "composition": "magical realism in a busy city, warm book glow against colorful neon, calm focus amid motion, vivid nighttime palette",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "magical realism in a busy city, warm book glow against colorful neon, calm focus amid motion, vivid nighttime palette",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "medium shot centered on the woman and book, slow push-in while pedestrians blur past in layers behind her",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic magical urban text-to-video with controlled fantasy light and believable crowd movement",
+  "artistic_style": "contemporary magical realism with cinematic neon contrast",
+  "context": "The video shows a woman calmly reading a book that appears to burn harmlessly while a busy city crowd passes without noticing.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The woman stands still in the lively city, holding an open book that begins glowing orange."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Harmless flame-like light ripples across the pages as pedestrians pass obliviously around her."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera pushes closer to her absorbed expression and the intact glowing pages."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "Neon signs and storefront lights are visible as colorful background shapes, with no readable wording specified.",
+      "category": "scene_sign",
+      "appearance": "visible scene text or signage",
+      "spatial_temporal": "visible during the relevant shot interval",
+      "context": "environmental detail"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The busy city backdrop frames a still woman holding an unusually bright open book.",
+      "key_changes": "The orange book glow starts to dominate the foreground against neon city colors.",
+      "camera": "medium frontal shot with slow push-in"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "The magical book flickers like fire while the crowd flows around the woman.",
+      "key_changes": "Flame-like light grows and recedes without burning the pages or affecting nearby pedestrians.",
+      "camera": "steady push-in with moving crowd layers and shallow depth of field"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The woman keeps reading, calm and absorbed, as neon reflections and book light mix on her face.",
+      "key_changes": "Her expression becomes the focal point and the crowd softens into colorful motion blur.",
+      "camera": "close medium hold on face, hands, and open book"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A woman reads a book that glows like harmless fire in a bustling neon city, while oblivious pedestrians move around her.",
+  "audio_description": "city footsteps, distant traffic, soft crowd murmur, faint electric neon buzz, gentle magical crackle from the glowing book",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

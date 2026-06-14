@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "majestic white swan gliding across a tranquil lake",
+      "appearance_details": "elegant white plumage, long curved neck, smooth body, dark eye detail, and reflected silhouette on calm water",
+      "relationship": "single graceful subject moving through the peaceful lake environment",
+      "location": "center frame on the surface of a tranquil lake",
+      "relative_size": "medium bird subject with broad water and foliage surrounding it",
+      "orientation": "moving laterally across the frame with neck arched and head poised",
+      "pose": "upright neck, body level on the water, wings folded close",
+      "action": "maneuvers slowly through the calm water, creating ripples that mirror its silhouette",
+      "state_changes": "ripples spread outward, reflection bends, neck angle shifts subtly, feathers catch changing light",
+      "clothing": "",
+      "expression": "serene and composed",
+      "gender": "Unknown",
+      "age": "adult swan",
+      "skin_tone_and_texture": "white feathers with fine texture, soft highlights, and a smooth water reflection",
+      "facial_features": "long neck, orange and black bill, dark eyes, refined head profile",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Calm tranquil lake bordered by lush verdant foliage and a few trees, still air, soft natural reflections, and peaceful water stretching behind the swan.",
+  "lighting": {
+    "conditions": "Gentle natural daylight with soft highlights on white feathers and subtle reflections across the water surface.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Gentle natural daylight with soft highlights on white feathers and subtle reflections across the water surface."
+  },
+  "aesthetics": {
+    "composition": "Peaceful nature realism, clean white silhouette, green foliage, mirrored ripples, and quiet cinematic stillness.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Peaceful nature realism, clean white silhouette, green foliage, mirrored ripples, and quiet cinematic stillness.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Medium shot at water level with the swan centered, slow lateral tracking, and a slight widening to show the lake setting.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic nature text-to-video.",
+  "artistic_style": "Calm cinematic wildlife portrait with delicate movement and soft natural color.",
+  "context": "A majestic white swan glides through a serene lake, its reflection and ripples creating a quiet dance on the water surface.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The white swan enters the medium shot, gliding smoothly across calm lake water."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Ripples spread from its body and gently distort the mirrored silhouette beneath it."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The swan continues past lush foliage as the still lake holds its peaceful reflection."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the swan in a medium water-level shot on the tranquil lake.",
+      "key_changes": "Feathers catch soft light, the first ripples appear around the body.",
+      "camera": "Stable water-level medium shot."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Focus on the swan movement and reflection rippling across the surface.",
+      "key_changes": "Reflection bends, ripples widen, neck angle changes slightly.",
+      "camera": "Slow lateral tracking beside the swan."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Reveal more foliage and calm water as the swan glides onward.",
+      "key_changes": "Lake remains still beyond the ripples, greenery adds depth behind the swan.",
+      "camera": "Slight widening shot while maintaining serene pace."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A majestic white swan glides across a calm lake, sending ripples through its reflection beneath lush green foliage.",
+  "audio_description": "Soft water lapping, faint bird calls, gentle rustle of distant leaves, and quiet outdoor stillness.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

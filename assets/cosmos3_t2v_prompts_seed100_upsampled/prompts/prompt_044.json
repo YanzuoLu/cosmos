@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "field of windblown autumn leaves",
+      "appearance_details": "amber, burnt orange, deep red, and golden leaves spread across the field, some lifting and swirling in the breeze",
+      "relationship": "primary moving texture across the open landscape",
+      "location": "throughout the foreground and midground of a broad autumn field",
+      "relative_size": "individual leaves are small, together forming a wide carpet of color",
+      "orientation": "varied, some lying flat, others tilted and spinning in air",
+      "pose": "scattered and gently lifted by wind",
+      "action": "rustle, sway, and drift gracefully in the gentle breeze",
+      "state_changes": "small clusters lift, rotate, settle, and shift position across the ground",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "fresh fallen autumn foliage",
+      "skin_tone_and_texture": "thin dry veined surfaces with crisp curled edges",
+      "facial_features": "",
+      "number_of_subjects": 200,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A wide field covered in autumn leaves sits before tall deciduous trees. The low sun warms the ground and throws long shadows between the leaf clusters.",
+  "lighting": {
+    "conditions": "low golden sunlight from the side, warm highlights on leaf edges, long soft shadows across the field",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "low golden sunlight from the side, warm highlights on leaf edges, long soft shadows across the field"
+  },
+  "aesthetics": {
+    "composition": "peaceful autumn motion, warm color palette, airy natural movement, gentle seasonal beauty",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "peaceful autumn motion, warm color palette, airy natural movement, gentle seasonal beauty",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "wide cinematic landscape shot with a slow ground-level drift, slight telephoto compression on the tree line, leaves crossing the lens in shallow focus",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic nature text-to-video with detailed leaf motion and natural wind behavior",
+  "artistic_style": "pastoral autumn vignette with calm poetic pacing",
+  "context": "The scene focuses on the quiet motion of autumn leaves moving across a sunlit field under a light breeze.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "A wide view establishes the golden leaf field and distant deciduous trees."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The breeze lifts scattered leaves, making amber and red shapes swirl low across the ground."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera glides through drifting leaves as the low sun glows behind the tree line."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Golden autumn field with leaves carpeting the ground and trees in the background.",
+      "key_changes": "Golden autumn field with leaves carpeting the ground and trees in the background.",
+      "camera": "wide cinematic landscape shot with a slow ground-level drift, slight telephoto compression on the tree line, leaves crossing the lens in shallow focus"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Leaves rustle and rise in small waves, catching warm side light as they turn.",
+      "key_changes": "Leaves rustle and rise in small waves, catching warm side light as they turn.",
+      "camera": "wide cinematic landscape shot with a slow ground-level drift, slight telephoto compression on the tree line, leaves crossing the lens in shallow focus"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "A few leaves drift close to the lens before settling back into the glowing field.",
+      "key_changes": "A few leaves drift close to the lens before settling back into the glowing field.",
+      "camera": "wide cinematic landscape shot with a slow ground-level drift, slight telephoto compression on the tree line, leaves crossing the lens in shallow focus"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A gentle breeze moves through a broad field of amber, red, and golden leaves while low sunlight warms the autumn tree line.",
+  "audio_description": "soft wind, dry leaves rustling and scraping lightly over the ground, distant birds",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

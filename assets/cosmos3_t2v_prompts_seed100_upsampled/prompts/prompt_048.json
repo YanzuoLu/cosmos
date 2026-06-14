@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "massive metallic silver cargo ship",
+      "appearance_details": "towering silver hull, stacked container decks, bridge structure high above the waterline, sunset reflections along metal surfaces",
+      "relationship": "dominant vessel moving through calm harbor waters near dock workers and smaller boats",
+      "location": "midground waterway beside a bustling harbor dock",
+      "relative_size": "enormous compared with buildings, workers, dock equipment, and smaller boats",
+      "orientation": "angled slightly toward the harbor channel, moving left to right",
+      "pose": "steady forward glide through water",
+      "action": "moves slowly toward the harbor as seagulls circle overhead",
+      "state_changes": "hull reflections shift with the sunset and water ripples spread from the bow",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "modern working vessel",
+      "skin_tone_and_texture": "metallic silver painted steel with subtle weathering and reflected orange light",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "dock workers unloading containers",
+      "appearance_details": "workers in hard hats and reflective vests, silhouettes partially backlit by sunset, moving around stacked containers and dock equipment",
+      "relationship": "foreground human activity that gives scale to the cargo ship",
+      "location": "foreground dock beside the harbor water",
+      "relative_size": "tiny compared with the cargo ship, medium-small in the foreground",
+      "orientation": "facing containers, equipment, and the ship",
+      "pose": "standing, walking, and guiding unloading work",
+      "action": "coordinate container unloading on the dock",
+      "state_changes": "workers shift positions, gesture, and walk between containers",
+      "clothing": "hard hats, reflective safety vests, work pants, sturdy boots",
+      "expression": "focused work posture, faces mostly silhouetted",
+      "gender": "Unknown",
+      "age": "adults",
+      "skin_tone_and_texture": "varied human skin tones, mostly obscured by distance and backlight",
+      "facial_features": "not clearly visible due to distance and silhouette",
+      "number_of_subjects": 6,
+      "number_of_arms": 12,
+      "number_of_legs": 12
+    }
+  ],
+  "background_setting": "A bustling harbor at sunset with calm water, smaller boats, stacked containers, dock cranes, low industrial buildings, and seagulls circling above the ship.",
+  "lighting": {
+    "conditions": "warm sunset backlight casting long shadows, orange reflections on water, silver hull highlights, silhouetted foreground workers",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "warm sunset backlight casting long shadows, orange reflections on water, silver hull highlights, silhouetted foreground workers"
+  },
+  "aesthetics": {
+    "composition": "industrial harbor scale, calm water contrasted with active unloading, dramatic sunset glow, maritime realism",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "industrial harbor scale, calm water contrasted with active unloading, dramatic sunset glow, maritime realism",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "wide cinematic harbor shot from dock level, slow lateral tracking with the ship dominating the frame and workers in foreground silhouette",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic maritime text-to-video with high-detail ship, harbor, and water reflections",
+  "artistic_style": "large-scale industrial sunset tableau with documentary realism",
+  "context": "The video shows a huge cargo ship arriving near a working harbor while dock workers unload containers in the foreground.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The massive silver cargo ship enters the frame across calm sunset-lit water."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Foreground workers move between containers as the ship glides behind them and seagulls circle overhead."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The sunset reflection stretches across the harbor while the ship's silhouette grows more dramatic."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Wide harbor view with a metallic silver cargo ship towering over smaller boats and buildings.",
+      "key_changes": "Wide harbor view with a metallic silver cargo ship towering over smaller boats and buildings.",
+      "camera": "wide cinematic harbor shot from dock level, slow lateral tracking with the ship dominating the frame and workers in foreground silhouette"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Workers in hard hats and reflective vests unload containers, their silhouettes active against the ship.",
+      "key_changes": "Workers in hard hats and reflective vests unload containers, their silhouettes active against the ship.",
+      "camera": "wide cinematic harbor shot from dock level, slow lateral tracking with the ship dominating the frame and workers in foreground silhouette"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Long shadows, circling seagulls, and glowing water frame the ship near the dock.",
+      "key_changes": "Long shadows, circling seagulls, and glowing water frame the ship near the dock.",
+      "camera": "wide cinematic harbor shot from dock level, slow lateral tracking with the ship dominating the frame and workers in foreground silhouette"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A huge metallic silver cargo ship moves through calm harbor waters at sunset while dock workers unload containers in the foreground and seagulls circle above.",
+  "audio_description": "harbor ambience, distant gull calls, water lapping, low ship engine rumble, muted container equipment sounds",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

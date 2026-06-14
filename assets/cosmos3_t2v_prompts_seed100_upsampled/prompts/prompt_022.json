@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "Small colorful parrot perched on a wooden desk beside a vintage typewriter.",
+      "appearance_details": "Bright blue and green feathers, curved beak, glossy dark eyes, delicate claws gripping the desk edge and typewriter keys.",
+      "relationship": "Single playful bird subject interacting with the typewriter as the focus of the cozy room.",
+      "location": "Foreground on the wooden desk, centered near the typewriter carriage.",
+      "relative_size": "Small compared with the typewriter, books, and desk items, but visually prominent through color contrast.",
+      "orientation": "Body angled toward the typewriter, head tilting between the keys and the room.",
+      "pose": "Perched upright with one foot near the keys and wings tucked.",
+      "action": "Taps at the typewriter keys with its beak and claws as if typing.",
+      "state_changes": "Begins watching the keys, pecks and taps during the middle segment, ends with a curious head tilt as the typewriter carriage shifts slightly.",
+      "clothing": "None, natural feathers only.",
+      "expression": "Curious, lively, and intent.",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "Feathered body with smooth vivid plumage and fine texture around the face and neck.",
+      "facial_features": "Small curved beak, round dark eyes, compact head with bright feather markings.",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Cozy well lit room with a warm wooden desk, a small potted plant, stacked old books, and nostalgic desk objects surrounding a slightly worn vintage typewriter.",
+  "lighting": {
+    "conditions": "Soft warm indoor light from the side, gentle highlights on metal typewriter keys, comfortable shadows around books and desk objects.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Soft warm indoor light from the side, gentle highlights on metal typewriter keys, comfortable shadows around books and desk objects."
+  },
+  "aesthetics": {
+    "composition": "Whimsical, nostalgic, charming, tactile wood grain, bright feathers against warm browns and muted paper tones.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Whimsical, nostalgic, charming, tactile wood grain, bright feathers against warm browns and muted paper tones.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Medium close shot from desk height, slow push in toward the parrot and typewriter, shallow depth of field on background knick knacks.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Realistic text to video with playful animal behavior and detailed prop animation.",
+  "artistic_style": "Cozy cinematic realism with a storybook sense of humor and gentle vintage color grading.",
+  "context": "A bright parrot appears to compose something on an old typewriter in a quiet, nostalgic study corner.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The parrot studies the typewriter, shifting its feet on the desk while warm light catches its feathers."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It pecks and taps several keys with quick precise movements, making the typewriter hammers twitch."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The bird pauses, tilts its head proudly, and the typewriter carriage gives a tiny nostalgic bounce."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "A colorful parrot perches beside a worn typewriter on a tidy but lived in wooden desk.",
+      "key_changes": "A colorful parrot perches beside a worn typewriter on a tidy but lived in wooden desk.",
+      "camera": "Medium close shot from desk height, slow push in toward the parrot and typewriter, shallow depth of field on background knick knacks."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Close detail of beak, claws, and old metal keys.",
+      "key_changes": "Close detail of beak, claws, and old metal keys.",
+      "camera": "Medium close shot from desk height, slow push in toward the parrot and typewriter, shallow depth of field on background knick knacks."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The parrot looks up against soft books and plant shapes in the background.",
+      "key_changes": "The parrot looks up against soft books and plant shapes in the background.",
+      "camera": "Medium close shot from desk height, slow push in toward the parrot and typewriter, shallow depth of field on background knick knacks."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "0:00-0:02 a colorful parrot inspects a vintage typewriter. 0:02-0:05 it taps the keys like a tiny typist. 0:05-0:07 it pauses with a curious, satisfied head tilt.",
+  "audio_description": "Light typewriter key clicks, tiny claw taps on wood, soft room tone, faint paper rustle, gentle bird chirps.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

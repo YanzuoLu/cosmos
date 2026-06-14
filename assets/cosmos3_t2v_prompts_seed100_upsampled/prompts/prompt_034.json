@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "red barn beside golden hour cornfields",
+      "appearance_details": "weathered red siding, white trim, dark roofline, warm sunset rim light, simple farm structure standing tall near fields",
+      "relationship": "central farm landmark anchoring the rural sunset scene",
+      "location": "middle ground slightly right of center near the corn rows",
+      "relative_size": "medium, larger than the cows but smaller than the fields and sky",
+      "orientation": "front and side walls angled toward the winding road",
+      "pose": "stationary against the sunset sky",
+      "action": "remains still as warm light slides across the siding",
+      "state_changes": "red walls deepen in color as the sun lowers",
+      "clothing": "",
+      "expression": "quiet and rustic",
+      "gender": "",
+      "age": "older farm building",
+      "skin_tone_and_texture": "painted wood siding with subtle grain and weathering",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "grazing cows silhouetted in the field",
+      "appearance_details": "dark cow shapes with soft edge light, lowered heads, slow tail movement, small highlights on backs",
+      "relationship": "living farm presence within the sunset pasture",
+      "location": "middle distance across the field near the barn",
+      "relative_size": "small against the broad farm landscape",
+      "orientation": "varied, mostly side facing while grazing",
+      "pose": "standing with heads lowered toward grass",
+      "action": "graze slowly and shift weight in place",
+      "state_changes": "silhouettes grow darker as the sky brightens behind them",
+      "clothing": "",
+      "expression": "calm",
+      "gender": "Unknown",
+      "age": "adult cattle",
+      "skin_tone_and_texture": "dark silhouetted hides with faint warm highlights",
+      "facial_features": "minimal details due to backlighting",
+      "number_of_subjects": 8,
+      "number_of_arms": 0,
+      "number_of_legs": 32
+    },
+    {
+      "description": "lone autumn tree beside a wooden fence",
+      "appearance_details": "branching silhouette with orange and red leaves, textured trunk, leaves flickering in the breeze",
+      "relationship": "adds color and scale near the road and fence",
+      "location": "foreground to left middle ground near the dirt road",
+      "relative_size": "medium vertical accent in the farm scene",
+      "orientation": "upright with branches spreading outward",
+      "pose": "rooted beside the fence line",
+      "action": "leaves tremble lightly in the evening breeze",
+      "state_changes": "leaf edges glow brighter as the camera angle catches the sun",
+      "clothing": "",
+      "expression": "peaceful and seasonal",
+      "gender": "",
+      "age": "mature tree",
+      "skin_tone_and_texture": "rough bark and dry autumn leaves",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "picturesque farm with rows of corn stretching to the horizon, a red barn, grazing cows, a lone autumn tree, a dirt road, and a quaint wooden fence under orange pink purple sunset sky",
+  "lighting": {
+    "conditions": "golden hour sunset with warm backlight, long field shadows, glowing sky gradient, soft haze over the corn rows",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "golden hour sunset with warm backlight, long field shadows, glowing sky gradient, soft haze over the corn rows"
+  },
+  "aesthetics": {
+    "composition": "rustic, pastoral, calm, warm, nostalgic rural beauty",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "rustic, pastoral, calm, warm, nostalgic rural beauty",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "wide slow dolly along the dirt road leading the eye to the barn, low angle foreground fence detail, expansive sky",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "photorealistic text to video rural landscape",
+  "artistic_style": "cinematic Americana realism with gentle golden hour color",
+  "context": "a quiet farm settles into evening as fields, animals, barn, and road form a peaceful sunset composition",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "the camera follows the dirt road past the fence toward rows of corn glowing in sunset light"
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "the red barn and silhouetted cows become prominent while autumn leaves move gently on the lone tree"
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "the shot holds on the full farm scene as purple dusk tones deepen behind the barn"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "the camera follows the dirt road past the fence toward rows of corn glowing in sunset light",
+      "key_changes": "the camera follows the dirt road past the fence toward rows of corn glowing in sunset light",
+      "camera": "wide slow dolly along the dirt road leading the eye to the barn, low angle foreground fence detail, expansive sky"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "the red barn and silhouetted cows become prominent while autumn leaves move gently on the lone tree",
+      "key_changes": "the red barn and silhouetted cows become prominent while autumn leaves move gently on the lone tree",
+      "camera": "wide slow dolly along the dirt road leading the eye to the barn, low angle foreground fence detail, expansive sky"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "the shot holds on the full farm scene as purple dusk tones deepen behind the barn",
+      "key_changes": "the shot holds on the full farm scene as purple dusk tones deepen behind the barn",
+      "camera": "wide slow dolly along the dirt road leading the eye to the barn, low angle foreground fence detail, expansive sky"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A red barn, cornfields, grazing cows, and a winding dirt road glow under a warm farm sunset.",
+  "audio_description": "soft wind through corn, distant cow sounds, dry leaves rustling, quiet evening farm ambience",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

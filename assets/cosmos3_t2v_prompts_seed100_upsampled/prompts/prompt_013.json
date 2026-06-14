@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "man intensely playing a video game on a couch",
+      "appearance_details": "casual posture, stylish headphones over the ears, both hands gripping a modern controller",
+      "relationship": "solo player focused on the large wall mounted television",
+      "location": "seated on a black leather couch in a warmly lit living room",
+      "relative_size": "medium foreground figure with the television visible beyond him",
+      "orientation": "facing the television with torso angled slightly forward",
+      "pose": "leaning forward from the couch with elbows bent and controller held at chest level",
+      "action": "presses buttons and moves the controller sticks while reacting to game action",
+      "state_changes": "begins focused, reacts sharply to an intense moment, then settles into concentrated play",
+      "clothing": "comfortable casual clothing suitable for relaxing at home",
+      "expression": "absorbed, excited, tense",
+      "gender": "Male",
+      "age": "adult",
+      "skin_tone_and_texture": "natural skin texture in soft indoor light, exact tone unspecified",
+      "facial_features": "focused eyes, tightened jaw, brows lifting during a reaction",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Warm living room with a black leather couch, glossy wooden table holding a sleek game console, and a large flat screen television filled with colorful game graphics.",
+  "lighting": {
+    "conditions": "Soft warm room lighting mixed with flickering blue and saturated color from the television screen.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Soft warm room lighting mixed with flickering blue and saturated color from the television screen."
+  },
+  "aesthetics": {
+    "composition": "Immersive home gaming mood, high contrast screen glow, cozy shadows, clean modern entertainment setup.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Immersive home gaming mood, high contrast screen glow, cozy shadows, clean modern entertainment setup.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Over the shoulder medium shot from behind the couch with the player's reactions and television both visible.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic text to video",
+  "artistic_style": "modern lifestyle realism with crisp screen reflections, believable controller motion, and stable indoor camera work",
+  "context": "A man is absorbed in a thrilling video game, reacting in real time to the action on the television.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Man sits forward on the couch, eyes fixed on the television, fingers ready on the controller."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "He presses buttons quickly and shifts the controller as colorful game graphics flash across the screen."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "He reacts with a tense smile, then refocuses as the room glows with the television light."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the couch, console, warm room, player headphones, controller, and bright television.",
+      "key_changes": "Establish the couch, console, warm room, player headphones, controller, and bright television.",
+      "camera": "Over the shoulder medium shot from behind the couch with the player's reactions and television both visible."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Hold the intense gameplay moment with quick finger motion and changing screen light.",
+      "key_changes": "Hold the intense gameplay moment with quick finger motion and changing screen light.",
+      "camera": "Over the shoulder medium shot from behind the couch with the player's reactions and television both visible."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Capture the player's reaction and return to focused concentration.",
+      "key_changes": "Capture the player's reaction and return to focused concentration.",
+      "camera": "Over the shoulder medium shot from behind the couch with the player's reactions and television both visible."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Over seven seconds, a man in headphones plays an intense video game on a black leather couch while the television lights the room.",
+  "audio_description": "Fast game sound effects, soft controller clicks, low room tone, no spoken dialogue.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "group of golden retriever puppies playing in fresh snow",
+      "appearance_details": "five honey-gold puppies with fluffy coats, tiny dark noses, bright eyes, snow-dusted ears, and wagging tails",
+      "relationship": "playful puppy group exploring the winter wonderland together",
+      "location": "foreground and midground on a gentle snow-covered slope",
+      "relative_size": "small animals against tall evergreens and broad snowy terrain",
+      "orientation": "moving in different directions but generally toward the camera and across the slope",
+      "pose": "bounding, crouching, nose-first in snow, and tumbling gently together",
+      "action": "frolic through powder, poke noses into snow, bark, and chase each other",
+      "state_changes": "snowflakes collect on fur; paw prints multiply; puppies pop up from snow and shake powder away",
+      "clothing": "",
+      "expression": "joyful, curious, and playful",
+      "gender": "Unknown",
+      "age": "puppies",
+      "skin_tone_and_texture": "warm honey fur with soft fluffy texture and wet snow clinging to strands",
+      "facial_features": "round dark eyes, small black noses, floppy ears, and open happy mouths",
+      "number_of_subjects": 5,
+      "number_of_arms": 0,
+      "number_of_legs": 20
+    }
+  ],
+  "background_setting": "A pristine winter forest with tall evergreens, a soft snowy slope, falling snowflakes, and quiet cold air surrounding the playful puppies.",
+  "lighting": {
+    "conditions": "Soft overcast winter light with gentle forest highlights, pale blue shadows, and bright snow bounce on the puppies fur.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Soft overcast winter light with gentle forest highlights, pale blue shadows, and bright snow bounce on the puppies fur."
+  },
+  "aesthetics": {
+    "composition": "Heartwarming winter charm, fluffy animal texture, sparkling snow, gentle snowfall, and playful movement in a calm forest.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Heartwarming winter charm, fluffy animal texture, sparkling snow, gentle snowfall, and playful movement in a calm forest.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low medium tracking shot at puppy height, shallow depth of field, crisp focus on faces, and soft falling snow in foreground bokeh.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action animal text-to-video.",
+  "artistic_style": "Cozy cinematic nature realism with warm puppy energy against cool winter tones.",
+  "context": "Golden retriever puppies discover and play in a fresh snowy forest clearing.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The puppies bound into the snowy clearing as flakes drift down and fresh paw prints appear."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "They tumble, poke their noses through powder, and chase one another across the gentle slope."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Several puppies look toward the camera with snow-dusted faces while one shakes powder from its fur."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the snowy forest and the group of golden retriever puppies entering the scene.",
+      "key_changes": "falling snow becomes visible; paw prints begin; puppies spread across foreground",
+      "camera": "low puppy-height tracking shot"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow the puppies as they frolic, tumble, and sniff through the powder.",
+      "key_changes": "snow sprays upward; noses emerge from snow; tails wag rapidly",
+      "camera": "gentle handheld follow with shallow depth of field"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold on their happy snow-covered faces against the soft evergreen background.",
+      "key_changes": "one puppy shakes off snow; others pause and bark; snow continues falling",
+      "camera": "steady medium close shot at ground level"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Five golden retriever puppies tumble and play through fresh snow in a softly lit evergreen forest.",
+  "audio_description": "Light puppy barks, soft panting, paws crunching in powder, gentle snowfall ambience, and quiet winter forest air.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

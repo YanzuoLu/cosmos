@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "Majestic adult lion standing tall in lush sunlit grassland.",
+      "appearance_details": "Golden fur glistening in the sun, thick mane moving faintly in the breeze, muscular body, amber eyes scanning the horizon.",
+      "relationship": "Single dominant animal subject commanding the open savanna scene.",
+      "location": "Foreground center on a broad expanse of vibrant grass, with rolling hills and scattered trees behind.",
+      "relative_size": "Large and imposing, filling the center of the frame while the landscape stretches behind it.",
+      "orientation": "Body in three quarter profile, head turning slowly from left toward right to scan the surroundings.",
+      "pose": "Standing upright and still, chest forward, paws planted firmly in the grass.",
+      "action": "Surveys the grassland with controlled, regal awareness as grass moves around it.",
+      "state_changes": "Starts standing still, turns its head and blinks through the middle, ends with mane and grass caught in golden light.",
+      "clothing": "None, natural fur and mane only.",
+      "expression": "Focused, dominant, calm, and watchful.",
+      "gender": "Male",
+      "age": "adult",
+      "skin_tone_and_texture": "Golden tawny fur with coarse mane texture and subtle sunlit sheen.",
+      "facial_features": "Piercing amber eyes, broad muzzle, black nose, whiskers, heavy mane framing the face.",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "Vast lush grassland with rolling hills, scattered acacia like trees, and open sky, creating depth and natural contrast behind the lion.",
+  "lighting": {
+    "conditions": "Bright warm sunlight with golden highlights on fur and grass, soft shadows under the lion, clear natural atmosphere.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Bright warm sunlight with golden highlights on fur and grass, soft shadows under the lion, clear natural atmosphere."
+  },
+  "aesthetics": {
+    "composition": "Regal, powerful, calm, sun washed, rich grass texture, iconic wildlife portrait mood.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Regal, powerful, calm, sun washed, rich grass texture, iconic wildlife portrait mood.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Slow lateral dolly at low height, medium wide framing, gentle rack focus from swaying grass to the lion eyes.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Realistic text to video wildlife portrait with natural wind and animal micro motion.",
+  "artistic_style": "Cinematic nature documentary realism with warm savanna color palette.",
+  "context": "A golden lion stands in command of a vibrant grassland, silently watching the horizon.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The lion stands tall as grass sways around its paws and sunlight glints along its mane."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It slowly turns its head, amber eyes scanning the rolling hills and scattered trees."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The lion holds a proud still pose while its mane ripples lightly in the breeze."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Wide grassland portrait with the lion centered against hills and trees.",
+      "key_changes": "Wide grassland portrait with the lion centered against hills and trees.",
+      "camera": "Slow lateral dolly at low height, medium wide framing, gentle rack focus from swaying grass to the lion eyes."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Closer emphasis on mane, eyes, and sunlight on golden fur.",
+      "key_changes": "Closer emphasis on mane, eyes, and sunlight on golden fur.",
+      "camera": "Slow lateral dolly at low height, medium wide framing, gentle rack focus from swaying grass to the lion eyes."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Regal final pose with grass shimmering in the warm light.",
+      "key_changes": "Regal final pose with grass shimmering in the warm light.",
+      "camera": "Slow lateral dolly at low height, medium wide framing, gentle rack focus from swaying grass to the lion eyes."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "0:00-0:02 a lion stands in bright grassland. 0:02-0:05 it scans the open hills with amber eyes. 0:05-0:07 it holds a dominant sunlit pose as grass sways.",
+  "audio_description": "Soft grass rustling, light wind, distant birds, faint low lion breath, quiet open savanna ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

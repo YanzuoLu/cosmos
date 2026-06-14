@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "herds of cattle and sheep grazing in a mountain pasture",
+      "appearance_details": "white sheep, brown and black cattle, sturdy bodies, woolly coats, grazing heads, slow walking, and small groups spread across the field",
+      "relationship": "living foreground and midground animals occupying the pasture below the mountain",
+      "location": "green pasture at the base of the snow-capped mountain",
+      "relative_size": "small to medium animals against an immense landscape",
+      "orientation": "mostly facing down to graze or moving gently across the meadow",
+      "pose": "standing, grazing, walking, and resting in scattered groups",
+      "action": "graze peacefully, shift positions, flick tails, and move slowly through the grass",
+      "state_changes": "a few animals lift their heads; small groups drift across the pasture; grass bends under hooves",
+      "clothing": "",
+      "expression": "calm and undisturbed",
+      "gender": "Unknown",
+      "age": "mixed adult livestock with a few young animals",
+      "skin_tone_and_texture": "wool, hide, fur, and natural animal coats with sunlit texture",
+      "facial_features": "soft muzzles, ears, horns on some cattle, and grazing profiles",
+      "number_of_subjects": 45,
+      "number_of_arms": 0,
+      "number_of_legs": 180
+    },
+    {
+      "description": "majestic snow-capped mountain above the pasture",
+      "appearance_details": "towering rocky peak, bright snow crown, shaded cliffs, distant ridgelines, and crisp alpine air",
+      "relationship": "dominant background landmark framing the pasture scene",
+      "location": "background rising behind the green meadow",
+      "relative_size": "colossal compared with animals and pasture plants",
+      "orientation": "vertical peak centered behind the field, slopes spreading outward",
+      "pose": "still monumental alpine presence",
+      "action": "holds steady while clouds drift and sunlight warms the lower slopes",
+      "state_changes": "cloud shadows move lightly; snow highlights brighten; pasture foreground gains warm glow",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "ancient mountain landscape",
+      "skin_tone_and_texture": "snow, exposed rock, alpine grass, and distant mist textures",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A lush alpine pasture unfolds beneath a snow-capped mountain, with green grass, wild plants, grazing cattle and sheep, a distant brook, clean horizon, and crisp mountain air.",
+  "lighting": {
+    "conditions": "Warm sunlight washes the meadow while cooler blue-white light remains on the snowy summit, creating clean alpine contrast and soft animal shadows.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Warm sunlight washes the meadow while cooler blue-white light remains on the snowy summit, creating clean alpine contrast and soft animal shadows."
+  },
+  "aesthetics": {
+    "composition": "Pastoral calm, expansive mountain grandeur, fresh air, natural abundance, bright green pasture, white livestock forms, and tranquil rural beauty.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Pastoral calm, expansive mountain grandeur, fresh air, natural abundance, bright green pasture, white livestock forms, and tranquil rural beauty.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Long scenic shot with a slow lateral glide across the meadow, layered depth from foreground grass to animals to mountain, and gentle telephoto compression.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic alpine nature and pastoral text-to-video.",
+  "artistic_style": "Cinematic landscape realism with warm pastoral color, crisp mountain detail, and peaceful animal motion.",
+  "context": "At the foot of a majestic snow-capped mountain, cattle and sheep graze across a rich green pasture while sunlight reveals the freshness of the alpine scene.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "A long shot reveals the snow-capped mountain towering above a green pasture dotted with cattle and sheep."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The herds graze and drift slowly while the camera glides across grass, wild plants, and a distant brook line."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Warm sunlight intensifies on the meadow as a few animals lift their heads beneath the bright alpine peak."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the full mountain pasture with snow peak, green field, and scattered livestock.",
+      "key_changes": "The camera reveals the landscape scale and animals become readable as white and dark forms.",
+      "camera": "Wide long shot with slow forward-lateral drift."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Move across the pasture as cattle and sheep graze, tails flick, and grass ripples in the breeze.",
+      "key_changes": "Animal movement becomes clearer, foreground plants pass by, and brook ambience is suggested.",
+      "camera": "Low telephoto glide with foreground grass parallax."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the serene alpine vista as sunlight warms the animals and lower slopes.",
+      "key_changes": "Meadow highlights brighten and a few animals lift their heads toward the camera.",
+      "camera": "Stable scenic hold with slight push toward the herds."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Cattle and sheep graze peacefully in a lush pasture beneath a majestic snow-capped mountain glowing in warm sunlight.",
+  "audio_description": "Soft wind over grass, distant brook water, sheep bleats, cattle lowing, light hoof steps, and open alpine ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

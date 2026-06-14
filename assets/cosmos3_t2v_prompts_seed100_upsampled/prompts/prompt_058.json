@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "young boy riding a red bicycle",
+      "appearance_details": "boy wearing a protective helmet and shorts, hands on handlebars, determined face, moving with steady pedaling rhythm",
+      "relationship": "main child rider enjoying the park path",
+      "location": "on a well-maintained gravel park path lined with trees and colorful flowers",
+      "relative_size": "medium foreground subject, smaller than the surrounding trees",
+      "orientation": "riding forward along the path, slightly angled across the frame",
+      "pose": "seated upright on the bicycle with bent knees and focused hands",
+      "action": "pedals through the park with determination and enjoyment",
+      "state_changes": "legs cycle, helmet catches light, expression stays focused, and breeze moves clothing slightly",
+      "clothing": "helmet, shorts, casual warm-weather top, and practical shoes",
+      "expression": "determined, excited, and focused on the path ahead",
+      "gender": "Male",
+      "age": "child",
+      "skin_tone_and_texture": "natural child skin tones in warm outdoor daylight",
+      "facial_features": "young face with focused eyes, tightened mouth, and wind-flushed cheeks",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "bright red bicycle",
+      "appearance_details": "small red bicycle with metal gears, black tires, silver spokes, handlebars, pedals, and a clean frame",
+      "relationship": "vehicle carrying the boy along the path",
+      "location": "under the boy on the gravel park path",
+      "relative_size": "child-sized bicycle, smaller than benches and trees but prominent in frame",
+      "orientation": "aligned with the forward curve of the path",
+      "pose": "rolling steadily with wheels in motion",
+      "action": "moves along the gravel as pedals turn and wheels crunch over the surface",
+      "state_changes": "wheels rotate, spokes blur, gears catch light, and small gravel shifts beneath the tires",
+      "clothing": "red painted frame with silver metal components and black rubber tires",
+      "expression": "",
+      "gender": "",
+      "age": "child-sized modern bicycle",
+      "skin_tone_and_texture": "glossy red metal, rubber tires, silver gears and spokes",
+      "facial_features": "handlebar and front wheel profile",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A peaceful park path bordered by lush green trees, colorful flowers, benches, picnic areas, and a maintained gravel surface.",
+  "lighting": {
+    "conditions": "bright pleasant daylight with soft tree-filtered highlights and mild shadows on the path",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "bright pleasant daylight with soft tree-filtered highlights and mild shadows on the path"
+  },
+  "aesthetics": {
+    "composition": "childhood adventure, fresh park colors, gentle breeze, red bicycle contrast, calm outdoor energy",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "childhood adventure, fresh park colors, gentle breeze, red bicycle contrast, calm outdoor energy",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "low tracking shot beside the bicycle, matching the boys speed while the park background slides by smoothly",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic outdoor family text-to-video with natural cycling motion and crisp park detail",
+  "artistic_style": "sunny everyday realism focused on youthful determination and movement",
+  "context": "The video follows a young boy in a helmet riding a bright red bicycle along a scenic park path.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The boy rides into view on the red bicycle, helmet secure and eyes fixed on the path."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "He pedals steadily as the bike wheels crunch over gravel and flowers pass along the sides."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera tracks beside him while benches and picnic areas appear in the distance."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The child rider appears on a neat park path, framed by trees and flowers.",
+      "key_changes": "The red bicycle becomes the strongest color accent against the green park.",
+      "camera": "low side tracking shot beginning near the front wheel"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "The boy keeps a determined rhythm as the gravel path curves through the park.",
+      "key_changes": "Wheels spin faster, small gravel shifts, and flowers slide past in the background.",
+      "camera": "smooth tracking parallel to the bicycle"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The path opens slightly toward benches and picnic areas while the boy continues forward.",
+      "key_changes": "The view widens to show more of the park while maintaining the riders momentum.",
+      "camera": "slight widen from side tracking into a forward three-quarter view"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A helmeted young boy pedals a bright red bicycle along a tree-lined gravel park path, focused and enjoying the breeze.",
+  "audio_description": "bike tires crunching on gravel, soft gear clicks, light breeze in trees, distant park birds and muffled voices",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

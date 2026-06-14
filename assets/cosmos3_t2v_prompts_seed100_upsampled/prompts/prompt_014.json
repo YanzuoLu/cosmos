@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "little boy splashing in a shallow blue kiddie pool",
+      "appearance_details": "curly blonde hair damp at the edges, blue t shirt, bare legs in the water, plastic yellow bucket in hand",
+      "relationship": "single child playing alone in a landscaped backyard",
+      "location": "inside a shallow blue kiddie pool set on a warm backyard lawn",
+      "relative_size": "small foreground figure centered within the round pool",
+      "orientation": "facing slightly toward the camera while turning toward the water",
+      "pose": "seated or crouched low in the pool with arms active over the water",
+      "action": "scoops water with a yellow bucket and splashes it back into the pool",
+      "state_changes": "starts scooping water, laughs as it splashes, then raises the bucket for another playful pour",
+      "clothing": "blue t shirt and simple summer shorts suitable for water play",
+      "expression": "joyful, laughing, delighted",
+      "gender": "Male",
+      "age": "little child",
+      "skin_tone_and_texture": "natural child skin texture with sunlit water highlights, exact tone unspecified",
+      "facial_features": "curly blonde hair, round cheeks, open laughing mouth, bright eyes",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Neatly landscaped backyard with a wooden fence, colorful flowers around the pool area, nearby trees, and warm summer air.",
+  "lighting": {
+    "conditions": "Bright warm daylight with soft reflections from the water and gentle shadows from trees.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Bright warm daylight with soft reflections from the water and gentle shadows from trees."
+  },
+  "aesthetics": {
+    "composition": "Cheerful summer backyard scene, sparkling water droplets, playful color contrast between blue pool and yellow bucket.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Cheerful summer backyard scene, sparkling water droplets, playful color contrast between blue pool and yellow bucket.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low close family style framing at pool height with a steady camera and crisp water motion.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic text to video",
+  "artistic_style": "warm home video realism with clear water physics, natural child movement, and soft garden color",
+  "context": "A little boy enjoys a warm summer day by playing in a shallow kiddie pool in the backyard.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Boy crouches in the blue pool and dips the yellow bucket into the cool water."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "He lifts the bucket and splashes water outward, laughing as droplets scatter across the pool rim."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "He scoops again while flowers and fence stay steady in the sunlit background."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the backyard, kiddie pool, boy in a blue shirt, and yellow bucket.",
+      "key_changes": "Establish the backyard, kiddie pool, boy in a blue shirt, and yellow bucket.",
+      "camera": "Low close family style framing at pool height with a steady camera and crisp water motion."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Highlight the main splash, water droplets, laughter, and bright summer texture.",
+      "key_changes": "Highlight the main splash, water droplets, laughter, and bright summer texture.",
+      "camera": "Low close family style framing at pool height with a steady camera and crisp water motion."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold on the playful reset as he prepares another scoop.",
+      "key_changes": "Hold on the playful reset as he prepares another scoop.",
+      "camera": "Low close family style framing at pool height with a steady camera and crisp water motion."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Over seven seconds, a little blonde boy laughs and splashes with a yellow bucket in a shallow blue kiddie pool on a sunny backyard day.",
+  "audio_description": "Child laughter, water splashes, faint rustling leaves, soft summer ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

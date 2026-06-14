@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "rows of purple lavender plants",
+      "appearance_details": "dense lavender stems topped with vibrant purple flower spikes, arranged in long parallel rows across sunlit soil",
+      "relationship": "main landscape subject forming a sea of fragrant purple waves",
+      "location": "sprawling lavender field stretching toward distant mountains",
+      "relative_size": "small individual plants but vast as a collective field",
+      "orientation": "rows receding diagonally toward the horizon",
+      "pose": "rooted in neat rows with flower spikes lifted upward",
+      "action": "sway gracefully in a gentle breeze, creating rolling wave motion across the field",
+      "state_changes": "successive rows ripple, purple blooms shift from shadow to golden highlights, and the horizon becomes more defined",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "mature flowering plants",
+      "skin_tone_and_texture": "soft purple blossoms, slender green stems, dry sun-warmed leaves",
+      "facial_features": "",
+      "number_of_subjects": 500,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A sun-drenched lavender field extending to the horizon, bordered by a distant mountain range under late afternoon golden light.",
+  "lighting": {
+    "conditions": "warm late afternoon sun with long soft shadows, golden highlights on purple blossoms, gentle haze near the mountains",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "warm late afternoon sun with long soft shadows, golden highlights on purple blossoms, gentle haze near the mountains"
+  },
+  "aesthetics": {
+    "composition": "tranquil pastoral beauty, rhythmic purple rows, fragrant summer atmosphere, soft mountain distance",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "tranquil pastoral beauty, rhythmic purple rows, fragrant summer atmosphere, soft mountain distance",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "wide low-angle glide along lavender rows, then a gradual lift toward the distant mountain border",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic landscape text-to-video with natural breeze motion and rich floral color",
+  "artistic_style": "serene pastoral realism with romantic late-day color grading",
+  "context": "The video captures an expansive lavender field moving like purple waves beneath warm late afternoon light.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The shot opens between long lavender rows glowing purple under late afternoon sun."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "A gentle breeze rolls through the plants, making the field undulate in soft waves."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera lifts slightly to reveal the field stretching toward a softly lit mountain range."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Lavender rows fill the frame with dense purple blossoms and warm sunlit soil.",
+      "key_changes": "Foreground blossoms enter focus and the repeating rows establish depth.",
+      "camera": "low tracking shot aligned with the rows"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "The breeze passes across the field, creating a visible wave through the lavender.",
+      "key_changes": "Purple flower spikes sway in sequence from foreground to middle distance.",
+      "camera": "smooth lateral glide with shallow foreground parallax"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The view opens toward the mountains, keeping the lavender sea in the foreground.",
+      "key_changes": "The mountain range and golden horizon become clearer as the plants continue moving.",
+      "camera": "gentle crane up into a wide pastoral view"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Rows of purple lavender sway in a sunlit field, forming soft waves that lead the eye toward distant golden mountains.",
+  "audio_description": "light wind through lavender, faint insects, distant birds, calm open-field ambience",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

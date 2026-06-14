@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "green bamboo stalks",
+      "appearance_details": "tall slender bamboo culms with segmented joints, narrow green leaves, and clustered vertical rhythm",
+      "relationship": "primary moving foliage framing the courtyard path",
+      "location": "along the stone path inside a traditional Chinese courtyard",
+      "relative_size": "tall compared with the path and shrubs, smaller than the surrounding roofline",
+      "orientation": "mostly vertical with leaves extending outward over the walkway",
+      "pose": "rooted and lightly bending in the breeze",
+      "action": "sway gently, casting moving shadows on the mossy stone path",
+      "state_changes": "leaves flutter, stalks flex slightly, and sunlight shifts across their green surfaces",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "mature bamboo",
+      "skin_tone_and_texture": "smooth green segmented stalks with fine leaves",
+      "facial_features": "",
+      "number_of_subjects": 24,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "pink plum blossom trees",
+      "appearance_details": "delicate branches carrying soft pink blooms, scattered petals, and dark textured bark",
+      "relationship": "contrasting floral subject complementing the green bamboo",
+      "location": "beside the winding path and near the courtyard architecture",
+      "relative_size": "medium trees, wider than individual bamboo stalks but lower than the roofline",
+      "orientation": "branches arching over the path and toward the courtyard center",
+      "pose": "rooted with flowering branches extended outward",
+      "action": "release a few petals while blossoms tremble in the breeze",
+      "state_changes": "petals drift onto the stone path and pink highlights brighten in the sunlight",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "mature flowering trees",
+      "skin_tone_and_texture": "dark bark, fine twigs, soft pink flower petals",
+      "facial_features": "",
+      "number_of_subjects": 4,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A tranquil courtyard with a winding moss-edged stone path, traditional Chinese architecture, a low curved roof, carved wooden details, bamboo, and plum blossoms.",
+  "lighting": {
+    "conditions": "soft afternoon sunlight filtered through leaves and roof edges, with gentle dappled shadows on stone and moss",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "soft afternoon sunlight filtered through leaves and roof edges, with gentle dappled shadows on stone and moss"
+  },
+  "aesthetics": {
+    "composition": "quiet harmony, green bamboo against pink blossoms, weathered stone, traditional craftsmanship, balanced natural calm",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "quiet harmony, green bamboo against pink blossoms, weathered stone, traditional craftsmanship, balanced natural calm",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "slow forward dolly along the winding path, framed by bamboo in the foreground and curved rooflines in the background",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic historical courtyard text-to-video with detailed foliage, carved wood, and natural breeze motion",
+  "artistic_style": "classical Chinese garden realism with meditative pacing",
+  "context": "The video moves through a peaceful courtyard where bamboo and plum blossoms sway beside traditional architecture.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera enters the courtyard path as bamboo leaves sway in soft afternoon light."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Pink plum blossoms tremble above mossy stones while petals drift across the walkway."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The shot settles on the curved roof and carved wood framed by bamboo and flowers."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "A moss-edged stone path leads into a quiet courtyard framed by green bamboo.",
+      "key_changes": "Foreground bamboo leaves begin swaying and reveal the path depth.",
+      "camera": "slow forward dolly from path height"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Plum blossoms and bamboo move together in the breeze beside traditional architecture.",
+      "key_changes": "A few pink petals fall and dappled shadows slide over the stones.",
+      "camera": "smooth glide with slight pan toward the flowering trees"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The courtyard composition resolves into bamboo, blossoms, curved roof, and carved wood.",
+      "key_changes": "Architecture becomes the background anchor while the foliage keeps moving softly.",
+      "camera": "steady framed hold with layered foreground leaves"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Soft afternoon light fills a traditional courtyard where bamboo sways, plum blossoms drift, and a mossy stone path leads past carved wooden architecture.",
+  "audio_description": "bamboo leaves rustling, faint birdsong, soft breeze, occasional petals brushing stone",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

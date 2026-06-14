@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "overgrown abandoned house ruins",
+      "appearance_details": "partially collapsed exterior walls, broken roof gaps, decaying wood, cracked plaster, weathered beams threaded with ivy",
+      "relationship": "main structure being reclaimed by vegetation",
+      "location": "center and background of the frame behind dense plants",
+      "relative_size": "large structure compared with foreground grass and flowers",
+      "orientation": "walls upright in fragments, roof broken open toward the sky",
+      "pose": "still, damaged, and partially swallowed by plants",
+      "action": "remains quiet while sunlight and shadows shift through roof openings",
+      "state_changes": "dappled light slides over cracked walls and ivy as leaves move in the breeze",
+      "clothing": "",
+      "expression": "peaceful yet eerie",
+      "gender": "",
+      "age": "old abandoned building",
+      "skin_tone_and_texture": "rough cracked plaster, gray weathered wood, mossy damp surfaces, creeping ivy",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "lush vegetation reclaiming the ruins",
+      "appearance_details": "green grass carpet, ivy vines, tangled plants, colorful wildflowers, small leaves catching dust motes and sunlight",
+      "relationship": "living growth covering the abandoned house and ground",
+      "location": "foreground, across the ground, and climbing the remaining walls",
+      "relative_size": "large organic layer covering most visible surfaces",
+      "orientation": "grass upright, vines climbing vertically, flowers scattered naturally",
+      "pose": "dense and spreading through the ruins",
+      "action": "sways gently, vines cling to wood and walls, insects move among flowers",
+      "state_changes": "leaf highlights flicker as sunlight filters through roof gaps",
+      "clothing": "",
+      "expression": "vibrant and persistent",
+      "gender": "",
+      "age": "wild seasonal growth",
+      "skin_tone_and_texture": "fresh grass blades, glossy ivy leaves, soft petals, rough stems",
+      "facial_features": "",
+      "number_of_subjects": 700,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "buzzing insects around wildflowers",
+      "appearance_details": "tiny dark and golden specks moving near blossoms, occasional wing glints in shafts of light",
+      "relationship": "small signs of life in the abandoned yet flourishing space",
+      "location": "foreground flowers and sunlit patches inside the ruins",
+      "relative_size": "very small compared with plants and house walls",
+      "orientation": "varied flight paths around flowers",
+      "pose": "hovering and darting",
+      "action": "buzz between blossoms and cross sunbeams",
+      "state_changes": "briefly appear and vanish as they pass through dappled light",
+      "clothing": "",
+      "expression": "busy and natural",
+      "gender": "",
+      "age": "adult insects",
+      "skin_tone_and_texture": "tiny bodies with translucent wing flickers",
+      "facial_features": "not visible at this distance",
+      "number_of_subjects": 20,
+      "number_of_arms": 0,
+      "number_of_legs": 120
+    }
+  ],
+  "background_setting": "abandoned house ruins with collapsed walls and roof gaps, dense green grass, ivy covered wood, wildflowers in many colors, and sunbeams filtering into a quiet overgrown interior",
+  "lighting": {
+    "conditions": "natural sunlight filtered through roof gaps and broken walls, dappled shadows across grass, warm highlights on leaves and dust",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "natural sunlight filtered through roof gaps and broken walls, dappled shadows across grass, warm highlights on leaves and dust"
+  },
+  "aesthetics": {
+    "composition": "peaceful, eerie, lush, reclaimed by nature, detailed decay and growth contrast",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "peaceful, eerie, lush, reclaimed by nature, detailed decay and growth contrast",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "slow ground level push through grass and wildflowers toward the ruined house, shallow foreground detail, drifting dust and insects in sunlight",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "photorealistic text to video atmospheric ruin scene",
+  "artistic_style": "cinematic natural realism with soft decay textures and verdant color",
+  "context": "nature has overtaken an abandoned house, turning broken walls and decaying wood into a quiet green sanctuary",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "the camera moves through a thick carpet of grass and wildflowers toward the collapsed house exterior"
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "ivy wrapped walls and decaying wood fill the frame while dappled sunlight shifts across plants and plaster"
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "insects buzz through sunbeams and the shot holds on the peaceful yet eerie overgrown ruin"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "the camera moves through a thick carpet of grass and wildflowers toward the collapsed house exterior",
+      "key_changes": "the camera moves through a thick carpet of grass and wildflowers toward the collapsed house exterior",
+      "camera": "slow ground level push through grass and wildflowers toward the ruined house, shallow foreground detail, drifting dust and insects in sunlight"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "ivy wrapped walls and decaying wood fill the frame while dappled sunlight shifts across plants and plaster",
+      "key_changes": "ivy wrapped walls and decaying wood fill the frame while dappled sunlight shifts across plants and plaster",
+      "camera": "slow ground level push through grass and wildflowers toward the ruined house, shallow foreground detail, drifting dust and insects in sunlight"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "insects buzz through sunbeams and the shot holds on the peaceful yet eerie overgrown ruin",
+      "key_changes": "insects buzz through sunbeams and the shot holds on the peaceful yet eerie overgrown ruin",
+      "camera": "slow ground level push through grass and wildflowers toward the ruined house, shallow foreground detail, drifting dust and insects in sunlight"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A lush carpet of grass, ivy, and wildflowers overtakes an abandoned house as sunlight filters through broken walls.",
+  "audio_description": "buzzing insects, soft wind through grass and ivy, faint creaking wood, distant birds, quiet abandoned space ambience",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "steam train leaving the Glenfinnan Viaduct",
+      "appearance_details": "historic locomotive with dark metal body, plume of steam, connected passenger carriages, and moving wheels on the elevated track",
+      "relationship": "main moving subject crossing away from the historic bridge",
+      "location": "on the railway line over the arch covered Glenfinnan Viaduct in the Scottish Highlands",
+      "relative_size": "long train scale, large on the viaduct but small compared with surrounding mountains",
+      "orientation": "traveling along the curve of the viaduct toward open highland track",
+      "pose": "rolling steadily across the bridge",
+      "action": "leaves the viaduct while trailing steam through the clear sky",
+      "state_changes": "train advances across arches, steam plume expands and drifts, carriages follow the curve",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "historic steam locomotive",
+      "skin_tone_and_texture": "dark painted metal, polished trim, soot marks, and vapor cloud texture",
+      "facial_features": "round front boiler face, headlamp, chimney, and buffers",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Glenfinnan Viaduct historic railway bridge",
+      "appearance_details": "stone arched viaduct with repeating spans, weathered masonry, and elevated rail line",
+      "relationship": "landmark structure supporting the train journey",
+      "location": "crossing the green Highland valley between Mallaig and Fort William",
+      "relative_size": "massive bridge structure spanning the valley, larger than the train",
+      "orientation": "curving across the landscape from foreground to middle distance",
+      "pose": "static architectural span",
+      "action": "holds the rail line as the train departs across it",
+      "state_changes": "remains still while shadows and train steam move across its arches",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "historic railway bridge",
+      "skin_tone_and_texture": "weathered stone blocks with sunlit rough texture",
+      "facial_features": "repeating stone arches and parapet line",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "The Scottish Highlands around Glenfinnan, with lush greenery, rocky mountains, blue sky, bright sun, and the historic arched viaduct carrying the railway line.",
+  "lighting": {
+    "conditions": "Clear sunny daylight with crisp shadows on stone arches, highlights on train metal, and bright green landscape color.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Clear sunny daylight with crisp shadows on stone arches, highlights on train metal, and bright green landscape color."
+  },
+  "aesthetics": {
+    "composition": "Picturesque heritage railway scene, scenic travel nostalgia, rich green Highlands, blue sky, and textured historic stone.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Picturesque heritage railway scene, scenic travel nostalgia, rich green Highlands, blue sky, and textured historic stone.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Wide cinematic landscape shot from a hillside vantage point, holding the viaduct curve and train movement in one clean composition.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic scenic railway text to video.",
+  "artistic_style": "Classic travel documentary realism with nostalgic steam train atmosphere.",
+  "context": "A steam train departs the Glenfinnan Viaduct on a bright day, showcasing the historic bridge and Scottish Highland scenery.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The steam train appears on the arched viaduct, dark locomotive bright against the green valley."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It rolls along the curve and begins leaving the bridge, steam drifting back over the stone arches."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The carriages follow off the viaduct toward the highland track as the plume thins in the blue sky."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the Glenfinnan Viaduct and steam train in bright Highland scenery.",
+      "key_changes": "Locomotive becomes the moving focal point, steam begins trailing.",
+      "camera": "Wide static hillside shot."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Show the train leaving the arch covered bridge.",
+      "key_changes": "Train advances along the curve, steam spreads across arches, carriages follow.",
+      "camera": "Slow pan following the train while keeping the viaduct visible."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "End with the train moving beyond the viaduct into the landscape.",
+      "key_changes": "Viaduct recedes as train exits, plume stretches into clear sky.",
+      "camera": "Hold wide composition with a slight continued pan."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A historic steam train leaves the Glenfinnan Viaduct under a blue sky, trailing steam across the green Scottish Highlands.",
+  "audio_description": "Steam chuffs, wheel rhythm on rails, faint whistle, mountain breeze, and distant birds over the valley.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

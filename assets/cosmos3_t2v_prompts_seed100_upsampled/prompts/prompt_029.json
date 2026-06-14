@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "Black ant emerging from the entrance of a detailed anthill in a green garden.",
+      "appearance_details": "Glossy black segmented exoskeleton, antennae probing forward, six thin legs, small mandibles, fine grains of sand clinging near the entrance.",
+      "relationship": "Single ant subject leaving its anthill and entering the sunlit garden environment.",
+      "location": "Macro foreground at the small entrance of a compacted soil and sand anthill.",
+      "relative_size": "Tiny in real scale but large in the macro frame, with soil grains appearing like pebbles.",
+      "orientation": "Facing outward from the anthill toward the camera and slightly to camera right.",
+      "pose": "Head first at the tunnel opening, front legs testing the ground, antennae extended.",
+      "action": "Cautiously climbs out of the anthill and steps into sunlight.",
+      "state_changes": "Starts with only the head visible, pulls the body out through the entrance, ends fully outside with antennae scanning the garden air.",
+      "clothing": "None, natural exoskeleton only.",
+      "expression": "No human expression, alert and cautious body language.",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "Hard glossy black exoskeleton with segmented texture and tiny reflective highlights.",
+      "facial_features": "Small head, moving antennae, tiny mandibles, dark compound eyes.",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 6
+    }
+  ],
+  "background_setting": "Lush green garden seen from macro ground level, with blurred grass blades, soft leaves, compacted soil, sand grains, and a small intricate anthill entrance.",
+  "lighting": {
+    "conditions": "Bright natural sunlight at ground level, warm highlights on soil grains and ant shell, soft green bokeh behind.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Bright natural sunlight at ground level, warm highlights on soil grains and ant shell, soft green bokeh behind."
+  },
+  "aesthetics": {
+    "composition": "Macro naturalism, miniature scale, detailed soil texture, quiet curiosity, garden freshness.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Macro naturalism, miniature scale, detailed soil texture, quiet curiosity, garden freshness.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Extreme close macro shot at anthill level, shallow depth of field, slow push in as the ant emerges.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Realistic text to video macro nature scene with precise insect movement.",
+  "artistic_style": "Documentary macro realism with crisp foreground detail and soft garden background.",
+  "context": "A tiny ant leaves its carefully built anthill and cautiously enters the sunlit garden world.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ant head appears in the anthill entrance, antennae moving through the sunlight."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It pulls its segmented body out grain by grain, legs testing the soil around the opening."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The ant steps fully outside, pauses, and scans the garden with quick antenna movements."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Macro view of an anthill entrance with the ant head just visible.",
+      "key_changes": "Macro view of an anthill entrance with the ant head just visible.",
+      "camera": "Extreme close macro shot at anthill level, shallow depth of field, slow push in as the ant emerges."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Glossy black body emerges against detailed grains of soil and sand.",
+      "key_changes": "Glossy black body emerges against detailed grains of soil and sand.",
+      "camera": "Extreme close macro shot at anthill level, shallow depth of field, slow push in as the ant emerges."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The ant stands outside with blurred green garden behind.",
+      "key_changes": "The ant stands outside with blurred green garden behind.",
+      "camera": "Extreme close macro shot at anthill level, shallow depth of field, slow push in as the ant emerges."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "0:00-0:02 an ant appears at a tiny anthill entrance. 0:02-0:05 it climbs out into sunlight. 0:05-0:07 it pauses outside, antennae scanning the garden.",
+  "audio_description": "Very subtle garden ambience, faint breeze in grass, distant insect hum, nearly silent tiny soil movement.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

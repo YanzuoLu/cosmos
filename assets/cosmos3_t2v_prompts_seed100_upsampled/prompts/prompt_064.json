@@ -1,0 +1,104 @@
+{
+  "subjects": [
+    {
+      "description": "young student taking notes in an ancient library",
+      "appearance_details": "focused learner seated cross-legged, leaning over a tattered notebook with careful hand movements",
+      "relationship": "primary human subject studying alone among old books",
+      "location": "center frame on a plush worn rug beneath a vintage lamp",
+      "relative_size": "medium human figure surrounded by towering shelves",
+      "orientation": "facing downward toward the open notebook and lamp glow",
+      "pose": "cross-legged, slightly hunched in concentration, notebook resting close",
+      "action": "reads from old material and diligently writes notes in the notebook",
+      "state_changes": "pencil moves, page edges shift, lamp glow flickers slightly, dust motes drift",
+      "clothing": "simple student clothing in muted tones suited to quiet study",
+      "expression": "absorbed, diligent, and thoughtful",
+      "gender": "Unknown",
+      "age": "young student",
+      "skin_tone_and_texture": "natural warm-lit skin with soft shadows and realistic texture",
+      "facial_features": "youthful face, attentive eyes, relaxed brow, mouth set in concentration",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Ancient dimly lit library with towering wooden bookshelves, leather-bound centuries-old volumes, a plush worn rug, a vintage lamp, dust in the air, and narrow aisles forming a scholarly labyrinth.",
+  "lighting": {
+    "conditions": "Soft amber lamp glow pools around the student while the surrounding shelves fall into deep warm shadow.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Soft amber lamp glow pools around the student while the surrounding shelves fall into deep warm shadow."
+  },
+  "aesthetics": {
+    "composition": "Old-world scholarship, aged paper, dark wood, dust motes, worn fabric, and intimate quiet concentration.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Old-world scholarship, aged paper, dark wood, dust motes, worn fabric, and intimate quiet concentration.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low medium shot from rug level with shallow focus on the notebook, followed by a slow reveal of the towering shelves.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action text-to-video.",
+  "artistic_style": "Atmospheric academic realism with warm chiaroscuro and tactile antique detail.",
+  "context": "A young student studies deep inside an ancient library, taking notes by lamp light amid shelves of centuries-old books.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The student sits cross-legged on the worn rug, eyes fixed on the tattered notebook under the vintage lamp."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "They write carefully, turn a fragile page, and continue taking notes as dust drifts through the amber light."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera reveals the surrounding maze of wooden shelves and old leather-bound volumes."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "Small handwritten notes appear in the tattered notebook without readable exact wording.",
+      "category": "scene_sign",
+      "appearance": "visible scene text or signage",
+      "spatial_temporal": "visible during the relevant shot interval",
+      "context": "environmental detail"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the student on the rug, the lamp, and the notebook in the ancient library.",
+      "key_changes": "Warm lamp glow isolates the student from the dark shelves.",
+      "camera": "Low medium shot from rug height."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Focus on note-taking and page movement.",
+      "key_changes": "Pencil strokes appear, paper rustles, dust motes cross the light beam.",
+      "camera": "Close-up on hands and notebook with shallow focus."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Reveal the towering shelves and scholarly atmosphere around the student.",
+      "key_changes": "Library scale expands while the student remains quietly absorbed.",
+      "camera": "Slow pullback and slight upward tilt."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A young student sits cross-legged in an ancient dim library, taking notes in a tattered notebook under a warm vintage lamp.",
+  "audio_description": "Quiet room tone, faint pencil strokes, soft page rustles, distant wood creaks, and muted dust-filled stillness.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

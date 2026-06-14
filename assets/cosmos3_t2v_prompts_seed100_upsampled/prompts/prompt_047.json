@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "chef grilling a marbled steak",
+      "appearance_details": "focused cook's hands and forearms working over a cast-iron grill pan, precise movements with tongs near rising smoke",
+      "relationship": "active human operator preparing the steak",
+      "location": "behind the black countertop grill station in a minimal kitchen",
+      "relative_size": "partially visible person, larger than utensils, secondary to the steak and grill surface",
+      "orientation": "facing the grill pan and countertop",
+      "pose": "leaning slightly forward with hands close to the grill",
+      "action": "places and adjusts the seasoned steak on the hot cast-iron grill pan",
+      "state_changes": "hands move from placing to steadying the steak while smoke increases",
+      "clothing": "clean chef attire partially visible, practical kitchen sleeves or apron edge",
+      "expression": "focused, mostly out of frame",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "natural human skin partly visible on hands, warm highlights from kitchen light",
+      "facial_features": "mostly out of frame",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "thick marbled steak",
+      "appearance_details": "rich red thick-cut steak with visible white marbling, herbs, salt, pepper, and spice coating across the surface",
+      "relationship": "main food subject being grilled by the chef",
+      "location": "center of the cast-iron grill pan on the black countertop",
+      "relative_size": "large close-up food item dominating the lower frame",
+      "orientation": "lying flat across the grill ridges",
+      "pose": "resting on the heated pan",
+      "action": "sizzles on contact with the hot grill and begins to sear",
+      "state_changes": "surface darkens at grill marks, juices bead, smoke rises steadily",
+      "clothing": "seasoning of herbs and spices",
+      "expression": "",
+      "gender": "",
+      "age": "fresh cut",
+      "skin_tone_and_texture": "moist red meat with creamy fat marbling and coarse seasoning grains",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A sleek minimal kitchen counter with a black work surface, cast-iron grill pan, a few utensils, herbs, and tools kept near the cooking area while the background stays uncluttered.",
+  "lighting": {
+    "conditions": "controlled warm kitchen lighting with bright highlights on smoke, meat juices, and black cast iron",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "controlled warm kitchen lighting with bright highlights on smoke, meat juices, and black cast iron"
+  },
+  "aesthetics": {
+    "composition": "high-end cooking process, smoky texture, rich steak color, clean minimal backdrop, tactile food detail",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "high-end cooking process, smoky texture, rich steak color, clean minimal backdrop, tactile food detail",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "tight close-up food shot, slight low angle at countertop height, slow push-in as smoke rises, shallow depth of field",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic culinary text-to-video with detailed steam, smoke, and searing effects",
+  "artistic_style": "polished cooking show macro style focused on heat and texture",
+  "context": "The video captures the moment a chef grills a seasoned marbled steak on a cast-iron pan in a minimal kitchen.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The chef lowers the seasoned marbled steak onto the hot cast-iron grill pan."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The steak sizzles loudly, smoke rises, and early grill marks begin to form."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The chef adjusts the steak with tongs while herbs and spices toast on the surface."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Close-up of a thick red marbled steak meeting the heated cast-iron grill.",
+      "key_changes": "Close-up of a thick red marbled steak meeting the heated cast-iron grill.",
+      "camera": "tight close-up food shot, slight low angle at countertop height, slow push-in as smoke rises, shallow depth of field"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Smoke and steam rise as fat renders and grill ridges mark the seasoned meat.",
+      "key_changes": "Smoke and steam rise as fat renders and grill ridges mark the seasoned meat.",
+      "camera": "tight close-up food shot, slight low angle at countertop height, slow push-in as smoke rises, shallow depth of field"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Tongs make a small adjustment while the black countertop and minimal tools frame the cooking action.",
+      "key_changes": "Tongs make a small adjustment while the black countertop and minimal tools frame the cooking action.",
+      "camera": "tight close-up food shot, slight low angle at countertop height, slow push-in as smoke rises, shallow depth of field"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A chef places a seasoned marbled steak onto a hot cast-iron grill pan, where it sizzles, smokes, and begins to sear on a sleek black countertop.",
+  "audio_description": "loud steak sizzle, soft crackle of rendered fat, faint kitchen utensil clink, low exhaust hum",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

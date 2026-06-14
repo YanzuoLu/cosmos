@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "group of friends around a dinner table",
+      "appearance_details": "friends seated and leaning around a table with plates of food, glasses of wine, relaxed gestures, and warm smiles",
+      "relationship": "central social group sharing a joyful dinner gathering",
+      "location": "around a dinner table in a cozy living room",
+      "relative_size": "medium figures arranged around the central table, viewed from above",
+      "orientation": "facing one another across the table in a loose circle",
+      "pose": "seated, leaning in, gesturing, and laughing",
+      "action": "laugh, chat, raise glasses, and share food during dinner",
+      "state_changes": "hands gesture, heads turn, smiles widen, and glasses catch the warm light",
+      "clothing": "comfortable smart-casual dinner clothing with soft indoor colors",
+      "expression": "warm, joyful, engaged, and relaxed",
+      "gender": "Unknown",
+      "age": "adults",
+      "skin_tone_and_texture": "varied human skin tones under soft indoor lighting",
+      "facial_features": "smiling faces, open mouths mid-laughter, attentive eyes turned toward friends",
+      "number_of_subjects": 6,
+      "number_of_arms": 12,
+      "number_of_legs": 12
+    },
+    {
+      "description": "dinner table with food and wine",
+      "appearance_details": "plates of shared food, wine glasses, cutlery, serving bowls, napkins, and warm reflections on the tabletop",
+      "relationship": "central gathering surface supporting the friends conversation",
+      "location": "center of the cozy living room below the high-angle camera",
+      "relative_size": "large central object surrounded by the group",
+      "orientation": "flat tabletop viewed from a high angle",
+      "pose": "stationary arrangement with active hands reaching around it",
+      "action": "holds the shared meal while glasses and utensils shift during conversation",
+      "state_changes": "glass reflections flicker, plates shift slightly, and food is passed between friends",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "set for an active dinner",
+      "skin_tone_and_texture": "ceramic plates, clear glass, polished cutlery, warm wood or cloth table texture",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A cozy living room with a dinner table in the center, a softly glowing fireplace in the background, comfortable furnishings, and warm household detail.",
+  "lighting": {
+    "conditions": "soft indoor lighting mixed with fireplace glow, warm highlights on faces, wine glasses, and plates",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "soft indoor lighting mixed with fireplace glow, warm highlights on faces, wine glasses, and plates"
+  },
+  "aesthetics": {
+    "composition": "warm friendship, shared meal, cozy home comfort, joyful conversation, intimate overhead composition",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "warm friendship, shared meal, cozy home comfort, joyful conversation, intimate overhead composition",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "high-angle shot looking down at the dinner table, slow gentle drift that keeps the group and fireplace in the same warm environment",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic social gathering text-to-video with natural gestures, warm color, and soft indoor ambience",
+  "artistic_style": "cozy domestic realism centered on friendship and shared joy",
+  "context": "The video shows friends laughing and chatting over dinner in a warm living room while a fireplace glows behind them.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The high-angle shot reveals friends gathered around plates of food and wine glasses."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The group laughs, chats, gestures, and passes food while the fireplace flickers in the background."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Glasses catch the warm light as the friends lean in together, keeping the joyful mood."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "An overhead view establishes the dinner table, food, wine, and friends seated around it.",
+      "key_changes": "Faces and table details come into view under soft indoor light.",
+      "camera": "high-angle static-to-slow drift shot"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Conversation becomes lively as friends laugh, gesture, and share the meal.",
+      "key_changes": "Hands move across the table and the fireplace adds flickering warmth behind the group.",
+      "camera": "slow circular drift above the table"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The group settles into a shared laugh with glasses and plates glowing in the warm light.",
+      "key_changes": "Smiles hold, glass reflections brighten, and the cozy room remains steady.",
+      "camera": "gentle overhead hold, slightly wider to include fireplace"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "From a high angle, friends laugh and chat around a dinner table filled with food and wine, warmed by a cozy living room fireplace.",
+  "audio_description": "soft laughter, overlapping friendly conversation, clinking glasses, cutlery on plates, fireplace crackle",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

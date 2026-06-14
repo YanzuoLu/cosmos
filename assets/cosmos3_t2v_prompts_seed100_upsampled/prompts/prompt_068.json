@@ -1,0 +1,124 @@
+{
+  "subjects": [
+    {
+      "description": "white cat perched on a car dashboard",
+      "appearance_details": "calm white cat with smooth fur, alert ears, and reflective eyes watching the city through tinted glass",
+      "relationship": "passenger observing the bustling metropolis from inside the car",
+      "location": "on the dashboard in the foreground of the black car interior",
+      "relative_size": "small animal subject against the wide urban view outside",
+      "orientation": "facing toward the side window and occasionally forward through the windshield",
+      "pose": "seated neatly on the dashboard with tail tucked close for balance",
+      "action": "looks out at skyscrapers, pedestrians, neon signs, and passing streetlights",
+      "state_changes": "ears twitch, head turns slowly, whiskers catch reflections, body remains steady as the car moves",
+      "clothing": "",
+      "expression": "unbothered, observant, and calm",
+      "gender": "Unknown",
+      "age": "adult cat",
+      "skin_tone_and_texture": "clean white fur with soft dashboard shadows and city reflections",
+      "facial_features": "bright eyes, pink nose, white whiskers, pointed ears",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    },
+    {
+      "description": "sleek black car moving through city traffic",
+      "appearance_details": "glossy black body, tinted windows, clean dashboard, reflective glass, and subtle interior highlights",
+      "relationship": "vehicle carrying the cat through the urban environment",
+      "location": "on a busy city street between skyscrapers",
+      "relative_size": "large compared with the cat and pedestrians, smaller than surrounding buildings",
+      "orientation": "aligned with the street and moving forward through traffic",
+      "pose": "smooth rolling motion with stable cabin interior",
+      "action": "navigates the bustling urban street while city lights reflect across its windows",
+      "state_changes": "reflections slide over glass, streetlights pass, shadows from skyscrapers sweep across the car",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "modern car",
+      "skin_tone_and_texture": "glossy black paint, dark tinted glass, and polished interior surfaces",
+      "facial_features": "headlights, windshield, and front silhouette visible",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "Bustling urban environment with towering skyscrapers, busy sidewalks full of pedestrians, moving traffic, tinted car windows, neon signs, streetlights, and deep building shadows across the road.",
+  "lighting": {
+    "conditions": "Mixed city lighting with cool skyscraper shade, flickering neon color, streetlight glow, and soft reflections inside the car.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Mixed city lighting with cool skyscraper shade, flickering neon color, streetlight glow, and soft reflections inside the car."
+  },
+  "aesthetics": {
+    "composition": "Urban nightfall energy, sleek black surfaces, calm white fur, colored neon reflections, and layered city motion.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Urban nightfall energy, sleek black surfaces, calm white fur, colored neon reflections, and layered city motion.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Interior dashboard perspective with the cat in the foreground and the moving city visible through windshield and side windows.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action text-to-video.",
+  "artistic_style": "Modern city realism with reflective automotive surfaces and a calm animal contrast against metropolitan motion.",
+  "context": "A white cat rides on the dashboard of a sleek black car, calmly watching a busy city pass by through tinted windows.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The white cat sits calmly on the dashboard as the black car moves between tall skyscrapers."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Pedestrians and neon signs slide past the tinted windows while the cat turns its head to observe the street."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Streetlights and building shadows sweep across the car interior as the cat remains unperturbed."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "Neon city signs and storefront lights appear outside the car, but no specific wording is readable.",
+      "category": "scene_sign",
+      "appearance": "visible scene text or signage",
+      "spatial_temporal": "visible during the relevant shot interval",
+      "context": "environmental detail"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the cat perched on the dashboard inside the sleek black car.",
+      "key_changes": "Skyscraper reflections move over tinted glass, the cat remains steady.",
+      "camera": "Interior dashboard shot looking past the cat."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Show the busy city passing outside the windows.",
+      "key_changes": "Pedestrians blur by, neon colors flicker, the cat slowly turns its head.",
+      "camera": "Smooth forward-moving interior perspective."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the calm contrast between the cat and the fast city surroundings.",
+      "key_changes": "Streetlights sweep across white fur and black dashboard surfaces.",
+      "camera": "Steady medium close shot with city motion outside."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A calm white cat perched on the dashboard rides through a bustling city in a sleek black car while neon signs and skyscrapers pass outside.",
+  "audio_description": "Muted car cabin hum, soft tire noise, distant traffic, faint pedestrian murmur, and muffled city ambience through glass.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

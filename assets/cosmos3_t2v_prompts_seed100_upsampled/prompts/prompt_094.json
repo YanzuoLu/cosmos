@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "golden retriever puppy chasing a squeaky toy in a sunlit living room",
+      "appearance_details": "fluffy bright eyed puppy with soft golden fur, quick paws, perked ears, and playful body language",
+      "relationship": "primary animal subject playing alone with a toy",
+      "location": "on the hardwood floor near a plush cream colored couch and scattered throw pillows",
+      "relative_size": "small puppy scale, low to the floor and smaller than the couch",
+      "orientation": "moving across the floor toward the bouncing toy",
+      "pose": "springing forward with front paws lifted and tail active",
+      "action": "bounces around and chases a colorful squeaky toy across the room",
+      "state_changes": "toy skips across the floor, puppy pivots and hops, fur catches shifting sunlight",
+      "clothing": "",
+      "expression": "excited, curious, playful",
+      "gender": "Unknown",
+      "age": "puppy",
+      "skin_tone_and_texture": "soft golden fur with warm sunlit texture",
+      "facial_features": "bright eyes, small nose, open happy mouth, perked ears",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "A cozy living room with hardwood floors, a plush cream colored couch, scattered warm throw pillows, a large framed family portrait on the wall, and sunlight filling the space.",
+  "lighting": {
+    "conditions": "Warm direct sunlight from a nearby window, soft room bounce, glowing highlights on fur, floor, couch fabric, and picture frame glass.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Warm direct sunlight from a nearby window, soft room bounce, glowing highlights on fur, floor, couch fabric, and picture frame glass."
+  },
+  "aesthetics": {
+    "composition": "Cozy domestic joy, playful pet energy, warm upholstery, polished wood, and bright family home comfort.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Cozy domestic joy, playful pet energy, warm upholstery, polished wood, and bright family home comfort.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low handheld pet level tracking shot, quick but smooth movement following the puppy and toy with shallow depth of field.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action pet video.",
+  "artistic_style": "Warm family home realism with soft highlights and energetic playful motion.",
+  "context": "A golden retriever puppy plays freely in a comfortable sunlit living room.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The colorful squeaky toy bounces onto the hardwood floor and the puppy springs after it."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The puppy darts around the couch, paws skittering as the toy skips and squeaks ahead."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The puppy catches up, noses the toy, and hops in place with bright excited eyes."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the sunlit living room and puppy spotting the bouncing toy.",
+      "key_changes": "Toy enters motion, puppy shifts from alert sitting to chase posture.",
+      "camera": "Low floor level angle facing the puppy and couch."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow the energetic chase across the hardwood floor.",
+      "key_changes": "Puppy accelerates, pillows and couch slide through background, sunlight flashes on fur.",
+      "camera": "Quick pet level tracking with gentle handheld sway."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "End with the puppy engaging the toy near the couch.",
+      "key_changes": "Motion condenses into playful hops and nose taps, toy slows.",
+      "camera": "Small push in to a close playful view."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A fluffy golden retriever puppy chases a colorful squeaky toy across a cozy sunlit living room.",
+  "audio_description": "Tiny paws on hardwood, toy squeaks, puppy panting, soft room ambience, and faint fabric rustle from nearby pillows.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

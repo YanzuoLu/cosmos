@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "man in a tailored suit holding a golden Oscar trophy",
+      "appearance_details": "well-dressed award winner standing under stage spotlights, both hands around the trophy",
+      "relationship": "award recipient acknowledging the audience",
+      "location": "center stage on a grand awards ceremony platform",
+      "relative_size": "medium human scale, dominant in foreground against stage lights",
+      "orientation": "facing the audience and slightly turning across the room",
+      "pose": "standing upright with shoulders lifted and trophy held at chest height",
+      "action": "holds the trophy proudly and looks around as applause continues",
+      "state_changes": "expression shifts from surprise to gratitude; trophy catches stronger highlights; hands tighten gently around the base",
+      "clothing": "sharp tailored suit",
+      "expression": "surprised, joyful, grateful, proud",
+      "gender": "Male",
+      "age": "adult",
+      "skin_tone_and_texture": "natural skin with strong stage highlights and realistic texture",
+      "facial_features": "expressive eyes, open smile, emotional face under spotlight",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "golden Oscar trophy",
+      "appearance_details": "gleaming metallic award statuette with reflective gold surface and dark base",
+      "relationship": "Best Actor award held by the man",
+      "location": "in the man hands at chest height under a spotlight",
+      "relative_size": "small object relative to the man, visually bright and central",
+      "orientation": "upright, facing the audience and camera",
+      "pose": "held securely with both hands",
+      "action": "reflects spotlights as the man turns slightly",
+      "state_changes": "gold highlights sweep across the surface; base remains steady in his grip",
+      "clothing": "no clothing",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "award object",
+      "skin_tone_and_texture": "polished gold metal with bright specular reflections",
+      "facial_features": "human-shaped statuette silhouette on a simple base",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "Grand awards ceremony stage with red carpet, strong spotlights, dark audience area, and celebratory theatrical atmosphere.",
+  "lighting": {
+    "conditions": "Focused white and warm spotlights from above and behind, bright reflections on the trophy, and softer darkness over the audience.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Focused white and warm spotlights from above and behind, bright reflections on the trophy, and softer darkness over the audience."
+  },
+  "aesthetics": {
+    "composition": "Prestigious celebration, polished gold, formal black suit, red carpet accents, and emotional award-night drama.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Prestigious celebration, polished gold, formal black suit, red carpet accents, and emotional award-night drama.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Medium close stage shot with a slow push-in, shallow background, trophy highlights, and slight pan as he acknowledges the room.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action awards ceremony video.",
+  "artistic_style": "Glossy cinematic event coverage with dramatic stage lighting and emotional portrait focus.",
+  "context": "A newly announced Best Actor winner stands on stage and receives applause while holding his trophy.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The man stands under the spotlight, holding the golden trophy close with visible surprise."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "He looks across the audience, smiling with joy and gratitude as applause rises."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "He steadies the trophy proudly at chest height while stage lights flare behind him."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the grand stage, red carpet, suited man, and bright golden award.",
+      "key_changes": "Introduce the grand stage, red carpet, suited man, and bright golden award.",
+      "camera": "Medium close stage shot with a slow push-in, shallow background, trophy highlights, and slight pan as he acknowledges the room."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Push closer on his emotional face and the trophy reflecting the spotlights.",
+      "key_changes": "Push closer on his emotional face and the trophy reflecting the spotlights.",
+      "camera": "Medium close stage shot with a slow push-in, shallow background, trophy highlights, and slight pan as he acknowledges the room."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold on his proud acknowledgement of the applauding audience in the ceremony setting.",
+      "key_changes": "Hold on his proud acknowledgement of the applauding audience in the ceremony setting.",
+      "camera": "Medium close stage shot with a slow push-in, shallow background, trophy highlights, and slight pan as he acknowledges the room."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A suited man proudly holds a golden Best Actor Oscar trophy on a grand awards ceremony stage.",
+  "audio_description": "Loud audience applause, stage ambience, camera shutters, soft microphone room tone, and a celebratory swell of crowd noise.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

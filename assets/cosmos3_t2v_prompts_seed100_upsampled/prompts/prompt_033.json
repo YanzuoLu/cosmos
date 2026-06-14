@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "snow dusted mountain range above an autumn valley",
+      "appearance_details": "jagged peaks with light snow caps, shadowed slopes, warm sunset edges, layered ridgelines fading into haze",
+      "relationship": "dominant landscape subject framing the valley and river below",
+      "location": "background horizon across the full width of the frame",
+      "relative_size": "very large, occupying the upper third of the panorama",
+      "orientation": "peaks rising vertically with ridges extending left and right",
+      "pose": "still and monumental",
+      "action": "holds steady while sunset light slowly warms the snow and shadows lengthen",
+      "state_changes": "golden highlights deepen and the valley shadows stretch across the scene",
+      "clothing": "",
+      "expression": "majestic and tranquil",
+      "gender": "",
+      "age": "ancient geological formation",
+      "skin_tone_and_texture": "gray rock, white snow dusting, blue shadowed creases",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "winding river through lush forest",
+      "appearance_details": "silver blue water reflecting orange sky, smooth bends, dark green forest banks mixed with autumn gold and red",
+      "relationship": "guides the eye from foreground valley toward the mountains",
+      "location": "middle ground curving through the valley",
+      "relative_size": "medium ribbon across the broad landscape",
+      "orientation": "meanders diagonally from lower right toward center distance",
+      "pose": "flowing channel nested in forest",
+      "action": "moves gently with small glints of reflected sunset",
+      "state_changes": "surface highlights brighten and slide downstream as the camera drifts",
+      "clothing": "",
+      "expression": "calm and inviting",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "clear reflective water with soft ripples",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "foreground wildflower meadow",
+      "appearance_details": "small flowers in yellow, white, purple, and red among green grasses, lightly moving in the breeze",
+      "relationship": "adds color and scale to the panoramic nature view",
+      "location": "foreground lower edge of the frame",
+      "relative_size": "small individual flowers forming a broad colorful carpet",
+      "orientation": "upright stems facing the low sun",
+      "pose": "clustered naturally across uneven ground",
+      "action": "sway gently in the evening breeze",
+      "state_changes": "petals catch shifting sunlight as the camera glides forward",
+      "clothing": "",
+      "expression": "fresh and delicate",
+      "gender": "",
+      "age": "seasonal bloom",
+      "skin_tone_and_texture": "soft petals, thin stems, textured grasses",
+      "facial_features": "",
+      "number_of_subjects": 300,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "panoramic mountain valley with snow capped peaks, winding river, dense green and autumn forests, foreground wildflowers, and orange pink sunset sky",
+  "lighting": {
+    "conditions": "low warm sunset light with long shadows across the valley, soft haze on distant peaks, glowing sky reflections in the river",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "low warm sunset light with long shadows across the valley, soft haze on distant peaks, glowing sky reflections in the river"
+  },
+  "aesthetics": {
+    "composition": "awe inspiring, peaceful, grand, richly colored, natural realism",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "awe inspiring, peaceful, grand, richly colored, natural realism",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "slow aerial push forward over wildflowers into a wide valley panorama, deep focus from foreground blooms to distant peaks",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "photorealistic text to video landscape panorama",
+  "artistic_style": "cinematic nature documentary style with warm sunset color grading",
+  "context": "an untouched mountain valley is shown at the quiet moment before dusk, emphasizing scale, color, and calm",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "the camera begins above the wildflowers, revealing the river and forest beyond"
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "the view opens wider to the snow dusted mountains while the river glints through autumn trees"
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "the camera settles into a full panorama as sunset colors intensify and shadows stretch across the valley"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "the camera begins above the wildflowers, revealing the river and forest beyond",
+      "key_changes": "the camera begins above the wildflowers, revealing the river and forest beyond",
+      "camera": "slow aerial push forward over wildflowers into a wide valley panorama, deep focus from foreground blooms to distant peaks"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "the view opens wider to the snow dusted mountains while the river glints through autumn trees",
+      "key_changes": "the view opens wider to the snow dusted mountains while the river glints through autumn trees",
+      "camera": "slow aerial push forward over wildflowers into a wide valley panorama, deep focus from foreground blooms to distant peaks"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "the camera settles into a full panorama as sunset colors intensify and shadows stretch across the valley",
+      "key_changes": "the camera settles into a full panorama as sunset colors intensify and shadows stretch across the valley",
+      "camera": "slow aerial push forward over wildflowers into a wide valley panorama, deep focus from foreground blooms to distant peaks"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A golden sunset reveals snow dusted mountains, a winding river, autumn forest, and wildflowers in a serene panorama.",
+  "audio_description": "soft wind over grass, distant river flow, light birdsong, open mountain ambience",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

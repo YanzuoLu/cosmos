@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "young red haired woman wearing a leafy crown by blue water",
+      "appearance_details": "vibrant red hair, whimsical leafy crown, freckles, porcelain complexion, colorful knitted scarf, hair moving gently in the breeze",
+      "relationship": "sole portrait subject gazing off camera in a serene coastal setting",
+      "location": "foreground close to camera with serene blue waters softly visible behind her",
+      "relative_size": "large portrait subject filling most of the frame",
+      "orientation": "face angled slightly off camera toward the side light",
+      "pose": "still upper body portrait with head gently turned and scarf wrapped around neck",
+      "action": "gazes off camera in soft awe while breeze lifts loose strands of hair",
+      "state_changes": "hair strands flutter, scarf edge shifts slightly, sunlight brightens freckles and cheek contours",
+      "clothing": "colorful knitted scarf and leafy crown, upper clothing mostly outside the frame",
+      "expression": "soft awe, calm wonder, reflective warmth",
+      "gender": "Female",
+      "age": "young adult",
+      "skin_tone_and_texture": "porcelain complexion with natural freckles, warm golden highlights, and realistic skin texture",
+      "facial_features": "freckled cheeks, expressive eyes looking off camera, soft lips, delicate nose, vivid red hair framing the face",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A serene waterside scene with soft blue water in the background, open air, and a gentle unseen breeze moving the subject hair and scarf.",
+  "lighting": {
+    "conditions": "Warm golden sunlight across her freckled face, soft rim light on red hair, and cool blue water bounce in the background.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Warm golden sunlight across her freckled face, soft rim light on red hair, and cool blue water bounce in the background."
+  },
+  "aesthetics": {
+    "composition": "Dreamy natural portrait, warm skin tones against cool blue water, red hair movement, handmade scarf texture, and quiet wonder.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Dreamy natural portrait, warm skin tones against cool blue water, red hair movement, handmade scarf texture, and quiet wonder.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Intimate close portrait with shallow depth of field, static camera, subtle natural motion from wind, and soft background blur.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic cinematic portrait text to video.",
+  "artistic_style": "Romantic natural light portrait realism with gentle fantasy details from the leafy crown.",
+  "context": "A young woman stands by calm blue water, caught in a warm moment of awe as the wind plays through her hair.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera holds on her freckled face as warm sunlight reveals the leafy crown and red hair."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "A light breeze moves loose hair strands and the knitted scarf while she gazes off camera."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Her expression remains softly awed as golden light and blue water create a calm contrast."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the close portrait, leafy crown, red hair, freckles, and golden light.",
+      "key_changes": "Face comes into warm focus, background water stays softly blurred.",
+      "camera": "Static close up with shallow depth of field."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Show subtle wind motion in hair and scarf while she looks off camera.",
+      "key_changes": "Hair strands lift and fall, scarf edge shifts, expression stays quiet and awed.",
+      "camera": "Very slow push toward the face."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "End on the serene contrast between warm portrait light and cool blue water.",
+      "key_changes": "Sunlight glows across freckles, motion settles into a calm portrait hold.",
+      "camera": "Held close view with minimal movement."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A young red haired woman with a leafy crown and colorful scarf gazes off camera in warm sunlight by calm blue water.",
+  "audio_description": "Soft breeze, faint water movement, gentle fabric rustle, and quiet outdoor ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

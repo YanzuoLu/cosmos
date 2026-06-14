@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "small fluffy dog eating watermelon with a spoon on a navy sofa",
+      "appearance_details": "compact fluffy dog with bright eyes, playful posture, paws near a shiny silver spoon and red watermelon pieces",
+      "relationship": "primary animal subject enjoying a snack in the living room",
+      "location": "seated on a plush navy blue sofa beside a cream throw blanket",
+      "relative_size": "small pet scale, much smaller than the sofa and bay window",
+      "orientation": "facing slightly toward camera while focused on the watermelon",
+      "pose": "sitting attentively with front paws close together and head lowered toward the spoon",
+      "action": "munches watermelon and nudges a silver spoon into the juicy red flesh",
+      "state_changes": "watermelon surface is scooped, dog chews, spoon glints as it moves, soft fur shifts with small motions",
+      "clothing": "",
+      "expression": "playful, attentive, pleased",
+      "gender": "Unknown",
+      "age": "small adult dog",
+      "skin_tone_and_texture": "soft fluffy fur with bright indoor highlights and natural texture",
+      "facial_features": "round bright eyes, small nose, alert ears, slightly open chewing mouth",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "A bright living room with hardwood floors, warm beige walls, a large bay window overlooking a landscaped garden, and a cream colored throw blanket over the sofa arm.",
+  "lighting": {
+    "conditions": "Bright natural daylight through the bay window, soft garden colored bounce, warm highlights on sofa fabric, spoon, watermelon, and fur.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Bright natural daylight through the bay window, soft garden colored bounce, warm highlights on sofa fabric, spoon, watermelon, and fur."
+  },
+  "aesthetics": {
+    "composition": "Cute domestic whimsy, clean cozy interiors, saturated red watermelon against navy upholstery, playful pet realism.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Cute domestic whimsy, clean cozy interiors, saturated red watermelon against navy upholstery, playful pet realism.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Medium close shot from sofa height, shallow depth on the dog, spoon, and watermelon, stable camera with small natural push in.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic playful pet text to video.",
+  "artistic_style": "Warm cozy interior realism with light comedic charm.",
+  "context": "A fluffy dog sits like a polite guest on a sofa, eating watermelon with a spoon in a bright home.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The small fluffy dog sits on the navy sofa and leans toward a red watermelon piece."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It nudges the shiny spoon into the fruit and munches, juice catching the window light."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The dog pauses with a pleased look, then takes another small bite as the garden glows behind it."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the dog seated on the navy sofa with watermelon and spoon.",
+      "key_changes": "Dog leans in, spoon and fruit become visual focus.",
+      "camera": "Sofa height medium close composition."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Show the playful act of eating with the spoon.",
+      "key_changes": "Spoon shifts, watermelon flesh is scooped, dog chews visibly.",
+      "camera": "Small push toward paws, spoon, and face."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the cozy living room mood as the dog enjoys another bite.",
+      "key_changes": "Chewing slows, expression turns pleased, daylight glints off the spoon.",
+      "camera": "Stable close view with bay window softly blurred."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A small fluffy dog sits on a navy sofa and happily eats red watermelon with a shiny silver spoon in a bright living room.",
+  "audio_description": "Soft chewing, light spoon taps, subtle sofa fabric rustle, quiet indoor ambience, and faint birds from the garden window.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

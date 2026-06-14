@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "four schoolgirls walking hand in hand across a green playground",
+      "appearance_details": "identical pastel uniforms, neat school styling, relaxed steps, linked hands, lively group energy",
+      "relationship": "close friends walking together in a joyful line",
+      "location": "freshly mowed green playground near colorful play equipment",
+      "relative_size": "medium group in the foreground with playground elements behind them",
+      "orientation": "walking toward the camera along the grass while turning toward each other",
+      "pose": "upright child walking posture with arms linked through hand holding",
+      "action": "walks hand in hand while laughing and sharing the sunny moment",
+      "state_changes": "begin walking in step, laugh together, then continue forward with joined hands swinging gently",
+      "clothing": "matching pastel colored school uniforms and comfortable school shoes",
+      "expression": "joyful, laughing, bright",
+      "gender": "Female",
+      "age": "school age children",
+      "skin_tone_and_texture": "varied natural child skin textures in sunny light, exact tones unspecified",
+      "facial_features": "smiling faces, bright eyes, youthful cheeks, individual features not heavily emphasized",
+      "number_of_subjects": 4,
+      "number_of_arms": 8,
+      "number_of_legs": 8
+    }
+  ],
+  "background_setting": "Freshly mowed green playground with colorful play equipment, lush shrubs and trees, open sunny sky, and a safe schoolyard feeling.",
+  "lighting": {
+    "conditions": "Bright sunny daylight with soft shadows on the grass and pastel highlights on the uniforms.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Bright sunny daylight with soft shadows on the grass and pastel highlights on the uniforms."
+  },
+  "aesthetics": {
+    "composition": "Youthful friendship, cheerful schoolday color, clean green playground, warm and wholesome energy.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Youthful friendship, cheerful schoolday color, clean green playground, warm and wholesome energy.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Eye level tracking shot moving backward in front of the group, keeping their linked hands and laughing faces visible.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic text to video",
+  "artistic_style": "bright schoolyard realism with smooth walking motion, natural group interaction, and vivid outdoor color",
+  "context": "Four schoolgirls enjoy a sunny day together while crossing the playground hand in hand.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The four girls enter the frame hand in hand on the green playground grass."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "They walk in a loose line, laugh together, and swing their joined hands gently."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "They continue toward the camera with colorful play equipment and greenery behind them."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the sunny playground, green grass, pastel uniforms, and four linked friends.",
+      "key_changes": "Establish the sunny playground, green grass, pastel uniforms, and four linked friends.",
+      "camera": "Eye level tracking shot moving backward in front of the group, keeping their linked hands and laughing faces visible."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow the group as laughter and hand holding show their camaraderie.",
+      "key_changes": "Follow the group as laughter and hand holding show their camaraderie.",
+      "camera": "Eye level tracking shot moving backward in front of the group, keeping their linked hands and laughing faces visible."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the cheerful forward walk with play equipment and trees framing the scene.",
+      "key_changes": "Hold the cheerful forward walk with play equipment and trees framing the scene.",
+      "camera": "Eye level tracking shot moving backward in front of the group, keeping their linked hands and laughing faces visible."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Over seven seconds, four schoolgirls in matching pastel uniforms walk hand in hand across a sunny green playground, laughing together.",
+  "audio_description": "Children laughing, soft footsteps through grass, distant playground ambience, light breeze in trees.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

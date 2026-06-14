@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "living coral-lined underwater street",
+      "appearance_details": "street-like path made of living orange, pink, and purple coral, textured ridges, glowing edges, and drifting bubbles",
+      "relationship": "primary path experienced from a first-person flight perspective",
+      "location": "center frame stretching forward through the underwater neighborhood",
+      "relative_size": "large environmental subject surrounding the viewer path",
+      "orientation": "receding straight ahead into the blue ocean depth",
+      "pose": "fixed reef formation with gentle living motion",
+      "action": "guides the first-person flight through the neighborhood while coral polyps sway subtly",
+      "state_changes": "coral colors shift under passing neon glow; bubbles rise along the path; small polyps ripple in water movement",
+      "clothing": "",
+      "expression": "fantastical and welcoming",
+      "gender": "",
+      "age": "living coral formation",
+      "skin_tone_and_texture": "rough living coral in orange, pink, and purple with fine organic texture",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "sea-creature-shaped suburban houses",
+      "appearance_details": "fantasy homes shaped like clams, starfish, and seahorses, painted turquoise, emerald, and cobalt blue with soft window glow",
+      "relationship": "neighborhood structures lining the coral street",
+      "location": "both sides of the underwater street in midground and background",
+      "relative_size": "small house scale compared with the vast ocean backdrop, larger than passing fish",
+      "orientation": "facing the coral street like a suburban row",
+      "pose": "stationary whimsical houses anchored to the reef",
+      "action": "glow softly as the first-person camera passes by",
+      "state_changes": "window glow flickers; water caustics slide across walls; parallax reveals varied creature shapes",
+      "clothing": "",
+      "expression": "dreamlike and whimsical",
+      "gender": "",
+      "age": "fantastical underwater neighborhood structures",
+      "skin_tone_and_texture": "painted shell, coral, and smooth aquatic surfaces with luminous blue-green highlights",
+      "facial_features": "arched shell openings, star-shaped profiles, and seahorse-like silhouettes",
+      "number_of_subjects": 8,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "colorful fish swimming through the underwater neighborhood",
+      "appearance_details": "varied small and medium fish in bright blues, yellows, oranges, and silvers weaving around coral and houses",
+      "relationship": "living movement filling the fantastical suburb",
+      "location": "foreground, midground, and background around the viewer path",
+      "relative_size": "small compared with coral houses and street formations",
+      "orientation": "swimming in multiple directions around the forward camera path",
+      "pose": "fluid schools and individual glides through the water",
+      "action": "swim around the coral street as the viewer flies forward",
+      "state_changes": "schools split around the camera path; fish scales flash in neon and ocean light; bubbles trail behind quick turns",
+      "clothing": "",
+      "expression": "lively and curious",
+      "gender": "Unknown",
+      "age": "mixed fish ages",
+      "skin_tone_and_texture": "shimmering scales in saturated colors with wet reflective highlights",
+      "facial_features": "small eyes, fins, tails, and quick darting profiles",
+      "number_of_subjects": 25,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A fantastical underwater suburban neighborhood under deep blue ocean water, with coral streets, creature-shaped houses, soft neon glows, drifting bubbles, and open aquatic depth beyond.",
+  "lighting": {
+    "conditions": "Filtered blue ocean light, warm neon accents, shimmering caustics, glowing house windows, and soft particulate sparkle in the water.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Filtered blue ocean light, warm neon accents, shimmering caustics, glowing house windows, and soft particulate sparkle in the water."
+  },
+  "aesthetics": {
+    "composition": "Dreamlike underwater utopia, colorful coral architecture, first-person flight, gentle neon, floating fish, and saturated fantasy suburban detail.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Dreamlike underwater utopia, colorful coral architecture, first-person flight, gentle neon, floating fish, and saturated fantasy suburban detail.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "First-person forward flight through the coral street, smooth glide at neighborhood height, wide 16:9 view, and soft parallax past houses and fish.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic fantasy underwater text-to-video.",
+  "artistic_style": "Colorful aquatic magical realism with suburban whimsy and immersive point-of-view motion.",
+  "context": "The viewer flies through an underwater coral suburb where living streets, sea-creature houses, neon light, and fish create a vibrant utopia.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The first-person view enters a coral-lined street with colorful houses glowing through blue water."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The camera glides forward past clam, starfish, and seahorse-shaped homes as fish swim across the path."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Neon light flickers gently on coral and scales while the underwater suburb opens deeper ahead."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Open from first-person perspective at the entrance of the coral suburban street.",
+      "key_changes": "coral street comes into view; blue ocean particles drift; warm neon glow begins",
+      "camera": "smooth first-person forward glide"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Fly between colorful creature-shaped houses as fish weave around the path.",
+      "key_changes": "houses pass with parallax; fish schools split and cross; caustics move over coral",
+      "camera": "steady point-of-view flight through the street"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Continue into a wider view of the glowing underwater neighborhood.",
+      "key_changes": "street opens deeper; neon flicker reflects on fish; bubbles rise through frame",
+      "camera": "first-person glide with gentle upward reveal"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A first-person flight moves through a colorful underwater coral suburb lined with sea-creature houses and swimming fish.",
+  "audio_description": "Muffled underwater ambience, soft bubbling, distant whale-like tones, gentle current movement, and subtle neon hum.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

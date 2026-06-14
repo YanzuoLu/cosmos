@@ -1,0 +1,124 @@
+{
+  "subjects": [
+    {
+      "description": "dedicated classroom teacher",
+      "appearance_details": "teacher in a classic button-down shirt and slacks, standing near a chalkboard with chalk or teaching tools in hand",
+      "relationship": "main instructor guiding the children through an interactive lesson",
+      "location": "front of a traditional well-lit classroom from the 1980s or 1990s",
+      "relative_size": "adult figure larger than seated students, central at the front of the room",
+      "orientation": "facing the students while occasionally turning toward the chalkboard",
+      "pose": "standing upright, gesturing warmly, and leaning toward the class",
+      "action": "teaches with chalkboard demonstrations and era-appropriate educational tools",
+      "state_changes": "arm gestures change, chalk marks accumulate, and the teacher smiles toward participating students",
+      "clothing": "classic button-down shirt, slacks, and simple classroom shoes",
+      "expression": "warm, patient, and engaged",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "natural human skin tone under even classroom lighting",
+      "facial_features": "warm smile, attentive eyes, expressive brows, classroom-focused gaze",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "diverse group of elementary students",
+      "appearance_details": "children aged 6 to 12 seated at rows of desks with textbooks, pencils, notebooks, varied hairstyles, and attentive postures",
+      "relationship": "students participating in the teachers lesson",
+      "location": "rows of desks facing the chalkboard and teacher",
+      "relative_size": "smaller seated figures filling the classroom midground and background",
+      "orientation": "mostly facing the teacher and chalkboard, with some turning toward classmates",
+      "pose": "seated, raising hands, writing, or leaning forward with interest",
+      "action": "listen, answer questions, raise hands, and follow the chalkboard demonstration",
+      "state_changes": "hands rise, notebooks open, heads turn, and expressions shift from shy to enthusiastic",
+      "clothing": "1980s and 1990s school clothing with sweaters, shirts, dresses, denim, and simple sneakers",
+      "expression": "curious, shy, eager, and engaged",
+      "gender": "Unknown",
+      "age": "children aged 6 to 12",
+      "skin_tone_and_texture": "varied child skin tones under soft classroom light",
+      "facial_features": "young faces with attentive eyes, smiles, and raised brows",
+      "number_of_subjects": 18,
+      "number_of_arms": 36,
+      "number_of_legs": 36
+    }
+  ],
+  "background_setting": "A traditional 1980s or 1990s classroom with calming green walls, a wooden teachers desk, chalkboard, rows of student desks, textbooks, pencils, and practical educational tools of the era.",
+  "lighting": {
+    "conditions": "even well-lit classroom daylight mixed with soft overhead light, warm highlights on wood desks and chalk dust",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "even well-lit classroom daylight mixed with soft overhead light, warm highlights on wood desks and chalk dust"
+  },
+  "aesthetics": {
+    "composition": "inclusive education, nostalgic classroom order, green walls, chalk texture, active learning, warm teacher-student connection",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "inclusive education, nostalgic classroom order, green walls, chalk texture, active learning, warm teacher-student connection",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "medium-wide classroom shot from the student side, slowly panning from teacher at the board to students raising hands",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic nostalgic classroom text-to-video with period details and natural group interaction",
+  "artistic_style": "warm educational realism with subtle 1980s and 1990s period texture",
+  "context": "The video captures a teacher leading an interactive lesson for a diverse group of elementary students in a traditional classroom from the 1980s or 1990s.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The teacher stands by the chalkboard in a well-lit green classroom as students face forward."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The teacher demonstrates with chalk and teaching tools while several students raise their hands."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Students write, smile, and participate as the teacher turns back toward the class."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "The chalkboard contains simple lesson marks and diagrams, with no readable wording specified.",
+      "category": "scene_sign",
+      "appearance": "visible scene text or signage",
+      "spatial_temporal": "visible during the relevant shot interval",
+      "context": "environmental detail"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The classroom opens on green walls, rows of desks, and the teacher near the chalkboard.",
+      "key_changes": "Students settle into focus and the teacher prepares to demonstrate the lesson.",
+      "camera": "medium-wide shot from the back or side of the classroom"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "The teacher writes and gestures while children of different ages respond from their desks.",
+      "key_changes": "Chalk marks appear, hands rise, and the lesson becomes interactive.",
+      "camera": "slow pan from chalkboard to students"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The teacher smiles back at the class as students write and continue participating.",
+      "key_changes": "Engaged expressions and raised hands complete the inclusive classroom moment.",
+      "camera": "steady medium-wide hold balancing teacher and students"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "In a nostalgic 1980s or 1990s classroom, a warm teacher guides diverse elementary students through an interactive chalkboard lesson.",
+  "audio_description": "soft classroom chatter, chalk on board, pencils writing, pages turning, teacher speaking warmly",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

@@ -1,0 +1,124 @@
+{
+  "subjects": [
+    {
+      "description": "vibrant pink pig with playful polka dot pattern sprinting through a Tokyo alley",
+      "appearance_details": "bright pink body with polka dot markings, glistening fur, quick hooves, and agile compact movement under neon light",
+      "relationship": "unexpected animal subject drawing attention in the city alley",
+      "location": "center of a narrow Tokyo alley lined with concrete walls, neon signs, and advertisements",
+      "relative_size": "small animal scale, low to the pavement and smaller than passersby and walls",
+      "orientation": "running forward down the alley away from and slightly across camera",
+      "pose": "sprinting with legs extended and body leaning into motion",
+      "action": "sprints energetically down the alley while neon light flickers across its body",
+      "state_changes": "pig moves quickly through frame, reflections and shadows shift, passersby turn to look",
+      "clothing": "",
+      "expression": "playful, alert, energetic",
+      "gender": "Unknown",
+      "age": "adult pig",
+      "skin_tone_and_texture": "vibrant pink fur and skin with glossy artificial light highlights and polka dot pattern",
+      "facial_features": "small snout, alert eyes, perked ears, lively open mouth",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    },
+    {
+      "description": "Tokyo alley passersby reacting to the pig",
+      "appearance_details": "urban pedestrians in casual city clothes, partly blurred by motion and neon reflections",
+      "relationship": "background bystanders giving curious glances at the sprinting pig",
+      "location": "edges of the alley near storefronts and concrete walls",
+      "relative_size": "human scale, taller than the pig but secondary and partly out of focus",
+      "orientation": "standing or walking while turning heads toward the pig",
+      "pose": "paused mid step, shoulders angled toward the alley center",
+      "action": "glance curiously as the pink pig runs past",
+      "state_changes": "heads turn, steps slow, colored light changes across faces and clothing",
+      "clothing": "casual Tokyo streetwear, jackets, trousers, bags, and everyday shoes",
+      "expression": "surprised and curious",
+      "gender": "Unknown",
+      "age": "adults",
+      "skin_tone_and_texture": "varied natural skin tones with neon colored highlights",
+      "facial_features": "distant faces with turned gazes, raised brows, and brief surprised looks",
+      "number_of_subjects": 5,
+      "number_of_arms": 10,
+      "number_of_legs": 10
+    }
+  ],
+  "background_setting": "A narrow bustling Tokyo alley with concrete walls, glowing neon signs, multicolored advertisements, reflective pavement, small storefront edges, and dynamic city shadows.",
+  "lighting": {
+    "conditions": "Artificial neon lighting in pink, blue, yellow, and green, flickering across pavement, walls, pig fur, and passersby.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Artificial neon lighting in pink, blue, yellow, and green, flickering across pavement, walls, pig fur, and passersby."
+  },
+  "aesthetics": {
+    "composition": "Playful surreal city realism, high energy alley chase, saturated neon color, concrete texture, and lively Tokyo street atmosphere.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Playful surreal city realism, high energy alley chase, saturated neon color, concrete texture, and lively Tokyo street atmosphere.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low street level tracking shot following the pig, fast lateral motion, shallow depth of field, passersby and signs streaking slightly with speed.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic cinematic urban animal chase text to video.",
+  "artistic_style": "Neon Tokyo realism with whimsical surreal contrast and kinetic street energy.",
+  "context": "A brightly patterned pink pig unexpectedly races through a narrow Tokyo alley, turning an ordinary city passage into a playful spectacle.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The pink polka dot pig bursts into the neon alley, hooves tapping quickly on the pavement."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It sprints past glowing advertisements as colored light and shadows ripple over its body."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Passersby turn with curious looks while the pig darts deeper into the alley."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "multicolored Tokyo neon signs and advertisements with no specific legible text",
+      "category": "scene_sign",
+      "appearance": "visible scene text or signage",
+      "spatial_temporal": "visible during the relevant shot interval",
+      "context": "environmental detail"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the pig entering the narrow neon alley at speed.",
+      "key_changes": "Pig accelerates into frame, neon highlights appear across pink fur.",
+      "camera": "Low tracking shot near pavement height."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow the sprint through the dense signage and concrete walls.",
+      "key_changes": "Advertisements flicker, shadows shift, pig remains central while background streaks.",
+      "camera": "Fast smooth follow with slight motion blur on the alley edges."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Show bystanders reacting as the pig continues away.",
+      "key_changes": "Passersby turn their heads, pig moves deeper, neon reflections stretch along pavement.",
+      "camera": "Trailing shot widening slightly to include pedestrians."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A vibrant pink pig with polka dot markings sprints through a neon Tokyo alley while passersby glance at the playful spectacle.",
+  "audio_description": "Quick hoof taps, city crowd murmur, faint traffic, neon electrical hum, and startled small reactions from pedestrians.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "joyful child playing a sunflower yellow ukulele",
+      "appearance_details": "curly blonde hair, bright smile, relaxed posture, small hands moving across the strings",
+      "relationship": "single child musician surrounded by colorful music sheets in a playful room",
+      "location": "sitting cross legged on a soft blue rug near large sunlit windows",
+      "relative_size": "small foreground figure with the ukulele centered in the lap",
+      "orientation": "facing slightly toward the camera while looking down at the instrument",
+      "pose": "cross legged seated pose with shoulders relaxed and elbows close to the body",
+      "action": "strums the ukulele and changes finger positions along the fretboard",
+      "state_changes": "starts with a gentle strum, grows more confident, then looks up with a wider smile",
+      "clothing": "comfortable casual indoor clothing in soft colors",
+      "expression": "happy, focused, proud",
+      "gender": "Unknown",
+      "age": "child",
+      "skin_tone_and_texture": "natural child skin texture in warm daylight, exact tone unspecified",
+      "facial_features": "round cheeks, bright eyes, curly hair framing the face",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Bright cozy room with large windows, soft blue rug, warm daylight, and a small stack of colorful music sheets placed beside the child.",
+  "lighting": {
+    "conditions": "Natural sunlight pours through the windows, creating a gentle warm glow and soft shadows on the rug.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Natural sunlight pours through the windows, creating a gentle warm glow and soft shadows on the rug."
+  },
+  "aesthetics": {
+    "composition": "Playful creative atmosphere, cheerful color palette, soft textures, intimate home music moment.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Playful creative atmosphere, cheerful color palette, soft textures, intimate home music moment.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low seated eye level framing with a slow gentle push toward the child's hands and smiling face.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic text to video",
+  "artistic_style": "warm family documentary style with clean focus, natural hand motion, and soft daylight realism",
+  "context": "A child practices a simple ukulele tune at home in a bright room filled with music and warmth.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Child sits cross legged on the blue rug and begins strumming the yellow ukulele."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Fingers move across the strings and fretboard while the child concentrates on the melody."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Child glances up with a bright smile as sunlight catches the instrument and music sheets."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the sunny room, blue rug, child, yellow ukulele, and colorful music sheets.",
+      "key_changes": "Establish the sunny room, blue rug, child, yellow ukulele, and colorful music sheets.",
+      "camera": "Low seated eye level framing with a slow gentle push toward the child's hands and smiling face."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Focus on coordinated strumming and fret changes as the child keeps steady rhythm.",
+      "key_changes": "Focus on coordinated strumming and fret changes as the child keeps steady rhythm.",
+      "camera": "Low seated eye level framing with a slow gentle push toward the child's hands and smiling face."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the happy expression and warm daylight as the short tune ends.",
+      "key_changes": "Hold the happy expression and warm daylight as the short tune ends.",
+      "camera": "Low seated eye level framing with a slow gentle push toward the child's hands and smiling face."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Over seven seconds, a curly blonde child sits on a blue rug and plays a yellow ukulele in warm natural light.",
+  "audio_description": "Bright ukulele strums, soft room tone, faint paper rustle, no spoken dialogue.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

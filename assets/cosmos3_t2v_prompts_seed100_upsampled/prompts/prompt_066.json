@@ -1,0 +1,156 @@
+{
+  "subjects": [
+    {
+      "description": "personified tabby cat boxer in black and gold attire",
+      "appearance_details": "upright tabby cat with striped fur, sleek black boxing suit, gold accents, confident stance, and bright spotlight highlights",
+      "relationship": "one contender facing the panda in the boxing ring",
+      "location": "left side of the ring near center",
+      "relative_size": "small compared with the panda but strong and central in the frame",
+      "orientation": "facing the panda with shoulders squared",
+      "pose": "balanced boxing stance with raised gloves and bent knees",
+      "action": "holds position confidently and shifts weight as the match is about to begin",
+      "state_changes": "fur gleams under lights, gloves lift, feet bounce lightly, eyes lock on the opponent",
+      "clothing": "sleek black boxing suit with gold accents and matching gloves",
+      "expression": "confident, intense, and ready",
+      "gender": "Unknown",
+      "age": "adult anthropomorphic cat",
+      "skin_tone_and_texture": "tabby fur with realistic stripes, soft sheen, and spotlight highlights",
+      "facial_features": "cat muzzle, whiskers, sharp eyes, upright ears",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "personified panda boxer in black attire with white stripes",
+      "appearance_details": "upright panda with fluffy black and white fur, fitted boxing suit, strong frame, and calm focused presence",
+      "relationship": "opposing contender facing the tabby cat",
+      "location": "right side of the ring near center",
+      "relative_size": "larger than the cat and visually imposing",
+      "orientation": "facing the tabby cat across the referee",
+      "pose": "steady boxing guard with feet planted and gloves raised",
+      "action": "waits for the starting signal while watching the cat carefully",
+      "state_changes": "gloves tighten near face, shoulders roll, fur catches the ring lights",
+      "clothing": "black boxing attire with white stripes and matching gloves",
+      "expression": "calm, focused, and competitive",
+      "gender": "Unknown",
+      "age": "adult anthropomorphic panda",
+      "skin_tone_and_texture": "soft black and white panda fur with fluffy texture and bright ring highlights",
+      "facial_features": "round panda face, dark eye patches, focused gaze, small rounded ears",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "referee holding a golden glove signal",
+      "appearance_details": "official standing upright between the contenders, arm raised with a polished golden glove",
+      "relationship": "neutral official ready to start the match",
+      "location": "center of the boxing ring between cat and panda",
+      "relative_size": "medium human scale, slightly behind the two contenders",
+      "orientation": "facing the camera while watching both fighters",
+      "pose": "standing with one arm raised and the other lowered for balance",
+      "action": "prepares to signal the start of the match with the golden glove",
+      "state_changes": "golden glove lifts, posture stiffens, gaze moves between both contenders",
+      "clothing": "professional referee shirt, dark trousers, and simple shoes",
+      "expression": "serious and attentive",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "natural skin with bright ring highlights",
+      "facial_features": "focused eyes, neutral mouth, clear official presence",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "cheering crowd in the arena stands",
+      "appearance_details": "mixed spectators seated around the ring, faces turned toward the contenders, hands raised in applause",
+      "relationship": "audience watching and cheering for the boxing match",
+      "location": "background stands surrounding the lit boxing ring",
+      "relative_size": "small background figures behind the main ring subjects",
+      "orientation": "facing inward toward the ring",
+      "pose": "seated or standing with arms raised, leaning forward",
+      "action": "cheers and watches intently as the match is about to begin",
+      "state_changes": "hands wave, heads turn, crowd energy builds, faces brighten under arena lights",
+      "clothing": "varied casual spectator clothing",
+      "expression": "excited and expectant",
+      "gender": "Unknown",
+      "age": "mixed adults",
+      "skin_tone_and_texture": "varied skin tones in distant arena light",
+      "facial_features": "small visible faces with open mouths, raised brows, and focused gazes",
+      "number_of_subjects": 40,
+      "number_of_arms": 80,
+      "number_of_legs": 80
+    }
+  ],
+  "background_setting": "Professionally lit boxing ring with taut ropes, polished canvas, dramatic spotlights, metallic suit accents, and crowded arena stands filled with cheering spectators.",
+  "lighting": {
+    "conditions": "Bright overhead arena spotlights isolate the ring while the stands remain darker with flickers of audience light.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Bright overhead arena spotlights isolate the ring while the stands remain darker with flickers of audience light."
+  },
+  "aesthetics": {
+    "composition": "Stylized sports spectacle, glossy black suits, gold accents, soft animal fur, theatrical lighting, and tense pre-match energy.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Stylized sports spectacle, glossy black suits, gold accents, soft animal fur, theatrical lighting, and tense pre-match energy.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Dynamic medium-wide ring shot with the referee centered, slight low angle, and subtle camera drift around the opposing contenders.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic fantasy sports text-to-video.",
+  "artistic_style": "Cinematic anthropomorphic boxing scene with polished arena drama and crisp character detail.",
+  "context": "A tabby cat boxer and a panda boxer face each other in a vibrant boxing ring while a referee raises a golden glove to start the match.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera establishes the lit ring as the tabby cat and panda face each other with the referee between them."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The referee raises the golden glove, the crowd cheers, and both contenders tighten their guards."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The cat and panda bounce lightly in place, ready for the opening signal as the arena energy rises."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the ring, the cat boxer, panda boxer, referee, and cheering crowd.",
+      "key_changes": "Spotlights flare, suits gleam, audience movement builds behind the ropes.",
+      "camera": "Medium-wide low-angle ring shot."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Center the referee lifting the golden glove between the contenders.",
+      "key_changes": "Golden glove rises, both boxers raise guards, crowd motion intensifies.",
+      "camera": "Slow push toward the referee and fighters."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold on the pre-match tension as the fighters bounce in place.",
+      "key_changes": "Cat and panda shift weight, gloves stay high, ring lights glint off gold accents.",
+      "camera": "Subtle circular camera drift around center ring."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A tabby cat boxer and a panda boxer face off in a bright arena while a referee raises a golden glove and the crowd cheers.",
+  "audio_description": "Crowd cheers, muffled arena rumble, soft glove creaks, shoe scuffs on canvas, and a sharp referee breath before the signal.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "elderly woman operating a busy vegetable market stall",
+      "appearance_details": "warm smile, gentle demeanor, careful hands arranging produce, calm familiarity with customers",
+      "relationship": "market vendor serving customers at her neatly arranged stall",
+      "location": "behind a produce stall under a large shaded canopy in a bustling market",
+      "relative_size": "medium foreground figure framed by rows of colorful vegetables",
+      "orientation": "facing customers and camera from behind the stall",
+      "pose": "standing upright with hands near baskets of cucumbers, tomatoes, and greens",
+      "action": "arranges vegetables, greets customers, and presents fresh produce for purchase",
+      "state_changes": "starts sorting greens, looks up with a warm smile, then reaches toward tomatoes as customers pass",
+      "clothing": "modest market day clothing with a practical apron or outer layer",
+      "expression": "warm, gentle, welcoming",
+      "gender": "Female",
+      "age": "elderly adult",
+      "skin_tone_and_texture": "natural aged skin texture with soft wrinkles in shaded daylight, exact tone unspecified",
+      "facial_features": "kind eyes, warm smile, softly lined face, gentle cheeks",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Busy outdoor market under shaded canopies, with nearby stalls selling spices, fruits, handmade crafts, and fresh bread while customers move through the aisle.",
+  "lighting": {
+    "conditions": "Soft diffused daylight under the canopy with bright highlights on cucumbers, tomatoes, greens, and surrounding goods.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Soft diffused daylight under the canopy with bright highlights on cucumbers, tomatoes, greens, and surrounding goods."
+  },
+  "aesthetics": {
+    "composition": "Bustling yet welcoming market scene, vivid vegetable colors, warm human connection, textured everyday realism.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Bustling yet welcoming market scene, vivid vegetable colors, warm human connection, textured everyday realism.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Medium eye level market stall framing with a slight handheld feel and gentle push toward the woman's smile and produce display.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic text to video",
+  "artistic_style": "documentary market realism with natural crowd movement, detailed produce textures, and warm color fidelity",
+  "context": "An elderly woman tends her vegetable stall during a lively market day filled with customers, food aromas, and chatter.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Woman stands behind the stall and arranges crisp cucumbers and lush greens under the canopy."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "She smiles warmly toward customers while marketgoers move past surrounding stalls."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "She adjusts plump tomatoes and presents the colorful display as the market bustle continues."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the shaded market stall, fresh vegetables, canopy, and elderly vendor.",
+      "key_changes": "Establish the shaded market stall, fresh vegetables, canopy, and elderly vendor.",
+      "camera": "Medium eye level market stall framing with a slight handheld feel and gentle push toward the woman's smile and produce display."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Show the woman greeting the flow of customers amid nearby spice, fruit, craft, and bread stalls.",
+      "key_changes": "Show the woman greeting the flow of customers amid nearby spice, fruit, craft, and bread stalls.",
+      "camera": "Medium eye level market stall framing with a slight handheld feel and gentle push toward the woman's smile and produce display."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "End on the neatly arranged produce and her gentle smile as the market remains lively.",
+      "key_changes": "End on the neatly arranged produce and her gentle smile as the market remains lively.",
+      "camera": "Medium eye level market stall framing with a slight handheld feel and gentle push toward the woman's smile and produce display."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Over seven seconds, an elderly woman warmly tends a colorful vegetable stall beneath a shaded canopy as a busy market moves around her.",
+  "audio_description": "Market chatter, soft footsteps, paper bags, faint bread stall activity, gentle vendor greeting without clear words.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

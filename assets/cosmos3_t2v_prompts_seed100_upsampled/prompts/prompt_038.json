@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "Eiffel Tower changing from daylight to illuminated evening",
+      "appearance_details": "golden iron lattice, four arched legs, tapering tower profile, lights gradually glowing across the structure",
+      "relationship": "central landmark in a timelapse over Paris",
+      "location": "center frame rising above the Champ de Mars",
+      "relative_size": "very large vertical subject dominating the skyline",
+      "orientation": "upright, symmetrical, viewed from a classic distant perspective",
+      "pose": "towering and still while the environment changes around it",
+      "action": "transitions from warm daylight detail to dark silhouette and then glowing evening illumination",
+      "state_changes": "iron lattice shifts from gold to shadow, then lights switch on and shimmer against the night sky",
+      "clothing": "",
+      "expression": "majestic and iconic",
+      "gender": "",
+      "age": "historic monument",
+      "skin_tone_and_texture": "painted iron lattice with warm metallic highlights and later golden lamp glow",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    },
+    {
+      "description": "Paris skyline, rooftops, Seine River, and Champ de Mars",
+      "appearance_details": "low rooftops, tree lined park, river glints, small city lights appearing one by one, long tower shadow over the grass",
+      "relationship": "urban context surrounding and framing the Eiffel Tower",
+      "location": "background and lower frame around the tower",
+      "relative_size": "large environmental setting behind the central tower",
+      "orientation": "horizontal city layers stretching left and right",
+      "pose": "still cityscape with changing light",
+      "action": "city lights flicker on as the sky dims and evening takes over",
+      "state_changes": "daylight fades to twilight, rooftops darken, lamps and windows begin glowing",
+      "clothing": "",
+      "expression": "romantic and calm",
+      "gender": "",
+      "age": "historic urban landscape",
+      "skin_tone_and_texture": "stone rooftops, dark tree canopies, reflective river surface, soft city haze",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "Paris cityscape with the Eiffel Tower above the Champ de Mars, Seine River, rooftops, tree lines, and sky progressing from day to twilight to starry evening",
+  "lighting": {
+    "conditions": "accelerated timelapse lighting from warm daylight to orange twilight, then city lamps and Eiffel Tower lights glowing in deep blue night",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "accelerated timelapse lighting from warm daylight to orange twilight, then city lamps and Eiffel Tower lights glowing in deep blue night"
+  },
+  "aesthetics": {
+    "composition": "romantic, iconic, elegant, atmospheric, urban timelapse",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "romantic, iconic, elegant, atmospheric, urban timelapse",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "locked off wide landmark shot with subtle timelapse motion in clouds, shadows, and city lights",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "photorealistic text to video landmark timelapse",
+  "artistic_style": "cinematic travel realism with polished evening color and gentle city glow",
+  "context": "the Eiffel Tower and Paris transform from afternoon into evening as lights come alive across the city",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "daylight reveals the tower's golden lattice while shadows stretch across the Champ de Mars"
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "the sun sets quickly, the tower turns into a twilight silhouette, and Paris lights begin flickering on"
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "night settles, the Eiffel Tower lights glow and shimmer, and the city becomes a field of warm points"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "daylight reveals the tower's golden lattice while shadows stretch across the Champ de Mars",
+      "key_changes": "daylight reveals the tower's golden lattice while shadows stretch across the Champ de Mars",
+      "camera": "locked off wide landmark shot with subtle timelapse motion in clouds, shadows, and city lights"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "the sun sets quickly, the tower turns into a twilight silhouette, and Paris lights begin flickering on",
+      "key_changes": "the sun sets quickly, the tower turns into a twilight silhouette, and Paris lights begin flickering on",
+      "camera": "locked off wide landmark shot with subtle timelapse motion in clouds, shadows, and city lights"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "night settles, the Eiffel Tower lights glow and shimmer, and the city becomes a field of warm points",
+      "key_changes": "night settles, the Eiffel Tower lights glow and shimmer, and the city becomes a field of warm points",
+      "camera": "locked off wide landmark shot with subtle timelapse motion in clouds, shadows, and city lights"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A timelapse transforms the Eiffel Tower from daylight to twilight silhouette and finally to a glowing Paris night landmark.",
+  "audio_description": "soft city ambience, distant traffic, faint river movement, evening crowd murmur, gentle wind",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "floating medieval castle transforming into a cyberpunk cityscape",
+      "appearance_details": "ancient stone towers, carved battlements, arched windows, heavy walls, then glowing neon seams, glass towers, holographic panels, and vertical skyscraper forms",
+      "relationship": "central architectural subject that bridges ancient fantasy and futuristic urban design",
+      "location": "center frame, suspended high above a futuristic metropolis before descending into it",
+      "relative_size": "immense architectural mass, larger than vehicles and comparable to surrounding skyscrapers after transformation",
+      "orientation": "descending vertically with towers upright, then stretching upward into city blocks and spires",
+      "pose": "graceful airborne descent turning into vertical urban growth",
+      "action": "floats down, unfurls stone walls, reshapes into neon skyscrapers, and settles into a dense cyberpunk skyline",
+      "state_changes": "stone carvings glow with neon lines; castle walls elongate into skyscrapers; ancient towers become futuristic high rises",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "ancient structure becoming futuristic city",
+      "skin_tone_and_texture": "weathered stone, carved masonry, then reflective glass, chrome, neon, and rain-slick metal",
+      "facial_features": "arched windows, battlements, glowing signs, and tower facades",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "flying cars and drones circling the emerging city",
+      "appearance_details": "small airborne vehicles with luminous thrusters, blinking navigation lights, smooth metallic shells, and compact drone silhouettes",
+      "relationship": "futuristic traffic emphasizing the new cyberpunk environment",
+      "location": "midair lanes around the castle and between skyscrapers",
+      "relative_size": "tiny compared with the castle and towers",
+      "orientation": "arcing around the descending structure and weaving through vertical streets",
+      "pose": "continuous flight paths with gentle banking turns",
+      "action": "circle, pass, hover, and stream through neon corridors as the city forms",
+      "state_changes": "traffic density increases; thruster trails brighten; drones reposition around new towers",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "futuristic vehicles",
+      "skin_tone_and_texture": "glossy metal, dark glass, LED strips, and soft engine glow",
+      "facial_features": "headlights, sensor lenses, and glowing thrusters",
+      "number_of_subjects": 18,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A vertical cyberpunk skyline under a dark atmospheric sky, packed with neon signs, reflective skyscrapers, aerial lanes, drones, flying cars, glowing windows, and misty urban depth.",
+  "lighting": {
+    "conditions": "Vibrant magenta, cyan, electric blue, and amber neon glow against dim twilight haze, with reflective highlights sliding across stone, glass, and metallic surfaces.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Vibrant magenta, cyan, electric blue, and amber neon glow against dim twilight haze, with reflective highlights sliding across stone, glass, and metallic surfaces."
+  },
+  "aesthetics": {
+    "composition": "Fantasy architecture merging with cyberpunk futurism, dramatic scale, luminous transformation, rich neon color, airborne traffic, and dense urban spectacle.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Fantasy architecture merging with cyberpunk futurism, dramatic scale, luminous transformation, rich neon color, airborne traffic, and dense urban spectacle.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Grand wide shot with slow downward camera drift, then a sweeping orbital move around the transforming castle as towers grow into the skyline.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "High detail cinematic fantasy cyberpunk text-to-video.",
+  "artistic_style": "Epic speculative city transformation with photoreal materials, stylized neon atmosphere, and smooth magical technology morphing.",
+  "context": "An ancient floating castle descends into a futuristic city and transforms into the core of a towering cyberpunk metropolis filled with drones and flying cars.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The medieval castle floats gracefully through the air, its stone carvings and towers visible against a neon skyline below."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "As it descends, stone walls stretch upward, windows ignite with neon, and cyberpunk skyscrapers rise around the castle form."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Flying cars and drones weave through the completed cityscape while neon signs flicker across the transformed towers."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Show the ornate medieval castle suspended above a futuristic city, descending slowly through mist and neon glow.",
+      "key_changes": "The castle lowers and the first neon seams appear in the stone.",
+      "camera": "Wide cinematic aerial view with slow downward drift."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "The castle transforms into a rising cyberpunk city core, mixing battlements, glass, steel, holographic light, and skyscraper silhouettes.",
+      "key_changes": "Stone becomes glass and chrome, towers extend, signs flicker on, and air traffic increases.",
+      "camera": "Smooth orbital sweep around the central structure with vertical parallax."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Reveal the finished cyberpunk skyline alive with flying cars, drones, neon reflections, and futuristic activity.",
+      "key_changes": "Transformation completes and the city becomes busy and luminous.",
+      "camera": "Pull back to a majestic long shot of the completed cityscape."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A floating medieval castle descends and transforms into a neon cyberpunk city filled with skyscrapers, flying cars, and drones.",
+  "audio_description": "Low magical stone resonance, rising electronic hum, neon buzz, distant engines, drone whirs, and layered futuristic city ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

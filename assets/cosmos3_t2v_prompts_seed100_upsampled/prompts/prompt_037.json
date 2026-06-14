@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "fireworks above the Golden Gate Bridge",
+      "appearance_details": "red, blue, and green bursts with sparkling trails, smoke wisps, bright reflections in the bay",
+      "relationship": "main moving spectacle set above the iconic bridge and city skyline",
+      "location": "upper night sky above the bridge towers",
+      "relative_size": "large bursts spanning the sky over the bridge",
+      "orientation": "radiating outward and downward in layered arcs",
+      "pose": "expanding starbursts and falling glitter trails",
+      "action": "explode, shimmer, fade, and refresh in overlapping patterns",
+      "state_changes": "colored light pulses across the bridge, bay, spectators, and smoke",
+      "clothing": "",
+      "expression": "spectacular and celebratory",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "colored light particles, bright cores, smoky edges",
+      "facial_features": "",
+      "number_of_subjects": 15,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Golden Gate Bridge with orange towers",
+      "appearance_details": "distinctive orange suspension towers, cables, roadway lights, dark structural silhouette against fireworks",
+      "relationship": "iconic architectural backdrop beneath the fireworks",
+      "location": "middle of the frame spanning across the bay",
+      "relative_size": "very large horizontal landmark across the panorama",
+      "orientation": "bridge deck stretches left to right, towers rising vertically",
+      "pose": "stationary suspension structure",
+      "action": "remains steady as colored flashes wash across its cables and towers",
+      "state_changes": "orange paint shifts between shadow and saturated color under firework light",
+      "clothing": "",
+      "expression": "grand and iconic",
+      "gender": "",
+      "age": "historic bridge",
+      "skin_tone_and_texture": "painted steel with cable lines and illuminated edges",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "spectators in nearby parks and on bridge viewing areas",
+      "appearance_details": "small crowd silhouettes, glowing faces, phones raised, casual jackets and hats in night air",
+      "relationship": "human audience witnessing the bridge fireworks",
+      "location": "lower edges and distant viewing areas near the bridge",
+      "relative_size": "small compared with the bridge and sky",
+      "orientation": "facing the fireworks and bridge",
+      "pose": "standing in clusters, some leaning forward or holding phones above shoulder height",
+      "action": "watch, cheer, and record the spectacle",
+      "state_changes": "faces and clothing flicker with changing red, blue, and green light",
+      "clothing": "casual evening outerwear, coats, hats, and hoodies",
+      "expression": "excited and impressed",
+      "gender": "Unknown",
+      "age": "children, adults, and older adults",
+      "skin_tone_and_texture": "varied skin tones briefly visible in colored flashes",
+      "facial_features": "smiles, open mouths, and upward gazes visible in close silhouettes",
+      "number_of_subjects": 60,
+      "number_of_arms": 120,
+      "number_of_legs": 120
+    }
+  ],
+  "background_setting": "panoramic San Francisco Bay at night with the Golden Gate Bridge, dark ocean water, distant urban skyline lights, parks with spectators, and fireworks filling the sky",
+  "lighting": {
+    "conditions": "night scene lit by bridge lights, city glow, and intense red, blue, and green fireworks reflected on bay water",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "night scene lit by bridge lights, city glow, and intense red, blue, and green fireworks reflected on bay water"
+  },
+  "aesthetics": {
+    "composition": "iconic, festive, cinematic, grand, high contrast night panorama",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "iconic, festive, cinematic, grand, high contrast night panorama",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "wide panoramic shot from an elevated viewpoint, stable camera with the bridge centered and fireworks layered above",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "photorealistic text to video landmark event scene",
+  "artistic_style": "cinematic urban realism with saturated fireworks and crisp architectural silhouettes",
+  "context": "a public celebration lights the sky above the Golden Gate Bridge while spectators watch from bridge areas and nearby parks",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "fireworks begin bursting above the orange bridge towers, lighting the bay with red and blue reflections"
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "the display intensifies into overlapping green, red, and blue blooms while spectators record the scene"
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "sparkling trails drift downward around the towers as smoke and reflections soften over the water"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "fireworks begin bursting above the orange bridge towers, lighting the bay with red and blue reflections",
+      "key_changes": "fireworks begin bursting above the orange bridge towers, lighting the bay with red and blue reflections",
+      "camera": "wide panoramic shot from an elevated viewpoint, stable camera with the bridge centered and fireworks layered above"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "the display intensifies into overlapping green, red, and blue blooms while spectators record the scene",
+      "key_changes": "the display intensifies into overlapping green, red, and blue blooms while spectators record the scene",
+      "camera": "wide panoramic shot from an elevated viewpoint, stable camera with the bridge centered and fireworks layered above"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "sparkling trails drift downward around the towers as smoke and reflections soften over the water",
+      "key_changes": "sparkling trails drift downward around the towers as smoke and reflections soften over the water",
+      "camera": "wide panoramic shot from an elevated viewpoint, stable camera with the bridge centered and fireworks layered above"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Fireworks explode in vivid colors above the Golden Gate Bridge as crowds watch across the bay at night.",
+  "audio_description": "deep firework booms, crackling sparks, cheering crowds, distant city ambience, bay wind",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

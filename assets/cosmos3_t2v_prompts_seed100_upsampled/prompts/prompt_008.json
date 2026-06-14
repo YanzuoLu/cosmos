@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "woman running briskly on a forest trail",
+      "appearance_details": "athletic adult with ponytail bouncing, steady stride, and bright sportswear",
+      "relationship": "solo runner moving through the scenic trail",
+      "location": "center frame on a winding forest path",
+      "relative_size": "medium human scale against tall trees and broad trail",
+      "orientation": "facing forward along the trail, body angled in running motion",
+      "pose": "upright running posture with arms bent and legs in stride",
+      "action": "runs briskly down the trail while keeping an even pace",
+      "state_changes": "ponytail bounces with each step; arms pump naturally; footfalls send small dust or leaf movement",
+      "clothing": "vibrant orange sports outfit",
+      "expression": "focused, energized, calm breathing",
+      "gender": "Female",
+      "age": "adult",
+      "skin_tone_and_texture": "natural skin with dappled forest sunlight and light exertion",
+      "facial_features": "focused eyes, relaxed mouth, lightly flushed cheeks",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Scenic trail winding through lush forest, dense canopy overhead, dappled sunlight on the ground, and a babbling brook audible in the background.",
+  "lighting": {
+    "conditions": "Filtered sunlight through leaves, shifting patches of gold and green across the runner, trail, and tree trunks.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Filtered sunlight through leaves, shifting patches of gold and green across the runner, trail, and tree trunks."
+  },
+  "aesthetics": {
+    "composition": "Fresh outdoor fitness scene with orange clothing against deep forest greens, gentle motion, and peaceful natural energy.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Fresh outdoor fitness scene with orange clothing against deep forest greens, gentle motion, and peaceful natural energy.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking medium shot at runner height, slight handheld realism, background softened by motion and shallow depth.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action fitness video.",
+  "artistic_style": "Natural cinematic trail-running realism with crisp movement and soft forest atmosphere.",
+  "context": "A woman enjoys a brisk run through a quiet forest trail near a small brook.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The runner appears on the winding trail, framed by trees and scattered sunlight."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "She maintains a brisk pace, ponytail bouncing as orange fabric catches the light."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "She continues past the camera path while the brook and leaves add calm background movement."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the forest trail, green canopy, dappled ground, and runner in orange.",
+      "key_changes": "Establish the forest trail, green canopy, dappled ground, and runner in orange.",
+      "camera": "Forward tracking medium shot at runner height, slight handheld realism, background softened by motion and shallow depth."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Track her stride and breathing rhythm with sunlight moving across her outfit.",
+      "key_changes": "Track her stride and breathing rhythm with sunlight moving across her outfit.",
+      "camera": "Forward tracking medium shot at runner height, slight handheld realism, background softened by motion and shallow depth."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Let the runner move deeper into the trail with the brook sound behind her.",
+      "key_changes": "Let the runner move deeper into the trail with the brook sound behind her.",
+      "camera": "Forward tracking medium shot at runner height, slight handheld realism, background softened by motion and shallow depth."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A woman in a vibrant orange sports outfit runs briskly along a sun-dappled forest trail.",
+  "audio_description": "Rhythmic running footfalls, controlled breathing, leaves rustling, birds, and a gentle brook in the background.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

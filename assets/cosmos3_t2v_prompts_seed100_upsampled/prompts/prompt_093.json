@@ -1,0 +1,99 @@
+{
+  "subjects": [
+    {
+      "description": "30 year old space adventurer in a desert movie trailer moment",
+      "appearance_details": "confident adventurer with rugged posture, red wool knitted motorcycle helmet, wind marked face, and determined presence",
+      "relationship": "heroic central figure of an action adventure trailer",
+      "location": "salt covered desert under a vast shimmering blue sky",
+      "relative_size": "medium human scale, small against the broad desert and sky",
+      "orientation": "facing into the wind and toward the open desert horizon",
+      "pose": "hero stance shifting into forward motion, shoulders squared and head lifted",
+      "action": "moves through a trailer style sequence of heroic desert travel and dramatic skyward looks",
+      "state_changes": "stance changes from still hero pose to motion, dust rises, gaze turns from horizon to sky",
+      "clothing": "red wool knitted motorcycle helmet with adventure clothing suited to harsh desert travel",
+      "expression": "bold, focused, mysterious",
+      "gender": "Male",
+      "age": "30 years old",
+      "skin_tone_and_texture": "sunlit natural skin with wind dried desert texture and 35mm film grain",
+      "facial_features": "strong jaw, narrowed eyes, wind touched cheeks, resolute mouth",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A rugged salt covered desert stretching beneath a vast shimmering blue sky, with subtle cosmic atmosphere implied through bright haze, reflective flats, and epic open space.",
+  "lighting": {
+    "conditions": "Bright hard daylight softened by nostalgic 35mm film response, vivid sky blues, pale salt reflections, and warm highlights on the helmet.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Bright hard daylight softened by nostalgic 35mm film response, vivid sky blues, pale salt reflections, and warm highlights on the helmet."
+  },
+  "aesthetics": {
+    "composition": "Retro cinematic trailer energy, heroic desert adventure, saturated color, film grain, mystery, and sweeping scale.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Retro cinematic trailer energy, heroic desert adventure, saturated color, film grain, mystery, and sweeping scale.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Trailer style sequence with a hero close view, wide desert motion, and skyward reveal, shot like vivid 35mm film with rich color and tactile grain.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Live action 35mm film style text to video.",
+  "artistic_style": "Nostalgic action adventure cinema with cosmic mystery and bold color contrast.",
+  "context": "A movie trailer introduces a daring space adventurer beginning an epic journey across a salt desert beneath an enormous sky.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The adventurer stands against the shimmering desert, red knitted helmet vivid under the blue sky."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "A fast trailer cut shows him moving across the salt covered ground as dust and glare streak past."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "He looks upward with heroic resolve while the sky fills the frame like a cosmic omen."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Hero introduction in the desert with the red wool helmet as the visual anchor.",
+      "key_changes": "Still posture establishes identity, film grain and saturated color become apparent.",
+      "camera": "Low angle medium close shot with bright sky behind him."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Action trailer movement through the salt covered landscape.",
+      "key_changes": "Dust rises, forward motion begins, horizon slides laterally.",
+      "camera": "Quick wide tracking shot with slight handheld urgency."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Dramatic skyward beat that promises adventure and mystery.",
+      "key_changes": "Subject slows, gaze lifts, blue sky dominates the composition.",
+      "camera": "Cut to close profile, then tilt upward toward the sky."
+    }
+  ],
+  "transitions": [
+    "hard trailer cut at 0:02 from hero pose to desert motion",
+    "dramatic cut at 0:05 from action movement to skyward close view"
+  ],
+  "temporal_caption": "A 30 year old space adventurer in a red knitted motorcycle helmet is introduced in a 35mm style desert movie trailer.",
+  "audio_description": "Rising trailer percussion, wind over salt flats, faint cloth flutter, and a cinematic swell under the final skyward look.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

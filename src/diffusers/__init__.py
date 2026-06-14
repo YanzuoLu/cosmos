@@ -7,7 +7,9 @@ from .schedulers.scheduling_utils import SchedulerMixin
 from .models.autoencoders.autoencoder_cosmos3_audio import Cosmos3AVAEAudioTokenizer
 from .models.autoencoders.autoencoder_kl_wan import AutoencoderKLWan
 from .models.transformers.transformer_cosmos3 import Cosmos3OmniTransformer
+from .models.transformers.transformer_cosmos3_taylorseer import Cosmos3OmniTaylorSeerTransformer
 from .pipelines.cosmos.pipeline_cosmos3_omni import Cosmos3OmniPipeline
+from .pipelines.cosmos.pipeline_cosmos3_omni_taylorseer import Cosmos3OmniTaylorSeerPipeline
 from .schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler
 from . import pipelines
 
@@ -21,6 +23,8 @@ __all__ = [
     "Cosmos3AVAEAudioTokenizer",
     "AutoencoderKLWan",
     "Cosmos3OmniTransformer",
+    "Cosmos3OmniTaylorSeerTransformer",
     "Cosmos3OmniPipeline",
+    "Cosmos3OmniTaylorSeerPipeline",
     "UniPCMultistepScheduler",
 ]

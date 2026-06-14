@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "deep purple flower blossoming against a black backdrop",
+      "appearance_details": "rich velvety purple petals, fine veins, detailed stamens, subtle pollen texture, and a saturated color edge against black",
+      "relationship": "left or central flower paired with the pink bloom",
+      "location": "foreground on the darker side of the black studio stage",
+      "relative_size": "large macro subject filling much of the frame",
+      "orientation": "angled slightly toward the pink flower and camera",
+      "pose": "petals gradually unfolding from a partially closed bloom",
+      "action": "opens its petals slowly, exposing stamens and velvety inner texture",
+      "state_changes": "outer petals loosen; inner petals spread; stamens become visible",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "fresh blooming flower",
+      "skin_tone_and_texture": "velvet-like petals, fine veins, soft pollen, and natural botanical texture",
+      "facial_features": "central stamens, pistil, and layered petal geometry",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "soft pink flower unfolding beside the purple flower",
+      "appearance_details": "pale pink translucent petals, delicate edges, fine stamens, gentle petal gradients, and an airy luminous quality",
+      "relationship": "companion bloom contrasting with the darker purple flower",
+      "location": "foreground beside the purple flower against the black backdrop",
+      "relative_size": "large macro subject similar in scale to the purple flower",
+      "orientation": "turned slightly toward the purple flower and camera",
+      "pose": "delicate petals opening outward with soft curvature",
+      "action": "unfurls gradually, revealing intricate stamens and layered petal structure",
+      "state_changes": "bud expands; petals separate; pink translucency catches rim light",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "fresh blooming flower",
+      "skin_tone_and_texture": "smooth soft petals, translucent edges, fine veins, and pollen detail",
+      "facial_features": "central stamens, pistil, and radial petal pattern",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A stark black studio backdrop with no visible environment, creating a dramatic stage that isolates two blossoming flowers and emphasizes color, texture, and shape.",
+  "lighting": {
+    "conditions": "Controlled macro studio lighting with soft front fill, narrow rim highlights on petal edges, and subtle specular detail on stamens against pure black.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Controlled macro studio lighting with soft front fill, narrow rim highlights on petal edges, and subtle specular detail on stamens against pure black."
+  },
+  "aesthetics": {
+    "composition": "Minimal botanical drama, high contrast color, velvety texture, delicate bloom motion, and sculptural floral composition.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Minimal botanical drama, high contrast color, velvety texture, delicate bloom motion, and sculptural floral composition.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Static macro close-up with shallow depth of field, slight time-lapse quality in petal movement, and slow focus breathing across stamens and petal edges.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic macro floral text-to-video.",
+  "artistic_style": "Elegant studio botanical realism with dramatic black background and detailed natural textures.",
+  "context": "Two flowers, one deep purple and one soft pink, bloom side by side on a black stage, revealing their petals and stamens in a quiet macro study.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The purple and pink flowers appear partially closed against the black backdrop, lit by soft rim highlights."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Both flowers unfold their petals in slow motion, revealing detailed stamens and fine petal veins."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The blossoms reach a fuller open shape, with purple velvet texture and pink translucency glowing against black."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish two partially closed blooms on a pure black background, one deep purple and one soft pink.",
+      "key_changes": "Petal tips begin to loosen and rim light outlines the forms.",
+      "camera": "Locked macro close-up with shallow depth of field."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "The flowers unfold slowly, showing layered petals, veins, stamens, and contrasting color textures.",
+      "key_changes": "Petals spread outward and the centers become visible.",
+      "camera": "Static macro with subtle rack focus from petal edges to stamens."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the fully expressive blossoms against the black stage, emphasizing vivid purple and soft pink detail.",
+      "key_changes": "Blooming completes and fine textures remain crisp under studio light.",
+      "camera": "Still close-up with minor focus breathing and no background movement."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A deep purple flower and a soft pink flower slowly unfold their petals and stamens against a pure black backdrop.",
+  "audio_description": "Near-silent studio ambience with a faint natural rustle impression and soft atmospheric tone.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

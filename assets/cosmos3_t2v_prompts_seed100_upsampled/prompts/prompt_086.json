@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "blue Pacific waves crashing against rugged Big Sur cliffs",
+      "appearance_details": "cold blue water, white-tipped surf, foamy impact bursts, and rolling swell lines striking dark rock",
+      "relationship": "main natural motion subject shaping the coastline view",
+      "location": "below the cliff edge along Garay Point Beach near Big Sur",
+      "relative_size": "vast ocean surface dwarfing rocks, road, and distant island",
+      "orientation": "waves moving diagonally from open sea toward the rocky shore",
+      "pose": "continuous swell pattern curling and breaking at the cliff base",
+      "action": "crashes against the rugged cliffs and spreads white foam along the rocks",
+      "state_changes": "blue waves rise; white foam blooms at impact; water pulls back into the sea",
+      "clothing": "",
+      "expression": "powerful and untamed",
+      "gender": "",
+      "age": "natural coastal ocean",
+      "skin_tone_and_texture": "deep blue water with white foam, spray, and reflective sunset highlights",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "rugged cliff edge with green shrubbery",
+      "appearance_details": "steep rocky drop, jagged edges jutting over the sea, low green shrubs, and a road high above the beach",
+      "relationship": "coastal landform framing the crashing waves",
+      "location": "right and lower frame edges beneath the drone path",
+      "relative_size": "massive landform larger than lighthouse island and shoreline details",
+      "orientation": "cliff line running diagonally along the coast",
+      "pose": "fixed steep face dropping sharply to the beach",
+      "action": "stands against the surf while wind brushes the shrubs",
+      "state_changes": "sunset light warms the rocks; shrubs flutter subtly; wave spray darkens lower stone",
+      "clothing": "",
+      "expression": "dramatic and rugged",
+      "gender": "",
+      "age": "ancient coastal rock formation",
+      "skin_tone_and_texture": "rough dark stone, golden dry grass, and dense green coastal shrubs",
+      "facial_features": "jagged cliff contours and protruding ledges",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "distant small island with a lighthouse",
+      "appearance_details": "rocky offshore island holding a slender lighthouse silhouette, softened by sea haze and sunset glow",
+      "relationship": "distant focal landmark beyond the crashing coast",
+      "location": "far background across the water",
+      "relative_size": "small against the ocean and cliffs",
+      "orientation": "upright lighthouse centered on the island",
+      "pose": "stationary horizon landmark",
+      "action": "remains still as waves and drone motion create parallax around it",
+      "state_changes": "island becomes clearer as the drone angle shifts; lighthouse edge catches warm light; sea haze changes subtly",
+      "clothing": "",
+      "expression": "quiet coastal beacon",
+      "gender": "",
+      "age": "coastal lighthouse structure",
+      "skin_tone_and_texture": "pale lighthouse surface and dark rocky island textures under golden light",
+      "facial_features": "vertical tower profile with small lantern room",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "The Big Sur coast near Garay Point Beach, with the Pacific Coast Highway high above a steep cliff, rugged shoreline below, open ocean, and a lighthouse island in the distance.",
+  "lighting": {
+    "conditions": "Golden sunset light grazing rocks and shrubbery, cool blue water in shadow, white foam catching bright highlights, and soft haze on the horizon.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Golden sunset light grazing rocks and shrubbery, cool blue water in shadow, white foam catching bright highlights, and soft haze on the horizon."
+  },
+  "aesthetics": {
+    "composition": "Raw coastal beauty, dramatic elevation, sweeping drone scale, blue surf against warm cliffs, and wild Pacific atmosphere.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Raw coastal beauty, dramatic elevation, sweeping drone scale, blue surf against warm cliffs, and wild Pacific atmosphere.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "High drone view gliding along the cliff edge and tilting down to reveal waves crashing far below, then drifting toward the distant lighthouse island.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic aerial landscape text-to-video.",
+  "artistic_style": "Cinematic natural coast documentary with grand scale, clean aerial motion, and sunset contrast.",
+  "context": "A drone surveys the rugged Big Sur coastline as Pacific waves hammer the cliffs near a dramatic drop from road to beach.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The drone looks down over the cliff edge as blue waves roll toward the rocky shore."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "White-tipped surf crashes against the cliffs, sending foam outward while golden light warms the rocks."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The view glides outward to include the distant lighthouse island and the green shrub-covered cliff rim."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Open with a high drone view over the steep Big Sur cliff and incoming waves.",
+      "key_changes": "cliff edge reveals height; waves approach shore; sunset glow defines rocks",
+      "camera": "aerial drone tilt-down along the cliff"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Track the main wave impacts against rugged rocks and foaming shoreline.",
+      "key_changes": "surf breaks into white foam; spray rises; water retreats and reforms",
+      "camera": "smooth lateral drone glide following the coastline"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Widen to show the road drop, shrubbery, open sea, and lighthouse island.",
+      "key_changes": "island enters clearer view; coastline scale expands; golden horizon deepens",
+      "camera": "wide drone pullback with horizon reveal"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A drone glides above Big Sur cliffs as blue Pacific waves crash below and a distant lighthouse island glows in sunset light.",
+  "audio_description": "Crashing surf, wind over cliffs, distant gulls, low ocean rumble, and faint aerial ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

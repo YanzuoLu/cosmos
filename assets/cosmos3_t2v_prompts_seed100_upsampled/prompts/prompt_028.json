@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "Vibrant green sea turtle swimming through a turquoise ocean near a coral reef.",
+      "appearance_details": "Distinct patterned shell, green head and flippers, textured scales, calm eyes, smooth streamlined movement through clear water.",
+      "relationship": "Single main turtle subject moving among fish, coral, and gentle waves.",
+      "location": "Midwater foreground above a colorful coral reef, with schools of fish in the background.",
+      "relative_size": "Large compared with nearby fish and reef details, centered as the primary subject.",
+      "orientation": "Swimming from left to right, occasionally angling upward toward the surface.",
+      "pose": "Front flippers extended in a broad gliding stroke, shell level, head slightly raised.",
+      "action": "Swims smoothly through the ocean and rises briefly toward the surface to breathe.",
+      "state_changes": "Starts gliding over reef, moves through fish schools, ends angling upward with surface light brightening above.",
+      "clothing": "None, natural shell and scales only.",
+      "expression": "Calm, gentle, and unhurried.",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "Green scaled skin with patterned hard shell, natural mottled texture and wet reflective highlights.",
+      "facial_features": "Small dark eyes, beaked mouth, patterned head scales.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Turquoise ocean with a colorful coral reef below, schools of small fish, gentle wave patterns near the surface, and clear water extending into the distance.",
+  "lighting": {
+    "conditions": "Warm sunlight filters through the surface, casting caustic patterns across the turtle shell, coral, and fish.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Warm sunlight filters through the surface, casting caustic patterns across the turtle shell, coral, and fish."
+  },
+  "aesthetics": {
+    "composition": "Graceful, bright, tropical, peaceful, biodiverse, richly colored reef environment.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Graceful, bright, tropical, peaceful, biodiverse, richly colored reef environment.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Smooth underwater side tracking shot, medium wide framing, camera follows the turtle while reef and fish slide past in layered parallax.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Realistic text to video marine wildlife scene with natural swimming and underwater light physics.",
+  "artistic_style": "Cinematic ocean documentary realism with saturated turquoise and coral colors.",
+  "context": "A green sea turtle travels through a healthy tropical reef ecosystem and nears the surface for air.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The turtle glides over the coral reef, front flippers sweeping slowly through clear water."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It passes through colorful fish as sunlight ripples across its shell and the reef below."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The turtle angles gently upward toward the surface, preparing to break through for a breath."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Green sea turtle centered above coral in bright turquoise water.",
+      "key_changes": "Green sea turtle centered above coral in bright turquoise water.",
+      "camera": "Smooth underwater side tracking shot, medium wide framing, camera follows the turtle while reef and fish slide past in layered parallax."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Schools of fish surround the turtle while coral textures pass below.",
+      "key_changes": "Schools of fish surround the turtle while coral textures pass below.",
+      "camera": "Smooth underwater side tracking shot, medium wide framing, camera follows the turtle while reef and fish slide past in layered parallax."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Surface glow grows brighter above as the turtle lifts its head.",
+      "key_changes": "Surface glow grows brighter above as the turtle lifts its head.",
+      "camera": "Smooth underwater side tracking shot, medium wide framing, camera follows the turtle while reef and fish slide past in layered parallax."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "0:00-0:02 a green sea turtle glides above coral. 0:02-0:05 it swims through fish in warm filtered light. 0:05-0:07 it rises toward the turquoise surface to breathe.",
+  "audio_description": "Muffled underwater current, soft bubbles, distant reef crackle, faint movement of passing fish.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

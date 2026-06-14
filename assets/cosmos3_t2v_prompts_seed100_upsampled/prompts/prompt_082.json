@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "translucent spherical glass ornament holding a miniature Zen garden",
+      "appearance_details": "clear glass sphere with subtle refraction, suspended in soft light, enclosing raked sand, tiny stones, and miniature plants",
+      "relationship": "main object containing the tiny animated world",
+      "location": "center frame in close-up against a softly diffused background",
+      "relative_size": "large in frame, with the inner world appearing tiny and delicate",
+      "orientation": "front-facing sphere with the garden visible through curved glass",
+      "pose": "hanging nearly still with a faint natural sway",
+      "action": "reveals the miniature garden through shifting reflections and warm highlights",
+      "state_changes": "glass reflections drift slightly; warm highlights slide across the curve; inner sand patterns become clearer",
+      "clothing": "",
+      "expression": "serene and enchanted",
+      "gender": "",
+      "age": "crafted decorative object",
+      "skin_tone_and_texture": "smooth transparent glass with glossy refraction and tiny dust-free clarity",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "tiny animated dwarf raking sand inside the ornament",
+      "appearance_details": "grain-of-sand scale figure with small robe, tiny rake, careful movements, and precise body gestures",
+      "relationship": "miniature caretaker of the Zen garden inside the sphere",
+      "location": "inside the glass sphere at the center of the raked sand",
+      "relative_size": "extremely small compared with the glass ornament and garden stones",
+      "orientation": "facing across the sand bed while working around stones",
+      "pose": "slightly bent forward with both hands guiding a miniature rake",
+      "action": "rakes intricate curved patterns through the sand with patient precision",
+      "state_changes": "sand grooves form behind the rake; dwarf steps carefully between stones; patterns grow more elaborate over time",
+      "clothing": "simple earth-toned miniature robe and tiny work shoes",
+      "expression": "focused and peaceful",
+      "gender": "Unknown",
+      "age": "adult fantasy miniature",
+      "skin_tone_and_texture": "tiny natural skin texture, mostly obscured by scale and warm light",
+      "facial_features": "minute face with concentrated eyes and a calm mouth",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Soft diffused studio-like space behind the suspended ornament, with warm bokeh and no visible room detail distracting from the miniature world.",
+  "lighting": {
+    "conditions": "Gentle warm backlight and soft frontal fill, creating glass refraction, glowing edges, and delicate highlights on sand and stones.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Gentle warm backlight and soft frontal fill, creating glass refraction, glowing edges, and delicate highlights on sand and stones."
+  },
+  "aesthetics": {
+    "composition": "Magical macro realism, serene miniature craftsmanship, translucent glass, fine sand texture, and quiet enchanted movement.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Magical macro realism, serene miniature craftsmanship, translucent glass, fine sand texture, and quiet enchanted movement.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Extreme close-up macro shot with shallow depth of field, slow push-in, and careful focus through curved glass onto the tiny dwarf.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic macro fantasy text-to-video.",
+  "artistic_style": "Serene magical realism with handcrafted detail and warm contemplative tone.",
+  "context": "A suspended glass ornament contains a living miniature Zen garden where a tiny dwarf patiently shapes sand patterns.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera settles on the glowing glass sphere and reveals the miniature Zen garden inside."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The tiny dwarf rakes curved lines into the sand, stepping carefully around stones and plants."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The glass sphere sways faintly as the completed sand pattern catches warm light."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the suspended translucent ornament and the tiny garden visible through the glass.",
+      "key_changes": "sphere comes into focus; inner stones and sand appear; warm glow increases",
+      "camera": "macro close-up with slow push-in"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Focus through the glass on the dwarf raking intricate sand designs.",
+      "key_changes": "rake lines deepen; dwarf crosses the sand; miniature plants shift slightly in perspective",
+      "camera": "locked macro focus with slight focus breathing"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold on the finished pattern inside the glowing ornament.",
+      "key_changes": "sphere sways subtly; reflections slide; sand design reads clearly",
+      "camera": "still close-up with delicate parallax"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A translucent glass sphere reveals a tiny dwarf calmly raking a miniature Zen garden inside.",
+  "audio_description": "Soft room tone, faint glass chime, delicate sand scraping, tiny footfalls, and warm quiet ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

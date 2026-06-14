@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "golden retriever wearing futuristic virtual reality goggles",
+      "appearance_details": "friendly golden retriever with sleek reflective VR goggles, warm fur detail, relaxed seated posture, and curious head movement",
+      "relationship": "central dog subject immersed in a virtual reality experience",
+      "location": "center of a cozy backyard on a lush green lawn",
+      "relative_size": "medium dog scale, central focus against the wider backyard",
+      "orientation": "facing slightly toward camera with head turning as if following unseen virtual motion",
+      "pose": "sitting comfortably with paws planted and head lifted",
+      "action": "reacts gently to the VR experience while the camera widens around the backyard",
+      "state_changes": "head tilts, ears perk, goggles reflect sunset color, fur glows warmer as the camera pulls back",
+      "clothing": "sleek futuristic virtual reality goggles",
+      "expression": "curious, absorbed, and calm",
+      "gender": "Unknown",
+      "age": "adult dog",
+      "skin_tone_and_texture": "golden fur with detailed strands, sunset highlights, and soft realistic texture",
+      "facial_features": "dark nose, floppy ears, relaxed mouth, eyes hidden behind glossy VR lenses",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "Cozy backyard with lush green lawn, warm sunset sky blending orange and pink, soft garden edges, and an open space that becomes more visible as the perspective widens.",
+  "lighting": {
+    "conditions": "Golden sunset light casts warm highlights over the lawn, fur, and reflective VR goggles.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Golden sunset light casts warm highlights over the lawn, fur, and reflective VR goggles."
+  },
+  "aesthetics": {
+    "composition": "Warm backyard futurism, friendly dog portrait, soft sunset colors, crisp fur texture, and playful high-tech detail.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Warm backyard futurism, friendly dog portrait, soft sunset colors, crisp fur texture, and playful high-tech detail.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Starts as a medium dog portrait and gradually widens into a panoramic backyard view with the dog centered.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action text-to-video.",
+  "artistic_style": "Charming near-future pet realism with cinematic sunset warmth and crisp material detail.",
+  "context": "A golden retriever sits in a cozy backyard at sunset, wearing futuristic VR goggles and appearing fully immersed in the experience.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The golden retriever sits on the backyard lawn, VR goggles reflecting orange and pink sunset light."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The dog tilts its head and perks its ears as if tracking something inside the virtual world."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera widens to a panoramic view of the backyard with the dog still centered and absorbed."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the dog and its sleek VR goggles in warm sunset light.",
+      "key_changes": "Goggles catch colored reflections, fur glows gold, lawn texture is crisp.",
+      "camera": "Medium portrait shot at dog height."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Show the dog reacting to the unseen virtual experience.",
+      "key_changes": "Head tilts, ears perk, reflections shift across the goggles.",
+      "camera": "Gentle close tracking around the face."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Reveal the wider cozy backyard as sunset color fills the frame.",
+      "key_changes": "Perspective widens, lawn and sky expand, the dog remains centered and still engaged.",
+      "camera": "Slow pullback to a panoramic wide shot."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A golden retriever wearing sleek VR goggles sits in a sunset backyard, tilts its head, and remains immersed as the view widens.",
+  "audio_description": "Soft backyard ambience, light evening breeze, distant birds, faint dog breathing, and a quiet electronic hum from the goggles.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

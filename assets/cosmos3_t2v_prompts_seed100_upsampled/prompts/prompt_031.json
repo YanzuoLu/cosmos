@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "single sailboat with a clean white hull and one white sail",
+      "appearance_details": "smooth hull reflecting sunset gold, taut triangular sail, slim mast, faint ripples mirrored along the side",
+      "relationship": "main moving subject crossing a calm lake within a wide sunset landscape",
+      "location": "center frame on the lake surface, moving from left middle distance toward right foreground",
+      "relative_size": "medium against the broad lake and distant horizon",
+      "orientation": "bow angled slightly right, sail facing the fading sun",
+      "pose": "upright and balanced on still water",
+      "action": "glides smoothly while the sail catches the last warm light",
+      "state_changes": "reflections shift from orange to indigo as the sky darkens",
+      "clothing": "",
+      "expression": "serene and unhurried",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "painted white fiberglass with glossy sunset highlights",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "vast calm lake at sunset with dark tree silhouettes, low mountains on the horizon, and a sky shifting from orange and pink near the sun to deep indigo above",
+  "lighting": {
+    "conditions": "warm golden sunset light on the boat and water, fading into cool blue twilight with soft reflections",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "warm golden sunset light on the boat and water, fading into cool blue twilight with soft reflections"
+  },
+  "aesthetics": {
+    "composition": "peaceful, cinematic, reflective, spacious, natural color contrast",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "peaceful, cinematic, reflective, spacious, natural color contrast",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "wide steady tracking shot from low lake level, slow lateral follow, gentle depth from foreground ripples to distant mountains",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "photorealistic text to video nature scene",
+  "artistic_style": "quiet cinematic realism with soft sunset grading and clean atmospheric depth",
+  "context": "a lone sailboat moves across a silent lake as evening settles over the landscape",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "the sailboat enters the wide frame, its white hull catching orange light while small ripples spread outward"
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "the camera tracks the boat across glassy water as the sail glows and the distant trees deepen into silhouettes"
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "the boat continues into cooler twilight tones, leaving a soft wake under an indigo sky"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "the sailboat enters the wide frame, its white hull catching orange light while small ripples spread outward",
+      "key_changes": "the sailboat enters the wide frame, its white hull catching orange light while small ripples spread outward",
+      "camera": "wide steady tracking shot from low lake level, slow lateral follow, gentle depth from foreground ripples to distant mountains"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "the camera tracks the boat across glassy water as the sail glows and the distant trees deepen into silhouettes",
+      "key_changes": "the camera tracks the boat across glassy water as the sail glows and the distant trees deepen into silhouettes",
+      "camera": "wide steady tracking shot from low lake level, slow lateral follow, gentle depth from foreground ripples to distant mountains"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "the boat continues into cooler twilight tones, leaving a soft wake under an indigo sky",
+      "key_changes": "the boat continues into cooler twilight tones, leaving a soft wake under an indigo sky",
+      "camera": "wide steady tracking shot from low lake level, slow lateral follow, gentle depth from foreground ripples to distant mountains"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A white sailboat glides across a tranquil lake at sunset as warm reflections fade into blue twilight.",
+  "audio_description": "gentle water lapping against the hull, faint sail cloth movement, distant bird calls, quiet evening air",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

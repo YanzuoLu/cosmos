@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "young boy petting a golden retriever named Max",
+      "appearance_details": "child kneeling or crouching close to the dog, smiling as he strokes the soft fur",
+      "relationship": "loving companion to the dog",
+      "location": "left foreground on a green lawn beside the retriever",
+      "relative_size": "small child scale, slightly taller than the lying dog when crouched",
+      "orientation": "facing down and toward the dog with open body language",
+      "pose": "crouched with one hand extended to pet the dog",
+      "action": "gently pets Max along the head and back",
+      "state_changes": "smile brightens; hand moves in slow strokes; posture relaxes beside the dog",
+      "clothing": "blue t-shirt and jeans",
+      "expression": "joyful, affectionate, relaxed",
+      "gender": "Male",
+      "age": "young child",
+      "skin_tone_and_texture": "natural child skin with warm sunlight and soft outdoor texture",
+      "facial_features": "bright eyes, rounded cheeks, wide smile",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "golden retriever dog named Max",
+      "appearance_details": "soft fluffy golden fur, friendly body language, lying comfortably on the grass",
+      "relationship": "beloved pet receiving affection from the boy",
+      "location": "right foreground on the lawn among flowers",
+      "relative_size": "medium dog scale, lower than the crouching boy",
+      "orientation": "body angled toward the boy, head lifted slightly toward his hand",
+      "pose": "lying comfortably with tail free to wag",
+      "action": "enjoys the petting and wags its tail happily",
+      "state_changes": "tail wags more visibly; ears relax; body stays calm and content",
+      "clothing": "no clothing",
+      "expression": "content and trusting",
+      "gender": "Unknown",
+      "age": "adult dog",
+      "skin_tone_and_texture": "soft golden fur with sunlight on individual strands",
+      "facial_features": "warm brown eyes, dark nose, relaxed mouth",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "Green grass lawn bordered by colorful flowers, leafy trees, and a sunny open sky, creating a peaceful backyard or park setting.",
+  "lighting": {
+    "conditions": "Bright warm sunlight with soft natural shadows and gentle highlights on hair, fur, petals, and grass.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Bright warm sunlight with soft natural shadows and gentle highlights on hair, fur, petals, and grass."
+  },
+  "aesthetics": {
+    "composition": "Heartwarming family-pet realism, vivid greens, golden fur, colorful flowers, and tender outdoor calm.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Heartwarming family-pet realism, vivid greens, golden fur, colorful flowers, and tender outdoor calm.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low medium shot at child and dog height, shallow depth of field, slow gentle camera drift following the petting motion.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action outdoor video.",
+  "artistic_style": "Warm family documentary style with soft color and natural movement.",
+  "context": "A boy shares a quiet affectionate moment with his golden retriever on a sunny lawn.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The boy crouches beside Max and reaches toward the dog with a happy smile."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "He strokes the retriever gently while Max lies in the grass and wags its tail."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The dog relaxes into the attention as flowers sway lightly in the background."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the sunny lawn, colorful flowers, smiling boy, and golden retriever.",
+      "key_changes": "Introduce the sunny lawn, colorful flowers, smiling boy, and golden retriever.",
+      "camera": "Low medium shot at child and dog height, shallow depth of field, slow gentle camera drift following the petting motion."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Hold close on the boy petting Max, with clear fur movement and tail wagging.",
+      "key_changes": "Hold close on the boy petting Max, with clear fur movement and tail wagging.",
+      "camera": "Low medium shot at child and dog height, shallow depth of field, slow gentle camera drift following the petting motion."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Widen slightly to show the peaceful garden setting around the pair.",
+      "key_changes": "Widen slightly to show the peaceful garden setting around the pair.",
+      "camera": "Low medium shot at child and dog height, shallow depth of field, slow gentle camera drift following the petting motion."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A young boy in a blue t-shirt gently pets his happy golden retriever Max on a sunny green lawn.",
+  "audio_description": "Birdsong, light breeze through trees, soft grass movement, a dog panting gently, and distant outdoor ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

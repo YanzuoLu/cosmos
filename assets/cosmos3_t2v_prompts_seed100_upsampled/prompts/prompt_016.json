@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "little boy running barefoot on a sandy beach at sunset",
+      "appearance_details": "shorts and t shirt, bare feet kicking soft sand, lively child posture, hair moving in the breeze",
+      "relationship": "child running ahead while family watches from the distance",
+      "location": "wet and dry sand near the calm turquoise sea",
+      "relative_size": "small foreground figure with family appearing small in the distance",
+      "orientation": "running diagonally along the shore with face turned slightly toward the cheering family",
+      "pose": "mid stride with arms swinging and knees lifted",
+      "action": "runs barefoot across the sand as seagulls fly overhead and palm trees sway",
+      "state_changes": "starts in a quick run, glances toward family, then speeds forward with playful energy",
+      "clothing": "summer t shirt and shorts",
+      "expression": "happy, excited, carefree",
+      "gender": "Male",
+      "age": "little child",
+      "skin_tone_and_texture": "natural child skin texture warmed by orange sunset light, exact tone unspecified",
+      "facial_features": "bright eyes, open smile, wind touched hair",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Sandy tropical beach with calm turquoise sea, orange sunset sky, palm trees along the shore, seagulls overhead, and a smiling family in the distance.",
+  "lighting": {
+    "conditions": "Warm sunset light reflecting on the water and sand, with soft orange highlights and long gentle shadows.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Warm sunset light reflecting on the water and sand, with soft orange highlights and long gentle shadows."
+  },
+  "aesthetics": {
+    "composition": "Carefree coastal joy, warm family atmosphere, soft sand motion, serene ocean backdrop.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Carefree coastal joy, warm family atmosphere, soft sand motion, serene ocean backdrop.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low tracking shot near the sand, following the boy's run while keeping the glowing sea and distant family visible.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic text to video",
+  "artistic_style": "natural beach film style with smooth running motion, believable sand displacement, and warm sunset color",
+  "context": "A little boy enjoys the beach at sunset while his family cheers him on from the shoreline.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Boy starts running barefoot across the sand as sunset color reflects on the sea."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "He runs faster, kicking up small puffs of sand while seagulls cross the orange sky."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "He turns his smile toward the distant family, then keeps running beside the calm water."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the sunset beach, turquoise water, palm trees, seagulls, and running boy.",
+      "key_changes": "Establish the sunset beach, turquoise water, palm trees, seagulls, and running boy.",
+      "camera": "Low tracking shot near the sand, following the boy's run while keeping the glowing sea and distant family visible."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Track the barefoot run with sand movement and warm ocean reflections.",
+      "key_changes": "Track the barefoot run with sand movement and warm ocean reflections.",
+      "camera": "Low tracking shot near the sand, following the boy's run while keeping the glowing sea and distant family visible."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Reveal the distant family cheering as the boy continues along the shore.",
+      "key_changes": "Reveal the distant family cheering as the boy continues along the shore.",
+      "camera": "Low tracking shot near the sand, following the boy's run while keeping the glowing sea and distant family visible."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Over seven seconds, a little boy runs barefoot along a sunset beach while seagulls fly, palms sway, and his family cheers in the distance.",
+  "audio_description": "Soft waves, child's running footsteps in sand, distant family cheers, seagulls, light breeze through palms.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

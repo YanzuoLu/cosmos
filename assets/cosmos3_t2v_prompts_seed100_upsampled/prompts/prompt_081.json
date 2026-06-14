@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "snowmobile rider speeding through a winter mountain road",
+      "appearance_details": "bundled adult rider with insulated jacket, gloves, helmet, visor, and visible breath in the freezing air",
+      "relationship": "primary rider controlling the snowmobile through the snowy landscape",
+      "location": "center foreground on a winding snow-covered road",
+      "relative_size": "medium human figure seated on a larger snowmobile, dominant in the frame",
+      "orientation": "facing forward along the road with body leaned into each curve",
+      "pose": "seated low with both hands gripping the handlebars and shoulders braced against speed",
+      "action": "accelerates around icy bends while tracking the road ahead",
+      "state_changes": "breath puffs appear and vanish; jacket and helmet gather drifting snow; body lean shifts with each turn",
+      "clothing": "thick winter jacket, padded snow pants, gloves, boots, and full protective helmet",
+      "expression": "determined and focused, mostly hidden by visor",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "mostly covered by winter gear, with only cold-air breath and small exposed areas visible",
+      "facial_features": "helmet visor hides most features, head angle shows concentration",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "snowmobile cutting fresh tracks through snow",
+      "appearance_details": "compact winter vehicle with black runners, textured seat, handlebars, front cowling, and churning rear tread",
+      "relationship": "vehicle carrying the rider and creating motion through the scene",
+      "location": "beneath the rider on the snowy road",
+      "relative_size": "large vehicle in the foreground, smaller than the surrounding mountains",
+      "orientation": "nose pointed down the curving road",
+      "pose": "low, forward-moving stance with suspension absorbing uneven snow",
+      "action": "speeds along the road and sprays powder from the rear tread",
+      "state_changes": "fresh tracks stretch behind it; powder bursts at curves; engine vibration trembles through the body",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "modern winter vehicle",
+      "skin_tone_and_texture": "glossy metal and plastic panels dusted with fine snow",
+      "facial_features": "headlight and front cowling form the visible front profile",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A pristine white mountain landscape with a narrow winding snowy road, distant snow-capped peaks, icy curves, evergreen edges, and untouched powder beyond the track.",
+  "lighting": {
+    "conditions": "Bright cold daylight reflecting off snow, crisp blue shadows, sunlit peaks, and sparkling ice highlights.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Bright cold daylight reflecting off snow, crisp blue shadows, sunlit peaks, and sparkling ice highlights."
+  },
+  "aesthetics": {
+    "composition": "Adrenaline-driven winter realism with clean snow textures, visible speed, powder spray, and sweeping alpine scale.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Adrenaline-driven winter realism with clean snow textures, visible speed, powder spray, and sweeping alpine scale.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Rider-perspective action shot from low front-side tracking, slight vibration, wide 16:9 framing, and fast but readable motion around curves.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action text-to-video.",
+  "artistic_style": "Cinematic outdoor adventure with crisp detail, high contrast snow, and dynamic mountain motion.",
+  "context": "A winter rider takes a thrilling snowmobile run through a remote mountain road while the landscape rushes past.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The rider enters a curving snowy road as the snowmobile engine surges and powder begins to trail behind."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The snowmobile leans through icy bends, carving fresh tracks while distant peaks flash through the frame."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The rider straightens out, breath steaming in the cold as the vehicle races deeper into the white landscape."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the rider, snowmobile, and winding mountain road from a fast low tracking angle.",
+      "key_changes": "engine acceleration begins; powder spray starts; fresh tracks appear",
+      "camera": "low front-side tracking shot with slight vibration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow the snowmobile through the main icy curves with mountains filling the horizon.",
+      "key_changes": "rider leans into turns; snow plume widens; peaks pass in the background",
+      "camera": "dynamic rider-perspective tracking with controlled motion blur"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The vehicle exits the curve and speeds forward into open snow.",
+      "key_changes": "road straightens; breath plume is visible; tracks extend behind",
+      "camera": "steady forward chase view with wide alpine framing"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A bundled snowmobile rider races along a winding snowy mountain road, carving fresh tracks through bright winter powder.",
+  "audio_description": "Roaring snowmobile engine, treads grinding through snow, wind rush, powder spray, and faint cold mountain ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

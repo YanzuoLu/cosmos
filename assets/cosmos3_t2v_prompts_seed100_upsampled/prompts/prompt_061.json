@@ -1,0 +1,104 @@
+{
+  "subjects": [
+    {
+      "description": "experienced investor reviewing financial data at a wooden desk",
+      "appearance_details": "composed professional with reading glasses, precise posture, and measured hand movements over organized papers",
+      "relationship": "primary human subject making investment decisions in a private office",
+      "location": "seated behind a polished wooden desk in the foreground",
+      "relative_size": "medium human scale, dominant figure in the office composition",
+      "orientation": "facing the desk at a slight angle, occasionally looking down through glasses",
+      "pose": "seated upright with shoulders squared and hands near the papers and calculator",
+      "action": "reviews financial statements, compares figures, and considers a strategic investment choice",
+      "state_changes": "eyes scan columns, fingers adjust papers, hand taps the calculator, posture tightens with concentration",
+      "clothing": "tailored dark suit, crisp shirt, understated tie, reading glasses",
+      "expression": "focused, analytical, quietly decisive",
+      "gender": "Male",
+      "age": "middle-aged adult",
+      "skin_tone_and_texture": "natural office-lit skin with subtle facial lines and realistic texture",
+      "facial_features": "defined jaw, neat hair, attentive eyes behind reading glasses",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Modern well-lit office with floor-to-ceiling windows overlooking a city skyline, polished wood surfaces, framed modern art, neatly stacked financial statements, pens, and a vintage mahogany calculator arranged with care.",
+  "lighting": {
+    "conditions": "Clean daylight from tall windows mixed with soft office fill, creating gentle reflections on glass, paper, polished wood, and the calculator.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Clean daylight from tall windows mixed with soft office fill, creating gentle reflections on glass, paper, polished wood, and the calculator."
+  },
+  "aesthetics": {
+    "composition": "Refined corporate realism, warm mahogany against cool city glass, orderly documents, quiet wealth, and disciplined focus.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Refined corporate realism, warm mahogany against cool city glass, orderly documents, quiet wealth, and disciplined focus.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Medium office shot from desk height with shallow focus on the investor, slow push-in across the papers, and skyline depth behind him.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action text-to-video.",
+  "artistic_style": "Elegant modern business drama with crisp detail, controlled contrast, and calm decision-making tension.",
+  "context": "An experienced investor studies financial statements in a high-rise office, using careful analysis before making a strategic investment decision.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The investor sits at the polished desk, adjusts his reading glasses, and lowers his gaze to the financial statements."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "He compares the printed figures, taps the vintage mahogany calculator, and slides one document closer."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "He pauses with a concentrated look, steadies the paper stack, and appears to settle on a decision."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "Financial statements show small printed tables, numbers, and column lines without readable specific words.",
+      "category": "scene_sign",
+      "appearance": "visible scene text or signage",
+      "spatial_temporal": "visible during the relevant shot interval",
+      "context": "environmental detail"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the bright office, city skyline, modern art, and investor seated at the wooden desk.",
+      "key_changes": "Glasses adjust, daylight catches the desk, documents become the visual focus.",
+      "camera": "Stable medium shot from desk height with a gentle push-in."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Focus on the investor scanning papers and using the vintage calculator.",
+      "key_changes": "Paper edges shift, calculator keys depress, eyes move across data columns.",
+      "camera": "Close desk-level framing with shallow depth of field."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Return to the investor as he pauses in focused decision-making.",
+      "key_changes": "Hand stills on the documents, expression settles into quiet confidence.",
+      "camera": "Medium close shot holding steady with skyline softly blurred."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "An experienced investor studies financial statements at a polished wooden desk, uses a vintage calculator, and settles into a strategic decision.",
+  "audio_description": "Soft office ambience, faint city hum behind glass, paper rustle, subtle calculator clicks, and a quiet wooden desk tap.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "decorated backyard oak tree",
+      "appearance_details": "thick sturdy trunk, broad green and autumn-tinted canopy, branches hung with orange and black balloons, gauzy spiderwebs, and small fluttering ghost decorations",
+      "relationship": "main festive centerpiece in the suburban backyard",
+      "location": "center of a neatly maintained backyard near hedges and a path to a quaint house",
+      "relative_size": "large tree towering over the decorations, pumpkin, hedges, and path",
+      "orientation": "upright with branches spreading above the yard",
+      "pose": "rooted and still while decorations move lightly",
+      "action": "holds Halloween decorations that sway and flutter in the autumn breeze",
+      "state_changes": "balloons bob, spiderweb strands ripple, ghost decorations shift gently",
+      "clothing": "Halloween decorations of balloons, webs, and hanging ghosts",
+      "expression": "festive and playful",
+      "gender": "",
+      "age": "mature oak tree",
+      "skin_tone_and_texture": "rough brown bark with dense leafy canopy",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "glowing carved pumpkin",
+      "appearance_details": "large orange jack-o-lantern with an intricately carved face and warm light shining from within",
+      "relationship": "festive prop placed at the base of the decorated oak",
+      "location": "on the ground at the oak tree base",
+      "relative_size": "small compared with the tree, prominent in the lower foreground",
+      "orientation": "carved face turned toward the camera",
+      "pose": "resting on the ground",
+      "action": "glows steadily while nearby decorations sway",
+      "state_changes": "inner candlelight flickers softly through the carved face",
+      "clothing": "",
+      "expression": "warm spooky grin",
+      "gender": "",
+      "age": "fresh carved pumpkin",
+      "skin_tone_and_texture": "smooth ribbed orange rind with carved cut edges",
+      "facial_features": "triangular eyes, carved nose, detailed glowing mouth",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A suburban backyard with neatly trimmed hedges, a clean garden path, and a quaint house beyond the tree. The scene is filled with soft autumn color and festive Halloween detail.",
+  "lighting": {
+    "conditions": "soft autumn sunlight with warm highlights, gentle shade under the oak canopy, pumpkin glow adding orange accent light",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "soft autumn sunlight with warm highlights, gentle shade under the oak canopy, pumpkin glow adding orange accent light"
+  },
+  "aesthetics": {
+    "composition": "family-friendly Halloween atmosphere, cozy suburban yard, playful spooky decorations, warm seasonal colors",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "family-friendly Halloween atmosphere, cozy suburban yard, playful spooky decorations, warm seasonal colors",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "medium-wide backyard shot with a slow push-in from the path toward the tree and pumpkin, stable cinematic framing",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic festive text-to-video with natural outdoor lighting and detailed decorations",
+  "artistic_style": "cozy autumn holiday vignette with inviting suburban charm",
+  "context": "The video presents a backyard oak transformed into a cheerful Halloween centerpiece on a calm autumn day.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The shot opens on the decorated oak, hedges, path, and house in warm autumn light."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The camera eases closer as balloons bob, ghost decorations flutter, and spiderwebs ripple."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Focus settles on the glowing jack-o-lantern beneath the tree while decorations continue to sway."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Festive oak tree fills the backyard with Halloween balloons, webs, ghosts, and warm sunlight.",
+      "key_changes": "Festive oak tree fills the backyard with Halloween balloons, webs, ghosts, and warm sunlight.",
+      "camera": "medium-wide backyard shot with a slow push-in from the path toward the tree and pumpkin, stable cinematic framing"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Decorations move gently in the breeze as the path and hedges frame the scene.",
+      "key_changes": "Decorations move gently in the breeze as the path and hedges frame the scene.",
+      "camera": "medium-wide backyard shot with a slow push-in from the path toward the tree and pumpkin, stable cinematic framing"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The glowing carved pumpkin at the base of the tree becomes the final focal point.",
+      "key_changes": "The glowing carved pumpkin at the base of the tree becomes the final focal point.",
+      "camera": "medium-wide backyard shot with a slow push-in from the path toward the tree and pumpkin, stable cinematic framing"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A decorated oak tree in a suburban backyard sways with Halloween balloons, webs, and ghosts while a carved pumpkin glows at its base.",
+  "audio_description": "light autumn breeze, faint balloon creaks, soft rustling leaves, quiet suburban ambience",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

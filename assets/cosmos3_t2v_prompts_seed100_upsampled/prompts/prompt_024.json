@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "Majestic Tyrannosaurus Rex surfing a towering prehistoric ocean wave.",
+      "appearance_details": "Deep earthy green scales with darker brown stripes, massive head, sharp teeth, robust torso, muscular tail balancing behind it, wet highlights across textured skin.",
+      "relationship": "Single heroic dinosaur subject riding the wave as the central action figure.",
+      "location": "Center of the wave face on a surfboard like stance, surrounded by foamy prehistoric sea.",
+      "relative_size": "Huge compared with fish and spray, yet the wave rises about twice its height.",
+      "orientation": "Facing diagonally down the wave toward camera left, body twisted for balance.",
+      "pose": "Crouched athletic surfing stance with tail extended as a rudder and tiny arms lifted for balance.",
+      "action": "Rides down the curling face of a massive foamy wave with surprising grace.",
+      "state_changes": "Starts dropping into the wave, carves along the crest through the middle, exits in spray with tail correcting balance.",
+      "clothing": "None, natural scales only.",
+      "expression": "Fierce, focused, exhilarated, mouth partly open to show teeth.",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "Rough scaly green hide with darker striping, wet reflective texture from sea spray.",
+      "facial_features": "Large skull, sharp teeth, heavy brow, forward facing predatory eyes, broad snout.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Vast ancient ocean under warm golden sunlight, schools of fish darting below the clear surface, distant prehistoric coastline barely visible through sea haze.",
+  "lighting": {
+    "conditions": "Golden sun glints through spray, bright highlights on foam, warm reflections across the wave and wet dinosaur scales.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Golden sun glints through spray, bright highlights on foam, warm reflections across the wave and wet dinosaur scales."
+  },
+  "aesthetics": {
+    "composition": "Exhilarating, surreal but physically grounded, cinematic adventure, dynamic water, playful prehistoric spectacle.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Exhilarating, surreal but physically grounded, cinematic adventure, dynamic water, playful prehistoric spectacle.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Wide action shot tracking beside the wave, slight slow motion on spray, strong diagonal composition emphasizing speed and height.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "High energy realistic fantasy text to video with detailed creature animation and ocean simulation.",
+  "artistic_style": "Blockbuster cinematic realism with adventurous color grading and crisp water detail.",
+  "context": "A powerful T Rex improbably surfs a huge wave in a sunlit prehistoric sea while marine life flashes below.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The T Rex drops onto the wave face, claws spread and tail swinging to stabilize its balance."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It carves across the foamy wall of water as fish scatter beneath and golden spray bursts around its legs."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The dinosaur rides out through a plume of foam, tail correcting its line as the crest curls behind it."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Huge green striped T Rex begins its descent on a towering ocean wave.",
+      "key_changes": "Huge green striped T Rex begins its descent on a towering ocean wave.",
+      "camera": "Wide action shot tracking beside the wave, slight slow motion on spray, strong diagonal composition emphasizing speed and height."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Foamy crest rises above the dinosaur, fish shimmer below, spray catches sunlight.",
+      "key_changes": "Foamy crest rises above the dinosaur, fish shimmer below, spray catches sunlight.",
+      "camera": "Wide action shot tracking beside the wave, slight slow motion on spray, strong diagonal composition emphasizing speed and height."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The T Rex bursts through white spray against the ancient sea horizon.",
+      "key_changes": "The T Rex bursts through white spray against the ancient sea horizon.",
+      "camera": "Wide action shot tracking beside the wave, slight slow motion on spray, strong diagonal composition emphasizing speed and height."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "0:00-0:02 a T Rex drops into a giant prehistoric wave. 0:02-0:05 it surfs with its tail acting as a rudder. 0:05-0:07 it exits through glowing foam and spray.",
+  "audio_description": "Roaring surf, explosive foam, splashing water, distant seabirds, low dinosaur growl mixed with rushing wind.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "elderly gentleman holding a hamburger in a cozy cafe",
+      "appearance_details": "weathered face, neatly trimmed beard, seated posture, hands wrapped around a full burger",
+      "relationship": "primary diner enjoying a relaxed meal",
+      "location": "foreground at a wooden cafe table",
+      "relative_size": "medium human scale, seated and filling the frame above the table",
+      "orientation": "facing the burger and slightly toward camera",
+      "pose": "seated comfortably with elbows near the table and burger raised in both hands",
+      "action": "lifts and admires the hamburger before taking a careful bite or pause",
+      "state_changes": "hands steady the burger; expression softens with anticipation; shoulders relax in the cafe setting",
+      "clothing": "casual cafe attire",
+      "expression": "content, relaxed, quietly pleased",
+      "gender": "Male",
+      "age": "elderly",
+      "skin_tone_and_texture": "weathered skin with warm lamp highlights, fine lines, and realistic texture",
+      "facial_features": "neatly trimmed beard, kind eyes, pronounced smile lines",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "classic American-style hamburger on a white plate",
+      "appearance_details": "golden toasted bun, crispy bacon, melted cheese, lettuce, tomato, pickles, and stacked fresh toppings",
+      "relationship": "meal held by the gentleman",
+      "location": "foreground above a white plate on a dark wooden table",
+      "relative_size": "small food item relative to the person, large enough to be visually prominent",
+      "orientation": "stacked vertically with bun top facing camera",
+      "pose": "held between both hands, slightly lifted from the plate",
+      "action": "remains stable as the man prepares to eat",
+      "state_changes": "cheese glistens; lettuce edges shift slightly; burger compresses lightly in his hands",
+      "clothing": "no clothing",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "freshly served food",
+      "skin_tone_and_texture": "toasted bread, crisp bacon, glossy cheese, and fresh vegetable textures",
+      "facial_features": "layered circular bun and visible topping edges",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "Cozy cafe interior with dark wooden tables, warm lamps, softly blurred patrons, and a relaxed conversational atmosphere.",
+  "lighting": {
+    "conditions": "Soft warm cafe lamps with gentle shadows, golden highlights on the burger bun, and flattering light on the man face.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Soft warm cafe lamps with gentle shadows, golden highlights on the burger bun, and flattering light on the man face."
+  },
+  "aesthetics": {
+    "composition": "Inviting cafe realism, dark wood contrast, golden food tones, and a comfortable late-afternoon meal mood.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Inviting cafe realism, dark wood contrast, golden food tones, and a comfortable late-afternoon meal mood.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Medium close shot from table height, shallow focus on the man and burger, stable camera with slight push-in.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action food and portrait video.",
+  "artistic_style": "Warm documentary-style cafe portrait with detailed food texture.",
+  "context": "An elderly man sits at a cafe table and enjoys a well-made hamburger in a calm social setting.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera settles on the elderly gentleman holding the burger over the white plate."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "He lifts the burger slightly and studies the layers with a pleased expression."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "He brings it closer as warm cafe light glows over the table and background."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the cozy cafe, wooden table, white plate, and full hamburger.",
+      "key_changes": "Establish the cozy cafe, wooden table, white plate, and full hamburger.",
+      "camera": "Medium close shot from table height, shallow focus on the man and burger, stable camera with slight push-in."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Focus on the man hands, beard, warm face, and detailed burger toppings.",
+      "key_changes": "Focus on the man hands, beard, warm face, and detailed burger toppings.",
+      "camera": "Medium close shot from table height, shallow focus on the man and burger, stable camera with slight push-in."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the relaxed eating moment with soft cafe chatter in the blurred background.",
+      "key_changes": "Hold the relaxed eating moment with soft cafe chatter in the blurred background.",
+      "camera": "Medium close shot from table height, shallow focus on the man and burger, stable camera with slight push-in."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "An elderly gentleman with a neatly trimmed beard holds a loaded hamburger at a warm wooden cafe table.",
+  "audio_description": "Soft cafe conversation, plate and paper rustle, faint chair movement, and warm indoor room tone.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

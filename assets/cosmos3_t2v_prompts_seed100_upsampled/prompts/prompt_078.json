@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "pink lotus flowers floating on a peaceful lake",
+      "appearance_details": "soft pink petals, yellow centers, broad green lily pads, slender stems below water, and crisp reflections on the still surface",
+      "relationship": "main floral subjects in the high-angle lake composition",
+      "location": "foreground and midground across the calm lake surface",
+      "relative_size": "small natural forms made prominent by close high-angle framing",
+      "orientation": "open blossoms facing upward toward fading evening light",
+      "pose": "floating and gently swaying on subtle water movement",
+      "action": "drift slightly, ripple their reflections, and glow in faint golden afterlight",
+      "state_changes": "petals catch warmer highlights; reflections ripple softly; lily pads shift with water movement",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "fresh blooming lotus flowers",
+      "skin_tone_and_texture": "silky petals, waxy lily pads, smooth stems, and reflective water texture",
+      "facial_features": "yellow centers and layered radial petals",
+      "number_of_subjects": 8,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "peaceful lake surface at evening afterglow",
+      "appearance_details": "smooth water, clear reflections, faint golden light, soft ripples, blurred distant banks, and dreamy background bokeh",
+      "relationship": "serene environment supporting the lotus flowers and reflections",
+      "location": "entire frame beneath the high-angle camera",
+      "relative_size": "broad lake surface filling the composition",
+      "orientation": "flat reflective plane viewed from above",
+      "pose": "calm surface with delicate ripple motion",
+      "action": "reflects lotus flowers and golden sky while subtle ripples pass outward",
+      "state_changes": "reflections sharpen then shimmer; afterglow warms the water; background remains softly blurred",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "timeless natural lake scene",
+      "skin_tone_and_texture": "glassy water, faint ripples, soft bokeh, and warm reflected light",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet lake at evening, seen from a high angle, with pink lotus flowers, green pads, clear reflections, faint golden afterglow, and a blurred dreamy shoreline background.",
+  "lighting": {
+    "conditions": "Soft evening afterglow with pale gold highlights on petals and water, low contrast shadows, and a gentle dreamy haze over the lake surface.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Soft evening afterglow with pale gold highlights on petals and water, low contrast shadows, and a gentle dreamy haze over the lake surface."
+  },
+  "aesthetics": {
+    "composition": "Peaceful, delicate, romantic, reflective, and dreamlike, with pink lotus color standing out against muted water and soft golden light.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Peaceful, delicate, romantic, reflective, and dreamlike, with pink lotus color standing out against muted water and soft golden light.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "High-angle shot looking down at lotus flowers and reflections, slow floating camera movement, shallow depth of field toward the blurred background.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic poetic nature text-to-video.",
+  "artistic_style": "Dreamy cinematic lake realism with soft bokeh, gentle reflections, and restrained evening color.",
+  "context": "Pink lotus flowers rest on a peaceful lake during evening afterglow, their reflections visible in the calm water and the background softly blurred.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "A high-angle view reveals pink lotus flowers and green pads floating on a calm reflective lake."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Faint golden afterglow spreads across the water as petals sway slightly and reflections ripple."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera drifts gently over the lotus cluster, holding the dreamy blurred background and clear lake reflections."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the high-angle lotus lake composition with clear reflections and soft evening color.",
+      "key_changes": "The lotus cluster becomes centered and the reflections settle into view.",
+      "camera": "High-angle floating shot, slow downward drift."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Show the golden afterglow touching pink petals and calm water while small ripples move through reflections.",
+      "key_changes": "Water reflections shimmer, petals brighten, and background blur deepens.",
+      "camera": "Gentle lateral glide over the lake surface."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold on the most charming lotus blossoms, with dreamy bokeh and peaceful lake texture.",
+      "key_changes": "Motion slows and the scene resolves into a calm reflective tableau.",
+      "camera": "Slow close high-angle hold with shallow depth of field."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Pink lotus flowers float on a peaceful lake under soft evening afterglow, their reflections rippling in a dreamy high-angle view.",
+  "audio_description": "Very soft water ripples, distant evening insects, light breeze over the lake, and a quiet dreamy ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

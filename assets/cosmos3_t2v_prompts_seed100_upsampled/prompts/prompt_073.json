@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "drone camera exploring the Amazon jungle from above to canopy level",
+      "appearance_details": "invisible aerial camera perspective with smooth flight, wide establishing view, descending movement, and close inspection of plants and river curves",
+      "relationship": "viewer perspective guiding the journey through the rainforest",
+      "location": "above the Amazon canopy, then descending toward a winding river and colorful jungle flora",
+      "relative_size": "camera viewpoint moving through a vast landscape",
+      "orientation": "facing forward and downward, gradually lowering into the jungle",
+      "pose": "smooth stabilized flight with a controlled descent",
+      "action": "glides over endless green canopy, descends toward the river, and pushes into vibrant flowers under filtered sunlight",
+      "state_changes": "altitude lowers; river details become clearer; canopy gives way to close flora textures",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "modern drone perspective",
+      "skin_tone_and_texture": "not applicable",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "vast Amazon rainforest canopy and winding river",
+      "appearance_details": "dense emerald tree crowns, layered vines, mist pockets, serpentine brown-green river water, riverbanks, and occasional breaks in the canopy",
+      "relationship": "primary natural environment revealed by the drone",
+      "location": "spanning the full frame from horizon to foreground",
+      "relative_size": "immense landscape filling the entire world of the shot",
+      "orientation": "canopy spreads horizontally while the river snakes diagonally through the forest",
+      "pose": "living landscape with leaves moving in wind and river flowing slowly",
+      "action": "sways, shimmers, and reveals depth as the drone descends",
+      "state_changes": "wide canopy becomes a detailed forest edge; river widens in view; sun patches shift across leaves",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "ancient tropical rainforest",
+      "skin_tone_and_texture": "lush leaves, bark, vines, muddy water, wet foliage, and humid haze",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "colorful Amazon flowers and dense understory plants",
+      "appearance_details": "bright red, orange, yellow, purple, and white blossoms among broad leaves, ferns, vines, moss, and small glints of moisture",
+      "relationship": "close foreground biodiversity highlighted after the descent",
+      "location": "lower canopy and jungle floor edges near the river",
+      "relative_size": "small botanical details against the vast rainforest",
+      "orientation": "flowers angled toward filtered sunlight and wet leaves",
+      "pose": "swaying gently in humid air",
+      "action": "flutter lightly, catch sun flecks, and reveal intricate textures as the camera moves close",
+      "state_changes": "flowers grow larger in frame; dew highlights appear; background canopy blurs softly",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "living tropical plants",
+      "skin_tone_and_texture": "velvety petals, glossy leaves, wet bark, moss, and organic textures",
+      "facial_features": "",
+      "number_of_subjects": 30,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "The Amazon jungle stretches to the horizon, with endless green canopy, a winding river, humid haze, layered plants, colorful flowers, and filtered sunlight creating dappled shadows.",
+  "lighting": {
+    "conditions": "Warm tropical sunlight broken by thick canopy leaves, with bright dappled beams, soft humid haze, and gleaming highlights on water and wet foliage.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Warm tropical sunlight broken by thick canopy leaves, with bright dappled beams, soft humid haze, and gleaming highlights on water and wet foliage."
+  },
+  "aesthetics": {
+    "composition": "Immersive natural wonder, vivid biodiversity, aerial scale, lush textures, peaceful wilderness, and a sense of discovery inside untouched rainforest.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Immersive natural wonder, vivid biodiversity, aerial scale, lush textures, peaceful wilderness, and a sense of discovery inside untouched rainforest.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Smooth drone descent from high aerial panorama to river reveal and close botanical pass, stabilized motion with gentle forward glide and depth-rich parallax.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic nature documentary text-to-video.",
+  "artistic_style": "Cinematic rainforest realism with vibrant color, humid atmosphere, and detailed ecological texture.",
+  "context": "A drone explores the Amazon, moving from a breathtaking aerial view to a closer look at the river and the colorful living details beneath the canopy.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The drone glides above the endless Amazon canopy, showing lush green forest stretching to the horizon."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It descends smoothly toward a winding river, revealing layered trees, mist pockets, and dappled sunlight."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera enters the jungle edge and settles on colorful flowers and wet leaves shimmering below the canopy."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the Amazon from high altitude, a vast green canopy under warm daylight.",
+      "key_changes": "The drone begins a smooth descent and the river line starts to appear.",
+      "camera": "High aerial drone shot, forward glide, slight downward tilt."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Reveal the river winding through dense forest while canopy layers and humid haze create depth.",
+      "key_changes": "Altitude drops, river becomes prominent, and leaf texture sharpens.",
+      "camera": "Descending stabilized drone move toward the river corridor."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Move close to vibrant flowers, ferns, and glossy leaves beneath filtered sunlight.",
+      "key_changes": "Wide landscape shifts into intimate biodiversity detail with soft background blur.",
+      "camera": "Low canopy push in with shallow depth of field on flowers."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A drone descends from a sweeping Amazon jungle panorama to a winding river and vivid tropical flowers under dappled sunlight.",
+  "audio_description": "Soft drone air movement, distant river flow, layered bird calls, rustling leaves, insects, and humid rainforest ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

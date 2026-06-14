@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "grandmother blowing out candles on a birthday cake",
+      "appearance_details": "elderly woman with neatly combed grey hair, joyful eyes, light blue floral blouse, and warm face lit by candle glow",
+      "relationship": "main celebrant at the dining table",
+      "location": "behind the birthday cake at a wooden dining room table",
+      "relative_size": "medium human subject in three-quarter view, dominant in the frame",
+      "orientation": "leaning forward toward the cake and camera at a slight angle",
+      "pose": "bent gently at the waist with hands near the table and lips pursed to blow",
+      "action": "leans in and blows out the candles with a gentle puff",
+      "state_changes": "candle flames flicker and go out; her eyes brighten with joy; a faint wisp of smoke rises after the puff",
+      "clothing": "light blue blouse with floral patterns",
+      "expression": "pure joy and happiness with a glowing look in her eyes",
+      "gender": "Female",
+      "age": "elderly adult",
+      "skin_tone_and_texture": "natural aged skin with soft wrinkles, warm highlights, and realistic texture",
+      "facial_features": "neatly combed grey hair, joyful eyes, gentle smile lines, and pursed lips while blowing",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "colorful birthday cake with many candles",
+      "appearance_details": "pink frosting, sprinkles, layered cake body, numerous small lit candles, and soft wax highlights",
+      "relationship": "celebration centerpiece in front of the grandmother",
+      "location": "center foreground on the wooden dining table",
+      "relative_size": "medium tabletop object between camera and grandmother",
+      "orientation": "front-facing cake with candles upright",
+      "pose": "stationary on the table",
+      "action": "holds flickering candle flames until the grandmother blows them out",
+      "state_changes": "flames flicker; candles cease to glow; thin smoke curls upward",
+      "clothing": "",
+      "expression": "festive and cheerful",
+      "gender": "",
+      "age": "fresh birthday cake",
+      "skin_tone_and_texture": "smooth pink frosting, colorful sprinkles, soft cake crumb, and glossy candle wax",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "friends and family celebrating at the table",
+      "appearance_details": "happy relatives and friends seated around the table, softly out of focus, clapping and smiling in warm light",
+      "relationship": "supporting celebrants surrounding the grandmother",
+      "location": "background around the dining room table",
+      "relative_size": "smaller blurred figures behind the main subject",
+      "orientation": "turned toward the grandmother and cake",
+      "pose": "seated, leaning in, clapping, and smiling",
+      "action": "celebrate as the candles are blown out",
+      "state_changes": "faces brighten; hands clap softly; background smiles shift with the moment",
+      "clothing": "casual family gathering attire in warm tones",
+      "expression": "happy, celebratory, and affectionate",
+      "gender": "Unknown",
+      "age": "mixed adults",
+      "skin_tone_and_texture": "varied natural skin tones softened by background blur and warm light",
+      "facial_features": "smiling faces and attentive eyes, intentionally out of focus",
+      "number_of_subjects": 6,
+      "number_of_arms": 12,
+      "number_of_legs": 12
+    }
+  ],
+  "background_setting": "A warm dining room with a wooden table, softly blurred friends and family, cozy decor, and a celebratory birthday atmosphere around the cake.",
+  "lighting": {
+    "conditions": "Soft warm indoor lighting mixed with small candle glow, gentle face highlights, and creamy background falloff.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Soft warm indoor lighting mixed with small candle glow, gentle face highlights, and creamy background falloff."
+  },
+  "aesthetics": {
+    "composition": "Tender family celebration, warm color tones, pink frosting, joyful expressions, soft cinematic focus, and intimate dining room comfort.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Tender family celebration, warm color tones, pink frosting, joyful expressions, soft cinematic focus, and intimate dining room comfort.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Cinematic three-quarter medium close shot of the grandmother behind the cake, shallow depth of field, stable camera, and warm lens softness.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action family celebration text-to-video.",
+  "artistic_style": "Warm intimate realism with soft focus, gentle color, and heartfelt emotional timing.",
+  "context": "A grandmother celebrates her birthday with family and friends as she leans forward to blow out the candles.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The grandmother smiles behind the pink birthday cake as candle flames flicker warmly."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "She leans forward and blows gently, causing the many candle flames to flicker and fade."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The candles go dark, thin smoke rises, and the blurred family celebrates around the table."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Set the warm dining room, joyful grandmother, pink cake, and glowing candles.",
+      "key_changes": "candle flames flicker; grandmother smiles; background family leans in",
+      "camera": "three-quarter medium close shot"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Focus on the gentle puff as the grandmother blows out the candles.",
+      "key_changes": "grandmother leans forward; flames bend and vanish; cake remains foreground anchor",
+      "camera": "stable shallow-focus shot with slight push-in"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold on the happy aftermath with smoke rising and family celebrating softly out of focus.",
+      "key_changes": "smoke curls upward; family claps; grandmother smiles wider",
+      "camera": "steady intimate close framing"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A joyful grandmother in a light blue floral blouse blows out the candles on a pink birthday cake while family celebrates nearby.",
+  "audio_description": "Gentle birthday room ambience, soft family cheers, small claps, candle puff, faint chair movement, and warm indoor room tone.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

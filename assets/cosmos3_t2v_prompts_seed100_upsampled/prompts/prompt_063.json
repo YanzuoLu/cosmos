@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "captivating mermaid in a luminous summer dress",
+      "appearance_details": "graceful aquatic figure with shimmering dress fabric, flowing hair, and a subtle iridescent tail beneath the clear water",
+      "relationship": "single ethereal subject moving through the sunny ocean",
+      "location": "midwater foreground against a broad azure sea",
+      "relative_size": "medium figure, elegant and central against the vast ocean backdrop",
+      "orientation": "angled diagonally through the water, face and torso turned toward filtered sunlight",
+      "pose": "arms extended softly while gliding with a fluid tail motion",
+      "action": "maneuvers gracefully through transparent ocean water as sunlight dances across her dress",
+      "state_changes": "dress glimmers, hair drifts, bubbles trail, body arcs gently through the water",
+      "clothing": "luminous summer dress that glows and ripples in the sunlight",
+      "expression": "serene, enchanted, and absorbed in the underwater motion",
+      "gender": "Female",
+      "age": "young adult",
+      "skin_tone_and_texture": "soft sunlit skin with watery highlights and natural texture",
+      "facial_features": "delicate features, calm eyes, relaxed mouth, hair framing the face",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "Clear azure ocean on a bright sunny day with transparent water, sparkling wave patterns above, soft shafts of sunlight, drifting bubbles, and an open panoramic sea backdrop.",
+  "lighting": {
+    "conditions": "Warm direct sunlight filters through the water, creating golden caustic patterns on the mermaid, dress, and surrounding waves.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Warm direct sunlight filters through the water, creating golden caustic patterns on the mermaid, dress, and surrounding waves."
+  },
+  "aesthetics": {
+    "composition": "Dreamlike aquatic beauty, clear blue water, luminous fabric, gentle bubbles, and shimmering sunlit motion.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Dreamlike aquatic beauty, clear blue water, luminous fabric, gentle bubbles, and shimmering sunlit motion.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Smooth underwater medium shot following the mermaid, with a slow widening move toward a panoramic ocean view.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic fantasy text-to-video with live action underwater realism.",
+  "artistic_style": "Ethereal ocean fantasy with golden highlights, fluid motion, and serene summer brightness.",
+  "context": "A graceful mermaid glides through clear ocean water on a sunny day, her luminous summer dress catching shifting sunlight beneath the waves.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The mermaid glides into view through transparent blue water as sunlight flickers across her luminous dress."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "She maneuvers in a slow arc, hair and fabric floating while bubbles drift around her."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera widens to reveal sparkling waves and the vast azure sea surrounding her."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Reveal the mermaid in clear ocean water under bright sunlight.",
+      "key_changes": "Golden caustics begin to shimmer across her dress and skin.",
+      "camera": "Underwater medium shot drifting beside her."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow her graceful turn through the water.",
+      "key_changes": "Hair, dress, bubbles, and tail motion create layered fluid movement.",
+      "camera": "Smooth lateral tracking camera with gentle parallax."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Expand to a panoramic view of the sparkling sea with the mermaid centered.",
+      "key_changes": "Ocean scale becomes clear, waves glitter above, her motion slows.",
+      "camera": "Slow pullback to a wide underwater composition."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A serene mermaid in a luminous summer dress glides through transparent ocean water while sunlight flickers across the azure sea.",
+  "audio_description": "Muffled underwater ambience, soft bubble streams, gentle water movement, and distant wave shimmer above.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

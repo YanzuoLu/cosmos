@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "nomadic rider crossing the Gobi Desert at sunset",
+      "appearance_details": "determined rider in layered traditional nomadic garments, wind-shaped fabric, steady posture, and sunlit profile",
+      "relationship": "human rider guiding the stallion through open desert terrain",
+      "location": "center frame on the moving horse across golden sand",
+      "relative_size": "medium human figure paired with a large horse in a vast landscape",
+      "orientation": "facing forward across the desert with face turned slightly toward the low sun",
+      "pose": "upright in the saddle with hands controlling the reins",
+      "action": "rides confidently across rugged sand and sparse desert vegetation",
+      "state_changes": "clothing flutters, body rises and settles with the horse gait, face catches warmer sunset light",
+      "clothing": "traditional nomadic robe, sash, boots, and head covering suited for desert travel",
+      "expression": "determined, free, and focused on the horizon",
+      "gender": "Male",
+      "age": "adult",
+      "skin_tone_and_texture": "sun-warmed skin with wind-weathered realistic texture",
+      "facial_features": "strong profile, narrowed eyes, set mouth, and cheeks lit by sunset",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "powerful chestnut stallion galloping over desert sand",
+      "appearance_details": "muscular chestnut body, glossy coat, flowing mane and tail, strong hooves kicking small arcs of sand",
+      "relationship": "mount carrying the nomadic rider across the Gobi Desert",
+      "location": "beneath the rider in the center foreground",
+      "relative_size": "large animal subject, visually dominant with the rider",
+      "orientation": "moving forward across the frame toward the sunset horizon",
+      "pose": "galloping with head lifted and legs extended through sand",
+      "action": "runs steadily across dunes and stony patches while responding to the reins",
+      "state_changes": "mane and tail stream in wind, hooves strike sand, dust trails form and fade",
+      "clothing": "leather saddle, simple bridle, reins, and practical travel tack",
+      "expression": "alert and energetic",
+      "gender": "Male",
+      "age": "adult stallion",
+      "skin_tone_and_texture": "chestnut coat with sunlit highlights, fine dust, and visible muscle texture",
+      "facial_features": "dark eyes, flared nostrils, and wind-tossed forelock",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "The Gobi Desert stretches in all directions with vast golden sand, ancient rocks, sparse vegetation, and a distant mountain range silhouetted beneath an orange, pink, and purple sunset sky.",
+  "lighting": {
+    "conditions": "Low sunset light casts long warm shadows, rim-lights the rider and horse, and turns airborne dust gold.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Low sunset light casts long warm shadows, rim-lights the rider and horse, and turns airborne dust gold."
+  },
+  "aesthetics": {
+    "composition": "Epic desert freedom, wind, open scale, glowing sand, rugged textures, and a heroic silhouette against a vivid sky.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Epic desert freedom, wind, open scale, glowing sand, rugged textures, and a heroic silhouette against a vivid sky.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Wide cinematic tracking shot moving parallel to the rider, then a slight pullback to reveal mountains and endless desert.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action text-to-video.",
+  "artistic_style": "Sweeping adventure realism with grand landscape scale and warm sunset color grading.",
+  "context": "A nomadic rider crosses the Gobi Desert on a chestnut stallion, moving through harsh terrain with determination and freedom.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The rider and chestnut stallion enter across golden sand as the sunset burns along the horizon."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The stallion gallops past rocks and sparse vegetation while mane, tail, and garments stream in the wind."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The rider turns his face toward the sun and guides the horse onward beneath the distant mountain silhouette."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the rider and stallion moving across the vast Gobi sands.",
+      "key_changes": "Dust lifts behind hooves, sunset colors intensify, mountains sit far in silhouette.",
+      "camera": "Wide side-tracking shot at low height."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow the horse through uneven sand, rocks, and sparse vegetation.",
+      "key_changes": "Mane and robe whip in the wind, hooves strike harder ground, dust trails lengthen.",
+      "camera": "Smooth tracking camera keeping rider centered."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold on the rider facing the sun as the desert opens around him.",
+      "key_changes": "Expression reads determined, horse maintains rhythm, horizon expands.",
+      "camera": "Slight pullback to a grand wide landscape view."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A determined nomadic rider guides a chestnut stallion across the golden Gobi Desert at sunset, framed by rocks, sparse plants, and distant mountains.",
+  "audio_description": "Rhythmic hoofbeats on sand, wind across open desert, tack creaks, soft dust movement, and distant empty ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

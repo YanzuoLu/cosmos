@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "stylish woman walking confidently through a neon Tokyo street",
+      "appearance_details": "fashionable adult woman with sunglasses, red lipstick, black purse, black leather jacket, long red dress, and black boots",
+      "relationship": "primary subject moving through the crowded city nightlife",
+      "location": "center foreground on a damp reflective Tokyo street",
+      "relative_size": "medium full-body figure, larger than passing pedestrians and framed by tall storefront lights",
+      "orientation": "walking toward camera along the street with relaxed forward gaze behind sunglasses",
+      "pose": "upright confident stride, one hand near purse, shoulders relaxed",
+      "action": "walks casually and confidently through warm neon reflections",
+      "state_changes": "dress sways with each step; boots ripple puddle reflections; neon colors slide across jacket and sunglasses",
+      "clothing": "black leather jacket, long red dress, black boots, sunglasses, and black purse",
+      "expression": "cool, composed, and self-assured",
+      "gender": "Female",
+      "age": "adult",
+      "skin_tone_and_texture": "natural skin with warm neon color casts and smooth cinematic highlights",
+      "facial_features": "red lipstick, sunglasses covering eyes, poised jawline, and calm mouth",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "pedestrians moving through the neon street",
+      "appearance_details": "mixed city crowd in coats, bags, umbrellas, and casual night outfits, softened by background depth of field",
+      "relationship": "urban crowd surrounding and contrasting with the main woman",
+      "location": "midground and background along sidewalks and street crossings",
+      "relative_size": "smaller background figures compared with the woman",
+      "orientation": "walking in varied directions through the street",
+      "pose": "striding, pausing, turning, and passing storefronts",
+      "action": "move around the street while the woman walks steadily through them",
+      "state_changes": "figures pass behind her; reflections shift under their feet; crowd density changes subtly",
+      "clothing": "varied modern streetwear, coats, trousers, skirts, bags, and shoes",
+      "expression": "casual city focus and mild nightlife energy",
+      "gender": "Unknown",
+      "age": "adults",
+      "skin_tone_and_texture": "varied natural skin tones with neon highlights and soft background blur",
+      "facial_features": "mostly indistinct faces with occasional glances and city-lit profiles",
+      "number_of_subjects": 18,
+      "number_of_arms": 36,
+      "number_of_legs": 36
+    }
+  ],
+  "background_setting": "A lively Tokyo street at night with damp reflective pavement, warm glowing neon, animated storefront signage, crowded sidewalks, and colorful light mirrored in puddles.",
+  "lighting": {
+    "conditions": "Warm neon signs, red and amber storefront glow, cooler blue accents, glossy wet-street reflections, and soft face highlights.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Warm neon signs, red and amber storefront glow, cooler blue accents, glossy wet-street reflections, and soft face highlights."
+  },
+  "aesthetics": {
+    "composition": "Stylish urban nightlife, fashion-forward confidence, reflective pavement, saturated neon color, and cinematic crowd movement.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Stylish urban nightlife, fashion-forward confidence, reflective pavement, saturated neon color, and cinematic crowd movement.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Full-body street-level tracking shot moving backward in front of the woman, shallow background focus, stable glide, and strong reflective foreground.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic cinematic city fashion text-to-video.",
+  "artistic_style": "Neo-noir Tokyo street realism with warm neon glow, wet pavement, and polished fashion imagery.",
+  "context": "A stylish woman walks through a busy Tokyo nightlife district, framed by animated city signage and many pedestrians.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The woman steps into the neon-lit street, her red dress and black leather jacket reflected in the wet pavement."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "She walks confidently through moving pedestrians as animated signs and puddles shimmer around her."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera holds on her composed stride while warm city lights glide across her sunglasses and purse."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "animated neon storefront signs with abstract Japanese-style glyphs and icons, no readable brand names",
+      "category": "scene_sign",
+      "appearance": "visible scene text or signage",
+      "spatial_temporal": "visible during the relevant shot interval",
+      "context": "environmental detail"
+    },
+    {
+      "text": "glowing billboard panels and small shop lightboxes reflected on wet pavement",
+      "category": "scene_sign",
+      "appearance": "visible scene text or signage",
+      "spatial_temporal": "visible during the relevant shot interval",
+      "context": "environmental detail"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the damp Tokyo street and the woman entering with confident posture.",
+      "key_changes": "puddle reflections brighten; pedestrians cross behind her; neon colors define her outfit",
+      "camera": "street-level backward tracking shot"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Track her steady walk through the densest neon and pedestrian flow.",
+      "key_changes": "red dress sways; crowd passes around her; animated signs flicker",
+      "camera": "smooth stabilized dolly backward at walking speed"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the stylish walk as reflections and signage continue shifting across the scene.",
+      "key_changes": "sunglasses catch warm light; boots cross mirror-like pavement; background crowd softens",
+      "camera": "medium full-body tracking with shallow background focus"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A stylish woman in a black leather jacket and long red dress walks confidently down a wet neon Tokyo street.",
+  "audio_description": "Soft city crowd murmur, footsteps on wet pavement, faint traffic, electronic sign hum, and distant nightlife ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

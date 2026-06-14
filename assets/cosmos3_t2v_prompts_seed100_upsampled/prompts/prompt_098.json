@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "white vintage SUV with black roof rack speeding up a steep dirt mountain road",
+      "appearance_details": "boxy white body, black roof rack, rear view visible, dust covered tires, suspension working over rough dirt",
+      "relationship": "main vehicle driving alone through rugged mountain terrain",
+      "location": "on a steep curving dirt road surrounded by redwoods, pine trees, hills, and mountains",
+      "relative_size": "mid sized vehicle, prominent in frame but smaller than trees and steep slopes",
+      "orientation": "seen from behind, following the road curve uphill into the distance",
+      "pose": "tilted slightly with the grade, gripping the dirt road at speed",
+      "action": "speeds uphill and follows the curve while dust kicks up from its tires",
+      "state_changes": "vehicle grows smaller along the road, dust plume expands, sunlight flashes across the white body",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "vintage SUV",
+      "skin_tone_and_texture": "white painted metal with dust, dark trim, glass reflections, and rugged tire texture",
+      "facial_features": "rear lights, spare tire shape, roof rack silhouette, and square tailgate",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A steep mountain slope with a narrow dirt road curving through redwoods and pine trees, scattered green patches, rugged hills, distant mountains, clear blue sky, and wispy clouds.",
+  "lighting": {
+    "conditions": "Warm sunlight striking the SUV and road dust, bright blue sky overhead, alternating tree shade across the dirt track.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Warm sunlight striking the SUV and road dust, bright blue sky overhead, alternating tree shade across the dirt track."
+  },
+  "aesthetics": {
+    "composition": "Rugged outdoor adventure, dust filled motion, vintage off road character, warm sun, tall forest, and open mountain scale.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Rugged outdoor adventure, dust filled motion, vintage off road character, warm sun, tall forest, and open mountain scale.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Rear following vehicle shot from low chase camera height, steady pursuit framing, dust and road texture kept sharp while trees slide past.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic cinematic off road driving text to video.",
+  "artistic_style": "Adventure travel realism with warm highlights, rugged terrain, and dynamic chase perspective.",
+  "context": "A lone vintage SUV climbs a steep forested mountain road, creating a dusty off road travel moment.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera follows behind the white SUV as it accelerates up the steep dirt road."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Dust kicks from the tires while the SUV follows a gentle curve between tall redwoods and pines."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The vehicle continues uphill into the distance, sun glinting off its body beneath the blue sky."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Rear chase view establishes the SUV climbing the dirt road.",
+      "key_changes": "Vehicle accelerates, first dust plume forms behind the tires.",
+      "camera": "Low trailing chase camera centered on the SUV rear."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow the SUV through the forested road curve.",
+      "key_changes": "Dust expands, trees pass on both sides, road curves deeper into the slope.",
+      "camera": "Smooth follow shot matching the curve of the road."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "End with the SUV pulling farther uphill through mountain terrain.",
+      "key_changes": "Vehicle recedes slightly, sunlight brightens dust, sky and hills open ahead.",
+      "camera": "Trailing camera eases back while maintaining rear view."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A white vintage SUV with a black roof rack speeds up a steep dirt road through redwoods, kicking dust into warm mountain sunlight.",
+  "audio_description": "Engine revs, tires crunch on dirt and gravel, dust rush, wind through tall trees, and faint suspension bumps.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

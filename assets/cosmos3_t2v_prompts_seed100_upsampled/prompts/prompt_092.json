@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "skilled male violinist performing in a dim alleyway",
+      "appearance_details": "weathered face with deep lines, careful hand placement on violin and bow, posture shaped by years of performance",
+      "relationship": "sole performer whose music draws unseen passersby",
+      "location": "center stage area of a narrow cobblestone alley between vintage brick walls",
+      "relative_size": "medium human scale, dominant figure against the tall alley walls",
+      "orientation": "facing slightly toward camera while angled down the alley",
+      "pose": "standing upright with violin tucked under chin and bow arm extended",
+      "action": "plays a sorrowful melody with controlled bow strokes and expressive pauses",
+      "state_changes": "bow moves across strings, shoulders sway subtly, shadows shift across his tuxedo and face",
+      "clothing": "classic black tuxedo with white dress shirt and dark bow tie",
+      "expression": "melancholy, concentrated, emotionally absorbed",
+      "gender": "Male",
+      "age": "older adult",
+      "skin_tone_and_texture": "natural skin with visible age lines, warm highlights, and realistic texture",
+      "facial_features": "lined face, focused eyes, tense mouth, slightly furrowed brow",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A narrow vintage alleyway with brick walls, cobblestone floor, warm lamps, deep shadows, and the suggestion of a few passersby just outside the frame.",
+  "lighting": {
+    "conditions": "Dim alley lighting with warm golden wall lamps, strong contrast, and moving shadows across cobblestones.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Dim alley lighting with warm golden wall lamps, strong contrast, and moving shadows across cobblestones."
+  },
+  "aesthetics": {
+    "composition": "Melancholic urban performance, intimate street theater mood, textured brick, polished wood violin, and dramatic low light.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Melancholic urban performance, intimate street theater mood, textured brick, polished wood violin, and dramatic low light.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Slow medium close shot centered on the violinist, shallow depth of field, bow and face in crisp focus, alley receding behind him.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic cinematic street performance text to video.",
+  "artistic_style": "Noir inspired urban realism with warm lamps, sorrowful tone, and refined musical detail.",
+  "context": "A solitary violinist transforms a quiet alley into an emotional stage through a sorrowful performance.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The violinist raises the bow and begins a mournful phrase under warm alley light."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "His bow glides across the strings, fingers shifting precisely while shadows move over the cobblestones."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "He leans into the final notes, face etched with sorrow as the alley seems to hold still."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the tuxedoed violinist alone in the dim brick alley.",
+      "key_changes": "Bow rises, first notes begin, warm lamp reflections catch the violin.",
+      "camera": "Locked medium shot with slight push toward the performer."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Focus on expressive playing and the somber alley mood.",
+      "key_changes": "Finger movement and bow strokes become more intense, shadows lengthen across stone.",
+      "camera": "Slow drift from face to hands and back."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "End on the violinist holding the emotional phrase.",
+      "key_changes": "Motion slows, expression deepens, background remains dim and quiet.",
+      "camera": "Gentle close push on his face and violin."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A melancholy male violinist in a black tuxedo performs a sorrowful piece in a warm, shadowed brick alley.",
+  "audio_description": "Solo violin melody with a sorrowful tone, faint alley reverb, distant footsteps, and soft city room noise.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

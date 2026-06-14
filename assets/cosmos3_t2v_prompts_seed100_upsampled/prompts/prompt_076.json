@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "colorful butterflies moving through a sunlit garden",
+      "appearance_details": "orange, blue, black, yellow, and white patterned wings, delicate bodies, thin antennae, and shimmering wing surfaces in sunlight",
+      "relationship": "main moving subjects attracted to the flowers",
+      "location": "foreground and midground above blooming flowers, shrubs, paths, and a small pond",
+      "relative_size": "small insects, visually prominent through close camera framing",
+      "orientation": "flying in varied directions, landing on blossoms, then lifting off again",
+      "pose": "wings opening, closing, hovering, and resting on petals",
+      "action": "flit from flower to flower, hover briefly, land, feed, and take off in graceful arcs",
+      "state_changes": "butterflies enter frame; several land on blossoms; wings catch stronger sunlight before lifting off",
+      "clothing": "",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "adult butterflies",
+      "skin_tone_and_texture": "fine wing scales, tiny bodies, delicate legs, and translucent sunlit edges",
+      "facial_features": "tiny antennae, compound eyes, and small proboscis details",
+      "number_of_subjects": 14,
+      "number_of_arms": 0,
+      "number_of_legs": 84
+    },
+    {
+      "description": "vibrant flower garden with roses, daisies, orchids, and water lilies",
+      "appearance_details": "delicate roses, cheerful daisies, exotic orchids, flowering shrubs, winding paths, a small pond, floating water lilies, and layered green leaves",
+      "relationship": "lush habitat and visual stage for butterfly movement",
+      "location": "entire garden setting from foreground beds to background paths and pond",
+      "relative_size": "landscape-scale garden surrounding the butterflies",
+      "orientation": "flower beds curve along winding paths and pond edges",
+      "pose": "blooming and gently swaying in the breeze",
+      "action": "sways, releases implied fragrance, reflects light on pond water, and supports butterfly landings",
+      "state_changes": "flowers sway as breeze passes; pond ripples lightly; butterfly landings animate blossoms",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "blooming garden in full season",
+      "skin_tone_and_texture": "soft petals, glossy leaves, wet lily pads, rough path stones, and shimmering pond water",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A carefully designed garden with winding paths, flowering shrubs, roses, daisies, orchids, a small pond with water lilies, dense greenery, and many butterflies moving through warm scented air.",
+  "lighting": {
+    "conditions": "Bright sun filtered by garden foliage, with warm highlights on wings and petals, soft shadows along paths, and sparkling reflections on the pond.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Bright sun filtered by garden foliage, with warm highlights on wings and petals, soft shadows along paths, and sparkling reflections on the pond."
+  },
+  "aesthetics": {
+    "composition": "Lush floral color, graceful insect movement, fragrant garden calm, elegant paths, pond reflections, and a lively harmony of nature.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Lush floral color, graceful insect movement, fragrant garden calm, elegant paths, pond reflections, and a lively harmony of nature.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Macro-to-medium garden shot with shallow depth of field, smooth tracking across flowers, and brief close focus on butterfly wings shimmering in sunlight.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic nature garden text-to-video.",
+  "artistic_style": "Cinematic botanical realism with vivid color, gentle motion, and delicate macro detail.",
+  "context": "In a sunlit garden full of roses, daisies, orchids, and water lilies, butterflies drift among the blossoms and bring the scene alive with color and motion.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera reveals a lush garden of bright flowers, winding paths, and butterflies beginning to cross the frame."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Butterflies hover and land on roses, daisies, and orchids while petals sway and pond water ripples nearby."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "A close butterfly opens its patterned wings in sunlight before lifting off toward the water lilies."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the vibrant garden with flowers, paths, pond, and the first butterflies moving through warm light.",
+      "key_changes": "Butterflies enter and draw focus from the garden layout to floral detail.",
+      "camera": "Medium garden glide with shallow depth of field."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow butterflies as they flit between roses, daisies, orchids, shrubs, and water lilies.",
+      "key_changes": "Wing colors shimmer, blossoms move under landings, and pond reflections ripple.",
+      "camera": "Smooth macro tracking shot weaving between flowers."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold on a butterfly opening its wings, then lifting away into the luminous garden.",
+      "key_changes": "Close wing detail catches sunlight and motion shifts from resting to flight.",
+      "camera": "Macro close-up with rack focus from wing texture to background blooms."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Colorful butterflies drift through a sunlit garden of roses, daisies, orchids, paths, and water lilies.",
+  "audio_description": "Soft breeze through leaves, faint wing flutter, bees and insects, light water ripples, and quiet garden ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

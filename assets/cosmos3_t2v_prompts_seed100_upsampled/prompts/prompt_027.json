@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "Pink translucent jellyfish swimming through deep blue ocean water.",
+      "appearance_details": "Bell shaped body glowing with vibrant pink hues, semi transparent membrane, trailing delicate tentacles, soft internal gradients visible in the light.",
+      "relationship": "Single main jellyfish subject drifting above the ocean floor among distant marine life.",
+      "location": "Midwater foreground, centered against a vast blue ocean with marine life and seabed far below.",
+      "relative_size": "Medium in frame, larger than distant fish and coral details due to close camera position.",
+      "orientation": "Bell facing upward with tentacles trailing downward, drifting diagonally through the water.",
+      "pose": "Open bell form expanding and contracting rhythmically, tentacles flowing behind.",
+      "action": "Pulsates and glides smoothly beneath shimmering filtered sunlight.",
+      "state_changes": "Starts with bell expanded, pulses through the middle of the shot, ends drifting deeper as tentacles trail in a soft arc.",
+      "clothing": "None, natural translucent body only.",
+      "expression": "No facial expression, serene and ethereal presence.",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "Translucent gelatinous pink tissue with luminous soft edges and smooth wet texture.",
+      "facial_features": "No face, bell body and flowing tentacles define the form.",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "Vast deep blue ocean with clear water, faint ocean floor, scattered marine life, soft coral shapes, and suspended particles adding depth.",
+  "lighting": {
+    "conditions": "Sunbeams filter down from the surface, shimmering through the water and glowing through the jellyfish body.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Sunbeams filter down from the surface, shimmering through the water and glowing through the jellyfish body."
+  },
+  "aesthetics": {
+    "composition": "Ethereal, tranquil, luminous, delicate, minimal, graceful underwater beauty.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Ethereal, tranquil, luminous, delicate, minimal, graceful underwater beauty.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Macro like underwater tracking shot with slow motion feel, camera gently follows the jellyfish from a slightly below angle.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Realistic text to video underwater nature scene with high detail translucent motion.",
+  "artistic_style": "Dreamlike cinematic realism with soft blue and pink color contrast.",
+  "context": "A pink jellyfish moves through clear ocean water, illuminated by sunlight as distant marine life gives the scene depth.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The jellyfish floats into view with its bell expanded and tentacles trailing through blue water."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It pulses rhythmically, each contraction pushing it forward as sunbeams shimmer across its pink body."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The jellyfish drifts calmly deeper into the frame while the ocean floor and small fish remain soft in the background."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Translucent pink jellyfish appears in clear deep blue water.",
+      "key_changes": "Translucent pink jellyfish appears in clear deep blue water.",
+      "camera": "Macro like underwater tracking shot with slow motion feel, camera gently follows the jellyfish from a slightly below angle."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Sunbeams pass through the bell, revealing soft internal texture.",
+      "key_changes": "Sunbeams pass through the bell, revealing soft internal texture.",
+      "camera": "Macro like underwater tracking shot with slow motion feel, camera gently follows the jellyfish from a slightly below angle."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The jellyfish floats above distant marine life and ocean floor texture.",
+      "key_changes": "The jellyfish floats above distant marine life and ocean floor texture.",
+      "camera": "Macro like underwater tracking shot with slow motion feel, camera gently follows the jellyfish from a slightly below angle."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "0:00-0:02 a pink jellyfish appears in deep blue water. 0:02-0:05 it pulses under shimmering sunlight. 0:05-0:07 it drifts gracefully above the distant ocean floor.",
+  "audio_description": "Soft muffled underwater ambience, faint current movement, delicate bubbling, quiet ocean depth tone.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

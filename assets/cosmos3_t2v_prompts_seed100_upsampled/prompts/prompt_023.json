@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "Sika deer with white spots drinking beside a tranquil forest stream.",
+      "appearance_details": "Slender brown coat with distinctive white spots, fine legs, alert ears, smooth neck, dark moist nose near the water surface.",
+      "relationship": "Single deer subject peacefully interacting with the stream in a quiet woodland setting.",
+      "location": "Near bank of the stream, foreground slightly left of center with water flowing across the lower frame.",
+      "relative_size": "Medium sized animal, prominent in the foreground while trees and greenery frame it.",
+      "orientation": "Side profile angled toward camera right, head lowered toward the water.",
+      "pose": "Standing still with front legs near the stream edge and neck extended downward.",
+      "action": "Lowers its head and drinks from the clear moving stream.",
+      "state_changes": "Starts alert with head partly lowered, touches nose to water and drinks, ends lifting slightly as ripples spread.",
+      "clothing": "None, natural coat only.",
+      "expression": "Gentle, calm, cautious, and peaceful.",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "Short smooth brown fur with pale spots and soft natural sheen.",
+      "facial_features": "Dark eyes, narrow muzzle, black nose, tall pointed ears.",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "Quiet stream in a lush green forest, surrounded by tall trees, mossy stones, grasses, and leafy plants casting dappled shadows on the water.",
+  "lighting": {
+    "conditions": "Filtered daylight through tree canopy, soft highlights on water ripples, cool green shade with warm flecks of sun.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Filtered daylight through tree canopy, soft highlights on water ripples, cool green shade with warm flecks of sun."
+  },
+  "aesthetics": {
+    "composition": "Peaceful, natural, delicate, refreshing, rich green tones, clear water detail, gentle wildlife observation.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Peaceful, natural, delicate, refreshing, rich green tones, clear water detail, gentle wildlife observation.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Static medium shot with subtle handheld naturalism, low angle near stream height, shallow background blur and visible ripples in the foreground.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Realistic text to video nature scene with smooth animal motion and water physics.",
+  "artistic_style": "Documentary style cinematic realism with calm forest atmosphere.",
+  "context": "A spotted sika deer pauses at a woodland stream to drink in a serene natural habitat.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The deer stands at the stream bank, ears flicking as it lowers its head toward the clear water."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Its nose touches the surface and it drinks quietly while small ripples spread around its muzzle."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The deer lifts its head slightly, droplets falling from its nose as leaves rustle behind it."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Spotted deer framed by stream stones and green foliage.",
+      "key_changes": "Spotted deer framed by stream stones and green foliage.",
+      "camera": "Static medium shot with subtle handheld naturalism, low angle near stream height, shallow background blur and visible ripples in the foreground."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Close attention on muzzle, water surface, and dappled reflections.",
+      "key_changes": "Close attention on muzzle, water surface, and dappled reflections.",
+      "camera": "Static medium shot with subtle handheld naturalism, low angle near stream height, shallow background blur and visible ripples in the foreground."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The deer holds a calm pose as light trembles across the water.",
+      "key_changes": "The deer holds a calm pose as light trembles across the water.",
+      "camera": "Static medium shot with subtle handheld naturalism, low angle near stream height, shallow background blur and visible ripples in the foreground."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "0:00-0:02 a sika deer approaches the stream edge. 0:02-0:05 it drinks from the clear forest water. 0:05-0:07 it lifts slightly as ripples drift downstream.",
+  "audio_description": "Gentle flowing water, soft leaf rustle, faint bird calls, tiny lapping sounds from the deer drinking.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

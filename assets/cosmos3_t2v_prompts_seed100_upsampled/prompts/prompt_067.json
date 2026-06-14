@@ -1,0 +1,104 @@
+{
+  "subjects": [
+    {
+      "description": "Labrador dog wearing glasses on a soft white bed",
+      "appearance_details": "relaxed Labrador with stylish glasses, striped t-shirt, denim shorts, glossy fur, and papers spread nearby",
+      "relationship": "single cozy subject surrounded by reading materials",
+      "location": "center of a soft white bed in a bright bedroom",
+      "relative_size": "medium dog scale, dominant subject in the room",
+      "orientation": "lying diagonally across the bed while looking down at books and papers",
+      "pose": "comfortably lying with front paws forward and head lowered toward the reading material",
+      "action": "rests on the bed as if reading, shifting attention between books and scattered papers",
+      "state_changes": "glasses catch light, head tilts, paw nudges a page, papers shift slightly",
+      "clothing": "stylish glasses, striped t-shirt, and denim shorts",
+      "expression": "calm, curious, and absorbed",
+      "gender": "Unknown",
+      "age": "adult dog",
+      "skin_tone_and_texture": "short Labrador fur with warm highlights and soft realistic texture",
+      "facial_features": "broad muzzle, dark eyes behind glasses, black nose, floppy ears",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "Bright peaceful bedroom with a large window casting warm light, a minimalist bookshelf, a cozy plush rug, soft white bedding, and books and papers scattered around the Labrador.",
+  "lighting": {
+    "conditions": "Warm daylight from the large window spreads across the bed, glasses, fur, papers, and white fabric.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Warm daylight from the large window spreads across the bed, glasses, fur, papers, and white fabric."
+  },
+  "aesthetics": {
+    "composition": "Whimsical cozy realism, clean white bedding, soft rug texture, bookish clutter, and warm calm bedroom light.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Whimsical cozy realism, clean white bedding, soft rug texture, bookish clutter, and warm calm bedroom light.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Medium shot from bed height with gentle shallow focus on the dog, glasses, and nearby papers.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic whimsical text-to-video.",
+  "artistic_style": "Cozy domestic surrealism with soft natural light and playful character detail.",
+  "context": "A Labrador dog dressed casually lies on a soft white bed among books and papers, appearing peacefully engaged in reading.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The Labrador lies comfortably on the white bed, glasses catching warm window light as books surround it."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It tilts its head toward a page and nudges a paper slightly with one paw."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The dog settles back into a calm reading pose while the bright room remains still and cozy."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "Books and papers show small unreadable lines and page blocks without specific readable titles.",
+      "category": "scene_sign",
+      "appearance": "visible scene text or signage",
+      "spatial_temporal": "visible during the relevant shot interval",
+      "context": "environmental detail"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the dressed Labrador on the soft white bed with books and papers around it.",
+      "key_changes": "Window light warms the bedding and reflects in the glasses.",
+      "camera": "Medium bed-height shot."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Focus on the dog engaging with the scattered reading materials.",
+      "key_changes": "Head tilts, paw shifts paper, pages move slightly.",
+      "camera": "Gentle close-up on face, glasses, and papers."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Show the quiet bedroom atmosphere as the dog relaxes on the bed.",
+      "key_changes": "Bookshelf and rug become clearer, the dog returns to stillness.",
+      "camera": "Slow slight pullback to include more room detail."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A Labrador in glasses, a striped t-shirt, and denim shorts lies on a soft white bed among books and papers in a bright cozy room.",
+  "audio_description": "Soft room tone, faint page rustle, gentle fabric movement, distant outdoor hush through the window, and quiet dog breathing.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

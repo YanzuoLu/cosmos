@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "fireworks bursting above a dark lake",
+      "appearance_details": "red, blue, and green starbursts with fine sparkling trails, bright smoke halos, mirrored streaks on the water",
+      "relationship": "main aerial spectacle launched from the barge and watched by the crowd",
+      "location": "upper sky above the lake, reflected across the lower frame",
+      "relative_size": "large bursts dominating the sky",
+      "orientation": "radiating outward from launch points over the water",
+      "pose": "expanding circular and fan shaped bursts",
+      "action": "explode, glitter, fade, and are replaced by new bursts",
+      "state_changes": "dark sky shifts through bright colors, smoke grows subtly, reflections ripple after each burst",
+      "clothing": "",
+      "expression": "dazzling and celebratory",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "brilliant colored light with smoky sparkling particles",
+      "facial_features": "",
+      "number_of_subjects": 12,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "shoreline spectators watching the fireworks",
+      "appearance_details": "mixed silhouettes and softly lit faces, several phones and cameras raised, jackets and casual evening clothes",
+      "relationship": "audience reacting to the fireworks across the lake",
+      "location": "lower shoreline in the foreground and middle distance",
+      "relative_size": "small compared with the sky and lake",
+      "orientation": "facing upward toward the fireworks",
+      "pose": "standing close together, some with arms raised to record",
+      "action": "watch, cheer, applaud, and film the display",
+      "state_changes": "faces flash red, blue, and green as each burst lights the shore",
+      "clothing": "casual evening jackets, hoodies, and shirts",
+      "expression": "excited and joyful",
+      "gender": "Unknown",
+      "age": "children, adults, and older adults",
+      "skin_tone_and_texture": "varied skin tones softly illuminated by colored fireworks",
+      "facial_features": "brief smiles and open mouths visible in the colored glow",
+      "number_of_subjects": 40,
+      "number_of_arms": 80,
+      "number_of_legs": 80
+    },
+    {
+      "description": "low fireworks launch barge on the lake",
+      "appearance_details": "dark rectangular platform with small launch racks, brief flashes at ignition points, faint smoke drifting above it",
+      "relationship": "source of the fireworks display",
+      "location": "middle distance on the lake below the bursts",
+      "relative_size": "small but visible against the water reflections",
+      "orientation": "parallel to the shoreline",
+      "pose": "stationary on calm water",
+      "action": "launches timed fireworks upward",
+      "state_changes": "brief sparks flare from the racks before each sky burst",
+      "clothing": "",
+      "expression": "functional and subdued",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "dark metal platform with wet reflective edges",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "night lake with a dark open sky, a low shoreline crowd, and shimmering reflections of fireworks across tranquil water",
+  "lighting": {
+    "conditions": "high contrast night lighting driven by colorful fireworks, intermittent red, blue, and green flashes on water and faces",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "high contrast night lighting driven by colorful fireworks, intermittent red, blue, and green flashes on water and faces"
+  },
+  "aesthetics": {
+    "composition": "festive, vivid, reflective, panoramic, high energy against still water",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "festive, vivid, reflective, panoramic, high energy against still water",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "wide locked off shot from the shore with balanced sky and reflection, slight handheld life from the crowd edge",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "photorealistic text to video event scene",
+  "artistic_style": "cinematic night realism with saturated fireworks and natural crowd silhouettes",
+  "context": "a public evening fireworks show unfolds over a quiet lake while spectators gather along the shore",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "first red and blue bursts bloom overhead while the barge flickers below"
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "multiple green and red explosions overlap, reflections stretch across the water, and spectators raise phones"
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "sparkling trails fade into smoke as applause rises and new colors ripple across the lake"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "first red and blue bursts bloom overhead while the barge flickers below",
+      "key_changes": "first red and blue bursts bloom overhead while the barge flickers below",
+      "camera": "wide locked off shot from the shore with balanced sky and reflection, slight handheld life from the crowd edge"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "multiple green and red explosions overlap, reflections stretch across the water, and spectators raise phones",
+      "key_changes": "multiple green and red explosions overlap, reflections stretch across the water, and spectators raise phones",
+      "camera": "wide locked off shot from the shore with balanced sky and reflection, slight handheld life from the crowd edge"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "sparkling trails fade into smoke as applause rises and new colors ripple across the lake",
+      "key_changes": "sparkling trails fade into smoke as applause rises and new colors ripple across the lake",
+      "camera": "wide locked off shot from the shore with balanced sky and reflection, slight handheld life from the crowd edge"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Colorful fireworks burst above a tranquil lake, reflecting on the water as spectators cheer from the shore.",
+  "audio_description": "firework booms, crackling sparks, crowd cheers, applause, faint lake ambience",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

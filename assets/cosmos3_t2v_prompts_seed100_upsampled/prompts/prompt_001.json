@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "woman washing dishes at a kitchen sink",
+      "appearance_details": "focused adult with tidy posture, standing close to the stainless steel basin while handling plates and utensils",
+      "relationship": "primary human subject working alone in the kitchen",
+      "location": "center frame at the sink, surrounded by counters and dishware",
+      "relative_size": "medium human scale, dominant figure in the foreground",
+      "orientation": "facing slightly left toward the sink, torso angled toward the counter",
+      "pose": "standing upright with arms forward over soapy water",
+      "action": "cleans each dish carefully, rinses foam from the surface, and places items aside",
+      "state_changes": "hands move through soapy water; clean dishes accumulate beside the sink; water ripples and bubbles shift",
+      "clothing": "white apron over simple home clothes",
+      "expression": "calm, focused, absorbed in the task",
+      "gender": "Female",
+      "age": "adult",
+      "skin_tone_and_texture": "natural skin with soft kitchen highlights and realistic texture",
+      "facial_features": "gentle features, attentive eyes, relaxed mouth",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Spacious modern kitchen with warm wood counters, cool stainless steel fixtures, a gleaming sink full of suds, colorful plates, bowls, and utensils waiting nearby, plus olive oil, salt, and pepper arranged neatly on the counter.",
+  "lighting": {
+    "conditions": "Soft warm ambient kitchen light with subtle reflections on metal, glass, water, and wet ceramic surfaces.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Soft warm ambient kitchen light with subtle reflections on metal, glass, water, and wet ceramic surfaces."
+  },
+  "aesthetics": {
+    "composition": "Clean domestic realism, warm wood against cool steel, cozy order, tactile soap bubbles, and colorful dishware accents.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Clean domestic realism, warm wood against cool steel, cozy order, tactile soap bubbles, and colorful dishware accents.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Medium close shot from counter height, shallow depth of field on hands and dishes, slow stable camera with small natural handheld motion.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action text-to-video.",
+  "artistic_style": "Natural cinematic household scene with soft contrast and crisp material detail.",
+  "context": "A quiet moment of kitchen cleanup after a meal, centered on careful routine and a peaceful home atmosphere.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The woman reaches into the soapy sink and lifts a colorful plate through foam."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "She scrubs and rinses the plate, water beads running across the ceramic as utensils shift in the basin."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "She sets the clean plate aside and reaches for the next bowl, staying focused and steady."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the warm kitchen, sink, soapy water, and woman in a white apron beginning to wash dishes.",
+      "key_changes": "Establish the warm kitchen, sink, soapy water, and woman in a white apron beginning to wash dishes.",
+      "camera": "Medium close shot from counter height, shallow depth of field on hands and dishes, slow stable camera with small natural handheld motion."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Close emphasis on hands, bubbles, colorful dishware, and reflections on the stainless steel sink.",
+      "key_changes": "Close emphasis on hands, bubbles, colorful dishware, and reflections on the stainless steel sink.",
+      "camera": "Medium close shot from counter height, shallow depth of field on hands and dishes, slow stable camera with small natural handheld motion."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Return to a medium view as clean dishes gather and the calm kitchen routine continues.",
+      "key_changes": "Return to a medium view as clean dishes gather and the calm kitchen routine continues.",
+      "camera": "Medium close shot from counter height, shallow depth of field on hands and dishes, slow stable camera with small natural handheld motion."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A woman in a white apron steadily washes dishes in a bright, warm kitchen from start to finish.",
+  "audio_description": "Soft water splashes, ceramic clinks, faint suds, and a quiet room tone from a peaceful home kitchen.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

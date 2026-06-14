@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "African penguin waddling confidently along a sandy beach at sunset.",
+      "appearance_details": "Distinct black and white feathers, compact body, dark flipper like wings, short legs, pale face markings, warm rim light along its silhouette.",
+      "relationship": "Single main penguin subject moving through a coastal sunset scene while seagulls and waves add background life.",
+      "location": "Foreground center on sandy beach dotted with small pebbles and shells, ocean waves behind.",
+      "relative_size": "Medium in the frame, prominent against the orange sky and shoreline.",
+      "orientation": "Facing forward with a slight angle toward camera left as it waddles along the beach.",
+      "pose": "Upright waddling posture with flippers held slightly away from its body for balance.",
+      "action": "Waddles confidently across the sand while waves roll in behind it.",
+      "state_changes": "Starts moving from the shoreline, continues with rhythmic side to side steps, ends silhouetted more strongly against the golden sky.",
+      "clothing": "None, natural feathers only.",
+      "expression": "Calm, determined, and lively.",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "Dense black and white feather texture with slight damp sheen, dark exposed skin around beak and feet.",
+      "facial_features": "Dark eyes, pointed beak, white facial patches, black cap markings.",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Sandy beach at sunset with orange sky, gentle ocean waves, scattered pebbles and shells, and seagulls flying overhead in the coastal air.",
+  "lighting": {
+    "conditions": "Warm golden sunset backlight, orange sky glow, soft reflections on wet sand, slight silhouette edge around the penguin.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Warm golden sunset backlight, orange sky glow, soft reflections on wet sand, slight silhouette edge around the penguin."
+  },
+  "aesthetics": {
+    "composition": "Coastal, warm, serene, charming, confident wildlife moment, soothing beach atmosphere.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Coastal, warm, serene, charming, confident wildlife moment, soothing beach atmosphere.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low tracking shot at penguin height, medium framing, camera glides backward as the penguin waddles toward it, ocean horizon kept soft behind.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Realistic text to video coastal wildlife scene with natural animal motion and surf detail.",
+  "artistic_style": "Cinematic natural realism with warm sunset palette and gentle silhouette contrast.",
+  "context": "An African penguin crosses a peaceful beach at sunset while waves and seagulls define the coastal setting.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The penguin steps onto the sandy foreground as sunset light outlines its black and white feathers."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It waddles confidently past pebbles and shells while seagulls glide overhead and waves roll behind."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The penguin continues forward in a warm silhouette against the orange sky as foam reaches the shore."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "African penguin appears on a sunset beach with waves in the distance.",
+      "key_changes": "African penguin appears on a sunset beach with waves in the distance.",
+      "camera": "Low tracking shot at penguin height, medium framing, camera glides backward as the penguin waddles toward it, ocean horizon kept soft behind."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Pebbles, shells, orange sky, and flying seagulls frame the waddling penguin.",
+      "key_changes": "Pebbles, shells, orange sky, and flying seagulls frame the waddling penguin.",
+      "camera": "Low tracking shot at penguin height, medium framing, camera glides backward as the penguin waddles toward it, ocean horizon kept soft behind."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Penguin silhouette grows warmer against the glowing sky and wet sand.",
+      "key_changes": "Penguin silhouette grows warmer against the glowing sky and wet sand.",
+      "camera": "Low tracking shot at penguin height, medium framing, camera glides backward as the penguin waddles toward it, ocean horizon kept soft behind."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "0:00-0:02 an African penguin steps onto a sunset beach. 0:02-0:05 it waddles past shells as gulls fly overhead. 0:05-0:07 it continues against orange sky and soft waves.",
+  "audio_description": "Gentle ocean waves, distant seagull calls, soft sand footfalls, light coastal breeze.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

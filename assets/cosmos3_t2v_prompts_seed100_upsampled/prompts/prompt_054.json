@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "young entrepreneur typing at a laptop",
+      "appearance_details": "focused young adult seated at a cluttered desk, shoulders lit by laptop glow, hands moving quickly over the keyboard",
+      "relationship": "main human subject driving the intense work scene",
+      "location": "at a desk in a dim office with tall city buildings visible through the window",
+      "relative_size": "medium foreground figure seen from behind the shoulder",
+      "orientation": "facing the laptop and slightly angled toward the window beyond it",
+      "pose": "leaning forward in concentration with both hands over the keyboard",
+      "action": "types intensely while scanning the laptop screen",
+      "state_changes": "fingers accelerate, shoulders tense, screen glow flickers across the face and hands",
+      "clothing": "practical office casual clothing partly obscured by the over-the-shoulder view",
+      "expression": "driven and intent, face partly visible in profile or screen reflection",
+      "gender": "Unknown",
+      "age": "young adult",
+      "skin_tone_and_texture": "natural human skin tones under cool laptop light and dim office shadows",
+      "facial_features": "partial profile, focused eyes, tight jaw, brows drawn toward the screen",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "cluttered work desk with laptop",
+      "appearance_details": "open laptop, scattered documents, notebooks, pens, coffee cups, and overlapping paper stacks across the desktop",
+      "relationship": "workspace showing pressure, ambition, and late work energy",
+      "location": "directly in front of the entrepreneur under dim office lighting",
+      "relative_size": "large foreground surface filling the lower half of the frame",
+      "orientation": "desk surface angled away from camera toward the window",
+      "pose": "stationary cluttered arrangement around the active laptop",
+      "action": "papers shift slightly from hand movement while the laptop screen glows",
+      "state_changes": "coffee steam fades, pages tremble, and screen brightness pulses subtly",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "modern office equipment",
+      "skin_tone_and_texture": "matte paper, glossy laptop screen, ceramic cups, worn desk surface",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A dim office at night or late evening, with a cluttered desk in the foreground and tall city buildings visible through a large window.",
+  "lighting": {
+    "conditions": "low office light mixed with cool laptop glow and distant city window highlights",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "low office light mixed with cool laptop glow and distant city window highlights"
+  },
+  "aesthetics": {
+    "composition": "ambitious work pressure, urban night energy, concentrated silence, messy productivity, cinematic shadows",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "ambitious work pressure, urban night energy, concentrated silence, messy productivity, cinematic shadows",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "over-the-shoulder shot from behind the entrepreneur, shallow focus on hands and laptop, city towers blurred through the window",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic contemporary office text-to-video with intimate work detail and restrained urban atmosphere",
+  "artistic_style": "modern entrepreneurial drama with quiet intensity",
+  "context": "The video shows a young entrepreneur working late at a cluttered office desk, typing with focus while the city rises outside.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The over-the-shoulder view reveals the laptop, scattered documents, coffee cups, and dim city window."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The entrepreneur types rapidly, leaning closer as screen light flickers across the desk."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera holds on the determined posture while city buildings loom beyond the glass."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "A dim office desk appears from behind the entrepreneur, packed with work materials.",
+      "key_changes": "Laptop glow establishes the subject and reveals the scattered documents and coffee cups.",
+      "camera": "static over-the-shoulder frame with shallow depth of field"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Typing intensifies as the subject leans toward the laptop amid the clutter.",
+      "key_changes": "Hands move faster, papers tremble, and the screen glow changes on the desk surface.",
+      "camera": "subtle push-in toward hands and laptop screen"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The final view balances focused work in the foreground with city towers in the window.",
+      "key_changes": "The subject stays locked on the task while background lights shimmer softly.",
+      "camera": "steady hold with slight rack focus toward the skyline"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "From an over-the-shoulder view, a young entrepreneur types intensely at a cluttered desk while dim office light and city towers create a driven late-work mood.",
+  "audio_description": "fast keyboard tapping, faint laptop fan, soft paper rustle, distant city traffic, quiet office hum",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

@@ -1,0 +1,124 @@
+{
+  "subjects": [
+    {
+      "description": "male astronaut sprinting through a Rio alley",
+      "appearance_details": "white spacesuit with red accents, reflective helmet visor, sealed gloves, boots, and suit panels catching colorful mural reflections",
+      "relationship": "futuristic runner contrasting with the traditional urban alley",
+      "location": "center of a narrow bustling alley in Rio de Janeiro",
+      "relative_size": "medium full-body figure dominating the alley foreground",
+      "orientation": "running toward and slightly past the camera along the cobblestone path",
+      "pose": "forward sprint with bent arms, high knees, and balanced helmeted head",
+      "action": "sprints down the alley while sunlight and street art reflect across his visor",
+      "state_changes": "distance to camera closes, suit joints flex, visor colors shift, and dust lifts from cobblestones",
+      "clothing": "white astronaut spacesuit with red accents, gloves, boots, helmet, and reflective visor",
+      "expression": "hidden by helmet, body language urgent and focused",
+      "gender": "Male",
+      "age": "adult",
+      "skin_tone_and_texture": "skin hidden by spacesuit, glossy visor, matte white fabric, red technical accents",
+      "facial_features": "face obscured by reflective helmet visor",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "alley pedestrians",
+      "appearance_details": "small groups of locals in casual street clothing moving near walls and doorways, partly blurred by the astronaut motion",
+      "relationship": "bustling urban crowd emphasizing the strange astronaut presence",
+      "location": "edges of the narrow Rio alley near painted walls and storefronts",
+      "relative_size": "smaller background and midground figures",
+      "orientation": "mostly facing the alley path or turning toward the astronaut",
+      "pose": "walking, pausing, and stepping aside",
+      "action": "make room as the astronaut runs through the alley",
+      "state_changes": "heads turn, bodies shift aside, and background movement continues around the sprint",
+      "clothing": "casual warm-weather street clothing in varied colors",
+      "expression": "surprised, curious, or blurred by motion",
+      "gender": "Unknown",
+      "age": "adults and teenagers",
+      "skin_tone_and_texture": "varied human skin tones in bright sun and alley shadow",
+      "facial_features": "distant faces with quick glances and lifted brows",
+      "number_of_subjects": 8,
+      "number_of_arms": 16,
+      "number_of_legs": 16
+    }
+  ],
+  "background_setting": "A narrow Rio de Janeiro alley with vibrant street art on both walls, cobblestone ground, bright gaps of sunlight, deep shadows, and busy urban life.",
+  "lighting": {
+    "conditions": "strong daylight filtering between buildings, dramatic shadow bands, bright highlights on the spacesuit and reflective helmet",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "strong daylight filtering between buildings, dramatic shadow bands, bright highlights on the spacesuit and reflective helmet"
+  },
+  "aesthetics": {
+    "composition": "surreal urban action, space-age white suit against colorful street art, kinetic alley energy, crisp high-definition realism",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "surreal urban action, space-age white suit against colorful street art, kinetic alley energy, crisp high-definition realism",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "dynamic tracking shot at alley height, slightly wide lens, strong motion blur on background pedestrians and sharp focus on the astronaut",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic text-to-video mixing futuristic space gear with lively Rio street texture",
+  "artistic_style": "high-energy urban science fiction realism with documentary street color",
+  "context": "The video follows a male astronaut in a white and red spacesuit sprinting through a bustling, mural-filled Rio alley.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The astronaut bursts into view at the far end of a colorful narrow alley."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "He sprints past street art and pedestrians as sunlight flashes across his reflective visor."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera tracks his final strides while dust and crowd movement trail behind him."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "Vibrant street art and mural shapes are visible on the alley walls, with no readable words emphasized.",
+      "category": "scene_sign",
+      "appearance": "visible scene text or signage",
+      "spatial_temporal": "visible during the relevant shot interval",
+      "context": "environmental detail"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "A narrow Rio alley opens with colorful murals and the astronaut entering at speed.",
+      "key_changes": "The white suit separates from the busy background and catches the first sunlight.",
+      "camera": "low alley-level tracking setup facing the runner"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "The astronaut runs through bands of sun and shadow while pedestrians react at the edges.",
+      "key_changes": "Helmet reflections shift from warm wall colors to bright sky highlights.",
+      "camera": "fast backward tracking shot with controlled motion blur"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The sprint continues toward the camera with street art and cobblestones streaking behind.",
+      "key_changes": "Dust lifts from the ground and the crowd remains in lively background motion.",
+      "camera": "tight moving medium shot, slightly wide lens"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A male astronaut in a white spacesuit with red accents sprints through a narrow Rio alley, reflecting vivid street art and bright sunlight in his helmet visor.",
+  "audio_description": "rapid bootsteps on cobblestones, suit fabric movement, alley chatter, distant traffic, quick breaths inside the helmet",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "man walking confidently through a dim city alley",
+      "appearance_details": "black jacket, jeans, backpack slung over one shoulder, strong silhouette under street lamps",
+      "relationship": "lone pedestrian moving through an urban alley at night",
+      "location": "center of a narrow cobblestone alley between tall city buildings",
+      "relative_size": "medium full body figure framed by looming walls",
+      "orientation": "walking toward the camera along the alley path",
+      "pose": "upright confident stride with one shoulder carrying the backpack",
+      "action": "walks steadily under flickering warm street lamps while shadows shift along the walls",
+      "state_changes": "enters as a dark silhouette, passes into a pool of warm light, then continues deeper through the alley",
+      "clothing": "black jacket, dark jeans, casual shoes, single shoulder backpack",
+      "expression": "calm, alert, self assured",
+      "gender": "Male",
+      "age": "adult",
+      "skin_tone_and_texture": "mostly obscured by dim lighting, natural skin texture visible briefly in lamplight",
+      "facial_features": "partially shadowed face with focused eyes and neutral mouth",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Urban alley with cobblestone path, tall buildings overhead, textured walls, warm street lamps, deep shadows, and a mysterious city atmosphere.",
+  "lighting": {
+    "conditions": "Dim warm street lighting with flicker, long shadows, and pockets of amber light across wet looking cobblestones.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Dim warm street lighting with flicker, long shadows, and pockets of amber light across wet looking cobblestones."
+  },
+  "aesthetics": {
+    "composition": "Moody urban realism, cinematic contrast, atmospheric depth, quiet mystery without danger or violence.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Moody urban realism, cinematic contrast, atmospheric depth, quiet mystery without danger or violence.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Centered tracking shot moving backward as the man walks forward, using the alley walls as leading lines.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic text to video",
+  "artistic_style": "urban night film style with controlled shadow detail, realistic walking motion, and stable perspective",
+  "context": "A confident man crosses a dim city alley while the lamps and tall buildings create a dramatic mood.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Man appears at the far end of the alley and walks toward the warm lamp glow."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "He passes beneath a street lamp, backpack shifting slightly as his silhouette lengthens on the cobblestones."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "He continues forward with steady confidence while shadows ripple across the walls."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the narrow alley, cobblestones, tall buildings, and lone man approaching.",
+      "key_changes": "Establish the narrow alley, cobblestones, tall buildings, and lone man approaching.",
+      "camera": "Centered tracking shot moving backward as the man walks forward, using the alley walls as leading lines."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Track his confident stride through the brightest pool of street lamp light.",
+      "key_changes": "Track his confident stride through the brightest pool of street lamp light.",
+      "camera": "Centered tracking shot moving backward as the man walks forward, using the alley walls as leading lines."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the elongated silhouette and moody urban depth as he keeps walking.",
+      "key_changes": "Hold the elongated silhouette and moody urban depth as he keeps walking.",
+      "camera": "Centered tracking shot moving backward as the man walks forward, using the alley walls as leading lines."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Over seven seconds, a man in a black jacket and jeans walks confidently down a dim cobblestone alley under warm flickering street lamps.",
+  "audio_description": "Quiet city ambience, footsteps on cobblestone, distant traffic hum, subtle lamp buzz.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "team of firefighters moving through earthquake rubble",
+      "appearance_details": "adult rescue workers in soot-dusted protective gear, helmets, face shields, gloves, oxygen packs, reflective striping, and heavy boots",
+      "relationship": "primary rescue team searching for civilians after a citywide earthquake",
+      "location": "foreground and midground streets beside collapsed concrete, twisted rebar, and damaged vehicles",
+      "relative_size": "human scale, small against ruined skyscrapers but visually dominant in the rescue foreground",
+      "orientation": "moving forward through debris toward trapped civilians and unstable structures",
+      "pose": "crouching, climbing, bracing, and signaling while carrying rescue tools",
+      "action": "race across broken pavement, scan rubble, coordinate signals, and begin a careful rescue operation",
+      "state_changes": "dust coats gear more heavily; flashlights switch on as daylight fades; team formation tightens around a rescue point",
+      "clothing": "firefighter turnout coats, pants, helmets, gloves, boots, harnesses, and reflective safety bands",
+      "expression": "urgent, determined, focused, and controlled under pressure",
+      "gender": "Unknown",
+      "age": "adults",
+      "skin_tone_and_texture": "varied human skin tones partly obscured by soot, dust, masks, and harsh emergency light",
+      "facial_features": "partly visible eyes, tense brows, ash-marked cheeks, and helmet shadows",
+      "number_of_subjects": 6,
+      "number_of_arms": 12,
+      "number_of_legs": 12
+    },
+    {
+      "description": "engineers stabilizing damaged city infrastructure",
+      "appearance_details": "civil engineers in hard hats, high visibility vests, work gloves, tablets, radios, and portable measuring equipment",
+      "relationship": "support team working near the firefighters to prevent further collapse",
+      "location": "midground near a cracked bridge support and damaged utility corridor",
+      "relative_size": "human scale, secondary figures amid large broken structures",
+      "orientation": "facing damaged supports, leaning over equipment and pointing toward stress fractures",
+      "pose": "kneeling, standing, bracing temporary supports, and checking readings",
+      "action": "inspect fractures, deploy braces, radio warnings, and guide rescue crews away from unsafe zones",
+      "state_changes": "portable lights come on; temporary supports lock into place; warning gestures redirect firefighters",
+      "clothing": "hard hats, reflective vests, rugged pants, gloves, and work boots",
+      "expression": "serious, concentrated, and alert",
+      "gender": "Unknown",
+      "age": "adults",
+      "skin_tone_and_texture": "varied skin tones with dust, sweat, and emergency light reflections",
+      "facial_features": "focused eyes, tight mouths, protective goggles, and radio headsets",
+      "number_of_subjects": 4,
+      "number_of_arms": 8,
+      "number_of_legs": 8
+    },
+    {
+      "description": "bustling metropolis devastated by a massive earthquake",
+      "appearance_details": "cracked skyscrapers, falling glass, collapsed bridge spans, fires, smoke plumes, dust clouds, damaged cars, broken signs, and emergency lights",
+      "relationship": "disaster environment surrounding the rescue operation",
+      "location": "entire background cityscape and street canyon",
+      "relative_size": "enormous, dwarfing all people and vehicles",
+      "orientation": "vertical towers fractured above streets, bridge segments angled downward into smoke",
+      "pose": "unstable urban landscape with debris settling and flames spreading in controlled cinematic distance",
+      "action": "crumbles, sheds dust, burns in scattered pockets, and shifts from late day chaos into night rescue lighting",
+      "state_changes": "dust expands then thins; fires brighten as daylight fades; emergency lights become more visible",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "modern metropolis",
+      "skin_tone_and_texture": "concrete, glass, steel, smoke, flame, asphalt, and rubble with gritty realistic detail",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A major city after a huge earthquake, with damaged skyscrapers, collapsed bridges, cracked streets, drifting dust, scattered fires, emergency vehicles, and civilians implied by rescue activity but not shown in graphic distress.",
+  "lighting": {
+    "conditions": "Starts in smoky late afternoon sunlight, shifts toward dusk, and ends with blue night tones, orange fires, white searchlights, and red emergency flashes cutting through dust.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Starts in smoky late afternoon sunlight, shifts toward dusk, and ends with blue night tones, orange fires, white searchlights, and red emergency flashes cutting through dust."
+  },
+  "aesthetics": {
+    "composition": "High stakes disaster cinema, large scale urban destruction, grounded rescue realism, smoky atmosphere, urgent movement, and strong contrast between warm fires and cool evening shadows.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "High stakes disaster cinema, large scale urban destruction, grounded rescue realism, smoky atmosphere, urgent movement, and strong contrast between warm fires and cool evening shadows.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Wide establishing disaster shot that pushes into street level rescue action, handheld urgency with controlled shake, deep perspective down a ruined avenue, and sharp focus on rescuers against monumental damage.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action super disaster text-to-video.",
+  "artistic_style": "Cinematic blockbuster realism with dense smoke, debris physics, emergency lighting, and dramatic but non-graphic rescue emphasis.",
+  "context": "A massive earthquake has just struck a crowded metropolis, and emergency teams begin a race against time to save trapped civilians while engineers stabilize critical infrastructure.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "A wide view reveals cracked towers, a collapsed bridge, dust rolling through streets, and firefighters entering the ruined avenue."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Firefighters climb over rubble while engineers brace a damaged support and radio safety directions through smoke and sirens."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Daylight fades into night rescue lighting as search beams lock onto debris and the teams converge on a careful extraction point."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the devastated metropolis immediately after the earthquake, with skyscrapers damaged, bridge spans down, fires starting, and firefighters entering frame.",
+      "key_changes": "Dust expands, debris settles, and the rescue team becomes visible in the foreground.",
+      "camera": "Wide aerial-to-street push in with slight disaster shake."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Track firefighters and engineers working in parallel through rubble, smoke, cracked pavement, and unstable infrastructure.",
+      "key_changes": "Engineers place supports, firefighters signal, smoke thickens, and emergency vehicles flash in the haze.",
+      "camera": "Low street-level tracking shot with handheld urgency and foreground debris parallax."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The city darkens into a night rescue setup as teams gather around a rubble pocket under searchlights.",
+      "key_changes": "Warm daylight drops, blue night appears, searchlights intensify, and the rescue operation focuses.",
+      "camera": "Slow push toward the rescue point, ending on firefighters framed by lights, smoke, and ruined towers."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A massive earthquake devastates a metropolis while firefighters and engineers move from first chaos into a focused night rescue operation.",
+  "audio_description": "Deep rumbling aftershocks, falling debris, distant alarms, crackling fires, radio chatter, heavy boots on rubble, and urgent sirens through smoky air.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

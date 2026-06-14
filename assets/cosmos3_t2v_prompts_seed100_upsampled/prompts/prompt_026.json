@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "Giant panda swimming gracefully underwater in a calm clear habitat.",
+      "appearance_details": "Distinct black and white fur flowing softly in water, rounded ears, dark eye patches, buoyant body, paws paddling with surprising agility.",
+      "relationship": "Single main panda subject moving among aquatic plants and curious fish.",
+      "location": "Midwater center of a serene aquarium like underwater habitat, surrounded by plants and small fish.",
+      "relative_size": "Large compared with fish and plants, filling the middle of the frame.",
+      "orientation": "Body angled diagonally from lower left toward upper right, swimming forward through clear water.",
+      "pose": "Streamlined floating posture with front limbs extended and rear limbs gently kicking.",
+      "action": "Swims smoothly underwater, maneuvering around aquatic plants.",
+      "state_changes": "Starts entering frame from one side, glides through plants while bubbles trail from fur, ends turning slightly toward a group of fish.",
+      "clothing": "None, natural fur only.",
+      "expression": "Calm, gentle, curious, and relaxed.",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "Dense wet black and white fur with softened underwater texture and tiny trapped air bubbles.",
+      "facial_features": "Round face, black eye patches, small dark eyes, broad black nose, rounded ears.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Serene clear underwater environment designed like a natural habitat, with lush aquatic plants, smooth stones, drifting bubbles, and a few small curious fish.",
+  "lighting": {
+    "conditions": "Filtered aqua light from above, caustic patterns across fur and plants, soft blue green shadows in calm water.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Filtered aqua light from above, caustic patterns across fur and plants, soft blue green shadows in calm water."
+  },
+  "aesthetics": {
+    "composition": "Peaceful, surreal, graceful, clean water clarity, soft fur motion, gentle aquarium calm.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Peaceful, surreal, graceful, clean water clarity, soft fur motion, gentle aquarium calm.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Slow underwater tracking shot at medium distance, stable camera drifting alongside the panda, visible depth layers from plants and fish.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Realistic text to video with gentle fantasy wildlife adaptation and underwater physics.",
+  "artistic_style": "Soft cinematic realism with tranquil blue green color grade and dreamy underwater atmosphere.",
+  "context": "A panda adapted to aquatic life glides through clear water in a calm planted habitat.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The panda enters the frame underwater, fur waving softly as it paddles into the clear habitat."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It swims between aquatic plants with smooth front paw strokes while small fish drift nearby."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The panda turns gently toward the fish, bubbles rising from its wet fur into the filtered light."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Clear underwater habitat with a giant panda gliding into view.",
+      "key_changes": "Clear underwater habitat with a giant panda gliding into view.",
+      "camera": "Slow underwater tracking shot at medium distance, stable camera drifting alongside the panda, visible depth layers from plants and fish."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Panda passes through aquatic plants, fish, stones, and caustic light.",
+      "key_changes": "Panda passes through aquatic plants, fish, stones, and caustic light.",
+      "camera": "Slow underwater tracking shot at medium distance, stable camera drifting alongside the panda, visible depth layers from plants and fish."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The panda turns in blue green water as bubbles rise around its face.",
+      "key_changes": "The panda turns in blue green water as bubbles rise around its face.",
+      "camera": "Slow underwater tracking shot at medium distance, stable camera drifting alongside the panda, visible depth layers from plants and fish."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "0:00-0:02 a panda swims into a clear underwater habitat. 0:02-0:05 it glides through plants and fish. 0:05-0:07 it turns calmly as bubbles rise in filtered light.",
+  "audio_description": "Muffled underwater ambience, soft bubbling, gentle water movement, faint distant aquarium hum.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

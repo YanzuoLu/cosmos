@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "towering pile of burning autumn leaves",
+      "appearance_details": "golden, amber, rust, and brown leaves stacked high, bright orange flames curling through dry edges, gray smoke lifting upward",
+      "relationship": "primary fiery subject within the ancient forest clearing",
+      "location": "on the leaf-covered forest floor near the center foreground",
+      "relative_size": "large pile rising above the surrounding fallen leaves but smaller than the nearby trees",
+      "orientation": "vertical flame movement rising from a rounded mound",
+      "pose": "stationary pile with active flickering fire",
+      "action": "crackles and burns as smoke drifts into the cool forest air",
+      "state_changes": "flames brighten and shift, leaf edges curl darker, smoke thickens slightly then thins as it rises",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "freshly fallen autumn leaves",
+      "skin_tone_and_texture": "dry brittle leaf surfaces with glowing ember edges and smoky ash patches",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "distant ancient oak tree silhouette",
+      "appearance_details": "tall dark trunk, wide branching crown, rugged bark, partly obscured by smoke and warm firelight",
+      "relationship": "dramatic background guardian behind the burning leaf pile",
+      "location": "deep in the background among dense forest trunks",
+      "relative_size": "much taller than the leaf pile and surrounding undergrowth",
+      "orientation": "upright and still",
+      "pose": "rooted vertical silhouette",
+      "action": "stands motionless while flickering shadows pass over its trunk",
+      "state_changes": "visibility shifts as smoke passes in front of it",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "ancient tree",
+      "skin_tone_and_texture": "dark rough bark with shadowed leaf canopy",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A dense ancient forest with tall trunks, a carpet of fallen autumn leaves, and cool air visible through drifting smoke. The burning leaf pile sits in a small clearing, with no people or buildings visible.",
+  "lighting": {
+    "conditions": "warm firelight provides the main illumination, casting flickering orange shadows on trees and leaf litter, with dim cool forest light in the background",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "warm firelight provides the main illumination, casting flickering orange shadows on trees and leaf litter, with dim cool forest light in the background"
+  },
+  "aesthetics": {
+    "composition": "dramatic autumn atmosphere, high contrast fire glow, smoky depth, rustic forest texture, tense but contained mood",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "dramatic autumn atmosphere, high contrast fire glow, smoky depth, rustic forest texture, tense but contained mood",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "low-to-medium cinematic shot, slow push-in toward the fire, shallow smoke layers creating depth, steady handheld feel without sudden movement",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic text-to-video with natural fire simulation and detailed smoke",
+  "artistic_style": "moody woodland drama with warm firelight against cool forest shadows",
+  "context": "The video shows a pile of autumn leaves burning in an isolated forest clearing, emphasizing crackling texture, smoke, and the scale of the old trees around it.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera frames the burning leaf pile as flames flicker through amber and rust-colored leaves."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Smoke rises and drifts between tree trunks while the fire casts moving shadows across the forest floor."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The distant oak silhouette becomes visible through thinner smoke as the leaf pile continues to crackle."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Close cinematic view of golden autumn leaves burning with bright orange flames.",
+      "key_changes": "Close cinematic view of golden autumn leaves burning with bright orange flames.",
+      "camera": "low-to-medium cinematic shot, slow push-in toward the fire, shallow smoke layers creating depth, steady handheld feel without sudden movement"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Smoke curls upward and firelight ripples across bark, fallen leaves, and nearby trunks.",
+      "key_changes": "Smoke curls upward and firelight ripples across bark, fallen leaves, and nearby trunks.",
+      "camera": "low-to-medium cinematic shot, slow push-in toward the fire, shallow smoke layers creating depth, steady handheld feel without sudden movement"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The shot holds on the fire with the ancient oak standing in the smoky distance.",
+      "key_changes": "The shot holds on the fire with the ancient oak standing in the smoky distance.",
+      "camera": "low-to-medium cinematic shot, slow push-in toward the fire, shallow smoke layers creating depth, steady handheld feel without sudden movement"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A mound of crisp autumn leaves burns in a dense old forest, sending smoke past tall trunks as firelight reveals a distant oak silhouette.",
+  "audio_description": "crackling dry leaves, soft popping embers, faint breeze through trees, low forest ambience",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

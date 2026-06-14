@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "vintage steam locomotive with carriages",
+      "appearance_details": "black polished engine, intricate brass fixtures, round headlamp, visible smokestack, several well-kept carriages with polished wood and ornate metalwork",
+      "relationship": "main nostalgic transport subject preparing to leave the historic station",
+      "location": "on the track beside a grand arched stone station platform",
+      "relative_size": "large vehicle dominating the platform scene",
+      "orientation": "front angled toward the track exit, carriages trailing behind",
+      "pose": "stationary but pressurized and ready to depart",
+      "action": "builds steam as the engineer revs the engine and passengers board",
+      "state_changes": "steam thickens near the wheels and smokestack, brass fixtures catch shifting sunlight",
+      "clothing": "polished brass fixtures and ornate metal trim",
+      "expression": "",
+      "gender": "",
+      "age": "historic restored locomotive",
+      "skin_tone_and_texture": "glossy black metal, warm brass, polished wood, soft white steam",
+      "facial_features": "round headlamp and front grille",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "passengers in period attire",
+      "appearance_details": "adults wearing vintage hats, coats, dresses, waistcoats, and travel bags, moving eagerly along the platform",
+      "relationship": "boarding passengers who support the departure moment",
+      "location": "station platform beside the locomotive and carriage doors",
+      "relative_size": "small compared with the train and station arch",
+      "orientation": "facing carriage doors and station attendants",
+      "pose": "walking, pausing, and stepping up into carriages",
+      "action": "board the train and gather near the doors in anticipation of departure",
+      "state_changes": "people shift forward, lift bags, and disappear into carriage entrances",
+      "clothing": "period coats, dresses, hats, waistcoats, gloves, and leather travel bags",
+      "expression": "eager and nostalgic, faces partly distant",
+      "gender": "Unknown",
+      "age": "adults",
+      "skin_tone_and_texture": "varied human skin tones under warm golden sunlight",
+      "facial_features": "small distant faces with smiles and attentive expressions",
+      "number_of_subjects": 12,
+      "number_of_arms": 24,
+      "number_of_legs": 24
+    },
+    {
+      "description": "train engineer",
+      "appearance_details": "engineer in period workwear visible near the cab, hand on controls, framed by brass and steam",
+      "relationship": "operator preparing the locomotive for departure",
+      "location": "inside or beside the locomotive cab",
+      "relative_size": "small within the train structure but important to the action",
+      "orientation": "facing the engine controls and track ahead",
+      "pose": "leaning forward in concentration",
+      "action": "revs the engine and prepares to depart",
+      "state_changes": "moves the controls as steam output increases",
+      "clothing": "period engineer cap, dark work jacket, practical trousers",
+      "expression": "focused and composed",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "natural human skin, partly obscured by cap shadow and steam",
+      "facial_features": "partly visible face with focused eyes",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A historic train station with a grand arched entrance, stone walls, sunlit platform, lush greenery, and a picturesque town beyond the tracks.",
+  "lighting": {
+    "conditions": "warm golden sunlight across stone walls, brass fixtures, steam clouds, and platform edges",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "warm golden sunlight across stone walls, brass fixtures, steam clouds, and platform edges"
+  },
+  "aesthetics": {
+    "composition": "nostalgic travel mood, polished vintage details, golden station atmosphere, adventure and anticipation",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "nostalgic travel mood, polished vintage details, golden station atmosphere, adventure and anticipation",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "medium-wide platform shot with a slow dolly along the locomotive, shallow steam layers and warm backlight",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic period railway text-to-video with cinematic steam and detailed historical props",
+  "artistic_style": "nostalgic adventure scene inspired by classic railway cinema",
+  "context": "The video captures a restored steam train at a historic station moments before departure, with passengers boarding and the engineer bringing the engine to life.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera reveals the brass-trimmed locomotive waiting at the sunlit arched station."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Passengers in period clothing board the carriages while the engineer works the controls."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Steam billows around the wheels and cab, signaling that the train is about to depart."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Golden sunlight reveals the historic stone station and polished steam locomotive.",
+      "key_changes": "Golden sunlight reveals the historic stone station and polished steam locomotive.",
+      "camera": "medium-wide platform shot with a slow dolly along the locomotive, shallow steam layers and warm backlight"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Passengers step onto carriages with bags while brass fixtures gleam and the engineer prepares the engine.",
+      "key_changes": "Passengers step onto carriages with bags while brass fixtures gleam and the engineer prepares the engine.",
+      "camera": "medium-wide platform shot with a slow dolly along the locomotive, shallow steam layers and warm backlight"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Steam grows thicker around the train, creating a nostalgic departure tableau.",
+      "key_changes": "Steam grows thicker around the train, creating a nostalgic departure tableau.",
+      "camera": "medium-wide platform shot with a slow dolly along the locomotive, shallow steam layers and warm backlight"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A restored vintage steam locomotive waits at a golden historic station as period-dressed passengers board and the engineer builds steam for departure.",
+  "audio_description": "steam hissing, engine chuffing softly, platform footsteps, faint passenger chatter, distant station ambience",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

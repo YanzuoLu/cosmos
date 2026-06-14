@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "young woman driving a silver sports car",
+      "appearance_details": "short curly brown hair, seated at the wheel with seatbelt fastened, focused on the road",
+      "relationship": "driver controlling the car on a scenic route",
+      "location": "driver seat inside the sports car cabin",
+      "relative_size": "medium human scale within the cockpit, framed by dashboard and windows",
+      "orientation": "facing forward toward the winding road with brief glances to mirrors and display",
+      "pose": "seated upright with hands on the steering wheel",
+      "action": "drives smoothly through curves while monitoring the road and dashboard",
+      "state_changes": "hands adjust steering through a bend; hair shifts slightly with cabin movement; eyes track the road ahead",
+      "clothing": "white t-shirt, jeans, and seatbelt",
+      "expression": "focused, calm, confident",
+      "gender": "Female",
+      "age": "young adult",
+      "skin_tone_and_texture": "natural skin with daylight from windshield and side windows",
+      "facial_features": "short curly brown hair, attentive eyes, composed expression",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "sleek silver sports car",
+      "appearance_details": "low aerodynamic body, modern dashboard, large touchscreen, safety displays, and polished silver exterior",
+      "relationship": "vehicle driven by the young woman",
+      "location": "on a winding scenic road with forest and mountains beyond",
+      "relative_size": "large vehicle scale, surrounding the driver and dominating exterior shots",
+      "orientation": "oriented forward along the road curves",
+      "pose": "rolling low and stable through the lane",
+      "action": "travels smoothly along the scenic route",
+      "state_changes": "dashboard display glows; road reflections slide across silver paint; car leans subtly into curves",
+      "clothing": "no clothing",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "modern sports car",
+      "skin_tone_and_texture": "glossy silver paint, glass, leather, and digital screen surfaces",
+      "facial_features": "sharp headlights, low hood, clean dashboard lines",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "Winding scenic road bordered by lush green trees, with mountains in the distance and a clean modern car interior in the foreground.",
+  "lighting": {
+    "conditions": "Bright natural daylight through windshield and side windows, balanced with cool dashboard glow and soft road reflections.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Bright natural daylight through windshield and side windows, balanced with cool dashboard glow and soft road reflections."
+  },
+  "aesthetics": {
+    "composition": "Modern travel realism, silver technology, green mountain scenery, clean cabin surfaces, and confident motion.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Modern travel realism, silver technology, green mountain scenery, clean cabin surfaces, and confident motion.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Interior over-dashboard shot mixed as a continuous feel with slight road vibration, clear view of driver, display, steering wheel, and road.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action driving video.",
+  "artistic_style": "Polished automotive lifestyle realism with crisp reflections and scenic depth.",
+  "context": "A young woman drives a sleek sports car along a picturesque mountain road.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera frames the driver, fastened seatbelt, modern dashboard, and curving road ahead."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "She steers through a gentle bend while trees slide past the windows and the touchscreen glows."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The road opens toward distant mountains as the car continues smoothly forward."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the driver inside the silver sports car with seatbelt, wheel, and dashboard visible.",
+      "key_changes": "Establish the driver inside the silver sports car with seatbelt, wheel, and dashboard visible.",
+      "camera": "Interior over-dashboard shot mixed as a continuous feel with slight road vibration, clear view of driver, display, steering wheel, and road."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Show active driving through the winding green road, with steering corrections and moving scenery.",
+      "key_changes": "Show active driving through the winding green road, with steering corrections and moving scenery.",
+      "camera": "Interior over-dashboard shot mixed as a continuous feel with slight road vibration, clear view of driver, display, steering wheel, and road."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold the composed journey as mountains appear in the distance through the windshield.",
+      "key_changes": "Hold the composed journey as mountains appear in the distance through the windshield.",
+      "camera": "Interior over-dashboard shot mixed as a continuous feel with slight road vibration, clear view of driver, display, steering wheel, and road."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A young woman with short curly brown hair drives a sleek silver sports car along a scenic mountain road.",
+  "audio_description": "Low engine hum, soft tire noise on pavement, faint dashboard alerts, and muted wind through the car cabin.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

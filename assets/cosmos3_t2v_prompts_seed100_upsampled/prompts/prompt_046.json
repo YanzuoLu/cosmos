@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "decorated birthday cake",
+      "appearance_details": "two-layer vanilla sponge cake with creamy white icing, colorful sprinkles scattered across the top and sides, single large candle centered on top",
+      "relationship": "main celebratory subject displayed on a white ceramic plate",
+      "location": "center of a white ceramic plate on a softly lit table",
+      "relative_size": "medium close-up object filling most of the frame",
+      "orientation": "upright, candle vertical in the center",
+      "pose": "stationary on the plate",
+      "action": "sits ready for celebration as the candle waits to be lit",
+      "state_changes": "icing and sprinkles remain still while the camera reveals layered texture and candle detail",
+      "clothing": "white icing and colorful sprinkles",
+      "expression": "cheerful and celebratory",
+      "gender": "",
+      "age": "freshly prepared cake",
+      "skin_tone_and_texture": "smooth creamy frosting, soft sponge layers, glossy sprinkle surfaces",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "single large birthday candle",
+      "appearance_details": "tall colorful candle set into the cake center, clean wick, wax surface catching warm highlights",
+      "relationship": "central decorative element on the cake",
+      "location": "top center of the cake",
+      "relative_size": "small compared with the cake but visually prominent",
+      "orientation": "vertical",
+      "pose": "standing straight in the frosting",
+      "action": "remains unlit and ready for the celebration",
+      "state_changes": "no flame appears, only subtle highlight changes from camera movement",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "new candle",
+      "skin_tone_and_texture": "smooth wax with a small dark wick",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A simple cozy tabletop setting with the glossy white plate beneath the cake and a softly blurred warm background that suggests an intimate birthday celebration.",
+  "lighting": {
+    "conditions": "soft warm indoor lighting, gentle highlights on frosting and ceramic plate, shallow shadow under the cake",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "soft warm indoor lighting, gentle highlights on frosting and ceramic plate, shallow shadow under the cake"
+  },
+  "aesthetics": {
+    "composition": "clean celebratory still life, inviting dessert textures, bright sprinkles against white icing, cozy warmth",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "clean celebratory still life, inviting dessert textures, bright sprinkles against white icing, cozy warmth",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "close-up tabletop shot, slow dolly-in with slight right-to-left reveal, shallow depth of field focused on frosting and candle",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic food cinematography text-to-video, crisp detail, warm color grading",
+  "artistic_style": "cozy birthday still life with polished commercial dessert styling",
+  "context": "The video highlights a freshly decorated birthday cake on a plate, ready for the candle-lighting moment.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera opens on the white plate and frosted cake in warm soft light."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "A slow push-in reveals the two sponge layers, creamy icing, and colorful sprinkles."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Focus settles on the single large candle standing ready at the cake's center."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Warm close-up of a birthday cake resting on a glossy white ceramic plate.",
+      "key_changes": "Warm close-up of a birthday cake resting on a glossy white ceramic plate.",
+      "camera": "close-up tabletop shot, slow dolly-in with slight right-to-left reveal, shallow depth of field focused on frosting and candle"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "The camera glides closer across white icing, sprinkles, and soft cake layers.",
+      "key_changes": "The camera glides closer across white icing, sprinkles, and soft cake layers.",
+      "camera": "close-up tabletop shot, slow dolly-in with slight right-to-left reveal, shallow depth of field focused on frosting and candle"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The unlit candle remains centered, ready for a birthday celebration.",
+      "key_changes": "The unlit candle remains centered, ready for a birthday celebration.",
+      "camera": "close-up tabletop shot, slow dolly-in with slight right-to-left reveal, shallow depth of field focused on frosting and candle"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A two-layer vanilla birthday cake with white icing, colorful sprinkles, and one large candle sits on a white ceramic plate in warm light.",
+  "audio_description": "quiet indoor room tone, faint celebratory ambience, soft ceramic table contact sounds",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

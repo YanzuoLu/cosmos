@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "astronaut riding a white horse in the desert",
+      "appearance_details": "human figure sealed in a sleek spacesuit with reflective patches and a mirrored helmet catching gold desert hues",
+      "relationship": "rider controlling the horse",
+      "location": "center frame on horseback crossing open sand",
+      "relative_size": "human scale rider, smaller than the horse but visually dominant through bright suit contrast",
+      "orientation": "facing forward along the horse path, helmet turned slightly into the wind",
+      "pose": "seated firmly in the saddle, leaning forward for balance",
+      "action": "holds the reins tightly while riding across the desert",
+      "state_changes": "helmet reflections shift; suit fabric creases with motion; body balances with the gallop",
+      "clothing": "sleek white spacesuit with reflective patches and full helmet",
+      "expression": "determined and hidden behind reflective visor",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "skin not visible under sealed suit and visor",
+      "facial_features": "facial features hidden by mirrored helmet",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "majestic pure white horse galloping",
+      "appearance_details": "strong white coat, flowing mane, muscular frame, hooves kicking up dust",
+      "relationship": "mount carrying the astronaut",
+      "location": "center foreground moving across sunlit desert floor",
+      "relative_size": "large animal scale, larger than rider body mass",
+      "orientation": "oriented left to right across the frame",
+      "pose": "galloping with legs extended and head forward",
+      "action": "runs gracefully over sand and leaves a dust trail",
+      "state_changes": "dust plume grows behind hooves; mane and tail stream with speed; stride cycles remain fluid",
+      "clothing": "saddle and reins",
+      "expression": "alert and energetic",
+      "gender": "Unknown",
+      "age": "adult horse",
+      "skin_tone_and_texture": "clean white coat with warm sunset highlights and dust flecks",
+      "facial_features": "long muzzle, dark eyes, lifted ears",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "Vast sun-drenched desert with open sand, a distant mountain range, long shadows, and a panoramic sunset sky in warm gold and amber tones.",
+  "lighting": {
+    "conditions": "Low setting sun with strong rim light, golden reflections on the helmet, warm sand glow, and elongated shadows.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Low setting sun with strong rim light, golden reflections on the helmet, warm sand glow, and elongated shadows."
+  },
+  "aesthetics": {
+    "composition": "Surreal cinematic contrast between space exploration and western desert travel, with white forms against golden terrain.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Surreal cinematic contrast between space exploration and western desert travel, with white forms against golden terrain.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Wide tracking shot beside the galloping horse, dust in the foreground, mountains layered in the background, steady cinematic motion.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic cinematic text-to-video.",
+  "artistic_style": "Epic surreal realism with high-detail desert atmosphere and heroic framing.",
+  "context": "An astronaut crosses a desert landscape on horseback as if exploring an alien frontier at sunset.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The white horse enters in a strong gallop with the astronaut seated firmly in the saddle."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Dust trails behind the hooves as the astronaut grips the reins and the visor reflects golden mountains."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The pair continue across the open desert beneath long sunset shadows."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Wide desert view establishes the astronaut, horse, sand, mountains, and low sun.",
+      "key_changes": "Wide desert view establishes the astronaut, horse, sand, mountains, and low sun.",
+      "camera": "Wide tracking shot beside the galloping horse, dust in the foreground, mountains layered in the background, steady cinematic motion."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Track alongside the gallop, emphasizing dust, reins, visor reflections, and moving muscles.",
+      "key_changes": "Track alongside the gallop, emphasizing dust, reins, visor reflections, and moving muscles.",
+      "camera": "Wide tracking shot beside the galloping horse, dust in the foreground, mountains layered in the background, steady cinematic motion."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Let the rider and horse carry forward into the glowing panorama without a cut.",
+      "key_changes": "Let the rider and horse carry forward into the glowing panorama without a cut.",
+      "camera": "Wide tracking shot beside the galloping horse, dust in the foreground, mountains layered in the background, steady cinematic motion."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "An astronaut in a white spacesuit rides a pure white horse across a golden desert at sunset.",
+  "audio_description": "Rhythmic hoofbeats on sand, rushing wind, soft tack creaks, and a broad desert ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

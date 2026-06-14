@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "skilled dancer practicing ballet at home",
+      "appearance_details": "form fitting black leotard, pink ballet slippers, controlled posture, precise arm and leg lines",
+      "relationship": "solo dancer using the mirror for self correction during practice",
+      "location": "spacious home practice room on a hardwood floor beside a full length mirror",
+      "relative_size": "medium full body figure with mirror reflection doubling the visible movement",
+      "orientation": "angled toward the mirror while partly facing the camera",
+      "pose": "upright ballet posture shifting between plie, tendu, and arabesque positions",
+      "action": "executes a short ballet practice sequence with precise footwork and fluid upper body control",
+      "state_changes": "begins in a grounded plie, extends into a tendu, then rises into a balanced arabesque",
+      "clothing": "black leotard and pink ballet slippers",
+      "expression": "focused, disciplined, serene",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "natural skin texture in soft warm indoor light, exact tone unspecified",
+      "facial_features": "composed face, concentrated eyes, relaxed jaw during movement",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Spacious home practice room with polished hardwood floor, soft warm lighting, and a full length mirror reflecting the dancer's movements.",
+  "lighting": {
+    "conditions": "Soft warm indoor light spread evenly across the hardwood floor with gentle mirror reflections.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Soft warm indoor light spread evenly across the hardwood floor with gentle mirror reflections."
+  },
+  "aesthetics": {
+    "composition": "Elegant disciplined practice mood, clean home studio composition, graceful motion, quiet focus.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Elegant disciplined practice mood, clean home studio composition, graceful motion, quiet focus.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Wide full body framing with the mirror visible, steady camera, slight lateral drift to follow the ballet line.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic text to video",
+  "artistic_style": "classical dance film realism with precise body mechanics, smooth motion continuity, and warm indoor atmosphere",
+  "context": "A dancer practices ballet technique at home while using the mirror to refine posture and alignment.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Dancer lowers into a controlled plie, reflected clearly in the full length mirror."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Dancer extends through tendu with pointed foot and measured arm placement across the warm floor."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Dancer lifts into a brief arabesque and holds balance while checking alignment in the mirror."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the home practice room, mirror, hardwood floor, and dancer in black leotard.",
+      "key_changes": "Establish the home practice room, mirror, hardwood floor, and dancer in black leotard.",
+      "camera": "Wide full body framing with the mirror visible, steady camera, slight lateral drift to follow the ballet line."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Show fluid transition through ballet footwork with the mirror confirming posture.",
+      "key_changes": "Show fluid transition through ballet footwork with the mirror confirming posture.",
+      "camera": "Wide full body framing with the mirror visible, steady camera, slight lateral drift to follow the ballet line."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "End on a poised arabesque with warm light and steady reflection.",
+      "key_changes": "End on a poised arabesque with warm light and steady reflection.",
+      "camera": "Wide full body framing with the mirror visible, steady camera, slight lateral drift to follow the ballet line."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Over seven seconds, a focused dancer practices plie, tendu, and arabesque in a warm home studio with a full length mirror.",
+  "audio_description": "Soft classical music, faint slipper movement on hardwood, quiet room ambience, no dialogue.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

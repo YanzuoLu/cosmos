@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "white and orange tabby cat darting through a dense garden path",
+      "appearance_details": "short-haired tabby with white chest and paws, orange patches, bright wide eyes, alert ears, and warm daylight on its fur",
+      "relationship": "primary animal subject being followed closely by the camera",
+      "location": "narrow ground-level path between branches, flowers, leaves, and garden plants",
+      "relative_size": "small cat filling much of the low foreground, surrounded by taller plants",
+      "orientation": "moving forward along the path while scanning side to side",
+      "pose": "low agile jog with paws stepping lightly and tail balancing turns",
+      "action": "darts happily through the garden as if chasing something unseen",
+      "state_changes": "eyes track moving leaves; body shifts around plants; orange fur catches scattered sunlight",
+      "clothing": "",
+      "expression": "wide-eyed, happy, and intent",
+      "gender": "Unknown",
+      "age": "adult cat",
+      "skin_tone_and_texture": "white and orange tabby fur, sharp whiskers, soft coat texture, and warm highlighted patches",
+      "facial_features": "bright eyes, pink nose, long whiskers, pointed ears, and alert forward gaze",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "A dense garden corridor with overlapping branches, flowers, leaves, narrow soil path, and warm scattered daylight filtering from above.",
+  "lighting": {
+    "conditions": "Dappled daylight through leaves, warm highlights on orange fur, soft shadows under plants, and high contrast patches along the path.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Dappled daylight through leaves, warm highlights on orange fur, soft shadows under plants, and high contrast patches along the path."
+  },
+  "aesthetics": {
+    "composition": "Cinematic warm tones, intimate low perspective, shallow focus, grainy texture, and clear sharp subject detail within lush greenery.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Cinematic warm tones, intimate low perspective, shallow focus, grainy texture, and clear sharp subject detail within lush greenery.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Ground-level close tracking shot following the cat from just ahead and beside it, shallow depth of field with blurred plants passing near lens.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic cinematic animal text-to-video.",
+  "artistic_style": "Warm grainy garden realism with intimate handheld energy and natural color contrast.",
+  "context": "A curious tabby cat moves through a crowded garden path, chasing or investigating something hidden among the plants.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The tabby cat enters the narrow garden path at a quick happy jog, eyes wide and ears alert."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It darts between flowers and leaves, scanning branches while the low camera follows close to the ground."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The cat pushes past foreground leaves and continues forward, orange fur glowing in scattered sunlight."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the cat from a low path-level view as it begins moving through dense garden plants.",
+      "key_changes": "cat enters frame; leaves part around path; dappled highlights appear on fur",
+      "camera": "ground-level tracking with shallow depth of field"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Follow the cat closely as it jogs, scans branches, and navigates the narrow corridor.",
+      "key_changes": "head turns side to side; plants blur past lens; tail balances the motion",
+      "camera": "close handheld follow beside the cat"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Keep the cat sharp as warm light catches its orange patches and it disappears deeper into the garden.",
+      "key_changes": "foreground leaves sweep by; cat advances beyond midground; warm contrast increases",
+      "camera": "low forward tracking with soft plant occlusion"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A white and orange tabby cat happily darts along a narrow garden path, scanning leaves and flowers from a low cinematic angle.",
+  "audio_description": "Soft paw steps on soil, brushing leaves, faint garden insects, distant birds, and quiet excited cat breathing.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "young charismatic singer at center stage",
+      "appearance_details": "stylish shimmering performance outfit catches the concert lights, clean stage makeup, confident stage presence",
+      "relationship": "solo lead performer in front of a live band and attentive seated audience",
+      "location": "center of a modern concert hall stage near a standing microphone",
+      "relative_size": "medium foreground figure, larger than the band members in the rear",
+      "orientation": "facing the audience and camera with slight turns toward the band",
+      "pose": "upright stance with one hand near the microphone and the other gesturing with the melody",
+      "action": "performs a soulful ballad with expressive phrasing and controlled hand movement",
+      "state_changes": "begins composed, leans into the emotional peak, then holds the last phrase with a lifted hand",
+      "clothing": "shimmering stage outfit with polished shoes and subtle reflective accents",
+      "expression": "focused, passionate, emotionally open",
+      "gender": "Unknown",
+      "age": "young adult",
+      "skin_tone_and_texture": "natural skin texture visible under bright warm stage light, exact tone unspecified",
+      "facial_features": "expressive eyes, defined mouth shapes while singing, softly highlighted cheekbones",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Modern concert hall with plush velvet audience seating, a live band arranged behind the singer, polished stage floor, and vibrant abstract digital projections filling the rear screen without readable words.",
+  "lighting": {
+    "conditions": "Bright concert lighting with warm front spotlights, cool rim light, and saturated projection glow that reflects on the singer's outfit.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Bright concert lighting with warm front spotlights, cool rim light, and saturated projection glow that reflects on the singer's outfit."
+  },
+  "aesthetics": {
+    "composition": "High energy yet intimate performance mood, crisp details, rich color contrast, polished concert production, emotionally sincere atmosphere.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "High energy yet intimate performance mood, crisp details, rich color contrast, polished concert production, emotionally sincere atmosphere.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Medium stage framing with a gentle push in, shallow depth of field on the singer, occasional soft silhouettes of the band and audience for scale.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic cinematic text to video",
+  "artistic_style": "contemporary concert film style with clean temporal motion, smooth human gestures, and natural stage reflections",
+  "context": "A live ballad performance is underway in a bright modern hall while the audience listens closely.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Singer stands centered at the microphone as the band begins the ballad and the audience remains still."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Singer leans forward, gestures through the chorus, and shimmering fabric flickers under moving stage lights."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "Singer sustains the final phrase while the digital backdrop blooms with color and the audience stays absorbed."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establish the bright concert hall, the singer at center stage, the live band, and rows of velvet seats.",
+      "key_changes": "Establish the bright concert hall, the singer at center stage, the live band, and rows of velvet seats.",
+      "camera": "Medium stage framing with a gentle push in, shallow depth of field on the singer, occasional soft silhouettes of the band and audience for scale."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Camera pushes closer as the singer performs with emotional facial movement and measured hand gestures.",
+      "key_changes": "Camera pushes closer as the singer performs with emotional facial movement and measured hand gestures.",
+      "camera": "Medium stage framing with a gentle push in, shallow depth of field on the singer, occasional soft silhouettes of the band and audience for scale."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The performance holds on the singer while colorful projections and band movement deepen the stage atmosphere.",
+      "key_changes": "The performance holds on the singer while colorful projections and band movement deepen the stage atmosphere.",
+      "camera": "Medium stage framing with a gentle push in, shallow depth of field on the singer, occasional soft silhouettes of the band and audience for scale."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Over seven seconds, a young singer delivers a soulful ballad on a bright modern stage as the band plays and the seated audience watches in silence.",
+  "audio_description": "Soulful vocal lead, live band accompaniment, soft room resonance, faint audience hush, no spoken dialogue.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

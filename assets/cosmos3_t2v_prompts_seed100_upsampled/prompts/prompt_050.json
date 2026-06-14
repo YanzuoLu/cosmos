@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "sleek modern metallic silver helicopter",
+      "appearance_details": "streamlined fuselage, tinted cockpit windows, metallic silver paint, spinning rotor blades, landing skids, subtle reflections of tall buildings",
+      "relationship": "main vehicle descending onto a busy city street",
+      "location": "above the center of a city street lined with tall buildings and trees",
+      "relative_size": "large compared with cars and pedestrians, smaller than surrounding buildings",
+      "orientation": "nose level with the street, descending vertically with slight forward alignment along the road",
+      "pose": "controlled hover transitioning into landing",
+      "action": "descends smoothly, touches down gently, then idles as occupants prepare to disembark",
+      "state_changes": "altitude lowers, rotor blur remains fast, skids contact pavement, fuselage settles into idle vibration",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "modern aircraft",
+      "skin_tone_and_texture": "smooth metallic silver panels with glossy reflections and dark glass",
+      "facial_features": "tinted cockpit windshield resembling a dark visor",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "city pedestrians watching the landing",
+      "appearance_details": "adults in everyday urban clothing standing along sidewalks, some pausing mid-step and looking toward the helicopter",
+      "relationship": "bystanders reacting to the helicopter landing",
+      "location": "sidewalks and street edges near the landing area",
+      "relative_size": "small compared with the helicopter and buildings",
+      "orientation": "turned toward the descending helicopter",
+      "pose": "standing, pausing, shielding faces from rotor breeze",
+      "action": "stop to watch the landing and keep clear of the street center",
+      "state_changes": "pedestrians slow, turn their heads, and step back as the helicopter nears the pavement",
+      "clothing": "casual city coats, shirts, trousers, bags, and everyday shoes",
+      "expression": "curious and cautious",
+      "gender": "Unknown",
+      "age": "adults",
+      "skin_tone_and_texture": "varied human skin tones, faces partly distant and windlit",
+      "facial_features": "small visible faces with lifted brows and focused gazes",
+      "number_of_subjects": 10,
+      "number_of_arms": 20,
+      "number_of_legs": 20
+    },
+    {
+      "description": "slow-moving city cars",
+      "appearance_details": "compact sedans and taxis with reflective windows, brake lights, and clean urban paintwork",
+      "relationship": "traffic yielding to the helicopter landing",
+      "location": "lanes on both sides of the landing area",
+      "relative_size": "smaller than the helicopter, mid-sized street objects",
+      "orientation": "aligned with the road, slowing near the landing zone",
+      "pose": "rolling slowly or stopped",
+      "action": "slow down and keep distance from the airspace",
+      "state_changes": "brake lights brighten and vehicles come to a cautious near stop",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "modern vehicles",
+      "skin_tone_and_texture": "glossy painted metal and glass with city reflections",
+      "facial_features": "headlights and brake lights visible",
+      "number_of_subjects": 5,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A busy city street bordered by tall buildings and rows of trees. Shadows fall across the pavement as pedestrians gather at the sidewalks and cars slow around the landing zone.",
+  "lighting": {
+    "conditions": "clear urban daylight with building shadows, bright reflections on helicopter metal, soft rotor-blown dust highlights near the pavement",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "clear urban daylight with building shadows, bright reflections on helicopter metal, soft rotor-blown dust highlights near the pavement"
+  },
+  "aesthetics": {
+    "composition": "modern urban spectacle, controlled aviation precision, tense but orderly street reaction, metallic reflections and motion blur",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "modern urban spectacle, controlled aviation precision, tense but orderly street reaction, metallic reflections and motion blur",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "wide street-level cinematic shot with a slight upward angle, steady camera as the helicopter descends into frame, rotor blades rendered with natural motion blur",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic city action text-to-video with detailed aircraft motion and believable crowd response",
+  "artistic_style": "contemporary urban cinematic realism with controlled landing drama",
+  "context": "The video shows a modern helicopter making a careful landing on a city street while traffic and pedestrians pause around it.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The silver helicopter descends between tall buildings as rotor wash stirs leaves and dust."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Pedestrians pause on the sidewalks and cars slow as the helicopter nears the pavement."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The skids touch down gently, the helicopter idles, and occupants prepare to disembark."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "A metallic silver helicopter lowers into a city street canyon framed by buildings and trees.",
+      "key_changes": "A metallic silver helicopter lowers into a city street canyon framed by buildings and trees.",
+      "camera": "wide street-level cinematic shot with a slight upward angle, steady camera as the helicopter descends into frame, rotor blades rendered with natural motion blur"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Cars brake and pedestrians watch from the sidewalks while rotor wash moves leaves across the pavement.",
+      "key_changes": "Cars brake and pedestrians watch from the sidewalks while rotor wash moves leaves across the pavement.",
+      "camera": "wide street-level cinematic shot with a slight upward angle, steady camera as the helicopter descends into frame, rotor blades rendered with natural motion blur"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The helicopter lands smoothly and settles into idle at street level.",
+      "key_changes": "The helicopter lands smoothly and settles into idle at street level.",
+      "camera": "wide street-level cinematic shot with a slight upward angle, steady camera as the helicopter descends into frame, rotor blades rendered with natural motion blur"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A sleek metallic silver helicopter descends onto a busy city street, making pedestrians pause and cars slow before it touches down and idles.",
+  "audio_description": "soft but steady helicopter rotor thump, wind rush through trees, muted city traffic, brief tire braking sounds, distant crowd murmurs",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

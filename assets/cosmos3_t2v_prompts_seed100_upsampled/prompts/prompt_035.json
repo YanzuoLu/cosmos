@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "towering waterfall fed by a clear swift river",
+      "appearance_details": "wide sheets of white water, glassy edges breaking into spray, mist plumes rising from the plunge basin",
+      "relationship": "main natural force connecting the river above with the basin below",
+      "location": "center frame descending from upper cliff to lower basin",
+      "relative_size": "large, filling most of the vertical frame",
+      "orientation": "falling straight downward over a rocky ledge",
+      "pose": "continuous cascading column",
+      "action": "plunges rapidly into the basin, throwing mist and droplets outward",
+      "state_changes": "spray thickens and rainbow colors flicker as sunlight catches the mist",
+      "clothing": "",
+      "expression": "powerful and mesmerizing",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "clear water turning white and foamy over dark wet rock",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "plunge basin beneath the waterfall",
+      "appearance_details": "deep blue green pool with foam rings, rippling reflections of trees, small rainbow shimmer in airborne mist",
+      "relationship": "receives the falling water and reflects the surrounding forest",
+      "location": "lower center and foreground below the waterfall",
+      "relative_size": "medium broad pool at the base of the falls",
+      "orientation": "horizontal water surface spreading outward from impact point",
+      "pose": "churning near the impact and calmer near the edges",
+      "action": "swirls, foams, and sends ripples toward the viewer",
+      "state_changes": "surface patterns constantly reshape under the falling water",
+      "clothing": "",
+      "expression": "cool and reflective",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "clear blue green water with white foam and glossy reflections",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "verdant forest surrounding the waterfall",
+      "appearance_details": "dense green trees, mossy rocks, wet leaves, filtered sunlight, small branches moving in spray filled air",
+      "relationship": "natural enclosure framing the waterfall and basin",
+      "location": "both sides of the falls and background cliff edges",
+      "relative_size": "large environmental frame around the water",
+      "orientation": "trees rise vertically around the rocky gorge",
+      "pose": "rooted along the cliff and basin edges",
+      "action": "leaves tremble lightly from mist and breeze",
+      "state_changes": "wet foliage glistens as sunlight shifts through the spray",
+      "clothing": "",
+      "expression": "lush and serene",
+      "gender": "",
+      "age": "mature forest",
+      "skin_tone_and_texture": "green leaves, moss, dark bark, slick stone",
+      "facial_features": "",
+      "number_of_subjects": 80,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "towering waterfall in a green forest gorge, clear river above, misty plunge basin below, wet rocks and verdant trees surrounding the scene",
+  "lighting": {
+    "conditions": "soft daylight with sunbeams cutting through mist, bright highlights on falling water, small rainbow shimmer above the basin",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "soft daylight with sunbeams cutting through mist, bright highlights on falling water, small rainbow shimmer above the basin"
+  },
+  "aesthetics": {
+    "composition": "fresh, powerful, serene, immersive, natural spectacle",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "fresh, powerful, serene, immersive, natural spectacle",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "slow push in from a wide forest view to the waterfall and basin, stable camera with fine mist crossing the lens",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "photorealistic text to video nature scene",
+  "artistic_style": "cinematic nature documentary realism with crisp water detail and soft mist",
+  "context": "a clear river drops over a high cliff into a forest basin, filling the air with spray and rainbow light",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "the shot opens on the full waterfall pouring into the basin amid lush trees"
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "the camera pushes closer as sheets of water break into mist and foam spreads across the pool"
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "sunlight catches the spray, creating a faint rainbow while ripples radiate across the basin"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "the shot opens on the full waterfall pouring into the basin amid lush trees",
+      "key_changes": "the shot opens on the full waterfall pouring into the basin amid lush trees",
+      "camera": "slow push in from a wide forest view to the waterfall and basin, stable camera with fine mist crossing the lens"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "the camera pushes closer as sheets of water break into mist and foam spreads across the pool",
+      "key_changes": "the camera pushes closer as sheets of water break into mist and foam spreads across the pool",
+      "camera": "slow push in from a wide forest view to the waterfall and basin, stable camera with fine mist crossing the lens"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "sunlight catches the spray, creating a faint rainbow while ripples radiate across the basin",
+      "key_changes": "sunlight catches the spray, creating a faint rainbow while ripples radiate across the basin",
+      "camera": "slow push in from a wide forest view to the waterfall and basin, stable camera with fine mist crossing the lens"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A clear river plunges over a tall waterfall into a misty forest basin where sunlight forms a faint rainbow.",
+  "audio_description": "roaring waterfall, splashing basin water, fine mist, distant birds, rustling forest leaves",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

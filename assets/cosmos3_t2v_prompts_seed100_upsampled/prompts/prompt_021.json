@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "Large adult gorilla walking through deep snow in a quiet winter forest.",
+      "appearance_details": "Dense black fur with frosted tips, powerful shoulders, long arms, broad chest, visible breath in the cold air, snow clinging lightly to hands and feet.",
+      "relationship": "Sole main animal subject, framed as a majestic presence within the isolated landscape.",
+      "location": "Foreground center, moving along an untouched snowy path between tall snow loaded trees.",
+      "relative_size": "Large and dominant in the frame, occupying much of the lower center while trees tower behind it.",
+      "orientation": "Facing forward with a slight angle toward camera right, moving deeper across the frame.",
+      "pose": "Steady knuckle walking posture with head lifted and shoulders rolling naturally.",
+      "action": "Walks deliberately through fluffy snow, leaving heavy tracks with each step.",
+      "state_changes": "Starts entering the snowy clearing, progresses with visible footprint trails, ends closer to the camera with drifting powder around its limbs.",
+      "clothing": "None, natural fur only.",
+      "expression": "Calm, focused, powerful, and alert.",
+      "gender": "Unknown",
+      "age": "adult",
+      "skin_tone_and_texture": "Dark skin mostly hidden beneath thick coarse black fur, rough texture visible around face and hands.",
+      "facial_features": "Heavy brow ridge, broad flat nose, strong jaw, deep set dark eyes.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "Pristine winter forest blanketed in deep soft snow, with towering evergreens and bare branches weighed down by fresh powder. The setting feels remote, silent, and untouched.",
+  "lighting": {
+    "conditions": "Low golden sun near the horizon, soft warm highlights on snow, cool blue shadows under trees, gentle haze in the cold air.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Low golden sun near the horizon, soft warm highlights on snow, cool blue shadows under trees, gentle haze in the cold air."
+  },
+  "aesthetics": {
+    "composition": "Serene, majestic, natural, high detail snow texture, realistic fur movement, tranquil isolation.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Serene, majestic, natural, high detail snow texture, realistic fur movement, tranquil isolation.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Low eye level tracking shot with a slow forward glide, shallow foreground snow detail, mild parallax from trees, stable cinematic wildlife framing.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Realistic text to video wildlife scene with natural motion and physical snow interaction.",
+  "artistic_style": "Cinematic realism, warm winter golden hour color grade, detailed environmental atmosphere.",
+  "context": "A powerful gorilla crosses an isolated snowy forest as winter light turns the landscape calm and luminous.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The gorilla steps into view from the snowy trees, compressing fresh powder beneath its hands and feet."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "It continues forward at a deliberate pace, shoulders rolling, breath faintly visible, snow dust lifting from each planted step."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The gorilla slows and raises its head slightly as golden light catches its fur and the quiet forest surrounds it."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Wide winter forest opens with the gorilla emerging through deep snow.",
+      "key_changes": "Wide winter forest opens with the gorilla emerging through deep snow.",
+      "camera": "Low eye level tracking shot with a slow forward glide, shallow foreground snow detail, mild parallax from trees, stable cinematic wildlife framing."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Closer view of fur, footprints, snow laden branches, and warm light across the terrain.",
+      "key_changes": "Closer view of fur, footprints, snow laden branches, and warm light across the terrain.",
+      "camera": "Low eye level tracking shot with a slow forward glide, shallow foreground snow detail, mild parallax from trees, stable cinematic wildlife framing."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The gorilla fills the foreground against glowing snow and dark tree trunks.",
+      "key_changes": "The gorilla fills the foreground against glowing snow and dark tree trunks.",
+      "camera": "Low eye level tracking shot with a slow forward glide, shallow foreground snow detail, mild parallax from trees, stable cinematic wildlife framing."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "0:00-0:02 a gorilla enters a deep snowy forest path. 0:02-0:05 it walks steadily through powder under golden winter light. 0:05-0:07 it slows, alert and majestic, amid the silent trees.",
+  "audio_description": "Soft crunching snow, faint winter wind through branches, distant muted forest ambience, low heavy breathing from the gorilla.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

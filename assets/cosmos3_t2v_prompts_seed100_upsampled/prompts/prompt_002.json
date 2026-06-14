@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "woman preparing cinnamon rolls with honey",
+      "appearance_details": "adult baker standing at a marble counter, carefully working over a tray of fresh rolls",
+      "relationship": "primary human subject preparing food",
+      "location": "center frame beside a baking sheet on the kitchen counter",
+      "relative_size": "medium human scale, larger than the tray and counter props",
+      "orientation": "facing forward and slightly down toward the cinnamon rolls",
+      "pose": "standing with one arm extended and the other steadying the tray area",
+      "action": "uses a large spoon to drizzle golden honey over the rolls",
+      "state_changes": "honey stretches from spoon to pastry; gloss builds on the rolls; steam and warmth remain subtle",
+      "clothing": "chef hat and apron",
+      "expression": "gentle concentration and quiet satisfaction",
+      "gender": "Female",
+      "age": "adult",
+      "skin_tone_and_texture": "natural skin with warm bakery light and soft texture",
+      "facial_features": "focused eyes, relaxed cheeks, slight pleased smile",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "fresh cinnamon rolls on a baking sheet",
+      "appearance_details": "neatly arranged spiral pastries with browned edges, cinnamon filling, and glossy honey glaze",
+      "relationship": "food subject being prepared by the baker",
+      "location": "foreground on a metal baking sheet over the marble countertop",
+      "relative_size": "small grouped food items relative to the woman",
+      "orientation": "flat on the tray, spirals facing upward",
+      "pose": "stationary in neat rows",
+      "action": "receive honey drizzle across their warm tops",
+      "state_changes": "surface grows shinier; thin trails of honey settle into pastry curves",
+      "clothing": "no clothing",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "freshly baked food",
+      "skin_tone_and_texture": "golden brown pastry texture with sticky amber glaze",
+      "facial_features": "spiral roll forms with layered dough ridges",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "Warm well-lit kitchen with wooden cabinets, a clean marble countertop, baking tools, and an orderly tray of cinnamon rolls filling the foreground.",
+  "lighting": {
+    "conditions": "Warm overhead and counter lighting that catches honey highlights and soft steam from fresh dough.",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "Warm overhead and counter lighting that catches honey highlights and soft steam from fresh dough."
+  },
+  "aesthetics": {
+    "composition": "Cozy bakery mood, golden pastry tones, honey sheen, smooth marble, and honeyed warmth.",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "Cozy bakery mood, golden pastry tones, honey sheen, smooth marble, and honeyed warmth.",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "Medium food-prep shot with a slow push toward the spoon and rolls, shallow focus shifting between the baker and glaze.",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "Photorealistic live action culinary video.",
+  "artistic_style": "Inviting cooking-show realism with warm color grading and crisp food texture.",
+  "context": "A home baker finishes a batch of cinnamon rolls by adding honey before serving.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The woman positions the spoon above the tray of cinnamon rolls."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Golden honey pours in a slow ribbon over the warm spiral rolls."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "She finishes the drizzle and tilts the spoon back as the rolls glisten on the baking sheet."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Introduce the warm kitchen, baker in chef hat and apron, and tray of rolls on marble.",
+      "key_changes": "Introduce the warm kitchen, baker in chef hat and apron, and tray of rolls on marble.",
+      "camera": "Medium food-prep shot with a slow push toward the spoon and rolls, shallow focus shifting between the baker and glaze."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Focus on the spoon as honey coats the cinnamon rolls in smooth amber lines.",
+      "key_changes": "Focus on the spoon as honey coats the cinnamon rolls in smooth amber lines.",
+      "camera": "Medium food-prep shot with a slow push toward the spoon and rolls, shallow focus shifting between the baker and glaze."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "Hold on the finished tray and the baker looking down with satisfied focus.",
+      "key_changes": "Hold on the finished tray and the baker looking down with satisfied focus.",
+      "camera": "Medium food-prep shot with a slow push toward the spoon and rolls, shallow focus shifting between the baker and glaze."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "A woman in a chef hat and apron drizzles honey over freshly baked cinnamon rolls in a cozy kitchen.",
+  "audio_description": "Soft kitchen ambience, faint tray movement, sticky spoon sounds, and the implied warmth of fresh cinnamon and dough.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

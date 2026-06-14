@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "emerging green field plants",
+      "appearance_details": "small resilient shoots with fresh green leaves, fine stems, dew beads, and dark fertile soil clinging to their bases",
+      "relationship": "main symbol of new growth within the quiet field",
+      "location": "low in a verdant field among shimmering grass blades and morning mist",
+      "relative_size": "tiny compared with the surrounding field, prominent in the foreground close-up",
+      "orientation": "upright shoots pushing vertically from the soil",
+      "pose": "rooted, delicate, and still except for slight breeze movement",
+      "action": "stand proudly as mist drifts past and sunlight catches the leaves",
+      "state_changes": "dew glints brighter, leaves tremble subtly, and the mist thins as warm light increases",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "new growth",
+      "skin_tone_and_texture": "smooth bright green leaves, tender stems, moist soil texture",
+      "facial_features": "",
+      "number_of_subjects": 40,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A serene verdant field at morning, layered with delicate grass blades, fertile soil, lush vegetation, and low mist drifting across the landscape.",
+  "lighting": {
+    "conditions": "gentle golden morning sunlight filtered through mist, with soft highlights on dew and grass tips",
+    "direction": "scene-appropriate key light from the most visible practical or natural source",
+    "shadows": "soft scene-consistent shadows that ground subjects and objects",
+    "illumination_effect": "gentle golden morning sunlight filtered through mist, with soft highlights on dew and grass tips"
+  },
+  "aesthetics": {
+    "composition": "peaceful renewal, fresh natural textures, soft mist, warm rays, calm green palette",
+    "color_scheme": "colors follow the source prompt and scene materials",
+    "mood_atmosphere": "peaceful renewal, fresh natural textures, soft mist, warm rays, calm green palette",
+    "patterns": ""
+  },
+  "cinematography": {
+    "camera_motion": "ground-level macro establishing shot with a slow forward push through grass, shallow depth of field, and soft mist parallax",
+    "framing": "medium cinematic framing",
+    "camera_angle": "source-appropriate angle",
+    "depth_of_field": "Shallow",
+    "focus": "main subject and key action remain sharp",
+    "lens_focal_length": "35mm to 50mm equivalent"
+  },
+  "style_medium": "realistic nature text-to-video with detailed plant texture and cinematic morning atmosphere",
+  "artistic_style": "quiet natural realism focused on rejuvenation and early growth",
+  "context": "The video presents new plants emerging in a lush field as morning light and mist create a calm sense of renewal.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The camera opens low over misty grass, revealing tiny green shoots emerging from rich soil."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Warm sunlight strengthens, dew sparkles on blades of grass, and the shoots sway lightly in the breeze."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The camera settles on the resilient plants standing against the lush field as the mist slowly clears."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Low view through morning mist and grass toward small new shoots.",
+      "key_changes": "Mist reveals the seedlings and dew becomes visible on the foreground blades.",
+      "camera": "ground-level macro push-in with shallow focus"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Sunlight glides across the field and highlights delicate leaves and soil.",
+      "key_changes": "The green shoots shimmer and bend slightly while golden light grows warmer.",
+      "camera": "slow forward dolly with subtle rack focus between grass and shoots"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The field feels open and calm as the plants remain upright in the thinning mist.",
+      "key_changes": "Visibility improves and the foreground plants become the clear final focal point.",
+      "camera": "steady close-up hold with soft background blur"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "Morning mist clears over a verdant field as tiny green shoots stand in warm sunlight, suggesting fresh growth and quiet renewal.",
+  "audio_description": "soft morning breeze, faint rustle of grass, distant birds, quiet natural ambience",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}
