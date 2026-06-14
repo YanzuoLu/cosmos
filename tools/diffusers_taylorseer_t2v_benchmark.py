@@ -264,8 +264,8 @@ def parse_args() -> argparse.Namespace:
         parser.error("--taylorseer-interval must be at least 1")
     if args.taylorseer_fresh_threshold is not None and args.taylorseer_fresh_threshold < 1:
         parser.error("--taylorseer-fresh-threshold must be at least 1")
-    if args.taylorseer_max_order not in {0, 1}:
-        parser.error("--taylorseer-max-order must be 0 or 1")
+    if args.taylorseer_max_order not in {0, 1, 2}:
+        parser.error("--taylorseer-max-order must be 0, 1, or 2")
     if args.taylorseer_delta_change_threshold is not None and args.taylorseer_delta_change_threshold <= 0:
         parser.error("--taylorseer-delta-change-threshold must be positive")
     if not math.isfinite(args.taylorseer_slope_scale) or args.taylorseer_slope_scale < 0:

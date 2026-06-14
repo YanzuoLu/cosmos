@@ -653,8 +653,8 @@ class Cosmos3OmniTaylorSeerTransformer(ModelMixin, ConfigMixin, PeftAdapterMixin
             raise ValueError("TaylorSeer interval must be >= 1.")
         if fresh_threshold is not None and fresh_threshold < 1:
             raise ValueError("TaylorSeer fresh_threshold must be >= 1 or None.")
-        if max_order not in {0, 1}:
-            raise ValueError("TaylorSeer max_order must be 0 or 1.")
+        if max_order not in {0, 1, 2}:
+            raise ValueError("TaylorSeer max_order must be 0, 1, or 2.")
         if first_enhance < 0:
             raise ValueError("TaylorSeer first_enhance must be >= 0.")
         if last_enhance < 0:
@@ -891,7 +891,12 @@ class Cosmos3OmniTaylorSeerTransformer(ModelMixin, ConfigMixin, PeftAdapterMixin
         dt = step_index - last_full_step
         if dt <= 0:
             raise RuntimeError("TaylorSeer full samples must advance denoising steps.")
-        return [sample, ((sample - old_factor0) / dt).detach()]
+        new_slope = ((sample - old_factor0) / dt).detach()
+        if self._taylorseer_config.max_order >= 2 and len(factors) >= 2:
+            old_slope = factors[1]
+            curvature = ((new_slope - old_slope) / dt).detach()
+            return [sample, new_slope, curvature]
+        return [sample, new_slope]
 
     def _taylorseer_finish_factor_update(
         self, entry: Cosmos3TaylorSeerLayerState, step_index: int, num_steps: int | None
@@ -944,9 +949,12 @@ class Cosmos3OmniTaylorSeerTransformer(ModelMixin, ConfigMixin, PeftAdapterMixin
         if not factors:
             raise RuntimeError("TaylorSeer prediction requested before a full layer sample exists.")
         age = 0 if last_full_step is None else step_index - last_full_step
-        if self._taylorseer_config.max_order == 1 and len(factors) > 1:
-            return factors[0] + factors[1] * age * self._taylorseer_config.slope_scale
-        return factors[0]
+        out = factors[0]
+        if len(factors) > 1:
+            out = out + factors[1] * age * self._taylorseer_config.slope_scale
+        if self._taylorseer_config.max_order >= 2 and len(factors) > 2:
+            out = out + 0.5 * factors[2] * (age * age) * self._taylorseer_config.slope_scale
+        return out
 
     def _taylorseer_predict(self, entry: Cosmos3TaylorSeerLayerState, step_index: int) -> torch.Tensor:
         return self._taylorseer_predict_from_factors(entry.factors, entry.last_full_step, step_index)
