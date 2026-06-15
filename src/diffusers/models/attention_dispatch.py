@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import contextlib
 import functools
+import importlib.util
 import inspect
 import math
 from dataclasses import dataclass
@@ -256,9 +257,7 @@ class AttentionBackendName(str, Enum):
     _SAGE_QK_INT8_PV_FP8_CUDA_SM90 = "_sage_qk_int8_pv_fp8_cuda_sm90"
     _SAGE_QK_INT8_PV_FP16_CUDA = "_sage_qk_int8_pv_fp16_cuda"
     _SAGE_QK_INT8_PV_FP16_TRITON = "_sage_qk_int8_pv_fp16_triton"
-    # TODO: let's not add support for Sparge Attention now because it requires tuning per model
-    # We can look into supporting something "autotune"-ing in the future
-    # SPARGE = "sparge"
+    SPARGE = "sparge"
 
     # `xformers`
     XFORMERS = "xformers"
@@ -564,6 +563,12 @@ def _check_attention_backend_requirements(backend: AttentionBackendName) -> None
         if not _CAN_USE_SAGE_ATTN:
             raise RuntimeError(
                 f"Sage Attention backend '{backend.value}' is not usable because of missing package or the version is too old. Please install `sageattention>={_REQUIRED_SAGE_VERSION}`."
+            )
+
+    elif backend == AttentionBackendName.SPARGE:
+        if importlib.util.find_spec("spas_sage_attn") is None:
+            raise RuntimeError(
+                f"Sparge Attention backend '{backend.value}' is not usable because the `spas_sage_attn` package isn't available. Please install SpargeAttn."
             )
 
     elif backend == AttentionBackendName.FLEX:
@@ -3826,6 +3831,75 @@ def _sage_qk_int8_pv_fp8_cuda_sm90_attention(
         sm_scale=scale,
         return_lse=return_lse,
     )
+
+
+@_AttentionBackendRegistry.register(
+    AttentionBackendName.SPARGE,
+    constraints=[_check_device_cuda_atleast_smXY(9, 0), _check_qkv_dtype_bf16_or_fp16, _check_shape],
+)
+def _sparge_attention(
+    query,
+    key,
+    value,
+    attn_mask=None,
+    dropout_p=0.0,
+    is_causal=False,
+    scale=None,
+    enable_gqa=False,
+    return_lse=False,
+    _parallel_config=None,
+):
+    # Inputs are dispatch-canonical (batch, seq_len, num_heads, head_dim) and already
+    # carry RoPE + QK-norm (applied in Cosmos3AttnProcessor) -> do NOT re-apply either.
+    # M2 Phase-A: only the gen full-attention (is_causal=False) is routed through
+    # SpargeAttn dense quant-only (SageAttention2++); the und/causal path stays on SDPA.
+    if attn_mask is not None:
+        raise ValueError("`attn_mask` is not supported for sparge attention")
+    if return_lse:
+        raise ValueError("`return_lse` is not supported for sparge attention")
+    if _parallel_config is not None:
+        raise ValueError("context-parallel is not supported for sparge attention")
+
+    if is_causal:
+        # und / causal path: leave numerics identical to the base pipeline.
+        return _native_attention(
+            query=query,
+            key=key,
+            value=value,
+            attn_mask=None,
+            dropout_p=dropout_p,
+            is_causal=True,
+            scale=scale,
+            enable_gqa=enable_gqa,
+            _parallel_config=None,
+        )
+
+    from spas_sage_attn import spas_sage2_attn_meansim_topk_cuda
+
+    # GQA: SpargeAttn needs Hq == Hkv, so expand k/v over the head dim.
+    num_heads_q = query.shape[2]
+    num_heads_kv = key.shape[2]
+    if num_heads_q != num_heads_kv:
+        if num_heads_q % num_heads_kv != 0:
+            raise ValueError(
+                f"num_heads_q ({num_heads_q}) must be a multiple of num_heads_kv ({num_heads_kv})."
+            )
+        groups = num_heads_q // num_heads_kv
+        key = key.repeat_interleave(groups, dim=2)
+        value = value.repeat_interleave(groups, dim=2)
+
+    # topk=1.0 -> dense (no block-skip): Phase-A quant-only (~pure SageAttention2++).
+    out = spas_sage2_attn_meansim_topk_cuda(
+        query,
+        key,
+        value,
+        topk=1.0,
+        is_causal=False,
+        scale=scale,
+        tensor_layout="NHD",
+        output_dtype=query.dtype,
+    )
+    return out
 
 
 @_AttentionBackendRegistry.register(
