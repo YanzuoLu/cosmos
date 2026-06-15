@@ -75,6 +75,23 @@ MANUAL_REVIEW_PENDING: dict[str, Any] = {
 }
 
 
+M1_SMOOTHQUANT_DEFAULT_STATS_PATH = Path("/root/cosmos/m1_smoothquant_stats/act_absmax.pt")
+M1_SMOOTHQUANT_GROUP_SPECS: dict[str, tuple[str, ...]] = {
+    "input_layernorm_moe_gen": (
+        "self_attn.add_q_proj",
+        "self_attn.add_k_proj",
+        "self_attn.add_v_proj",
+    ),
+    "post_attention_layernorm_moe_gen": (
+        "mlp_moe_gen.gate_proj",
+        "mlp_moe_gen.up_proj",
+    ),
+}
+M1_SMOOTHQUANT_EPS = 1e-8
+M1_SMOOTHQUANT_SCALE_MIN = 1e-5
+M1_SMOOTHQUANT_SCALE_MAX = 1e5
+
+
 def _flag_supplied(*names: str) -> bool:
     for item in sys.argv[1:]:
         for name in names:
@@ -216,6 +233,22 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--log-every", type=int, default=5)
     parser.add_argument("--summary-json", type=Path)
     parser.add_argument("--m1-fp8", action="store_true", help="Apply M1 FP8 rowwise gen-linear quantization.")
+    parser.add_argument(
+        "--m1-smoothquant",
+        action="store_true",
+        help="Fold M1 SmoothQuant scales into RMSNorm/consumer gen linears before FP8 quantization.",
+    )
+    parser.add_argument(
+        "--smoothquant-alpha",
+        type=float,
+        default=0.5,
+        help="SmoothQuant alpha in [0, 1]; only used with --m1-smoothquant.",
+    )
+    parser.add_argument(
+        "--smoothquant-stats-path",
+        type=Path,
+        default=M1_SMOOTHQUANT_DEFAULT_STATS_PATH,
+    )
     parser.add_argument("--m1-compile", action="store_true", help="Compile TaylorSeer layer compute methods.")
     parser.add_argument("--m1-compile-forward", action="store_true", help="Compile the transformer forward method.")
     parser.add_argument("--torch-profiler-dir", type=Path, help="Directory for a Kineto trace of measured run 0.")
@@ -266,6 +299,15 @@ def parse_args() -> argparse.Namespace:
         parser.error("--runs must be at least 1")
     if args.m1_compile and args.m1_compile_forward:
         parser.error("--m1-compile and --m1-compile-forward are mutually exclusive")
+    if not math.isfinite(args.smoothquant_alpha) or not 0.0 <= args.smoothquant_alpha <= 1.0:
+        parser.error("--smoothquant-alpha must be finite and in [0, 1]")
+    if args.m1_smoothquant and not args.smoothquant_stats_path.is_file():
+        parser.error(f"--m1-smoothquant stats file not found: {args.smoothquant_stats_path}")
+    if args.m1_smoothquant and not args.m1_fp8:
+        print(
+            "warning: --m1-smoothquant was set without --m1-fp8; folding will run in bf16 for debug only",
+            file=sys.stderr,
+        )
     if args.taylorseer_interval < 1:
         parser.error("--taylorseer-interval must be at least 1")
     if args.taylorseer_fresh_threshold is not None and args.taylorseer_fresh_threshold < 1:
@@ -622,6 +664,154 @@ def m1_fp8_hit_kind(fqn: str) -> str:
     return "unknown"
 
 
+def m1_smoothquant_group_linears(group_key: str) -> list[str]:
+    for norm_suffix, consumer_suffixes in M1_SMOOTHQUANT_GROUP_SPECS.items():
+        suffix = f".{norm_suffix}"
+        if group_key.endswith(suffix):
+            layer_prefix = group_key[: -len(suffix)]
+            return [f"{layer_prefix}.{consumer_suffix}" for consumer_suffix in consumer_suffixes]
+    raise KeyError(f"unknown M1 SmoothQuant group key: {group_key}")
+
+
+def m1_smoothquant_expected_group_keys(transformer: Any) -> list[str]:
+    layers = getattr(transformer, "layers", [])
+    return [f"layers.{index}.{norm_suffix}" for index in range(len(layers)) for norm_suffix in M1_SMOOTHQUANT_GROUP_SPECS]
+
+
+def m1_get_submodule(root: Any, fqn: str) -> Any:
+    if hasattr(root, "get_submodule"):
+        return root.get_submodule(fqn)
+    module = root
+    for part in fqn.split("."):
+        if part.isdigit() and isinstance(module, (list, tuple)):
+            module = module[int(part)]
+        else:
+            module = getattr(module, part)
+    return module
+
+
+def load_m1_smoothquant_stats(path: Path) -> dict[str, Any]:
+    import torch
+
+    payload = torch.load(path, map_location="cpu", weights_only=False)
+    if not isinstance(payload, dict):
+        raise TypeError(f"M1 SmoothQuant stats must be a dict, got {type(payload).__name__}")
+    return payload
+
+
+def m1_smoothquant_act_absmax(stats: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any]]:
+    if "act_absmax" in stats:
+        act_absmax = stats["act_absmax"]
+        metadata = stats.get("metadata", {})
+    else:
+        act_absmax = stats
+        metadata = {}
+    if not isinstance(act_absmax, dict):
+        raise TypeError("M1 SmoothQuant stats['act_absmax'] must be a dict")
+    return act_absmax, metadata if isinstance(metadata, dict) else {}
+
+
+def apply_m1_smoothquant(
+    transformer: Any,
+    stats: dict[str, Any],
+    alpha: float,
+    *,
+    eps: float = M1_SMOOTHQUANT_EPS,
+    scale_min: float = M1_SMOOTHQUANT_SCALE_MIN,
+    scale_max: float = M1_SMOOTHQUANT_SCALE_MAX,
+) -> dict[str, Any]:
+    import torch
+
+    if getattr(transformer, "_m1_smoothquant_folded", False):
+        raise RuntimeError("M1 SmoothQuant was already folded into this transformer instance")
+    if not math.isfinite(alpha) or not 0.0 <= alpha <= 1.0:
+        raise ValueError("alpha must be finite and in [0, 1]")
+
+    act_absmax, metadata = m1_smoothquant_act_absmax(stats)
+    expected_group_keys = m1_smoothquant_expected_group_keys(transformer)
+    missing = [key for key in expected_group_keys if key not in act_absmax]
+    if missing:
+        raise KeyError(f"M1 SmoothQuant stats missing {len(missing)} group keys, first missing: {missing[0]}")
+    extra = sorted(set(act_absmax).difference(expected_group_keys))
+
+    groups: dict[str, Any] = {}
+    total_clamped = 0
+    total_nonfinite = 0
+
+    with torch.no_grad():
+        for group_key in expected_group_keys:
+            norm = m1_get_submodule(transformer, group_key)
+            if getattr(norm, "weight", None) is None:
+                raise RuntimeError(f"{group_key} has no foldable weight")
+            consumer_keys = m1_smoothquant_group_linears(group_key)
+            consumers = [m1_get_submodule(transformer, key) for key in consumer_keys]
+
+            x_absmax = act_absmax[group_key]
+            if not isinstance(x_absmax, torch.Tensor):
+                raise TypeError(f"{group_key} stats must be a torch.Tensor")
+            x_absmax_cpu = x_absmax.detach().to(device="cpu", dtype=torch.float32).flatten()
+            in_features = norm.weight.numel()
+            if x_absmax_cpu.numel() != in_features:
+                raise ValueError(f"{group_key} stats shape {tuple(x_absmax_cpu.shape)} does not match {in_features}")
+
+            w_absmax = None
+            for consumer_key, consumer in zip(consumer_keys, consumers):
+                weight = getattr(consumer, "weight", None)
+                if weight is None or weight.ndim != 2:
+                    raise RuntimeError(f"{consumer_key} has no 2D weight")
+                if weight.shape[1] != in_features:
+                    raise ValueError(f"{consumer_key} in_features {weight.shape[1]} does not match {in_features}")
+                column_absmax = weight.detach().to(dtype=torch.float32).abs().amax(dim=0).to(device="cpu")
+                w_absmax = column_absmax if w_absmax is None else torch.maximum(w_absmax, column_absmax)
+            assert w_absmax is not None
+
+            x_safe = torch.clamp(x_absmax_cpu, min=eps)
+            w_safe = torch.clamp(w_absmax, min=eps)
+            raw_scale = torch.pow(x_safe, alpha) / torch.pow(w_safe, 1.0 - alpha)
+            finite = torch.isfinite(raw_scale)
+            nonfinite_count = int((~finite).sum().item())
+            scale = torch.nan_to_num(raw_scale, nan=1.0, posinf=scale_max, neginf=scale_min)
+            clamped_mask = (scale < scale_min) | (scale > scale_max) | (~finite)
+            clamp_count = int(clamped_mask.sum().item())
+            scale = torch.clamp(scale, min=scale_min, max=scale_max)
+
+            norm_scale = scale.to(device=norm.weight.device, dtype=torch.float32)
+            norm.weight.copy_((norm.weight.detach().to(dtype=torch.float32) / norm_scale).to(dtype=norm.weight.dtype))
+            for consumer in consumers:
+                weight_scale = scale.to(device=consumer.weight.device, dtype=torch.float32)
+                folded_weight = consumer.weight.detach().to(dtype=torch.float32) * weight_scale.unsqueeze(0)
+                consumer.weight.copy_(folded_weight.to(dtype=consumer.weight.dtype))
+
+            total_clamped += clamp_count
+            total_nonfinite += nonfinite_count
+            groups[group_key] = {
+                "scale_min": float(scale.min().item()),
+                "scale_max": float(scale.max().item()),
+                "scale_mean": float(scale.mean().item()),
+                "clamped_channels": clamp_count,
+                "nonfinite_channels": nonfinite_count,
+                "in_features": in_features,
+                "consumers": consumer_keys,
+            }
+
+    setattr(transformer, "_m1_smoothquant_folded", True)
+    record = {
+        "event": "m1_smoothquant_applied",
+        "alpha": alpha,
+        "group_count": len(groups),
+        "extra_stats_keys": extra,
+        "eps": eps,
+        "scale_min": scale_min,
+        "scale_max": scale_max,
+        "total_clamped_channels": total_clamped,
+        "total_nonfinite_channels": total_nonfinite,
+        "stats_metadata": metadata,
+        "groups": groups,
+    }
+    print(json.dumps(record, sort_keys=True), flush=True)
+    return record
+
+
 def apply_m1_fp8(transformer: Any) -> dict[str, Any]:
     from collections import Counter
 
@@ -728,8 +918,12 @@ def load_taylorseer_pipeline(args: argparse.Namespace, dtype: Any, config: dict[
     configure_pipeline(pipe, args)
     pipe.enable_taylorseer(**taylorseer_call_kwargs(config))
     m1_fp8 = None
+    m1_smoothquant = None
     m1_compile = None
     m1_compile_forward = None
+    if args.m1_smoothquant:
+        stats = load_m1_smoothquant_stats(args.smoothquant_stats_path)
+        m1_smoothquant = apply_m1_smoothquant(pipe.transformer, stats, args.smoothquant_alpha)
     if args.m1_fp8:
         m1_fp8 = apply_m1_fp8(pipe.transformer)
     if args.m1_compile:
@@ -746,6 +940,7 @@ def load_taylorseer_pipeline(args: argparse.Namespace, dtype: Any, config: dict[
                 "seconds": seconds,
                 "taylorseer_config": config,
                 "m1_fp8": m1_fp8,
+                "m1_smoothquant": m1_smoothquant,
                 "m1_compile": m1_compile,
                 "m1_compile_forward": m1_compile_forward,
                 **cuda_stats(args.device),
@@ -1672,6 +1867,9 @@ def run_single(args: argparse.Namespace, *, diffusers_source: str) -> dict[str, 
                 "profile_steps": args.profile_steps,
                 "warmup_runs": args.warmup_runs,
                 "runs": args.runs,
+                "m1_smoothquant": args.m1_smoothquant,
+                "smoothquant_alpha": args.smoothquant_alpha,
+                "smoothquant_stats_path": str(args.smoothquant_stats_path),
                 "m1_fp8": args.m1_fp8,
                 "m1_compile": args.m1_compile,
                 "m1_compile_forward": args.m1_compile_forward,
@@ -1724,6 +1922,9 @@ def run_single(args: argparse.Namespace, *, diffusers_source: str) -> dict[str, 
         "add_duration_template": args.enable_duration_template,
         "enable_safety_check": args.enable_safety_check,
         "m1_fp8": args.m1_fp8,
+        "m1_smoothquant": args.m1_smoothquant,
+        "smoothquant_alpha": args.smoothquant_alpha,
+        "smoothquant_stats_path": str(args.smoothquant_stats_path),
         "m1_compile": args.m1_compile,
         "m1_compile_forward": args.m1_compile_forward,
     }
