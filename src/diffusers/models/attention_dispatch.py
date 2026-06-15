@@ -3874,7 +3874,7 @@ def _sparge_attention(
             _parallel_config=None,
         )
 
-    from spas_sage_attn import spas_sage2_attn_meansim_topk_cuda
+    from sageattention import sageattn_qk_int8_pv_fp16_cuda, sageattn_qk_int8_pv_fp8_cuda_sm90
 
     # GQA: SpargeAttn needs Hq == Hkv, so expand k/v over the head dim.
     num_heads_q = query.shape[2]
@@ -3888,17 +3888,49 @@ def _sparge_attention(
         key = key.repeat_interleave(groups, dim=2)
         value = value.repeat_interleave(groups, dim=2)
 
-    # topk=1.0 -> dense (no block-skip): Phase-A quant-only (~pure SageAttention2++).
-    out = spas_sage2_attn_meansim_topk_cuda(
-        query,
-        key,
-        value,
-        topk=1.0,
-        is_causal=False,
-        scale=scale,
-        tensor_layout="NHD",
-        output_dtype=query.dtype,
-    )
+    pv_variant = __import__("os").environ.get("M2_PV_VARIANT", "fp8")
+    if pv_variant == "fp8":
+        # Phase-A default: dense SageAttention on Hopper, bypassing SpargeAttn block-map kernels.
+        out = sageattn_qk_int8_pv_fp8_cuda_sm90(
+            query,
+            key,
+            value,
+            tensor_layout="NHD",
+            is_causal=False,
+            qk_quant_gran="per_thread",
+            sm_scale=scale,
+            pv_accum_dtype="fp32+fp32",
+            smooth_k=True,
+            return_lse=False,
+        )
+    elif pv_variant == "fp16_fp32":
+        out = sageattn_qk_int8_pv_fp16_cuda(
+            query,
+            key,
+            value,
+            tensor_layout="NHD",
+            is_causal=False,
+            qk_quant_gran="per_thread",
+            sm_scale=scale,
+            pv_accum_dtype="fp32",
+            smooth_k=True,
+            return_lse=False,
+        )
+    elif pv_variant == "fp16_fp16x32":
+        out = sageattn_qk_int8_pv_fp16_cuda(
+            query,
+            key,
+            value,
+            tensor_layout="NHD",
+            is_causal=False,
+            qk_quant_gran="per_thread",
+            sm_scale=scale,
+            pv_accum_dtype="fp16+fp32",
+            smooth_k=True,
+            return_lse=False,
+        )
+    else:
+        raise ValueError(f"Unsupported M2_PV_VARIANT={pv_variant!r}")
     return out
 
 
