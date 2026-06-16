@@ -1393,9 +1393,15 @@ def get_m1m2_sparge_sta_static_op():
         q_len = int(query.shape[1])
         kv_len = int(key.shape[1])
         num_heads_q = int(query.shape[2])
-        wt = _sta_required_int_env("STA_WT")
-        wh = _sta_required_int_env("STA_WH")
-        ww = _sta_required_int_env("STA_WW")
+        axial_sparse = os.environ.get("AXIAL_SPARSE") == "1"
+        if axial_sparse:
+            wt = _sta_optional_int_env("STA_WT", 0)
+            wh = _sta_optional_int_env("STA_WH", 0)
+            ww = _sta_optional_int_env("STA_WW", 0)
+        else:
+            wt = _sta_required_int_env("STA_WT")
+            wh = _sta_required_int_env("STA_WH")
+            ww = _sta_required_int_env("STA_WW")
         t_lat = _sta_optional_int_env("STA_T_LAT", 48)
         h_lat = _sta_optional_int_env("STA_H_LAT", 23)
         w_lat = _sta_optional_int_env("STA_W_LAT", 40)
@@ -1419,6 +1425,7 @@ def get_m1m2_sparge_sta_static_op():
             wt,
             wh,
             ww,
+            axial_sparse,
             und_len,
             t_lat,
             h_lat,
@@ -1428,20 +1435,34 @@ def get_m1m2_sparge_sta_static_op():
         )
         cached = _STA_LUT_CACHE.get(cache_key)
         if cached is None:
-            mask = build_sta_block_mask(
-                t_lat,
-                h_lat,
-                w_lat,
-                und_len,
-                q_len,
-                kv_len,
-                wt,
-                wh,
-                ww,
-                blkq=64,
-                blkk=128,
-                device=query.device,
-            )
+            if axial_sparse:
+                from axial_mask import build_axial_block_mask
+                mask = build_axial_block_mask(
+                    t_lat,
+                    h_lat,
+                    w_lat,
+                    und_len,
+                    q_len,
+                    kv_len,
+                    blkq=64,
+                    blkk=128,
+                    device=query.device,
+                )
+            else:
+                mask = build_sta_block_mask(
+                    t_lat,
+                    h_lat,
+                    w_lat,
+                    und_len,
+                    q_len,
+                    kv_len,
+                    wt,
+                    wh,
+                    ww,
+                    blkq=64,
+                    blkk=128,
+                    device=query.device,
+                )
             block_map = mask[None, None, :, :].expand(batch_size, num_heads_q, -1, -1).contiguous()
             cached = block_map_lut_triton(block_map)
             _STA_LUT_CACHE[cache_key] = cached
@@ -1963,7 +1984,9 @@ def install_m1m2_sparge_opaque_backend(sparse_tau: float, sparse_theta: float) -
     from diffusers.models.attention_dispatch import AttentionBackendName
 
     sta_sparse = os.environ.get("STA_SPARSE") == "1"
-    op = get_m1m2_sparge_sta_static_op() if sta_sparse else get_m1m2_sparge_fp8_dense_baseline_op()
+    axial_sparse = os.environ.get("AXIAL_SPARSE") == "1"
+    use_static = sta_sparse or axial_sparse
+    op = get_m1m2_sparge_sta_static_op() if use_static else get_m1m2_sparge_fp8_dense_baseline_op()
     registry = attention_dispatch._AttentionBackendRegistry
     sparge_name = AttentionBackendName.SPARGE
     if _M1M2_ORIGINAL_SPARGE_BACKEND is None:
@@ -2009,8 +2032,8 @@ def install_m1m2_sparge_opaque_backend(sparse_tau: float, sparse_theta: float) -
 
     registry._backends[sparge_name] = _m1m2_sparge_attention
     registry._constraints[sparge_name] = []
-    custom_op_name = "m1m2::sparge_sta_static_sm90" if sta_sparse else "m1m2::sparge_fp8_dense_sm90"
-    gen_path = "spas_sage2_attn_static_lut_cuda" if sta_sparse else "sageattn_qk_int8_pv_fp8_cuda_sm90"
+    custom_op_name = "m1m2::sparge_sta_static_sm90" if use_static else "m1m2::sparge_fp8_dense_sm90"
+    gen_path = "spas_sage2_attn_static_lut_cuda" if use_static else "sageattn_qk_int8_pv_fp8_cuda_sm90"
     record = {
         "event": "m1m2_sparge_opaque_backend_installed",
         "backend": sparge_name.value,
@@ -2018,9 +2041,10 @@ def install_m1m2_sparge_opaque_backend(sparse_tau: float, sparse_theta: float) -
         "causal_path": "native_attention",
         "gen_path": gen_path,
         "sta_sparse": sta_sparse,
+        "axial_sparse": axial_sparse,
         "constraints_disabled_for_compile": len(_M1M2_ORIGINAL_SPARGE_CONSTRAINTS),
     }
-    if sta_sparse:
+    if use_static:
         record.update(
             {
                 "sm90_blocksparse_kernel": "no_pv",
