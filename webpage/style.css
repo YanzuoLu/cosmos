@@ -413,22 +413,22 @@ button {
 
 /* Per-section "Method source" / origin attribution. */
 .method-source {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 6px 9px;
+  display: block;
   max-width: 980px;
   margin: 18px 0 6px;
   border-left: 2px solid var(--border-strong);
   padding: 9px 0 9px 13px;
   color: var(--muted);
   font-size: 0.88rem;
-  line-height: 1.5;
+  line-height: 1.65;
 }
 
 .source-pill {
-  flex: 0 0 auto;
-  align-self: center;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7px;
+  position: relative;
+  top: -1px;
   border: 1px solid var(--accent-line);
   border-radius: 999px;
   background: var(--accent-dim);
