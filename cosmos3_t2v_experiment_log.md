@@ -405,3 +405,60 @@ window** (068 clean = 7) and **absent in dense** (068 = 7,8,8).
 **Verdict: NO-GO.** Dilated-temporal buys more skip/speed than STA and 028 passes, but high-motion binding needs
 **dense contiguous near-frame temporal context** — striding the far frames causes ghosting/duplication. **Contiguous
 STA (w20-20-34) stays best.**
+
+## Candidate 4 (window + global keyframe anchor, LVSA form) — **LOCKED, current BEST static sparse config**
+
+Purpose: push the temporal-sparsity ceiling past STA's 32.5% skip without reviving dilated's high-motion ghosting —
+add a **fixed global temporal reference** that is consistent across all queries, so the contiguous local window can
+shrink while binding holds.
+
+**Mechanism.** A new mask builder (`tools/anchor_mask.py:build_window_anchor_block_mask`) emits the **UNION** of two
+full-spatial (WH=23, WW=40) temporal sets: (1) a **relative** contiguous temporal window `|dt| <= WLOCAL` around each
+query's own frame, and (2) a small set of **absolute fixed keyframe slabs** kept by *every* query. Driven through the
+**same** no_pv INT8-QK + FP8-PV LUT path and `m1m2::sparge_sta_static_sm90` custom_op as STA, selected via
+`ANCHOR_SPARSE=1 ANC_WLOCAL=10 ANC_KEYFRAMES={0,8,16,24,32,40,47}` (7 anchors). All-1 mask bit-equiv to dense;
+zero per-step mask overhead. **A2 = window +/-10 + 7 keyframes = 50.0% block skip.** Geometry T48/H23/W40, und/text
+prefix K-idx 0-42 force-kept, blkq64/blkk128.
+
+**Why it beats STA / dilated.** The contiguous local window (+/-10) preserves dense near-frame motion tracking (no
+striding artifacts), while the **fixed keyframe anchors give a CONSISTENT global temporal reference for all queries**.
+This is the key difference from Candidate 3: dilated's far frames were per-query **relative-strided** (each query sees
+*different* far frames), which broke fast-motion interpolation and duplicated 068's cat. The **absolute** anchors are
+the *same* frames for everyone, so they add global context without the relative-stride ghosting. That consistent
+reference lets the local window shrink from STA's +/-20 to +/-10 at **50% skip** while still holding the high-motion
+binding hardcases.
+
+**A2 final8 QA, strict 8/8 gate:**
+
+| 006 | 014 | 028 | 039 | 048 | 049 | 068 | 079 |
+|---|---|---|---|---|---|---|---|
+| 8 | 8 | 7 | 8 | 8 | 8 | 7 | 8 |
+
+8/8 PASS (overall mean 7.75, min 7). The two universal hardcases both hold: **068 = 7** (4 strict raters [7,7,7,7] all
+acceptable — only a faint ambiguous reflection-like artifact, **NOT** a distinct second cat as in the rejected dilated
+config) and **028 = 7** (raters [7,7] — mild fine-structure softening, no melting/ghosting). No regression vs dense on
+the binding prompts.
+
+**Speed:** mean **1.316x over dense-integrated** = **~2.01x over cache** = **~3.23x over BF16**. A2 lifts the locked
+stack from 1.528x to ~2.01x over cache (a **+32% speed gain** over the prior locked dense stack) while holding 8/8 —
+and beats STA's ~1.79x.
+
+**A2 is the anchor sweet spot.** A more aggressive **A3 (52.7% skip)** gave **NO measured speed gain over A2**:
+attention is ~45% of the step, so speedup = 1/(1 - 0.446*skip) flattens past 50% skip. Pushing skip higher only
+risks quality for no wall-clock return — A2 is the Pareto knee.
+
+**Verdict: LOCKED as the best static sparse config.** Fixed keyframe anchors + contiguous local window is the winning
+form: it doubles STA's block skip (32.5% -> 50%) and reaches 1.316x over dense while staying 8/8 on the high-motion
+binding hardcases. cache+M1+M2+A2 = 8/8 @ ~2.01x over cache (~3.23x over BF16).
+
+Reproduce (one prompt per GPU; same m1m2sparse runner flags as the dense stack, plus the anchor env):
+
+```bash
+M2_PV_VARIANT=fp8 ANCHOR_SPARSE=1 ANC_WLOCAL=10 ANC_KEYFRAMES=0,8,16,24,32,40,47 \
+python tools/diffusers_m1m2sparse_t2v_benchmark.py \
+  --attention-backend sparge --m1-fp8 --m1-compile --m1-smoothquant --smoothquant-alpha 0.5 \
+  --smoothquant-stats-path /root/cosmos/m1_smoothquant_stats/act_absmax.pt \
+  --taylorseer-interval 2 --taylorseer-max-order 1 --taylorseer-first-enhance 1 --taylorseer-last-enhance 5 \
+  --taylorseer-cache-und --height 720 --width 1280 --num-frames 189 --num-inference-steps 35 \
+  --guidance-scale 6.0 --flow-shift 10 --seed 1234
+```
