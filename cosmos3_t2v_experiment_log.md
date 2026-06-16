@@ -462,3 +462,60 @@ python tools/diffusers_m1m2sparse_t2v_benchmark.py \
   --taylorseer-cache-und --height 720 --width 1280 --num-frames 189 --num-inference-steps 35 \
   --guidance-scale 6.0 --flow-shift 10 --seed 1234
 ```
+
+## Candidate 5 (content-adaptive block-sparse) — **NO-GO**
+
+Purpose: the optional final lever — let each prompt (or each step) pick its own skip floor, spending budget on "hard"
+content and shaving it on "easy" content, to push past A2's 50% skip without breaking the high-motion binding cases.
+
+**Method — oracle ceiling, not a classifier.** Building a real global-complexity classifier is unvalidatable on this
+tiny gate set, so we instead ran the **ORACLE CEILING** of *any* adaptive scheme: the most aggressive **static** floor
+an adaptive scheme would ever drop "easy" content to — **window +/-4 + the 7 keyframe anchors = 67.6% block skip**
+(~1.47x) — and a **frontier probe** at **window +/-7 = 58.5% skip**. The logic: if even the oracle floor holds the
+high-motion hardcases, adaptivity adds only per-step overhead + misfire risk for no quality benefit; if the floor
+*fails*, then any classifier that mistakes hard content for easy carries a **catastrophic false-negative** (melting).
+
+**Results.**
+- **Oracle +/-4 (67.6% skip):** **068 = [4,4]** (fail — melting cat blob + duplicated second body), **006 = 5** (fail —
+  garden-robot body warps/melts in late frames; a *supposedly-easy* scene also collapses), **028 = [7,6]** (fail —
+  late-frame turtle softening/smearing). Only **048 = 8** passes.
+- **Frontier +/-7 (58.5% skip):** **068 = [4,4]** (fail — clear cat duplication, two distinct bodies + ghosting),
+  **006 = 8** (pass), **028 = 7** (pass). The frontier is **sharp**: 068 is already gone at +/-7.
+
+**Verdict: NO-GO for content-adaptivity.** The window/quality frontier is sharp and high-motion 068 needs the full
+A2 **+/-10** contiguous window — it collapses to cat-duplication/melting at both +/-7 ([4,4]) and +/-4 ([4,4]).
+Critically, even the **moderate-motion 006 fails at +/-4 (=5)** and **028 fails at +/-4 ([7,6])**, so "easy-looking"
+content is **NOT reliably +/-4-safe**: a global complexity classifier separating +/-4-safe from +/-10-needed content
+would be fragile with a **catastrophic false-negative mode (melting)**. On top of that, content-adaptivity adds
+per-step overhead — the prior adaptive probe died exactly here (**1.03x at 5.7% skip**) — for **no validatable
+headroom**. **Static window+anchor A2 (+/-10, 50% skip) is the confirmed ceiling.**
+
+## FINAL: cross-candidate comparison & conclusion (custom quant+sparse fused kernel)
+
+**Goal.** A self-written **quant+sparse fused kernel** = a static block-sparse mask gating layered onto the
+**SageAttention2 INT8-QK + FP8-PV no_pv mainloop** (reused the stable quant mainloop, added a precomputed int32-LUT
+block mask; `custom_op m1m2::sparge_sta_static_sm90`; **zero per-step overhead**; mask-all-1 **bit-equiv to dense**;
+**NEVER** touched the deadlocking fused PV-threshold WGMMA path). It stacks on
+cache(**TaylorSeer i2_o1_all_w1_c5**) + M1(**FP8 + SmoothQuant a0.5**) + M2(**SageAttn2 dense**), replacing the M2 dense
+attention call. Candidates C1–C5 are the sparsity *structure* swapped into that mask.
+
+| Candidate | Mechanism | Best config | Block skip | Speed vs dense-integrated | 8/8? | Verdict |
+|---|---|---|---|---|---|---|
+| C1 STA | contiguous full-spatial 3D sliding tile | w20-20-34 (full spatial + ±20 temporal) | 32.5% | 1.17x | YES | locked, superseded by C4 |
+| C2 Axial | 3-axis decomposed (T/H/W lines) | pure axial | 76.9% | ~1.5x | NO (068=3, 028=2) | NO-GO (off-axis spatial loss -> ghosting) |
+| C3 Dilated | full-spatial + strided-far temporal | D1/D2 | 41-57% | 1.20-1.33x | NO (068 ghosting/duplication) | NO-GO (strided far frames -> ghosting) |
+| C4 Window+Anchor | full-spatial ±10 temporal window + 7 fixed keyframe anchors | A2 (ANC_WLOCAL=10, keyframes {0,8,16,24,32,40,47}) | 50% | 1.32x | YES | **WINNER** |
+| C5 Adaptive | content-adaptive block skip | (oracle static ±4) | 67.6% | ~1.47x | NO (068=4, 006=5) | NO-GO (no validatable headroom) |
+
+**WINNER = C4 Window+Anchor A2.** Final delivered stack = **cache + M1 + M2 + A2** = **8/8 @ ~2.01x over cache
+pipeline (~3.23x over BF16)** — a **+32% speedup** on top of the prior locked dense stack (1.528x over cache, ~2.45x
+over BF16), with **NO quality regression** on the high-motion binding hardcases (**068 = [7,7,7,7]**, **028 = [7,7]**).
+
+**Mechanism conclusion.** For high-motion video diffusion, the only safe sparsity structure is **(full local 2D
+spatial) x (contiguous near-frame temporal window, ~±10) + (a few FIXED global keyframe anchors)**. Spatial sparsity
+(axial), temporal striding (dilated), and thin temporal windows (±4/±7) all collapse high-motion 068 into
+ghosting/cat-duplication/melting. **FIXED keyframe anchors** (a consistent global reference for all queries)
+outperform per-query relative-strided far frames (which ghost). The speedup is **attention-bound** (attention ~45% of
+the per-step cost after cache+M1; speedup ~= 1/(1 - 0.446*skip)), so the practical ceiling at 8/8 is **~1.32x over
+dense / ~2.0x over cache**. Reproduce A2: `M2_PV_VARIANT=fp8 ANCHOR_SPARSE=1 ANC_WLOCAL=10
+ANC_KEYFRAMES={0,8,16,24,32,40,47}` + the standard m1m2sparse runner flags.
