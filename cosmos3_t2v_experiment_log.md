@@ -367,3 +367,22 @@ python tools/diffusers_m1m2sparse_t2v_benchmark.py \
   --taylorseer-cache-und --height 720 --width 1280 --num-frames 189 --num-inference-steps 35 \
   --guidance-scale 6.0 --flow-shift 10 --seed 1234
 ```
+
+## Candidate 2 (axial / decomposed attention) — **NO-GO (high-motion collapse)**
+
+**Mechanism.** A new mask builder (`tools/axial_mask.py:build_axial_block_mask`) emits a pure **axial / decomposed**
+block pattern — each query attends only to the horizontal, vertical, and temporal axis-lines through its own position
+(a 3D "plus"/cross), not its full 2D spatial neighborhood. Driven through the **same** no_pv INT8-QK + FP8-PV LUT path
+and `m1m2::sparge_sta_static_sm90` custom_op as STA, selected via `AXIAL_SPARSE=1`. Realized **76.95% block skip**
+(all-1 mask bit-equiv to dense; kernel-landed + NaN-free). Speed-positive: 068 1.43x, 028 1.55x over dense-integrated
+(~1.5x over dense, well above STA's 1.17x — **if quality had held**).
+
+**Binding-gate result (unanimous fail).** The two high-motion hardcases both collapse: **068 = 3** (raters 3,3 —
+cat melts into white blob, ghosted hood duplicates, horizontal smearing) and **028 = 2** (raters 2,2 — vertical
+stacked ghost/duplicate turtles, shell melting, water banding). The failure mode is **off-axis 2D spatial-neighbor
+loss** manifesting as axis-line ghosting (vertical-stacked duplicates, horizontal smears).
+
+**Verdict: NO-GO.** Pure axial is fast but catastrophically destroys high-motion binding. This **reinforces the
+Candidate-1 finding**: high-motion video requires FULL local 2D spatial coverage — the cross/plus axis-lines are
+insufficient. Thickening the axial bands toward full-spatial just converges back to STA, so axial is **not a
+distinct viable lever**. Remaining axial sweeps skipped.
