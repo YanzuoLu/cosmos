@@ -411,6 +411,46 @@ button {
   margin: 24px 0 4px;
 }
 
+/* Per-section "Method source" / origin attribution. */
+.method-source {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 9px;
+  max-width: 980px;
+  margin: 18px 0 6px;
+  border-left: 2px solid var(--border-strong);
+  padding: 9px 0 9px 13px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.source-pill {
+  flex: 0 0 auto;
+  align-self: center;
+  border: 1px solid var(--accent-line);
+  border-radius: 999px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding: 5px 9px;
+  text-transform: uppercase;
+}
+
+.method-source a {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent-line);
+}
+
+.method-source a:hover {
+  border-bottom-color: var(--accent);
+}
+
 .custom-picker {
   display: grid;
   grid-template-columns: auto minmax(120px, 1fr) auto;
