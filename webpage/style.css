@@ -18,6 +18,61 @@
   --content: 1160px;
   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* Theme-derived helpers used by surfaces with hardcoded rgba(255,255,255,*) tints. */
+  --grid-line: rgba(255, 255, 255, 0.018);
+  --chip-bg: rgba(255, 255, 255, 0.035);
+  --chip-bg-hover: rgba(255, 255, 255, 0.04);
+  --nav-bg: rgba(11, 13, 16, 0.9);
+  --picker-bg: rgba(13, 16, 20, 0.94);
+  --panel-bg: rgba(17, 20, 26, 0.82);
+  --code-bg: #090b0e;
+  --code-text: #dde4ee;
+  --code-inline: #d9faf6;
+  --input-bg: rgba(0, 0, 0, 0.22);
+  --prose: #c8d0db;
+  --banner-text: #cfd6df;
+  /* Chart text colors (read by renderTimeBreakdownChart via getComputedStyle). */
+  --chart-title: #e6e9ef;
+  --chart-text: #cfd6df;
+  --chart-muted: #a3adba;
+  --chart-faint: #717b88;
+  --chart-grid: rgba(255, 255, 255, 0.08);
+  --chart-axis: rgba(255, 255, 255, 0.18);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f6f8fb;
+  --panel: #ffffff;
+  --panel-2: #f0f3f7;
+  --panel-3: #eef1f5;
+  --text: #1a2230;
+  --muted: #4f5b6b;
+  --faint: #76828f;
+  --border: rgba(15, 23, 35, 0.12);
+  --border-strong: rgba(15, 23, 35, 0.2);
+  --accent: #0c8a7d;
+  --accent-dim: rgba(12, 138, 125, 0.1);
+  --accent-line: rgba(12, 138, 125, 0.45);
+  --danger: #b86a2c;
+  --grid-line: rgba(15, 23, 35, 0.04);
+  --chip-bg: rgba(15, 23, 35, 0.03);
+  --chip-bg-hover: rgba(15, 23, 35, 0.06);
+  --nav-bg: rgba(246, 248, 251, 0.9);
+  --picker-bg: rgba(240, 243, 247, 0.94);
+  --panel-bg: rgba(255, 255, 255, 0.9);
+  --code-bg: #0f141b;
+  --code-text: #dde4ee;
+  --code-inline: #0a766b;
+  --input-bg: rgba(15, 23, 35, 0.04);
+  --prose: #344050;
+  --banner-text: #344050;
+  --chart-title: #1a2230;
+  --chart-text: #344050;
+  --chart-muted: #4f5b6b;
+  --chart-faint: #76828f;
+  --chart-grid: rgba(15, 23, 35, 0.1);
+  --chart-axis: rgba(15, 23, 35, 0.22);
 }
 
 * {
@@ -32,8 +87,8 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
     var(--bg);
   background-size: 42px 42px, 42px 42px, auto;
   color: var(--text);
@@ -55,8 +110,12 @@ output {
 }
 
 code {
-  color: #d9faf6;
+  color: var(--code-inline);
   font-size: 0.92em;
+}
+
+pre code {
+  color: inherit;
 }
 
 button,
@@ -74,7 +133,7 @@ button {
   z-index: 50;
   height: var(--nav-height);
   border-bottom: 1px solid var(--border);
-  background: rgba(11, 13, 16, 0.9);
+  background: var(--nav-bg);
   backdrop-filter: blur(16px);
 }
 
@@ -122,7 +181,7 @@ button {
 .anchor-nav a:hover,
 .anchor-nav a.is-active {
   border-color: var(--border-strong);
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--chip-bg-hover);
   color: var(--text);
 }
 
@@ -130,12 +189,59 @@ button {
   color: var(--accent);
 }
 
+.nav-controls {
+  flex: 0 0 auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-toggle {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--chip-bg);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 7px 11px;
+  transition: transform 120ms ease, border-color 160ms ease, background 160ms ease, color 160ms ease;
+}
+
+.nav-toggle:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.nav-toggle:active {
+  transform: translateY(1px);
+}
+
+.nav-toggle.is-on {
+  border-color: var(--accent-line);
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+.theme-toggle {
+  width: 34px;
+  padding: 7px 0;
+  font-size: 0.92rem;
+}
+
 .prompt-picker {
   position: sticky;
   top: var(--nav-height);
   z-index: 40;
   border-bottom: 1px solid var(--border);
-  background: rgba(13, 16, 20, 0.94);
+  background: var(--picker-bg);
   backdrop-filter: blur(16px);
 }
 
@@ -180,7 +286,7 @@ button {
 .copy-btn {
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.035);
+  background: var(--chip-bg);
   color: var(--muted);
   font-family: var(--mono);
   font-size: 0.78rem;
@@ -236,7 +342,7 @@ button {
   margin: 26px 0 8px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: rgba(17, 20, 26, 0.82);
+  background: var(--panel-bg);
   padding: 18px 18px 20px;
 }
 
@@ -260,7 +366,7 @@ button {
   gap: 7px;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.035);
+  background: var(--chip-bg);
   color: var(--muted);
   font-family: var(--mono);
   font-size: 0.78rem;
@@ -322,7 +428,7 @@ button {
   min-width: 0;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.22);
+  background: var(--input-bg);
   color: var(--text);
   font-family: var(--mono);
   font-size: 0.8rem;
@@ -519,8 +625,8 @@ section {
 .setup-banner span {
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.035);
-  color: #cfd6df;
+  background: var(--chip-bg);
+  color: var(--banner-text);
   font-family: var(--mono);
   font-size: 0.78rem;
   line-height: 1.1;
@@ -548,7 +654,7 @@ section {
 .mechanism {
   max-width: 990px;
   margin: 0 0 20px;
-  color: #c8d0db;
+  color: var(--prose);
   font-size: 1.02rem;
 }
 
@@ -582,7 +688,7 @@ section {
   max-width: 980px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: rgba(17, 20, 26, 0.82);
+  background: var(--panel-bg);
 }
 
 .info-panel {
@@ -601,7 +707,7 @@ section {
 .fact-list {
   margin: 0;
   padding-left: 1.4rem;
-  color: #c8d0db;
+  color: var(--prose);
 }
 
 .lever-list li + li,
@@ -636,7 +742,7 @@ section {
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: #090b0e;
+  background: var(--code-bg);
 }
 
 .code-toolbar {
@@ -645,7 +751,7 @@ section {
   justify-content: space-between;
   gap: 12px;
   border-bottom: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.035);
+  background: var(--chip-bg);
   color: var(--muted);
   font-family: var(--mono);
   font-size: 0.78rem;
@@ -667,7 +773,7 @@ pre {
   margin: 0;
   overflow-x: auto;
   padding: 16px;
-  color: #dde4ee;
+  color: var(--code-text);
   font-size: 0.85rem;
   line-height: 1.55;
   tab-size: 2;
@@ -684,7 +790,7 @@ pre {
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: rgba(17, 20, 26, 0.88);
+  background: var(--panel);
   box-shadow: 0 16px 42px rgba(0, 0, 0, 0.18);
 }
 
@@ -794,7 +900,7 @@ pre {
   width: 100%;
   border-collapse: collapse;
   min-width: 620px;
-  background: rgba(17, 20, 26, 0.82);
+  background: var(--panel-bg);
   font-size: 0.94rem;
 }
 
@@ -830,11 +936,11 @@ pre {
 .chart-panel {
   position: relative;
   margin: 24px 0 30px;
-  padding: 24px 18px 12px;
+  padding: 26px 20px 22px;
 }
 
 .chart-mount {
-  min-height: 340px;
+  min-height: 400px;
 }
 
 .chart-mount svg {
@@ -947,11 +1053,11 @@ pre {
   }
 
   .chart-panel {
-    padding: 46px 10px 8px;
+    padding: 28px 12px 16px;
   }
 
   .chart-mount {
-    min-height: 300px;
+    min-height: 320px;
   }
 }
 

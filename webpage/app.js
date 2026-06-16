@@ -10,12 +10,20 @@
   const VIDEO_TIMEOUT_MS = 18000;
   const STALLED_TIMEOUT_MS = 4500;
 
-  let selectedIds = [...DEFAULT_IDS];
+  const THEME_KEY = "cosmos3-theme";
+  const LANG_KEY = "cosmos3-lang";
+
+  let selectedIds = sortIds([...DEFAULT_IDS]);
   let armedId = null;
   let sparseTag = DEFAULT_SPARSE_TAG;
+  let currentLang = "en";
   let videoObserver = null;
   const videoTimers = new WeakMap();
   let lightbox = null;
+
+  function sortIds(ids) {
+    return [...ids].sort((a, b) => Number(a) - Number(b));
+  }
 
   const posterSvg = [
     "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2560 720'>",
@@ -28,6 +36,8 @@
   const POSTER_URL = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(posterSvg);
 
   document.addEventListener("DOMContentLoaded", () => {
+    initTheme();
+    initLang();
     initPromptPicker();
     initSparseLadder();
     initCopyButtons();
@@ -36,6 +46,99 @@
     renderTimeBreakdownChart();
     initLightbox();
   });
+
+  function initTheme() {
+    const toggle = document.getElementById("themeToggle");
+    let stored = null;
+    try {
+      stored = localStorage.getItem(THEME_KEY);
+    } catch (error) {
+      stored = null;
+    }
+    applyTheme(stored === "light" ? "light" : "dark");
+
+    if (toggle) {
+      toggle.addEventListener("click", () => {
+        const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+        applyTheme(next);
+        try {
+          localStorage.setItem(THEME_KEY, next);
+        } catch (error) {
+          // ignore storage failures (private mode, etc.)
+        }
+        // Chart text colors come from CSS vars, so re-render on theme change.
+        renderTimeBreakdownChart();
+      });
+    }
+  }
+
+  function applyTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    const toggle = document.getElementById("themeToggle");
+    if (toggle) {
+      const isLight = theme === "light";
+      // Show the icon for the theme you would switch TO.
+      toggle.textContent = isLight ? "☀" : "☾";
+      toggle.classList.toggle("is-on", isLight);
+      toggle.setAttribute("aria-pressed", isLight ? "true" : "false");
+    }
+  }
+
+  function initLang() {
+    const toggle = document.getElementById("langToggle");
+    let stored = null;
+    try {
+      stored = localStorage.getItem(LANG_KEY);
+    } catch (error) {
+      stored = null;
+    }
+    applyLang(stored === "zh" ? "zh" : "en");
+
+    if (toggle) {
+      toggle.addEventListener("click", () => {
+        const next = currentLang === "zh" ? "en" : "zh";
+        applyLang(next);
+        try {
+          localStorage.setItem(LANG_KEY, next);
+        } catch (error) {
+          // ignore storage failures
+        }
+        // Re-render JS-injected, translatable content.
+        renderTimeBreakdownChart();
+        renderVideos();
+      });
+    }
+  }
+
+  function applyLang(lang) {
+    currentLang = lang === "zh" ? "zh" : "en";
+    document.documentElement.lang = currentLang === "zh" ? "zh" : "en";
+
+    document.querySelectorAll("[data-en], [data-zh]").forEach((el) => {
+      const value = el.dataset[currentLang];
+      if (typeof value === "string") {
+        el.textContent = value;
+      }
+    });
+
+    document.querySelectorAll("[data-en-html], [data-zh-html]").forEach((el) => {
+      const value = el.dataset[currentLang + "Html"];
+      if (typeof value === "string") {
+        el.innerHTML = value;
+      }
+    });
+
+    const toggle = document.getElementById("langToggle");
+    if (toggle) {
+      // Label shows the language you would switch TO.
+      toggle.textContent = currentLang === "zh" ? "EN" : "中文";
+      toggle.setAttribute("aria-pressed", currentLang === "zh" ? "true" : "false");
+    }
+  }
+
+  function tr(en, zh) {
+    return currentLang === "zh" ? zh : en;
+  }
 
   function buildVideoUrl(group, id) {
     return `${HF_BASE}/${group}/prompt_${id}.mp4`;
@@ -56,8 +159,11 @@
           armedId = armedId === id ? null : id;
           setPromptMessage(
             armedId
-              ? `${id} marked to swap out — now tap an inactive prompt to swap it in.`
-              : "Swap cancelled."
+              ? tr(
+                  `${id} marked to swap out — now tap an inactive prompt to swap it in.`,
+                  `已标记 ${id} 待换出——现在点击一个未选提示词将其换入。`
+                )
+              : tr("Swap cancelled.", "已取消互换。")
           );
           syncPromptUi();
           return;
@@ -65,16 +171,19 @@
 
         // Inactive chip: it replaces the armed active chip (explicit swap).
         if (!armedId) {
-          setPromptMessage("Tap one of the 4 active prompts first to mark it for replacement.");
+          setPromptMessage(tr(
+            "Tap one of the 4 active prompts first to mark it for replacement.",
+            "请先点击 4 个已选提示词之一，将其标记为待替换。"
+          ));
           pulseActiveChips();
           return;
         }
 
         const swappedOut = armedId;
-        selectedIds = selectedIds.map((selected) => (selected === armedId ? id : selected));
+        selectedIds = sortIds(selectedIds.map((selected) => (selected === armedId ? id : selected)));
         armedId = null;
         input.removeAttribute("aria-invalid");
-        setPromptMessage(`Swapped ${swappedOut} → ${id}.`);
+        setPromptMessage(tr(`Swapped ${swappedOut} → ${id}.`, `已互换 ${swappedOut} → ${id}。`));
         syncPromptUi();
         renderVideos();
       });
@@ -90,10 +199,10 @@
         return;
       }
 
-      selectedIds = parsed.ids;
+      selectedIds = sortIds(parsed.ids);
       armedId = null;
       input.removeAttribute("aria-invalid");
-      setPromptMessage("Applied custom prompt ids.");
+      setPromptMessage(tr("Applied custom prompt ids.", "已应用自定义提示词编号。"));
       syncPromptUi();
       renderVideos();
     });
@@ -275,11 +384,11 @@
 
     const prompt = document.createElement("div");
     prompt.className = "prompt-label";
-    prompt.textContent = `Prompt ${id}`;
+    prompt.textContent = `${tr("Prompt", "提示词")} ${id}`;
 
     const caption = document.createElement("div");
     caption.className = "config-label";
-    caption.innerHTML = `<span>LEFT: ${escapeHtml(left)}</span><span class="caption-divider">|</span><span>RIGHT: ${escapeHtml(right)}</span>`;
+    caption.innerHTML = `<span>${tr("LEFT", "左")}: ${escapeHtml(left)}</span><span class="caption-divider">|</span><span>${tr("RIGHT", "右")}: ${escapeHtml(right)}</span>`;
 
     meta.append(prompt, caption);
     card.append(frame, meta);
@@ -330,7 +439,7 @@
     const caption = box.querySelector(".lightbox-caption");
     video.poster = POSTER_URL;
     video.src = buildVideoUrl(group, id);
-    caption.innerHTML = `<strong>Prompt ${escapeHtml(id)}</strong><span class="caption-divider">|</span><span>LEFT: ${escapeHtml(left)}</span><span class="caption-divider">|</span><span>RIGHT: ${escapeHtml(right)}</span>`;
+    caption.innerHTML = `<strong>${tr("Prompt", "提示词")} ${escapeHtml(id)}</strong><span class="caption-divider">|</span><span>${tr("LEFT", "左")}: ${escapeHtml(left)}</span><span class="caption-divider">|</span><span>${tr("RIGHT", "右")}: ${escapeHtml(right)}</span>`;
     box.classList.add("is-open");
     box.setAttribute("aria-hidden", "false");
     document.body.classList.add("lightbox-open");
@@ -460,10 +569,10 @@
         const text = code.textContent.trimEnd();
         const copied = await copyText(text);
 
-        button.textContent = copied ? "Copied" : "Select";
+        button.textContent = copied ? tr("Copied", "已复制") : tr("Select", "请手动选择");
         button.classList.toggle("is-copied", copied);
         window.setTimeout(() => {
-          button.textContent = "Copy";
+          button.textContent = button.dataset[currentLang] || tr("Copy", "复制");
           button.classList.remove("is-copied");
         }, 1400);
       });
@@ -561,6 +670,26 @@
     const mount = document.getElementById("timeBreakdownChart");
     if (!mount) return;
 
+    const isZh = currentLang === "zh";
+    // Chart text colors pulled from the active theme's CSS variables.
+    const css = getComputedStyle(document.documentElement);
+    const cv = (name, fallback) => (css.getPropertyValue(name).trim() || fallback);
+    const colTitle = cv("--chart-title", "#e6e9ef");
+    const colText = cv("--chart-text", "#cfd6df");
+    const colMuted = cv("--chart-muted", "#a3adba");
+    const colFaint = cv("--chart-faint", "#717b88");
+    const colGrid = cv("--chart-grid", "rgba(255,255,255,0.08)");
+    const colAxis = cv("--chart-axis", "rgba(255,255,255,0.18)");
+
+    const t = {
+      title: isZh ? "逐阶段耗时分解" : "Per-stage time breakdown",
+      subtitle: isZh
+        ? "整段生成累计的 GPU 忙碌 kernel 时间（wall-clock 因启动/CPU 开销略高）"
+        : "GPU-busy kernel time, summed over a full generation (wall-clock is slightly higher due to launch/CPU overhead)",
+      axis: isZh ? "逐阶段 GPU kernel 耗时 (s)" : "per-stage GPU kernel time (s)",
+      config: isZh ? "配置" : "config"
+    };
+
     const TIME_BREAKDOWN_DATA = [
       { config: "BF16", attention: 144.9, linear_gemm: 58.2, quant_cast: 0.0, norm_rope: 0.2, vae_decode: 6.3, other: 42.6 },
       { config: "+cache", attention: 83.5, linear_gemm: 34.5, quant_cast: 0.0, norm_rope: 0.2, vae_decode: 6.3, other: 29.2 },
@@ -569,25 +698,31 @@
     ];
 
     const categories = [
-      { key: "attention", label: "attention", color: "#4fd1c5" },
+      { key: "attention", label: isZh ? "注意力" : "attention", color: "#4fd1c5" },
       { key: "linear_gemm", label: "linear-GEMM", color: "#7c8df6" },
-      { key: "quant_cast", label: "quant/cast", color: "#d9b56f" },
+      { key: "quant_cast", label: isZh ? "量化/cast" : "quant/cast", color: "#d9b56f" },
       { key: "norm_rope", label: "norm/rope", color: "#9ac5a9" },
-      { key: "vae_decode", label: "VAE decode", color: "#6f9bd9" },
-      { key: "other", label: "other", color: "#8d99a6" }
+      { key: "vae_decode", label: isZh ? "VAE 解码" : "VAE decode", color: "#6f9bd9" },
+      { key: "other", label: isZh ? "其他" : "other", color: "#8d99a6" }
     ];
 
     const width = 980;
-    const height = 430;
-    const margin = { top: 76, right: 64, bottom: 86, left: 94 };
+    const height = 482;
+    const margin = { top: 76, right: 64, bottom: 138, left: 94 };
     const plotWidth = width - margin.left - margin.right;
     const plotHeight = height - margin.top - margin.bottom;
-    const rowGap = 19;
     const barHeight = 31;
     const totals = TIME_BREAKDOWN_DATA.map((row) => categories.reduce((sum, category) => sum + row[category.key], 0));
     const maxTotal = Math.ceil(Math.max(...totals) / 50) * 50;
     const rowStep = (plotHeight - barHeight) / (TIME_BREAKDOWN_DATA.length - 1);
     const tickValues = [0, maxTotal * 0.25, maxTotal * 0.5, maxTotal * 0.75, maxTotal];
+
+    // Vertical layout below the bars: each element gets its own clearly separated row.
+    const plotBottom = margin.top + plotHeight;        // 344 — bottom of the bar area
+    const axisLineY = plotBottom + 10;                  // 354 — x-axis rule
+    const tickLabelY = axisLineY + 22;                  // 376 — tick number row (0/75/.../300)
+    const axisTitleY = tickLabelY + 34;                 // 410 — centered axis title row
+    const legendY = axisTitleY + 38;                    // 448 — legend row (well clear of the title)
 
     const bars = TIME_BREAKDOWN_DATA.map((row, rowIndex) => {
       const y = margin.top + rowIndex * rowStep;
@@ -606,9 +741,9 @@
       const totalX = margin.left + (total / maxTotal) * plotWidth + 10;
 
       return [
-        `<text x="${margin.left - 14}" y="${round(y + barHeight * 0.68)}" text-anchor="end" fill="#cfd6df" font-family="ui-monospace, Menlo, monospace" font-size="14">${escapeHtml(row.config)}</text>`,
+        `<text x="${margin.left - 14}" y="${round(y + barHeight * 0.68)}" text-anchor="end" fill="${colText}" font-family="ui-monospace, Menlo, monospace" font-size="14">${escapeHtml(row.config)}</text>`,
         segments,
-        `<text x="${round(totalX)}" y="${round(y + barHeight * 0.68)}" fill="#a3adba" font-family="ui-monospace, Menlo, monospace" font-size="12">${total.toFixed(1)} s</text>`
+        `<text x="${round(totalX)}" y="${round(y + barHeight * 0.68)}" fill="${colMuted}" font-family="ui-monospace, Menlo, monospace" font-size="12">${total.toFixed(1)} s</text>`
       ].join("");
     }).join("");
 
@@ -616,31 +751,31 @@
       const x = margin.left + (value / maxTotal) * plotWidth;
       const label = Math.round(value);
       return [
-        `<line x1="${round(x)}" y1="${margin.top - 12}" x2="${round(x)}" y2="${margin.top + plotHeight + rowGap}" stroke="rgba(255,255,255,0.08)"/>`,
-        `<text x="${round(x)}" y="${height - 48}" text-anchor="middle" fill="#717b88" font-family="ui-monospace, Menlo, monospace" font-size="12">${label}</text>`
+        `<line x1="${round(x)}" y1="${margin.top - 12}" x2="${round(x)}" y2="${round(axisLineY)}" stroke="${colGrid}"/>`,
+        `<text x="${round(x)}" y="${round(tickLabelY)}" text-anchor="middle" fill="${colFaint}" font-family="ui-monospace, Menlo, monospace" font-size="12">${label}</text>`
       ].join("");
     }).join("");
 
     const legend = categories.map((category, index) => {
       const x = margin.left + index * 132;
-      const y = height - 24;
+      const y = legendY;
       return [
-        `<rect x="${x}" y="${y - 10}" width="10" height="10" rx="2" fill="${category.color}" opacity="0.9"/>`,
-        `<text x="${x + 16}" y="${y}" fill="#a3adba" font-family="ui-monospace, Menlo, monospace" font-size="12">${escapeHtml(category.label)}</text>`
+        `<rect x="${x}" y="${round(y - 10)}" width="10" height="10" rx="2" fill="${category.color}" opacity="0.9"/>`,
+        `<text x="${x + 16}" y="${round(y)}" fill="${colMuted}" font-family="ui-monospace, Menlo, monospace" font-size="12">${escapeHtml(category.label)}</text>`
       ].join("");
     }).join("");
 
     mount.innerHTML = [
       `<svg class="time-chart" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="timeChartTitle timeChartDesc">`,
-      `<title id="timeChartTitle">Per-stage time breakdown</title>`,
+      `<title id="timeChartTitle">${escapeHtml(t.title)}</title>`,
       `<desc id="timeChartDesc">Real per-stage GPU kernel time (seconds) for the four delivered configs; total shrinks from 252.2 s to 108.2 s.</desc>`,
-      `<text x="${margin.left}" y="32" fill="#e6e9ef" font-family="ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700">Per-stage time breakdown</text>`,
-      `<text x="${margin.left}" y="54" fill="#a3adba" font-family="ui-monospace, Menlo, monospace" font-size="12">GPU-busy kernel time, summed over a full generation (wall-clock is slightly higher due to launch/CPU overhead)</text>`,
+      `<text x="${margin.left}" y="32" fill="${colTitle}" font-family="ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700">${escapeHtml(t.title)}</text>`,
+      `<text x="${margin.left}" y="54" fill="${colMuted}" font-family="ui-monospace, Menlo, monospace" font-size="12">${escapeHtml(t.subtitle)}</text>`,
       grid,
-      `<line x1="${margin.left}" y1="${height - 60}" x2="${margin.left + plotWidth}" y2="${height - 60}" stroke="rgba(255,255,255,0.18)"/>`,
+      `<line x1="${margin.left}" y1="${round(axisLineY)}" x2="${margin.left + plotWidth}" y2="${round(axisLineY)}" stroke="${colAxis}"/>`,
       bars,
-      `<text x="${margin.left + plotWidth / 2}" y="${height - 34}" text-anchor="middle" fill="#717b88" font-family="ui-monospace, Menlo, monospace" font-size="12">per-stage GPU kernel time (s)</text>`,
-      `<text x="24" y="${margin.top + plotHeight / 2}" transform="rotate(-90 24 ${margin.top + plotHeight / 2})" text-anchor="middle" fill="#717b88" font-family="ui-monospace, Menlo, monospace" font-size="12">config</text>`,
+      `<text x="${margin.left + plotWidth / 2}" y="${round(axisTitleY)}" text-anchor="middle" fill="${colFaint}" font-family="ui-monospace, Menlo, monospace" font-size="12">${escapeHtml(t.axis)}</text>`,
+      `<text x="24" y="${margin.top + plotHeight / 2}" transform="rotate(-90 24 ${margin.top + plotHeight / 2})" text-anchor="middle" fill="${colFaint}" font-family="ui-monospace, Menlo, monospace" font-size="12">${escapeHtml(t.config)}</text>`,
       legend,
       "</svg>"
     ].join("");

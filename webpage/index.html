@@ -12,22 +12,26 @@
       <div class="nav-inner">
         <a class="brand" href="#hero" aria-label="Cosmos3-Nano T2V overview">Cosmos3-Nano T2V</a>
         <nav class="anchor-nav" aria-label="Page sections">
-          <a href="#background" data-nav-link>Background</a>
-          <a href="#cache" data-nav-link>Cache</a>
-          <a href="#m1" data-nav-link>M1</a>
-          <a href="#m2" data-nav-link>M2</a>
-          <a href="#final" data-nav-link>Final</a>
-          <a href="#sparse" data-nav-link>Sparse (explored)</a>
+          <a href="#background" data-nav-link data-en="Background" data-zh="背景">Background</a>
+          <a href="#cache" data-nav-link data-en="Cache" data-zh="缓存">Cache</a>
+          <a href="#m1" data-nav-link data-en="M1" data-zh="M1">M1</a>
+          <a href="#m2" data-nav-link data-en="M2" data-zh="M2">M2</a>
+          <a href="#final" data-nav-link data-en="Final" data-zh="最终">Final</a>
+          <a href="#sparse" data-nav-link data-en="Sparse (explored)" data-zh="稀疏（探索）">Sparse (explored)</a>
         </nav>
+        <div class="nav-controls">
+          <button type="button" class="nav-toggle lang-toggle" id="langToggle" aria-label="Switch language">中文 / EN</button>
+          <button type="button" class="nav-toggle theme-toggle" id="themeToggle" aria-label="Switch color theme">☾</button>
+        </div>
       </div>
     </header>
 
     <aside class="prompt-picker" aria-label="Global prompt picker">
       <div class="picker-inner">
         <div class="picker-title">
-          <span class="eyebrow">Prompt picker</span>
-          <strong>One global 4-prompt view</strong>
-          <span class="picker-hint">Tap an active prompt to mark it (⇄), then tap an inactive one to swap them.</span>
+          <span class="eyebrow" data-en="Prompt picker" data-zh="提示词选择器">Prompt picker</span>
+          <strong data-en="One global 4-prompt view" data-zh="全局统一的 4 提示词视图">One global 4-prompt view</strong>
+          <span class="picker-hint" data-en="Tap an active prompt to mark it (⇄), then tap an inactive one to swap them." data-zh="点击一个已选提示词将其标记（⇄），再点击一个未选提示词即可互换。">Tap an active prompt to mark it (⇄), then tap an inactive one to swap them.</span>
         </div>
         <div class="chip-row" id="promptChips" aria-label="Final8 quick picks">
           <button type="button" class="prompt-chip" data-prompt-id="006">006</button>
@@ -40,12 +44,12 @@
           <button type="button" class="prompt-chip" data-prompt-id="079">079</button>
         </div>
         <form class="custom-picker" id="customPromptForm">
-          <label for="customPromptInput">Custom ids</label>
+          <label for="customPromptInput" data-en="Custom ids" data-zh="自定义编号">Custom ids</label>
           <input id="customPromptInput" name="promptIds" type="text" inputmode="numeric" autocomplete="off" placeholder="012, 050, 077, 100">
-          <button type="submit">Apply</button>
+          <button type="submit" data-en="Apply" data-zh="应用">Apply</button>
         </form>
         <div class="picker-state" aria-live="polite">
-          <span>Selected</span>
+          <span data-en="Selected" data-zh="已选">Selected</span>
           <output id="selectedPromptOutput">039 · 048 · 049 · 079</output>
           <span class="picker-message" id="promptStatus"></span>
         </div>
@@ -55,58 +59,58 @@
     <main>
       <section class="hero-section" id="hero" aria-labelledby="hero-title">
         <div class="hero-inner">
-          <p class="eyebrow">Cosmos3-Nano T2V acceleration project</p>
-          <h1 id="hero-title">Cosmos3-Nano T2V — Training-free 2.36x Acceleration</h1>
-          <p class="hero-subtitle">Stack a derivative cache, FP8 quantization, and quantized dense attention to reduce text-to-video latency while preserving final8 quality gates.</p>
+          <p class="eyebrow" data-en="Cosmos3-Nano T2V acceleration project" data-zh="Cosmos3-Nano T2V 加速项目">Cosmos3-Nano T2V acceleration project</p>
+          <h1 id="hero-title" data-en="Cosmos3-Nano T2V — Training-free 2.36x Acceleration" data-zh="Cosmos3-Nano T2V — 免训练 2.36x 加速">Cosmos3-Nano T2V — Training-free 2.36x Acceleration</h1>
+          <p class="hero-subtitle" data-en="Stack a derivative cache, FP8 quantization, and quantized dense attention to reduce text-to-video latency while preserving final8 quality gates." data-zh="叠加导数缓存、FP8 量化与量化稠密注意力，在通过 final8 质量门槛的前提下降低文本生成视频的时延。">Stack a derivative cache, FP8 quantization, and quantized dense attention to reduce text-to-video latency while preserving final8 quality gates.</p>
           <div class="setup-banner" aria-label="Hardware and setup">
-            <span>NVIDIA Cosmos3-Nano text-to-video</span>
+            <span data-en="NVIDIA Cosmos3-Nano text-to-video" data-zh="NVIDIA Cosmos3-Nano 文本生成视频">NVIDIA Cosmos3-Nano text-to-video</span>
             <span>720x1280</span>
-            <span>189 frames</span>
-            <span>35 steps</span>
-            <span>guidance 6.0</span>
+            <span data-en="189 frames" data-zh="189 帧">189 frames</span>
+            <span data-en="35 steps" data-zh="35 步">35 steps</span>
+            <span data-en="guidance 6.0" data-zh="引导 6.0">guidance 6.0</span>
             <span>flow-shift 10</span>
             <span>seed 1234</span>
-            <span>single H200 (Hopper sm90, native FP8 E4M3 / INT8)</span>
-            <span>100 structured prompts</span>
-            <span>final8 hardcase subset gates quality</span>
+            <span data-en="single H200 (Hopper sm90, native FP8 E4M3 / INT8)" data-zh="单卡 H200（Hopper sm90，原生 FP8 E4M3 / INT8）">single H200 (Hopper sm90, native FP8 E4M3 / INT8)</span>
+            <span data-en="100 structured prompts" data-zh="100 条结构化提示词">100 structured prompts</span>
+            <span data-en="final8 hardcase subset gates quality" data-zh="final8 困难子集把控质量">final8 hardcase subset gates quality</span>
           </div>
         </div>
       </section>
 
       <section class="content-section" id="background" aria-labelledby="background-title">
         <div class="section-heading">
-          <p class="section-kicker">SECTION 0</p>
-          <h2 id="background-title">Background &amp; Setup</h2>
+          <p class="section-kicker" data-en="SECTION 0" data-zh="第 0 节">SECTION 0</p>
+          <h2 id="background-title" data-en="Background &amp; Setup" data-zh="背景与配置">Background &amp; Setup</h2>
         </div>
-        <p class="mechanism">Stack three orthogonal training-free levers — a derivative CACHE (TaylorSeer), weight+activation QUANTIZATION (M1, FP8), and quantized dense ATTENTION (M2 SageAttention2) — to cut latency 2.36x vs BF16 with no quality regression. A fourth lever, block-sparse attention (A2), was explored but not shipped — it degraded large-object motion (see the appendix).</p>
+        <p class="mechanism" data-en="Stack three orthogonal training-free levers — a derivative CACHE (TaylorSeer), weight+activation QUANTIZATION (M1, FP8), and quantized dense ATTENTION (M2 SageAttention2) — to cut latency 2.36x vs BF16 with no quality regression. A fourth lever, block-sparse attention (A2), was explored but not shipped — it degraded large-object motion (see the appendix)." data-zh="叠加三个正交的免训练手段——导数缓存（TaylorSeer）、权重+激活量化（M1，FP8）以及量化稠密注意力（M2 SageAttention2）——在不损失质量的前提下将时延相对 BF16 降低 2.36x。第四个手段，即块稀疏注意力（A2），经探索但未采用——它会破坏大物体的运动（见附录）。">Stack three orthogonal training-free levers — a derivative CACHE (TaylorSeer), weight+activation QUANTIZATION (M1, FP8), and quantized dense ATTENTION (M2 SageAttention2) — to cut latency 2.36x vs BF16 with no quality regression. A fourth lever, block-sparse attention (A2), was explored but not shipped — it degraded large-object motion (see the appendix).</p>
         <div class="metric-callout">
-          <span class="metric-label">Delivered</span>
+          <span class="metric-label" data-en="Delivered" data-zh="已交付">Delivered</span>
           <span class="metric-value">2.36x vs BF16</span>
-          <span class="metric-note">cache + M1 + M2, quality-gated on final8</span>
+          <span class="metric-note" data-en="cache + M1 + M2, quality-gated on final8" data-zh="cache + M1 + M2，以 final8 把控质量">cache + M1 + M2, quality-gated on final8</span>
         </div>
         <div class="info-panel">
-          <h3>Three orthogonal levers (delivered)</h3>
+          <h3 data-en="Three orthogonal levers (delivered)" data-zh="三个正交手段（已交付）">Three orthogonal levers (delivered)</h3>
           <ol class="lever-list">
-            <li><strong>Cache</strong> — TaylorSeer derivative cache (training-free).</li>
-            <li><strong>Quant</strong> — M1 FP8 W8A8 + SmoothQuant.</li>
-            <li><strong>Attention</strong> — M2 SageAttention2 dense (INT8-QK + FP8-PV).</li>
+            <li data-en-html="<strong>Cache</strong> — TaylorSeer derivative cache (training-free)." data-zh-html="<strong>缓存</strong> — TaylorSeer 导数缓存（免训练）。"><strong>Cache</strong> — TaylorSeer derivative cache (training-free).</li>
+            <li data-en-html="<strong>Quant</strong> — M1 FP8 W8A8 + SmoothQuant." data-zh-html="<strong>量化</strong> — M1 FP8 W8A8 + SmoothQuant。"><strong>Quant</strong> — M1 FP8 W8A8 + SmoothQuant.</li>
+            <li data-en-html="<strong>Attention</strong> — M2 SageAttention2 dense (INT8-QK + FP8-PV)." data-zh-html="<strong>注意力</strong> — M2 SageAttention2 稠密（INT8-QK + FP8-PV）。"><strong>Attention</strong> — M2 SageAttention2 dense (INT8-QK + FP8-PV).</li>
           </ol>
         </div>
 
         <div class="subsection">
-          <h3>Environment / Install</h3>
+          <h3 data-en="Environment / Install" data-zh="环境 / 安装">Environment / Install</h3>
           <ol class="fact-list">
-            <li>Python 3.13, single H200 (Hopper sm90), CUDA 12.8 toolchain (cu128 torch backend).</li>
-            <li>venv via uv: <code>uv venv venv --python 3.13 --seed --managed-python</code> then <code>uv pip sync tools/requirements.lock --torch-backend cu128</code>.</li>
-            <li>Pinned (from <code>tools/requirements.lock</code>): torch 2.11.0+cu128, torchvision 0.26.0+cu128, triton 3.6.0, transformers 5.12.0, accelerate 1.14.0, and diffusers installed from GitHub main (pinned commit a50ade49) for Cosmos3OmniPipeline.</li>
-            <li>TorchAO ~0.17.0 (<code>version=2</code> quant API; provides <code>Float8DynamicActivationFloat8WeightConfig</code> with <code>PerRow</code> granularity) — installed separately.</li>
-            <li>SageAttention2 / SpargeAttn: built EDITABLE from github.com/thu-ml/SpargeAttn (SpargeAttn layers block-sparsity on top of SageAttention2++ INT8-QK + FP8-PV kernels). <span class="muted">Build-environment notes:</span> set <code>TORCH_CUDA_ARCH_LIST=9.0</code>, <code>CUDA_HOME=/usr/local/cuda-12.8</code>, remove the <code>-include,cassert</code> line from its setup before building, and avoid conda header pollution (build against the venv, not a conda env).</li>
-            <li>Repo is self-contained: the M1 SmoothQuant calibration stats <code>m1_smoothquant_stats/act_absmax.pt</code> are committed in-repo (no separate calibration download needed).</li>
+            <li data-en-html="Python 3.13, single H200 (Hopper sm90), CUDA 12.8 toolchain (cu128 torch backend)." data-zh-html="Python 3.13，单卡 H200（Hopper sm90），CUDA 12.8 工具链（cu128 torch 后端）。">Python 3.13, single H200 (Hopper sm90), CUDA 12.8 toolchain (cu128 torch backend).</li>
+            <li data-en-html="venv via uv: <code>uv venv venv --python 3.13 --seed --managed-python</code> then <code>uv pip sync tools/requirements.lock --torch-backend cu128</code>." data-zh-html="通过 uv 创建 venv：<code>uv venv venv --python 3.13 --seed --managed-python</code>，然后 <code>uv pip sync tools/requirements.lock --torch-backend cu128</code>。">venv via uv: <code>uv venv venv --python 3.13 --seed --managed-python</code> then <code>uv pip sync tools/requirements.lock --torch-backend cu128</code>.</li>
+            <li data-en-html="Pinned (from <code>tools/requirements.lock</code>): torch 2.11.0+cu128, torchvision 0.26.0+cu128, triton 3.6.0, transformers 5.12.0, accelerate 1.14.0, and diffusers installed from GitHub main (pinned commit a50ade49) for Cosmos3OmniPipeline." data-zh-html="锁定版本（来自 <code>tools/requirements.lock</code>）：torch 2.11.0+cu128、torchvision 0.26.0+cu128、triton 3.6.0、transformers 5.12.0、accelerate 1.14.0，以及为 Cosmos3OmniPipeline 从 GitHub main 安装的 diffusers（锁定到 commit a50ade49）。">Pinned (from <code>tools/requirements.lock</code>): torch 2.11.0+cu128, torchvision 0.26.0+cu128, triton 3.6.0, transformers 5.12.0, accelerate 1.14.0, and diffusers installed from GitHub main (pinned commit a50ade49) for Cosmos3OmniPipeline.</li>
+            <li data-en-html="TorchAO ~0.17.0 (<code>version=2</code> quant API; provides <code>Float8DynamicActivationFloat8WeightConfig</code> with <code>PerRow</code> granularity) — installed separately." data-zh-html="TorchAO ~0.17.0（<code>version=2</code> 量化 API；提供 <code>PerRow</code> 粒度的 <code>Float8DynamicActivationFloat8WeightConfig</code>）——单独安装。">TorchAO ~0.17.0 (<code>version=2</code> quant API; provides <code>Float8DynamicActivationFloat8WeightConfig</code> with <code>PerRow</code> granularity) — installed separately.</li>
+            <li data-en-html="SageAttention2 / SpargeAttn: built EDITABLE from github.com/thu-ml/SpargeAttn (SpargeAttn layers block-sparsity on top of SageAttention2++ INT8-QK + FP8-PV kernels). <span class=&quot;muted&quot;>Build-environment notes:</span> set <code>TORCH_CUDA_ARCH_LIST=9.0</code>, <code>CUDA_HOME=/usr/local/cuda-12.8</code>, remove the <code>-include,cassert</code> line from its setup before building, and avoid conda header pollution (build against the venv, not a conda env)." data-zh-html="SageAttention2 / SpargeAttn：以 EDITABLE 方式从 github.com/thu-ml/SpargeAttn 构建（SpargeAttn 在 SageAttention2++ 的 INT8-QK + FP8-PV kernel 之上叠加块稀疏）。<span class=&quot;muted&quot;>构建环境说明：</span>设置 <code>TORCH_CUDA_ARCH_LIST=9.0</code>、<code>CUDA_HOME=/usr/local/cuda-12.8</code>，在构建前从其 setup 中移除含 <code>-include,cassert</code> 的那一行，并避免 conda 头文件污染（针对 venv 而非 conda 环境构建）。">SageAttention2 / SpargeAttn: built EDITABLE from github.com/thu-ml/SpargeAttn (SpargeAttn layers block-sparsity on top of SageAttention2++ INT8-QK + FP8-PV kernels). <span class="muted">Build-environment notes:</span> set <code>TORCH_CUDA_ARCH_LIST=9.0</code>, <code>CUDA_HOME=/usr/local/cuda-12.8</code>, remove the <code>-include,cassert</code> line from its setup before building, and avoid conda header pollution (build against the venv, not a conda env).</li>
+            <li data-en-html="Repo is self-contained: the M1 SmoothQuant calibration stats <code>m1_smoothquant_stats/act_absmax.pt</code> are committed in-repo (no separate calibration download needed)." data-zh-html="仓库自包含：M1 SmoothQuant 校准统计量 <code>m1_smoothquant_stats/act_absmax.pt</code> 已提交到仓库内（无需单独下载校准数据）。">Repo is self-contained: the M1 SmoothQuant calibration stats <code>m1_smoothquant_stats/act_absmax.pt</code> are committed in-repo (no separate calibration download needed).</li>
           </ol>
           <div class="code-panel">
             <div class="code-toolbar">
-              <span>Environment / install shell</span>
-              <button type="button" class="copy-btn" data-copy>Copy</button>
+              <span data-en="Environment / install shell" data-zh="环境 / 安装 shell">Environment / install shell</span>
+              <button type="button" class="copy-btn" data-copy data-en="Copy" data-zh="复制">Copy</button>
             </div>
             <pre><code>uv venv venv --python 3.13 --seed --managed-python
 uv pip sync tools/requirements.lock --torch-backend cu128
@@ -118,25 +122,25 @@ export CUDA_HOME=/usr/local/cuda-12.8
 # Before building SpargeAttn: remove the setup line containing "-include,cassert"
 # Build against the venv headers; avoid conda header pollution.</code></pre>
           </div>
-          <p class="caveat"><em>Versions extracted from the repo lockfile where verifiable; TorchAO/SpargeAttn are editable/source builds — pin to the versions noted, treat the build flags as environment-specific.</em></p>
+          <p class="caveat" data-en-html="<em>Versions extracted from the repo lockfile where verifiable; TorchAO/SpargeAttn are editable/source builds — pin to the versions noted, treat the build flags as environment-specific.</em>" data-zh-html="<em>可核对的版本均取自仓库锁文件；TorchAO/SpargeAttn 为 editable/源码构建——请锁定到所列版本，并将构建参数视为与环境相关。</em>"><em>Versions extracted from the repo lockfile where verifiable; TorchAO/SpargeAttn are editable/source builds — pin to the versions noted, treat the build flags as environment-specific.</em></p>
         </div>
       </section>
 
       <section class="content-section video-section" id="cache" data-group="cache" data-left="BF16" data-right="+cache" aria-labelledby="cache-title">
         <div class="section-heading">
-          <p class="section-kicker">SECTION 1</p>
-          <h2 id="cache-title">Cache — TaylorSeer derivative cache</h2>
+          <p class="section-kicker" data-en="SECTION 1" data-zh="第 1 节">SECTION 1</p>
+          <h2 id="cache-title" data-en="Cache — TaylorSeer derivative cache" data-zh="缓存 — TaylorSeer 导数缓存">Cache — TaylorSeer derivative cache</h2>
         </div>
-        <p class="mechanism">Training-free. On non-full steps, predict transformer block output deltas via an order-1 Taylor expansion from recent full-step activations instead of recomputing. Config <code>i2_o1_all_w1_c5</code> = interval 2 (full recompute every 2 steps), max-order 1, first-enhance 1, last-enhance 5; also caches the unconditional/und branch; applied to all blocks.</p>
+        <p class="mechanism" data-en-html="Training-free. On non-full steps, predict transformer block output deltas via an order-1 Taylor expansion from recent full-step activations instead of recomputing. Config <code>i2_o1_all_w1_c5</code> = interval 2 (full recompute every 2 steps), max-order 1, first-enhance 1, last-enhance 5; also caches the unconditional/und branch; applied to all blocks." data-zh-html="免训练。在非完整步上，用基于近期完整步激活的一阶 Taylor 展开来预测 transformer 块输出的增量，而非重新计算。配置 <code>i2_o1_all_w1_c5</code> = 间隔 2（每 2 步完整重算一次）、最大阶数 1、first-enhance 1、last-enhance 5；同时缓存无条件/und 分支；应用于所有块。">Training-free. On non-full steps, predict transformer block output deltas via an order-1 Taylor expansion from recent full-step activations instead of recomputing. Config <code>i2_o1_all_w1_c5</code> = interval 2 (full recompute every 2 steps), max-order 1, first-enhance 1, last-enhance 5; also caches the unconditional/und branch; applied to all blocks.</p>
         <div class="metric-callout">
-          <span class="metric-label">Speedup</span>
+          <span class="metric-label" data-en="Speedup" data-zh="加速比">Speedup</span>
           <span class="metric-value">1.61x over BF16</span>
-          <span class="metric-note">264s -> 164s, no quality loss</span>
+          <span class="metric-note" data-en="264s -> 164s, no quality loss" data-zh="264s -> 164s，无质量损失">264s -> 164s, no quality loss</span>
         </div>
         <div class="code-panel">
           <div class="code-toolbar">
-            <span>Repro — config B (cache)</span>
-            <button type="button" class="copy-btn" data-copy>Copy</button>
+            <span data-en="Repro — config B (cache)" data-zh="复现 — 配置 B（cache）">Repro — config B (cache)</span>
+            <button type="button" class="copy-btn" data-copy data-en="Copy" data-zh="复制">Copy</button>
           </div>
           <pre><code>venv/bin/python tools/diffusers_taylorseer_t2v_benchmark.py --model nvidia/Cosmos3-Nano --dtype bf16 \
   --prompt-json assets/cosmos3_t2v_prompts_seed100_upsampled/prompts/prompt_068.json \
@@ -150,20 +154,20 @@ export CUDA_HOME=/usr/local/cuda-12.8
 
       <section class="content-section video-section" id="m1" data-group="m1" data-left="+cache" data-right="+cache +M1" aria-labelledby="m1-title">
         <div class="section-heading">
-          <p class="section-kicker">SECTION 2</p>
-          <h2 id="m1-title">M1 — FP8 W8A8 + SmoothQuant</h2>
+          <p class="section-kicker" data-en="SECTION 2" data-zh="第 2 节">SECTION 2</p>
+          <h2 id="m1-title" data-en="M1 — FP8 W8A8 + SmoothQuant" data-zh="M1 — FP8 W8A8 + SmoothQuant">M1 — FP8 W8A8 + SmoothQuant</h2>
         </div>
-        <p class="mechanism">Quantize the 252 generation-pathway linear layers (36 transformer layers x 7 projections) to FP8 E4M3 weights + activations (TorchAO Float8DynamicActivationFloat8WeightConfig, PerRow, lowers to rowwise <code>_scaled_mm</code>). SmoothQuant alpha=0.5 migrates activation outliers into weights (fold-free, into RMSNorm + linear input columns), calibrated on the 100 structured prompts. Per-layer <code>torch.compile</code> of the real TaylorSeer hot path so the FP8 cast fuses. alpha=0.5 is the sweet spot — alpha 0 or 0.6 collapse high-motion 068.</p>
+        <p class="mechanism" data-en-html="Quantize the 252 generation-pathway linear layers (36 transformer layers x 7 projections) to FP8 E4M3 weights + activations (TorchAO Float8DynamicActivationFloat8WeightConfig, PerRow, lowers to rowwise <code>_scaled_mm</code>). SmoothQuant alpha=0.5 migrates activation outliers into weights (fold-free, into RMSNorm + linear input columns), calibrated on the 100 structured prompts. Per-layer <code>torch.compile</code> of the real TaylorSeer hot path so the FP8 cast fuses. alpha=0.5 is the sweet spot — alpha 0 or 0.6 collapse high-motion 068." data-zh-html="将生成路径上的 252 个 linear 层（36 个 transformer 层 x 7 个 projection）量化为 FP8 E4M3 权重 + 激活（TorchAO Float8DynamicActivationFloat8WeightConfig，PerRow，下降为 rowwise <code>_scaled_mm</code>）。SmoothQuant alpha=0.5 把激活离群值迁移进权重（fold-free，迁入 RMSNorm + linear 的输入列），在 100 条结构化提示词上校准。对真实 TaylorSeer 热路径做逐层 <code>torch.compile</code>，使 FP8 cast 得以融合。alpha=0.5 是最佳点——alpha 0 或 0.6 会让高速运动的 068 崩坏。">Quantize the 252 generation-pathway linear layers (36 transformer layers x 7 projections) to FP8 E4M3 weights + activations (TorchAO Float8DynamicActivationFloat8WeightConfig, PerRow, lowers to rowwise <code>_scaled_mm</code>). SmoothQuant alpha=0.5 migrates activation outliers into weights (fold-free, into RMSNorm + linear input columns), calibrated on the 100 structured prompts. Per-layer <code>torch.compile</code> of the real TaylorSeer hot path so the FP8 cast fuses. alpha=0.5 is the sweet spot — alpha 0 or 0.6 collapse high-motion 068.</p>
         <div class="metric-callout">
-          <span class="metric-label">Speedup</span>
+          <span class="metric-label" data-en="Speedup" data-zh="加速比">Speedup</span>
           <span class="metric-value">1.23x over cache</span>
-          <span class="metric-note">164s -> 133s; 1.98x over BF16; 8/8 final8</span>
+          <span class="metric-note" data-en="164s -> 133s; 1.98x over BF16; 8/8 final8" data-zh="164s -> 133s；相对 BF16 为 1.98x；final8 8/8">164s -> 133s; 1.98x over BF16; 8/8 final8</span>
         </div>
-        <p class="config-note">= config B base flags, but using <code>tools/diffusers_m1m2_t2v_benchmark.py</code> and adding:</p>
+        <p class="config-note" data-en-html="= config B base flags, but using <code>tools/diffusers_m1m2_t2v_benchmark.py</code> and adding:" data-zh-html="= 配置 B 的基础参数，但改用 <code>tools/diffusers_m1m2_t2v_benchmark.py</code> 并追加：">= config B base flags, but using <code>tools/diffusers_m1m2_t2v_benchmark.py</code> and adding:</p>
         <div class="code-panel">
           <div class="code-toolbar">
-            <span>Repro — config C (M1 delta)</span>
-            <button type="button" class="copy-btn" data-copy>Copy</button>
+            <span data-en="Repro — config C (M1 delta)" data-zh="复现 — 配置 C（M1 增量）">Repro — config C (M1 delta)</span>
+            <button type="button" class="copy-btn" data-copy data-en="Copy" data-zh="复制">Copy</button>
           </div>
           <pre><code>--attention-backend native --m1-fp8 --m1-compile --m1-smoothquant --smoothquant-alpha 0.5 \
   --smoothquant-stats-path m1_smoothquant_stats/act_absmax.pt</code></pre>
@@ -173,20 +177,20 @@ export CUDA_HOME=/usr/local/cuda-12.8
 
       <section class="content-section video-section" id="m2" data-group="m1m2" data-left="+cache" data-right="+cache +M1 +M2" aria-labelledby="m2-title">
         <div class="section-heading">
-          <p class="section-kicker">SECTION 3</p>
-          <h2 id="m2-title">M2 — SageAttention2 quantized attention</h2>
+          <p class="section-kicker" data-en="SECTION 3" data-zh="第 3 节">SECTION 3</p>
+          <h2 id="m2-title" data-en="M2 — SageAttention2 quantized attention" data-zh="M2 — SageAttention2 量化注意力">M2 — SageAttention2 quantized attention</h2>
         </div>
-        <p class="mechanism">Replace the generation self-attention with SageAttention2's INT8 QK^T + FP8 PV kernel (sm90), behind diffusers' <code>dispatch_attention_fn</code>. q/k arrive already RoPE'd + QK-normed; GQA 32 query / 8 KV heads, head_dim 128; registered as an opaque <code>torch.library custom_op</code> so <code>torch.compile</code> stays fullgraph. Co-design: M2 alone fails 068, but M1's SmoothQuant-cleaned activations give it enough margin.</p>
+        <p class="mechanism" data-en-html="Replace the generation self-attention with SageAttention2's INT8 QK^T + FP8 PV kernel (sm90), behind diffusers' <code>dispatch_attention_fn</code>. q/k arrive already RoPE'd + QK-normed; GQA 32 query / 8 KV heads, head_dim 128; registered as an opaque <code>torch.library custom_op</code> so <code>torch.compile</code> stays fullgraph. Co-design: M2 alone fails 068, but M1's SmoothQuant-cleaned activations give it enough margin." data-zh-html="用 SageAttention2 的 INT8 QK^T + FP8 PV kernel（sm90）替换生成阶段的自注意力，置于 diffusers 的 <code>dispatch_attention_fn</code> 之后。q/k 进入时已完成 RoPE 与 QK-norm；GQA 32 query / 8 KV heads，head_dim 128；注册为不透明的 <code>torch.library custom_op</code>，使 <code>torch.compile</code> 保持 fullgraph。协同设计：M2 单独使用会让 068 失败，但 M1 经 SmoothQuant 清理后的激活给了它足够的余量。">Replace the generation self-attention with SageAttention2's INT8 QK^T + FP8 PV kernel (sm90), behind diffusers' <code>dispatch_attention_fn</code>. q/k arrive already RoPE'd + QK-normed; GQA 32 query / 8 KV heads, head_dim 128; registered as an opaque <code>torch.library custom_op</code> so <code>torch.compile</code> stays fullgraph. Co-design: M2 alone fails 068, but M1's SmoothQuant-cleaned activations give it enough margin.</p>
         <div class="metric-callout">
-          <span class="metric-label">Speedup</span>
+          <span class="metric-label" data-en="Speedup" data-zh="加速比">Speedup</span>
           <span class="metric-value">1.47x over cache</span>
-          <span class="metric-note">~2.36x over BF16, 8/8</span>
+          <span class="metric-note" data-en="~2.36x over BF16, 8/8" data-zh="相对 BF16 约 2.36x，8/8">~2.36x over BF16, 8/8</span>
         </div>
-        <p class="config-note">= config C, prefixed with env <code>M2_PV_VARIANT=fp8</code> and switching <code>--attention-backend native</code> → <code>sparge</code>:</p>
+        <p class="config-note" data-en-html="= config C, prefixed with env <code>M2_PV_VARIANT=fp8</code> and switching <code>--attention-backend native</code> → <code>sparge</code>:" data-zh-html="= 配置 C，前置环境变量 <code>M2_PV_VARIANT=fp8</code>，并将 <code>--attention-backend native</code> → <code>sparge</code>：">= config C, prefixed with env <code>M2_PV_VARIANT=fp8</code> and switching <code>--attention-backend native</code> → <code>sparge</code>:</p>
         <div class="code-panel">
           <div class="code-toolbar">
-            <span>Repro — config D (M2)</span>
-            <button type="button" class="copy-btn" data-copy>Copy</button>
+            <span data-en="Repro — config D (M2)" data-zh="复现 — 配置 D（M2）">Repro — config D (M2)</span>
+            <button type="button" class="copy-btn" data-copy data-en="Copy" data-zh="复制">Copy</button>
           </div>
           <pre><code>M2_PV_VARIANT=fp8 venv/bin/python tools/diffusers_m1m2_t2v_benchmark.py [base + M1 flags] --attention-backend sparge</code></pre>
         </div>
@@ -195,25 +199,25 @@ export CUDA_HOME=/usr/local/cuda-12.8
 
       <section class="content-section video-section" id="final" data-group="final" data-left="BF16" data-right="cache+M1+M2" aria-labelledby="final-title">
         <div class="section-heading">
-          <p class="section-kicker">SECTION 4</p>
-          <h2 id="final-title">Final — full route &amp; time breakdown</h2>
+          <p class="section-kicker" data-en="SECTION 4" data-zh="第 4 节">SECTION 4</p>
+          <h2 id="final-title" data-en="Final — full route &amp; time breakdown" data-zh="最终 — 完整路线与耗时分解">Final — full route &amp; time breakdown</h2>
         </div>
-        <p class="mechanism">BF16 → +cache (×1.61) → +M1 (×1.23) → +M2 (×1.20) = 2.36x over BF16, 8/8 on the final8. The delivered pipeline ends at cache+M1+M2 (dense attention); sparse attention was explored but not shipped — see the appendix.</p>
+        <p class="mechanism" data-en="BF16 → +cache (×1.61) → +M1 (×1.23) → +M2 (×1.20) = 2.36x over BF16, 8/8 on the final8. The delivered pipeline ends at cache+M1+M2 (dense attention); sparse attention was explored but not shipped — see the appendix." data-zh="BF16 → +cache (×1.61) → +M1 (×1.23) → +M2 (×1.20) = 相对 BF16 为 2.36x，final8 上 8/8。交付的流水线止于 cache+M1+M2（稠密注意力）；稀疏注意力经探索但未采用——见附录。">BF16 → +cache (×1.61) → +M1 (×1.23) → +M2 (×1.20) = 2.36x over BF16, 8/8 on the final8. The delivered pipeline ends at cache+M1+M2 (dense attention); sparse attention was explored but not shipped — see the appendix.</p>
         <div class="metric-callout">
-          <span class="metric-label">Delivered route</span>
+          <span class="metric-label" data-en="Delivered route" data-zh="交付路线">Delivered route</span>
           <span class="metric-value">~2.36x over BF16</span>
-          <span class="metric-note">cache + M1 + M2, 8/8 on final8</span>
+          <span class="metric-note" data-en="cache + M1 + M2, 8/8 on final8" data-zh="cache + M1 + M2，final8 上 8/8">cache + M1 + M2, 8/8 on final8</span>
         </div>
 
         <div class="table-wrap" aria-label="Cumulative speedup table">
           <table class="speed-table">
             <thead>
               <tr>
-                <th scope="col">Config</th>
-                <th scope="col">Latency (s)</th>
-                <th scope="col">Stage gain</th>
-                <th scope="col">Cumulative vs BF16</th>
-                <th scope="col">final8</th>
+                <th scope="col" data-en="Config" data-zh="配置">Config</th>
+                <th scope="col" data-en="Latency (s)" data-zh="时延 (s)">Latency (s)</th>
+                <th scope="col" data-en="Stage gain" data-zh="阶段增益">Stage gain</th>
+                <th scope="col" data-en="Cumulative vs BF16" data-zh="相对 BF16 累计">Cumulative vs BF16</th>
+                <th scope="col" data-en="final8" data-zh="final8">final8</th>
               </tr>
             </thead>
             <tbody>
@@ -222,7 +226,7 @@ export CUDA_HOME=/usr/local/cuda-12.8
                 <td>263.7</td>
                 <td>—</td>
                 <td class="cumulative">1.00x</td>
-                <td>baseline</td>
+                <td data-en="baseline" data-zh="基线">baseline</td>
               </tr>
               <tr>
                 <td>+cache</td>
@@ -251,7 +255,7 @@ export CUDA_HOME=/usr/local/cuda-12.8
 
         <div class="chart-panel" aria-label="Per-stage time breakdown chart">
           <div id="timeBreakdownChart" class="chart-mount"></div>
-          <p class="chart-caption">Attention dominates throughout. Cache halves every stage (skips ~half the steps); M1 collapses linear-GEMM 58-&gt;19 s and adds a ~9 s FP8-cast prologue; M2 cuts dense attention 84-&gt;61 s; VAE decode (~6.3 s) is fixed. Total GPU kernel time falls 252.2 s -&gt; 108.2 s across the delivered ladder; wall-clock is slightly higher.</p>
+          <p class="chart-caption" data-en="Attention dominates throughout. Cache halves every stage (skips ~half the steps); M1 collapses linear-GEMM 58->19 s and adds a ~9 s FP8-cast prologue; M2 cuts dense attention 84->61 s; VAE decode (~6.3 s) is fixed. Total GPU kernel time falls 252.2 s -> 108.2 s across the delivered ladder; wall-clock is slightly higher." data-zh="注意力始终是主导项。cache 把每个阶段减半（跳过约一半的步）；M1 将 linear-GEMM 从 58 压到 19 s，并增加约 9 s 的 FP8-cast 前置开销；M2 将稠密注意力从 84 削到 61 s；VAE decode（约 6.3 s）保持不变。在交付的阶梯上，总 GPU kernel 耗时从 252.2 s 降到 108.2 s；wall-clock 略高于此。">Attention dominates throughout. Cache halves every stage (skips ~half the steps); M1 collapses linear-GEMM 58-&gt;19 s and adds a ~9 s FP8-cast prologue; M2 cuts dense attention 84-&gt;61 s; VAE decode (~6.3 s) is fixed. Total GPU kernel time falls 252.2 s -&gt; 108.2 s across the delivered ladder; wall-clock is slightly higher.</p>
         </div>
 
         <div class="video-grid" data-video-grid aria-live="polite"></div>
@@ -259,40 +263,40 @@ export CUDA_HOME=/usr/local/cuda-12.8
 
       <section class="content-section video-section sparse-section" id="sparse" data-sparse-section data-left="dense cache+M1+M2" data-right="+A2 sparse" aria-labelledby="sparse-title">
         <div class="section-heading">
-          <p class="section-kicker">APPENDIX · EXPLORED, NOT SHIPPED</p>
-          <h2 id="sparse-title">Sparse attention — explored, not shipped</h2>
+          <p class="section-kicker" data-en="APPENDIX · EXPLORED, NOT SHIPPED" data-zh="附录 · 探索但未采用">APPENDIX · EXPLORED, NOT SHIPPED</p>
+          <h2 id="sparse-title" data-en="Sparse attention — explored, not shipped" data-zh="稀疏注意力 — 探索但未采用">Sparse attention — explored, not shipped</h2>
         </div>
-        <p class="mechanism">A self-written window+anchor quant-SPARSE fused kernel: a static block-sparse mask LUT layered on top of the SageAttn2 INT8-QK + FP8-PV mainloop. The mask keeps a contiguous temporal window (<code>ANC_WLOCAL</code>) around each query frame plus a set of fixed global keyframe anchors (<code>ANC_KEYFRAMES=0,8,16,24,32,40,47</code>); the int32 LUT is precomputed once, so per-step overhead is zero and mask-all-1 is bit-equivalent to dense. Shrinking the window raises the block-skip ratio and the speedup — but also the quality cost.</p>
+        <p class="mechanism" data-en-html="A self-written window+anchor quant-SPARSE fused kernel: a static block-sparse mask LUT layered on top of the SageAttn2 INT8-QK + FP8-PV mainloop. The mask keeps a contiguous temporal window (<code>ANC_WLOCAL</code>) around each query frame plus a set of fixed global keyframe anchors (<code>ANC_KEYFRAMES=0,8,16,24,32,40,47</code>); the int32 LUT is precomputed once, so per-step overhead is zero and mask-all-1 is bit-equivalent to dense. Shrinking the window raises the block-skip ratio and the speedup — but also the quality cost." data-zh-html="一个自研的 window+anchor 量化稀疏融合 kernel：在 SageAttn2 INT8-QK + FP8-PV 主循环之上叠加一张静态块稀疏掩码 LUT。掩码在每个 query 帧周围保留一段连续的时间窗口（<code>ANC_WLOCAL</code>），外加一组固定的全局关键帧锚点（<code>ANC_KEYFRAMES=0,8,16,24,32,40,47</code>）；int32 LUT 只预计算一次，因此每步开销为零，且全 1 掩码与稠密在比特上等价。缩小窗口会提高块跳过比例与加速比——但也会提高质量代价。">A self-written window+anchor quant-SPARSE fused kernel: a static block-sparse mask LUT layered on top of the SageAttn2 INT8-QK + FP8-PV mainloop. The mask keeps a contiguous temporal window (<code>ANC_WLOCAL</code>) around each query frame plus a set of fixed global keyframe anchors (<code>ANC_KEYFRAMES=0,8,16,24,32,40,47</code>); the int32 LUT is precomputed once, so per-step overhead is zero and mask-all-1 is bit-equivalent to dense. Shrinking the window raises the block-skip ratio and the speedup — but also the quality cost.</p>
         <div class="metric-callout danger-callout">
-          <span class="metric-label">Outcome</span>
-          <span class="metric-value">not adopted</span>
-          <span class="metric-note">every config — down to the mildest 1.04x — loses dense motion; delivered pipeline stops at cache+M1+M2</span>
+          <span class="metric-label" data-en="Outcome" data-zh="结论">Outcome</span>
+          <span class="metric-value" data-en="not adopted" data-zh="未采用">not adopted</span>
+          <span class="metric-note" data-en="every config — down to the mildest 1.04x — loses dense motion; delivered pipeline stops at cache+M1+M2" data-zh="每个配置——直到最温和的 1.04x——都会损失稠密的运动；交付的流水线止于 cache+M1+M2">every config — down to the mildest 1.04x — loses dense motion; delivered pipeline stops at cache+M1+M2</span>
         </div>
 
         <div class="sparse-ladder" aria-label="Sparsity ladder">
           <div class="ladder-title">
-            <span class="eyebrow">Sparsity ladder</span>
-            <strong>Slide from aggressive (worst) to mild — degradation persists throughout</strong>
-            <span class="picker-hint">Each step loads the dense cache+M1+M2 (LEFT) versus that sparse config (RIGHT) for the 4 selected prompts. Defaults to the most aggressive variant so the motion loss is immediately visible.</span>
+            <span class="eyebrow" data-en="Sparsity ladder" data-zh="稀疏阶梯">Sparsity ladder</span>
+            <strong data-en="Slide from aggressive (worst) to mild — degradation persists throughout" data-zh="从激进（最差）滑到温和——劣化自始至终存在">Slide from aggressive (worst) to mild — degradation persists throughout</strong>
+            <span class="picker-hint" data-en="Each step loads the dense cache+M1+M2 (LEFT) versus that sparse config (RIGHT) for the 4 selected prompts. Defaults to the most aggressive variant so the motion loss is immediately visible." data-zh="每一档为所选的 4 条提示词加载稠密 cache+M1+M2（左）与该稀疏配置（右）的对比。默认采用最激进的变体，以便立即看到运动损失。">Each step loads the dense cache+M1+M2 (LEFT) versus that sparse config (RIGHT) for the 4 selected prompts. Defaults to the most aggressive variant so the motion loss is immediately visible.</span>
           </div>
           <div class="chip-row ladder-row" id="sparseLadder" role="radiogroup" aria-label="Sparse config">
-            <button type="button" class="sparse-chip" data-sparse-tag="w10" role="radio">w10 · 1.32x dense · 50% skip<span class="chip-sub">3.10x / bf16</span></button>
-            <button type="button" class="sparse-chip" data-sparse-tag="w14" role="radio">w14 · 1.24x dense · 40% skip</button>
-            <button type="button" class="sparse-chip" data-sparse-tag="w18" role="radio">w18 · 1.16x dense · 31% skip</button>
-            <button type="button" class="sparse-chip" data-sparse-tag="w22" role="radio">w22 · 1.11x dense · 23% skip</button>
-            <button type="button" class="sparse-chip" data-sparse-tag="w32" role="radio">w32 · 1.04x dense · 8% skip<span class="chip-sub">2.45x / bf16</span></button>
+            <button type="button" class="sparse-chip" data-sparse-tag="w10" role="radio" data-en-html="w10 · 1.32x dense · 50% skip<span class=&quot;chip-sub&quot;>3.10x / bf16</span>" data-zh-html="w10 · 相对稠密 1.32x · 跳过 50%<span class=&quot;chip-sub&quot;>3.10x / bf16</span>">w10 · 1.32x dense · 50% skip<span class="chip-sub">3.10x / bf16</span></button>
+            <button type="button" class="sparse-chip" data-sparse-tag="w14" role="radio" data-en="w14 · 1.24x dense · 40% skip" data-zh="w14 · 相对稠密 1.24x · 跳过 40%">w14 · 1.24x dense · 40% skip</button>
+            <button type="button" class="sparse-chip" data-sparse-tag="w18" role="radio" data-en="w18 · 1.16x dense · 31% skip" data-zh="w18 · 相对稠密 1.16x · 跳过 31%">w18 · 1.16x dense · 31% skip</button>
+            <button type="button" class="sparse-chip" data-sparse-tag="w22" role="radio" data-en="w22 · 1.11x dense · 23% skip" data-zh="w22 · 相对稠密 1.11x · 跳过 23%">w22 · 1.11x dense · 23% skip</button>
+            <button type="button" class="sparse-chip" data-sparse-tag="w32" role="radio" data-en-html="w32 · 1.04x dense · 8% skip<span class=&quot;chip-sub&quot;>2.45x / bf16</span>" data-zh-html="w32 · 相对稠密 1.04x · 跳过 8%<span class=&quot;chip-sub&quot;>2.45x / bf16</span>">w32 · 1.04x dense · 8% skip<span class="chip-sub">2.45x / bf16</span></button>
           </div>
         </div>
 
         <div class="video-grid" data-video-grid aria-live="polite"></div>
 
-        <p class="chart-caption sparse-conclusion">As sparsity and speedup rise, motion and quality degrade — large slow-moving subjects (the 049 steam train, the 079 ship) freeze or smear. Even the mildest config (w32, 1.04x over dense, only 8% block skip) does not fully restore the dense motion, so its quality loss is still not acceptable. This defect is invisible in single still frames — it is a cross-frame motion failure — and was only caught on video. Therefore sparse attention is NOT adopted; the delivered pipeline stops at cache+M1+M2. We also profiled the aggressive 1.3x sparse variant (w10): its per-stage trace shows it does cut attention further (61 -&gt; 34 s), but the motion/quality regression made it not worth shipping.</p>
+        <p class="chart-caption sparse-conclusion" data-en="As sparsity and speedup rise, motion and quality degrade — large slow-moving subjects (the 049 steam train, the 079 ship) freeze or smear. Even the mildest config (w32, 1.04x over dense, only 8% block skip) does not fully restore the dense motion, so its quality loss is still not acceptable. This defect is invisible in single still frames — it is a cross-frame motion failure — and was only caught on video. Therefore sparse attention is NOT adopted; the delivered pipeline stops at cache+M1+M2. We also profiled the aggressive 1.3x sparse variant (w10): its per-stage trace shows it does cut attention further (61 -> 34 s), but the motion/quality regression made it not worth shipping." data-zh="随着稀疏度与加速比上升，运动与质量都会劣化——大型慢速主体（049 的蒸汽火车、079 的轮船）会冻结或拖影。即便最温和的配置（w32，相对稠密 1.04x，仅跳过 8% 的块）也无法完全还原稠密的运动，其质量损失仍不可接受。该缺陷在单帧静止画面中不可见——它是一种跨帧运动失败——只有在视频上才能被发现。因此稀疏注意力未被采用；交付的流水线止于 cache+M1+M2。我们还剖析了激进的 1.3x 稀疏变体（w10）：其逐阶段 trace 显示它确实进一步削减了注意力（61 -> 34 s），但运动/质量退化使其不值得交付。">As sparsity and speedup rise, motion and quality degrade — large slow-moving subjects (the 049 steam train, the 079 ship) freeze or smear. Even the mildest config (w32, 1.04x over dense, only 8% block skip) does not fully restore the dense motion, so its quality loss is still not acceptable. This defect is invisible in single still frames — it is a cross-frame motion failure — and was only caught on video. Therefore sparse attention is NOT adopted; the delivered pipeline stops at cache+M1+M2. We also profiled the aggressive 1.3x sparse variant (w10): its per-stage trace shows it does cut attention further (61 -&gt; 34 s), but the motion/quality regression made it not worth shipping.</p>
 
-        <p class="config-note">= config D, prefixed with the anchor-sparse env and switching to the sparse runner script (<code>&lt;w&gt;</code> = the window value, e.g. 10):</p>
+        <p class="config-note" data-en-html="= config D, prefixed with the anchor-sparse env and switching to the sparse runner script (<code>&lt;w&gt;</code> = the window value, e.g. 10):" data-zh-html="= 配置 D，前置 anchor-sparse 环境变量，并切换到稀疏运行脚本（<code>&lt;w&gt;</code> = 窗口值，例如 10）：">= config D, prefixed with the anchor-sparse env and switching to the sparse runner script (<code>&lt;w&gt;</code> = the window value, e.g. 10):</p>
         <div class="code-panel">
           <div class="code-toolbar">
-            <span>Repro — config E (sparse, ANC_WLOCAL)</span>
-            <button type="button" class="copy-btn" data-copy>Copy</button>
+            <span data-en="Repro — config E (sparse, ANC_WLOCAL)" data-zh="复现 — 配置 E（稀疏，ANC_WLOCAL）">Repro — config E (sparse, ANC_WLOCAL)</span>
+            <button type="button" class="copy-btn" data-copy data-en="Copy" data-zh="复制">Copy</button>
           </div>
           <pre><code>M2_PV_VARIANT=fp8 ANCHOR_SPARSE=1 ANC_WLOCAL=&lt;w&gt; ANC_KEYFRAMES=0,8,16,24,32,40,47 \
   venv/bin/python tools/diffusers_m1m2sparse_t2v_benchmark.py [base + M1 flags] --attention-backend sparge</code></pre>
@@ -301,7 +305,7 @@ export CUDA_HOME=/usr/local/cuda-12.8
     </main>
 
     <footer class="site-footer">
-      <p>Built for review · videos hosted on HuggingFace dataset <code>oliveryanzuolu/cosmos3-t2v-release</code>.</p>
+      <p data-en-html="Built for review · videos hosted on HuggingFace dataset <code>oliveryanzuolu/cosmos3-t2v-release</code>." data-zh-html="为评审而构建 · 视频托管于 HuggingFace 数据集 <code>oliveryanzuolu/cosmos3-t2v-release</code>。">Built for review · videos hosted on HuggingFace dataset <code>oliveryanzuolu/cosmos3-t2v-release</code>.</p>
     </footer>
   </body>
 </html>
