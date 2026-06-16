@@ -11,6 +11,7 @@
   let armedId = null;
   let videoObserver = null;
   const videoTimers = new WeakMap();
+  let lightbox = null;
 
   const posterSvg = [
     "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2560 720'>",
@@ -28,6 +29,7 @@
     renderVideos();
     initNavHighlighter();
     renderTimeBreakdownChart();
+    initLightbox();
   });
 
   function buildVideoUrl(group, id) {
@@ -242,7 +244,64 @@
     video.addEventListener("stalled", () => scheduleVideoTimeout(card, STALLED_TIMEOUT_MS));
     video.addEventListener("waiting", () => setPlaceholderText(card, "loading..."));
 
+    frame.title = "Double-click to enlarge";
+    card.addEventListener("dblclick", () => openLightbox({ group, id, left, right }));
+
     return card;
+  }
+
+  function initLightbox() {
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeLightbox();
+    });
+  }
+
+  function ensureLightbox() {
+    if (lightbox) return lightbox;
+    const overlay = document.createElement("div");
+    overlay.className = "lightbox";
+    overlay.setAttribute("aria-hidden", "true");
+    overlay.innerHTML = [
+      '<div class="lightbox-backdrop" data-lightbox-close></div>',
+      '<div class="lightbox-body" role="dialog" aria-modal="true" aria-label="Enlarged comparison video">',
+      '<button type="button" class="lightbox-close" data-lightbox-close aria-label="Close">×</button>',
+      '<video class="lightbox-video" muted loop playsinline></video>',
+      '<div class="lightbox-caption"></div>',
+      "</div>"
+    ].join("");
+    document.body.appendChild(overlay);
+    overlay.querySelectorAll("[data-lightbox-close]").forEach((el) => {
+      el.addEventListener("click", closeLightbox);
+    });
+    lightbox = overlay;
+    return overlay;
+  }
+
+  function openLightbox({ group, id, left, right }) {
+    const box = ensureLightbox();
+    const video = box.querySelector(".lightbox-video");
+    const caption = box.querySelector(".lightbox-caption");
+    video.poster = POSTER_URL;
+    video.src = buildVideoUrl(group, id);
+    caption.innerHTML = `<strong>Prompt ${escapeHtml(id)}</strong><span class="caption-divider">|</span><span>LEFT: ${escapeHtml(left)}</span><span class="caption-divider">|</span><span>RIGHT: ${escapeHtml(right)}</span>`;
+    box.classList.add("is-open");
+    box.setAttribute("aria-hidden", "false");
+    document.body.classList.add("lightbox-open");
+    video.load();
+    playVideo(video);
+  }
+
+  function closeLightbox() {
+    if (!lightbox || !lightbox.classList.contains("is-open")) return;
+    const video = lightbox.querySelector(".lightbox-video");
+    if (video) {
+      video.pause();
+      video.removeAttribute("src");
+      video.load();
+    }
+    lightbox.classList.remove("is-open");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("lightbox-open");
   }
 
   function createVideoObserver() {
@@ -556,6 +615,8 @@
 
   window.cosmosT2V = {
     buildVideoUrl,
-    renderVideos
+    renderVideos,
+    openLightbox,
+    closeLightbox
   };
 })();
