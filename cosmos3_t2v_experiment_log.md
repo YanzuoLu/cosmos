@@ -312,3 +312,58 @@ with poor risk/reward. The sparse benchmark + non-PV bypass are kept as an **opt
 (`diffusers_m1m2sparse_t2v_benchmark.py`, env-gated), default path byte-identical to dense.
 
 **Final delivered stack: cache + M1 + M2 = 8/8 @ 1.528x over cache (~2.45x over BF16).**
+
+## Candidate 1 (STA static 3D sliding-tile block-sparse quant kernel) — **LOCKED (8/8) — real speedup over dense baseline @ w20-20-34**
+
+Purpose: revisit the M3 attention-sparsity lever (the profiled 70.5% bottleneck) with a **static**, content-independent
+block-sparse mask, sidestepping the adaptive-proxy failures that sank M3's global/per-layer attempts.
+
+**Mechanism.** A precomputed static **int32 LUT** drives a 3D sliding-tile (STA) block-sparse pattern through the
+SageAttn2 **no_pv** INT8-QK + FP8-PV sm90 kernel. The sparse call is registered as an opaque
+`torch.library.custom_op` (`m1m2::sparge_sta_static_sm90`) so it composes inside the M1 fullgraph compile exactly like
+the dense M2 custom_op. The mask is **static per geometry** -> **zero per-step mask overhead** (no block-map recompute,
+the cost that ate M3's adaptive skip). A mask-of-all-1s is **bit-equivalent to dense** (clean fallback / correctness
+anchor). Geometry: T48/H23/W40 visual grid, und/text prefix = K-idx 0-42 (force-kept for every query), blkq64/blkk128,
+mask 690x346. Selected at runtime via `STA_SPARSE=1 STA_WT=<t> STA_WH=<h> STA_WW=<w>`.
+
+**Key finding — high-motion video is sparsity-tolerant on the TEMPORAL axis ONLY.** Sweeping the window showed a sharp
+quality cliff governed entirely by temporal coverage at full spatial extent: the cliff sits **between +/-16 (fail) and
++/-20 (pass) temporal frames**. Spatial sparsity is *not* safely skippable — shrinking the spatial window collapses
+fast-moving subjects into ghosting/melting. Cubic windows that skip spatially fail the high-motion hardcases at any
+speed-positive setting: w16-23-40 (skip 0.43) 068=4/028=3; w12-23-40 (0.54) 068=5/028=2; w8-23-40 (0.67) 068=3/028=2;
+the original cubic sweep (w12-12-12 / w6-6-6 / w3-3-3 / w2-2-2, skip 0.57-0.94) all land 068/028 at 2-3. So the full
+spatial window (WH=23, WW=40) is mandatory and **temporal is the only axis with headroom** — ceiling ~32.5% block skip.
+
+**Pareto config: w20-20-34** (full spatial + temporal +/-20 frames, **32.5% block skip**). Final8 QA, strict 8/8 gate:
+
+| 006 | 014 | 028 | 039 | 048 | 049 | 068 | 079 |
+|---|---|---|---|---|---|---|---|
+| 8 | 8 | 8 | 8 | 8 | 8 | 7 | 8 |
+
+8/8 PASS (overall mean 7.875, min 7). The two universal hardcases **028 (high-motion turtle) = 8 and 068 (high-motion
+white cat) = 7 both match dense — no regression**. Per-prompt speedup vs dense-integrated ranges 1.10-1.26x.
+
+**Speed:** mean **1.17x over dense-integrated** = **~1.79x over cache** = **~2.87x over BF16**. STA lifts the locked
+stack from 1.528x to ~1.79x over cache while holding 8/8.
+
+**Integration-bug hypothesis REFUTED (independent diagnosis).** Before accepting the cliff as honest, the obvious
+"it's a plumbing bug" theory was attacked and falsified: und/text tokens *are* the prefix K-idx 0-42 (matches the mask,
+force-kept for all queries); the visual flatten order is **t-major / h-mid / w-minor**, confirmed against the real
+patchify + mrope; LUT / GQA / axis mapping all correct. **Decisive falsification:** a near-full window (24,23,40, skip
+0.24) is clean and ~=dense, and quality degrades **monotonically** with skip — that is honest coverage loss, not a bug.
+The cliff is a real mechanism of fast motion, not an artifact.
+
+**Decision:** **STA LOCKED at w20-20-34.** Mechanism takeaway: for high-motion video the only safe sparsity axis is
+temporal; full spatial coverage is required to track fast-moving subjects. Sparsity ceiling ~32.5% block skip.
+
+Reproduce (one prompt per GPU; same m1m2sparse runner flags as the dense stack, plus the STA env):
+
+```bash
+M2_PV_VARIANT=fp8 STA_SPARSE=1 STA_WT=20 STA_WH=20 STA_WW=34 \
+python tools/diffusers_m1m2sparse_t2v_benchmark.py \
+  --attention-backend sparge --m1-fp8 --m1-compile --m1-smoothquant --smoothquant-alpha 0.5 \
+  --smoothquant-stats-path /root/cosmos/m1_smoothquant_stats/act_absmax.pt \
+  --taylorseer-interval 2 --taylorseer-max-order 1 --taylorseer-first-enhance 1 --taylorseer-last-enhance 5 \
+  --taylorseer-cache-und --height 720 --width 1280 --num-frames 189 --num-inference-steps 35 \
+  --guidance-scale 6.0 --flow-shift 10 --seed 1234
+```
