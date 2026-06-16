@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cosmos3-Nano T2V — Training-free 3.10x Acceleration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="nav-inner">
+        <a class="brand" href="#hero" aria-label="Cosmos3-Nano T2V overview">Cosmos3-Nano T2V</a>
+        <nav class="anchor-nav" aria-label="Page sections">
+          <a href="#background" data-nav-link>Background</a>
+          <a href="#cache" data-nav-link>Cache</a>
+          <a href="#m1" data-nav-link>M1</a>
+          <a href="#m2" data-nav-link>M2</a>
+          <a href="#a2" data-nav-link>A2</a>
+          <a href="#final" data-nav-link>Final</a>
+        </nav>
+      </div>
+    </header>
+
+    <aside class="prompt-picker" aria-label="Global prompt picker">
+      <div class="picker-inner">
+        <div class="picker-title">
+          <span class="eyebrow">Prompt picker</span>
+          <strong>One global 4-prompt view</strong>
+        </div>
+        <div class="chip-row" id="promptChips" aria-label="Final8 quick picks">
+          <button type="button" class="prompt-chip" data-prompt-id="006">006</button>
+          <button type="button" class="prompt-chip" data-prompt-id="014">014</button>
+          <button type="button" class="prompt-chip" data-prompt-id="028">028</button>
+          <button type="button" class="prompt-chip" data-prompt-id="039">039</button>
+          <button type="button" class="prompt-chip" data-prompt-id="048">048</button>
+          <button type="button" class="prompt-chip" data-prompt-id="049">049</button>
+          <button type="button" class="prompt-chip" data-prompt-id="068">068</button>
+          <button type="button" class="prompt-chip" data-prompt-id="079">079</button>
+        </div>
+        <form class="custom-picker" id="customPromptForm">
+          <label for="customPromptInput">Custom ids</label>
+          <input id="customPromptInput" name="promptIds" type="text" inputmode="numeric" autocomplete="off" placeholder="012, 050, 077, 100">
+          <button type="submit">Apply</button>
+        </form>
+        <div class="picker-state" aria-live="polite">
+          <span>Selected</span>
+          <output id="selectedPromptOutput">039 · 048 · 049 · 079</output>
+          <span class="picker-message" id="promptStatus"></span>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hero-section" id="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <p class="eyebrow">Cosmos3-Nano T2V acceleration project</p>
+          <h1 id="hero-title">Cosmos3-Nano T2V — Training-free 3.10x Acceleration</h1>
+          <p class="hero-subtitle">Stack cache, FP8 quantization, and sparse quantized attention to reduce text-to-video latency while preserving final8 quality gates.</p>
+          <div class="setup-banner" aria-label="Hardware and setup">
+            <span>NVIDIA Cosmos3-Nano text-to-video</span>
+            <span>720x1280</span>
+            <span>189 frames</span>
+            <span>35 steps</span>
+            <span>guidance 6.0</span>
+            <span>flow-shift 10</span>
+            <span>seed 1234</span>
+            <span>single H200 (Hopper sm90, native FP8 E4M3 / INT8)</span>
+            <span>100 structured prompts</span>
+            <span>final8 hardcase subset gates quality</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="background" aria-labelledby="background-title">
+        <div class="section-heading">
+          <p class="section-kicker">SECTION 0</p>
+          <h2 id="background-title">Background &amp; Setup</h2>
+        </div>
+        <p class="mechanism">Stack three orthogonal levers — a training-free derivative CACHE (TaylorSeer), weight+activation QUANTIZATION (M1, FP8), and attention QUANTIZATION + SPARSITY (M2 SageAttention2 dense + A2 window-anchor block-sparse) — to cut latency ~3.10x vs BF16 with no quality regression.</p>
+        <div class="metric-callout">
+          <span class="metric-label">Project target</span>
+          <span class="metric-value">~3.10x vs BF16</span>
+          <span class="metric-note">quality-gated on final8</span>
+        </div>
+        <div class="info-panel">
+          <h3>Three orthogonal levers</h3>
+          <ol class="lever-list">
+            <li><strong>Cache</strong> — TaylorSeer derivative cache (training-free).</li>
+            <li><strong>Quant</strong> — M1 FP8 W8A8 + SmoothQuant.</li>
+            <li><strong>Attention</strong> — M2 SageAttention2 dense + A2 window-anchor block-sparse.</li>
+          </ol>
+        </div>
+
+        <div class="subsection">
+          <h3>Environment / Install</h3>
+          <ol class="fact-list">
+            <li>Python 3.13, single H200 (Hopper sm90), CUDA 12.8 toolchain (cu128 torch backend).</li>
+            <li>venv via uv: <code>uv venv venv --python 3.13 --seed --managed-python</code> then <code>uv pip sync tools/requirements.lock --torch-backend cu128</code>.</li>
+            <li>Pinned (from <code>tools/requirements.lock</code>): torch 2.11.0+cu128, torchvision 0.26.0+cu128, triton 3.6.0, transformers 5.12.0, accelerate 1.14.0, and diffusers installed from GitHub main (pinned commit a50ade49) for Cosmos3OmniPipeline.</li>
+            <li>TorchAO ~0.17.0 (<code>version=2</code> quant API; provides <code>Float8DynamicActivationFloat8WeightConfig</code> with <code>PerRow</code> granularity) — installed separately.</li>
+            <li>SageAttention2 / SpargeAttn: built EDITABLE from github.com/thu-ml/SpargeAttn (SpargeAttn layers block-sparsity on top of SageAttention2++ INT8-QK + FP8-PV kernels). <span class="muted">Build-environment notes:</span> set <code>TORCH_CUDA_ARCH_LIST=9.0</code>, <code>CUDA_HOME=/usr/local/cuda-12.8</code>, remove the <code>-include,cassert</code> line from its setup before building, and avoid conda header pollution (build against the venv, not a conda env).</li>
+            <li>Repo is self-contained: the M1 SmoothQuant calibration stats <code>m1_smoothquant_stats/act_absmax.pt</code> are committed in-repo (no separate calibration download needed).</li>
+          </ol>
+          <div class="code-panel">
+            <div class="code-toolbar">
+              <span>Environment / install shell</span>
+              <button type="button" class="copy-btn" data-copy>Copy</button>
+            </div>
+            <pre><code>uv venv venv --python 3.13 --seed --managed-python
+uv pip sync tools/requirements.lock --torch-backend cu128
+
+# TorchAO: install separately from source/editable at ~0.17.0
+# SpargeAttn: build editable from github.com/thu-ml/SpargeAttn
+export TORCH_CUDA_ARCH_LIST=9.0
+export CUDA_HOME=/usr/local/cuda-12.8
+# Before building SpargeAttn: remove the setup line containing "-include,cassert"
+# Build against the venv headers; avoid conda header pollution.</code></pre>
+          </div>
+          <p class="caveat"><em>Versions extracted from the repo lockfile where verifiable; TorchAO/SpargeAttn are editable/source builds — pin to the versions noted, treat the build flags as environment-specific.</em></p>
+        </div>
+      </section>
+
+      <section class="content-section video-section" id="cache" data-group="cache" data-left="BF16" data-right="+cache" aria-labelledby="cache-title">
+        <div class="section-heading">
+          <p class="section-kicker">SECTION 1</p>
+          <h2 id="cache-title">Cache — TaylorSeer derivative cache</h2>
+        </div>
+        <p class="mechanism">Training-free. On non-full steps, predict transformer block output deltas via an order-1 Taylor expansion from recent full-step activations instead of recomputing. Config <code>i2_o1_all_w1_c5</code> = interval 2 (full recompute every 2 steps), max-order 1, first-enhance 1, last-enhance 5; also caches the unconditional/und branch; applied to all blocks.</p>
+        <div class="metric-callout">
+          <span class="metric-label">Speedup</span>
+          <span class="metric-value">1.61x over BF16</span>
+          <span class="metric-note">264s -> 164s, no quality loss</span>
+        </div>
+        <div class="code-panel">
+          <div class="code-toolbar">
+            <span>Repro — config B (cache)</span>
+            <button type="button" class="copy-btn" data-copy>Copy</button>
+          </div>
+          <pre><code>venv/bin/python tools/diffusers_taylorseer_t2v_benchmark.py --model nvidia/Cosmos3-Nano --dtype bf16 \
+  --prompt-json assets/cosmos3_t2v_prompts_seed100_upsampled/prompts/prompt_068.json \
+  --height 720 --width 1280 --num-frames 189 --num-inference-steps 35 --guidance-scale 6.0 \
+  --flow-shift 10.0 --seed 1234 --taylorseer-interval 2 --taylorseer-max-order 1 \
+  --taylorseer-first-enhance 1 --taylorseer-last-enhance 5 --taylorseer-cache-und \
+  --taylorseer-cache-max-gib 120 --save-video out.mp4</code></pre>
+        </div>
+        <div class="video-grid" data-video-grid aria-live="polite"></div>
+      </section>
+
+      <section class="content-section video-section" id="m1" data-group="m1" data-left="+cache" data-right="+cache +M1" aria-labelledby="m1-title">
+        <div class="section-heading">
+          <p class="section-kicker">SECTION 2</p>
+          <h2 id="m1-title">M1 — FP8 W8A8 + SmoothQuant</h2>
+        </div>
+        <p class="mechanism">Quantize the 252 generation-pathway linear layers (36 transformer layers x 7 projections) to FP8 E4M3 weights + activations (TorchAO Float8DynamicActivationFloat8WeightConfig, PerRow, lowers to rowwise <code>_scaled_mm</code>). SmoothQuant alpha=0.5 migrates activation outliers into weights (fold-free, into RMSNorm + linear input columns), calibrated on the 100 structured prompts. Per-layer <code>torch.compile</code> of the real TaylorSeer hot path so the FP8 cast fuses. alpha=0.5 is the sweet spot — alpha 0 or 0.6 collapse high-motion 068.</p>
+        <div class="metric-callout">
+          <span class="metric-label">Speedup</span>
+          <span class="metric-value">1.23x over cache</span>
+          <span class="metric-note">164s -> 133s; 1.98x over BF16; 8/8 final8</span>
+        </div>
+        <p class="config-note">= config B base flags, but using <code>tools/diffusers_m1m2_t2v_benchmark.py</code> and adding:</p>
+        <div class="code-panel">
+          <div class="code-toolbar">
+            <span>Repro — config C (M1 delta)</span>
+            <button type="button" class="copy-btn" data-copy>Copy</button>
+          </div>
+          <pre><code>--attention-backend native --m1-fp8 --m1-compile --m1-smoothquant --smoothquant-alpha 0.5 \
+  --smoothquant-stats-path m1_smoothquant_stats/act_absmax.pt</code></pre>
+        </div>
+        <div class="video-grid" data-video-grid aria-live="polite"></div>
+      </section>
+
+      <section class="content-section video-section" id="m2" data-group="m1m2" data-left="+cache" data-right="+cache +M1 +M2" aria-labelledby="m2-title">
+        <div class="section-heading">
+          <p class="section-kicker">SECTION 3</p>
+          <h2 id="m2-title">M2 — SageAttention2 quantized attention</h2>
+        </div>
+        <p class="mechanism">Replace the generation self-attention with SageAttention2's INT8 QK^T + FP8 PV kernel (sm90), behind diffusers' <code>dispatch_attention_fn</code>. q/k arrive already RoPE'd + QK-normed; GQA 32 query / 8 KV heads, head_dim 128; registered as an opaque <code>torch.library custom_op</code> so <code>torch.compile</code> stays fullgraph. Co-design: M2 alone fails 068, but M1's SmoothQuant-cleaned activations give it enough margin.</p>
+        <div class="metric-callout">
+          <span class="metric-label">Speedup</span>
+          <span class="metric-value">1.47x over cache</span>
+          <span class="metric-note">~2.36x over BF16, 8/8</span>
+        </div>
+        <p class="config-note">= config C, prefixed with env <code>M2_PV_VARIANT=fp8</code> and switching <code>--attention-backend native</code> → <code>sparge</code>:</p>
+        <div class="code-panel">
+          <div class="code-toolbar">
+            <span>Repro — config D (M2)</span>
+            <button type="button" class="copy-btn" data-copy>Copy</button>
+          </div>
+          <pre><code>M2_PV_VARIANT=fp8 venv/bin/python tools/diffusers_m1m2_t2v_benchmark.py [base + M1 flags] --attention-backend sparge</code></pre>
+        </div>
+        <div class="video-grid" data-video-grid aria-live="polite"></div>
+      </section>
+
+      <section class="content-section video-section" id="a2" data-group="a2" data-left="+cache +M1 +M2" data-right="+cache +M1 +M2 +A2" aria-labelledby="a2-title">
+        <div class="section-heading">
+          <p class="section-kicker">SECTION 4</p>
+          <h2 id="a2-title">A2 — window+anchor quant-sparse fused kernel</h2>
+        </div>
+        <p class="mechanism">A self-written quant + SPARSE fused attention: a static block-sparse mask gating layered onto the SageAttn2 INT8-QK + FP8-PV mainloop (precomputed int32 LUT, zero per-step overhead; mask-all-1 is bit-equivalent to dense; never touches the deadlocking fused PV-threshold path). The A2 mask = full local 2D spatial × a contiguous ±10-frame temporal window + 7 fixed global keyframe anchors {0,8,16,24,32,40,47}; ~50% block skip. Chosen via a 5-candidate sweep (sliding-tile / axial / dilated / window-anchor / content-adaptive): fixed keyframe anchors give a CONSISTENT global reference that avoids the ghosting/duplication that spatial sparsity and temporal striding cause on high-motion video.</p>
+        <div class="metric-callout">
+          <span class="metric-label">Speedup</span>
+          <span class="metric-value">1.31x over dense</span>
+          <span class="metric-note">1.93x over cache; 3.10x over BF16 (264s -> 85s); 8/8, high-motion 068/028 non-regressing</span>
+        </div>
+        <p class="config-note">= config D, prefixed with the anchor-sparse env and switching to the sparse runner script:</p>
+        <div class="code-panel">
+          <div class="code-toolbar">
+            <span>Repro — config E (A2)</span>
+            <button type="button" class="copy-btn" data-copy>Copy</button>
+          </div>
+          <pre><code>M2_PV_VARIANT=fp8 ANCHOR_SPARSE=1 ANC_WLOCAL=10 ANC_KEYFRAMES=0,8,16,24,32,40,47 \
+  venv/bin/python tools/diffusers_m1m2sparse_t2v_benchmark.py [base + M1 flags] --attention-backend sparge</code></pre>
+        </div>
+        <div class="video-grid" data-video-grid aria-live="polite"></div>
+      </section>
+
+      <section class="content-section video-section" id="final" data-group="final" data-left="BF16" data-right="+cache +M1 +M2 +A2" aria-labelledby="final-title">
+        <div class="section-heading">
+          <p class="section-kicker">SECTION 5</p>
+          <h2 id="final-title">Final — full route &amp; time breakdown</h2>
+        </div>
+        <p class="mechanism">BF16 → +cache (×1.61) → +M1 (×1.23) → +M2 (×1.20) → +A2 (×1.31) = 3.10x over BF16, 8/8 on the final8.</p>
+        <div class="metric-callout">
+          <span class="metric-label">Final route</span>
+          <span class="metric-value">3.10x over BF16</span>
+          <span class="metric-note">8/8 on final8</span>
+        </div>
+
+        <div class="table-wrap" aria-label="Cumulative speedup table">
+          <table class="speed-table">
+            <thead>
+              <tr>
+                <th scope="col">Config</th>
+                <th scope="col">Latency (s)</th>
+                <th scope="col">Stage gain</th>
+                <th scope="col">Cumulative vs BF16</th>
+                <th scope="col">final8</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>BF16</td>
+                <td>263.7</td>
+                <td>—</td>
+                <td class="cumulative">1.00x</td>
+                <td>baseline</td>
+              </tr>
+              <tr>
+                <td>+cache</td>
+                <td>164.0</td>
+                <td>1.61x</td>
+                <td class="cumulative">1.61x</td>
+                <td>8/8</td>
+              </tr>
+              <tr>
+                <td>+M1</td>
+                <td>133.4</td>
+                <td>1.23x</td>
+                <td class="cumulative">1.98x</td>
+                <td>8/8</td>
+              </tr>
+              <tr>
+                <td>+M2</td>
+                <td>111.5</td>
+                <td>1.20x</td>
+                <td class="cumulative">2.36x</td>
+                <td>8/8</td>
+              </tr>
+              <tr>
+                <td>+A2</td>
+                <td>85.2</td>
+                <td>1.31x</td>
+                <td class="cumulative">3.10x</td>
+                <td>8/8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="chart-panel" aria-label="Per-stage time breakdown chart">
+          <div id="timeBreakdownChart" class="chart-mount"></div>
+          <p class="chart-caption">Attention dominates throughout. Cache halves every stage (skips ~half the steps); M1 collapses linear-GEMM 58-&gt;19 s and adds a ~9 s FP8-cast prologue; M2 then A2 progressively cut attention 84-&gt;61-&gt;34 s; VAE decode (~6.3 s) is fixed. GPU kernel time; wall-clock is slightly higher.</p>
+        </div>
+
+        <div class="video-grid" data-video-grid aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built for review · videos hosted on HuggingFace dataset <code>oliveryanzuolu/cosmos3-t2v-release</code>.</p>
+    </footer>
+  </body>
+</html>
