@@ -196,3 +196,4 @@ core.*
 /public/
 /dataset/
 /downloaded_data/
+!m1_smoothquant_stats/act_absmax.pt
