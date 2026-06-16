@@ -244,8 +244,8 @@
     video.addEventListener("stalled", () => scheduleVideoTimeout(card, STALLED_TIMEOUT_MS));
     video.addEventListener("waiting", () => setPlaceholderText(card, "loading..."));
 
-    frame.title = "Double-click to enlarge";
-    card.addEventListener("dblclick", () => openLightbox({ group, id, left, right }));
+    frame.title = "Click to enlarge";
+    card.addEventListener("click", () => openLightbox({ group, id, left, right }));
 
     return card;
   }
