@@ -1394,7 +1394,12 @@ def get_m1m2_sparge_sta_static_op():
         kv_len = int(key.shape[1])
         num_heads_q = int(query.shape[2])
         axial_sparse = os.environ.get("AXIAL_SPARSE") == "1"
-        if axial_sparse:
+        dilated_sparse = os.environ.get("DILATED_SPARSE") == "1"
+        if dilated_sparse:
+            wt = _sta_optional_int_env("STA_WT", 0)
+            wh = _sta_optional_int_env("STA_WH", 0)
+            ww = _sta_optional_int_env("STA_WW", 0)
+        elif axial_sparse:
             wt = _sta_optional_int_env("STA_WT", 0)
             wh = _sta_optional_int_env("STA_WH", 0)
             ww = _sta_optional_int_env("STA_WW", 0)
@@ -1402,6 +1407,14 @@ def get_m1m2_sparge_sta_static_op():
             wt = _sta_required_int_env("STA_WT")
             wh = _sta_required_int_env("STA_WH")
             ww = _sta_required_int_env("STA_WW")
+        if dilated_sparse:
+            dil_core = _sta_optional_int_env("DIL_CORE", 0)
+            dil_stride = _sta_optional_int_env("DIL_STRIDE", 1)
+            dil_range = _sta_optional_int_env("DIL_RANGE", 0)
+        else:
+            dil_core = 0
+            dil_stride = 1
+            dil_range = 0
         t_lat = _sta_optional_int_env("STA_T_LAT", 48)
         h_lat = _sta_optional_int_env("STA_H_LAT", 23)
         w_lat = _sta_optional_int_env("STA_W_LAT", 40)
@@ -1432,11 +1445,33 @@ def get_m1m2_sparge_sta_static_op():
             w_lat,
             num_heads_q,
             str(query.device),
+            dilated_sparse,
+            dil_core,
+            dil_stride,
+            dil_range,
         )
         cached = _STA_LUT_CACHE.get(cache_key)
         if cached is None:
-            if axial_sparse:
+            if dilated_sparse:
+                from dilated_mask import build_dilated_temporal_block_mask
+
+                mask = build_dilated_temporal_block_mask(
+                    t_lat,
+                    h_lat,
+                    w_lat,
+                    und_len,
+                    q_len,
+                    kv_len,
+                    dil_core,
+                    dil_stride,
+                    dil_range,
+                    blkq=64,
+                    blkk=128,
+                    device=query.device,
+                )
+            elif axial_sparse:
                 from axial_mask import build_axial_block_mask
+
                 mask = build_axial_block_mask(
                     t_lat,
                     h_lat,
@@ -1985,7 +2020,8 @@ def install_m1m2_sparge_opaque_backend(sparse_tau: float, sparse_theta: float) -
 
     sta_sparse = os.environ.get("STA_SPARSE") == "1"
     axial_sparse = os.environ.get("AXIAL_SPARSE") == "1"
-    use_static = sta_sparse or axial_sparse
+    dilated_sparse = os.environ.get("DILATED_SPARSE") == "1"
+    use_static = sta_sparse or axial_sparse or dilated_sparse
     op = get_m1m2_sparge_sta_static_op() if use_static else get_m1m2_sparge_fp8_dense_baseline_op()
     registry = attention_dispatch._AttentionBackendRegistry
     sparge_name = AttentionBackendName.SPARGE
@@ -2042,14 +2078,23 @@ def install_m1m2_sparge_opaque_backend(sparse_tau: float, sparse_theta: float) -
         "gen_path": gen_path,
         "sta_sparse": sta_sparse,
         "axial_sparse": axial_sparse,
+        "dilated_sparse": dilated_sparse,
         "constraints_disabled_for_compile": len(_M1M2_ORIGINAL_SPARGE_CONSTRAINTS),
     }
     if use_static:
         record.update(
             {
                 "sm90_blocksparse_kernel": "no_pv",
-                "sta_required_env": ["STA_WT", "STA_WH", "STA_WW"],
-                "sta_optional_env": ["STA_TEXT_TOKENS", "STA_T_LAT", "STA_H_LAT", "STA_W_LAT"],
+                "sta_required_env": [] if dilated_sparse else ["STA_WT", "STA_WH", "STA_WW"],
+                "sta_optional_env": [
+                    "STA_TEXT_TOKENS",
+                    "STA_T_LAT",
+                    "STA_H_LAT",
+                    "STA_W_LAT",
+                    "DIL_CORE",
+                    "DIL_STRIDE",
+                    "DIL_RANGE",
+                ],
                 "sta_lut_cache": True,
             }
         )
