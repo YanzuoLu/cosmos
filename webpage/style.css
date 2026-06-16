@@ -231,6 +231,80 @@ button {
   border-color: var(--accent-line);
 }
 
+.sparse-ladder {
+  max-width: 980px;
+  margin: 26px 0 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(17, 20, 26, 0.82);
+  padding: 18px 18px 20px;
+}
+
+.ladder-title {
+  display: grid;
+  gap: 3px;
+  margin-bottom: 14px;
+}
+
+.ladder-title strong {
+  font-size: 0.98rem;
+}
+
+.ladder-row {
+  gap: 8px;
+}
+
+.sparse-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  line-height: 1;
+  padding: 9px 13px;
+  transition: transform 120ms ease, border-color 160ms ease, background 160ms ease, color 160ms ease;
+}
+
+.sparse-chip:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.sparse-chip:active {
+  transform: translateY(1px);
+}
+
+.sparse-chip.is-active {
+  border-color: rgba(231, 165, 109, 0.9);
+  background: rgba(231, 165, 109, 0.14);
+  color: #f0c089;
+}
+
+.chip-sub {
+  border-left: 1px solid currentColor;
+  padding-left: 7px;
+  opacity: 0.7;
+  font-size: 0.92em;
+}
+
+.danger-callout {
+  border-left-color: var(--danger);
+  background: linear-gradient(90deg, rgba(231, 165, 109, 0.12), rgba(255, 255, 255, 0.025));
+}
+
+.danger-callout .metric-value {
+  color: var(--danger);
+}
+
+.sparse-conclusion {
+  max-width: 980px;
+  margin: 24px 0 4px;
+}
+
 .custom-picker {
   display: grid;
   grid-template-columns: auto minmax(120px, 1fr) auto;

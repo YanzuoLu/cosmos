@@ -4,11 +4,15 @@
   const HF_BASE = "https://huggingface.co/datasets/oliveryanzuolu/cosmos3-t2v-release/resolve/main/compare";
   const DEFAULT_IDS = ["039", "048", "049", "079"];
   const FINAL8_IDS = ["006", "014", "028", "039", "048", "049", "068", "079"];
+  const SPARSE_TAGS = ["w10", "w14", "w18", "w22", "w32"];
+  const DEFAULT_SPARSE_TAG = "w10";
+  const SPARSE_LEFT = "dense cache+M1+M2";
   const VIDEO_TIMEOUT_MS = 18000;
   const STALLED_TIMEOUT_MS = 4500;
 
   let selectedIds = [...DEFAULT_IDS];
   let armedId = null;
+  let sparseTag = DEFAULT_SPARSE_TAG;
   let videoObserver = null;
   const videoTimers = new WeakMap();
   let lightbox = null;
@@ -25,6 +29,7 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     initPromptPicker();
+    initSparseLadder();
     initCopyButtons();
     renderVideos();
     initNavHighlighter();
@@ -170,6 +175,32 @@
     });
   }
 
+  function initSparseLadder() {
+    const ladder = document.getElementById("sparseLadder");
+    if (!ladder) return;
+    const chips = Array.from(ladder.querySelectorAll(".sparse-chip"));
+
+    chips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        const tag = chip.dataset.sparseTag;
+        if (!tag || !SPARSE_TAGS.includes(tag) || tag === sparseTag) return;
+        sparseTag = tag;
+        syncSparseUi();
+        renderSparseSection();
+      });
+    });
+
+    syncSparseUi();
+  }
+
+  function syncSparseUi() {
+    document.querySelectorAll(".sparse-chip").forEach((chip) => {
+      const isActive = chip.dataset.sparseTag === sparseTag;
+      chip.classList.toggle("is-active", isActive);
+      chip.setAttribute("aria-checked", isActive ? "true" : "false");
+    });
+  }
+
   function renderVideos() {
     if (videoObserver) {
       videoObserver.disconnect();
@@ -184,19 +215,35 @@
       const group = section.dataset.group;
       const left = section.dataset.left || "LEFT";
       const right = section.dataset.right || "RIGHT";
-      grid.replaceChildren();
-
-      selectedIds.forEach((id) => {
-        const card = createVideoCard({ group, id, left, right });
-        grid.appendChild(card);
-
-        if (videoObserver) {
-          videoObserver.observe(card);
-        } else {
-          loadVideo(card);
-        }
-      });
+      renderGrid(grid, group, left, right);
     });
+
+    renderSparseSection();
+  }
+
+  function renderGrid(grid, group, left, right) {
+    grid.replaceChildren();
+
+    selectedIds.forEach((id) => {
+      const card = createVideoCard({ group, id, left, right });
+      grid.appendChild(card);
+
+      if (videoObserver) {
+        videoObserver.observe(card);
+      } else {
+        loadVideo(card);
+      }
+    });
+  }
+
+  function renderSparseSection() {
+    const section = document.querySelector("[data-sparse-section]");
+    if (!section) return;
+    const grid = section.querySelector("[data-video-grid]");
+    if (!grid) return;
+
+    const right = `${sparseTag} sparse`;
+    renderGrid(grid, `sparse/${sparseTag}`, SPARSE_LEFT, right);
   }
 
   function createVideoCard({ group, id, left, right }) {
@@ -518,8 +565,7 @@
       { config: "BF16", attention: 144.9, linear_gemm: 58.2, quant_cast: 0.0, norm_rope: 0.2, vae_decode: 6.3, other: 42.6 },
       { config: "+cache", attention: 83.5, linear_gemm: 34.5, quant_cast: 0.0, norm_rope: 0.2, vae_decode: 6.3, other: 29.2 },
       { config: "+M1", attention: 86.8, linear_gemm: 18.7, quant_cast: 9.2, norm_rope: 0.5, vae_decode: 6.3, other: 10.3 },
-      { config: "+M2", attention: 61.4, linear_gemm: 19.1, quant_cast: 7.9, norm_rope: 0.5, vae_decode: 6.3, other: 12.9 },
-      { config: "+A2", attention: 33.6, linear_gemm: 18.4, quant_cast: 6.6, norm_rope: 0.5, vae_decode: 6.3, other: 15.5 }
+      { config: "+M2", attention: 61.4, linear_gemm: 19.1, quant_cast: 7.9, norm_rope: 0.5, vae_decode: 6.3, other: 12.9 }
     ];
 
     const categories = [
@@ -587,7 +633,7 @@
     mount.innerHTML = [
       `<svg class="time-chart" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="timeChartTitle timeChartDesc">`,
       `<title id="timeChartTitle">Per-stage time breakdown</title>`,
-      `<desc id="timeChartDesc">Real per-stage GPU kernel time (seconds) for five acceleration configs; total shrinks from 252.2 s to 80.8 s.</desc>`,
+      `<desc id="timeChartDesc">Real per-stage GPU kernel time (seconds) for the four delivered configs; total shrinks from 252.2 s to 108.2 s.</desc>`,
       `<text x="${margin.left}" y="32" fill="#e6e9ef" font-family="ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700">Per-stage time breakdown</text>`,
       `<text x="${margin.left}" y="54" fill="#a3adba" font-family="ui-monospace, Menlo, monospace" font-size="12">GPU-busy kernel time, summed over a full generation (wall-clock is slightly higher due to launch/CPU overhead)</text>`,
       grid,

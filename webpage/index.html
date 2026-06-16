@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cosmos3-Nano T2V — Training-free 3.10x Acceleration</title>
+    <title>Cosmos3-Nano T2V — Training-free 2.36x Acceleration</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
   </head>
@@ -16,8 +16,8 @@
           <a href="#cache" data-nav-link>Cache</a>
           <a href="#m1" data-nav-link>M1</a>
           <a href="#m2" data-nav-link>M2</a>
-          <a href="#a2" data-nav-link>A2</a>
           <a href="#final" data-nav-link>Final</a>
+          <a href="#sparse" data-nav-link>Sparse (explored)</a>
         </nav>
       </div>
     </header>
@@ -56,8 +56,8 @@
       <section class="hero-section" id="hero" aria-labelledby="hero-title">
         <div class="hero-inner">
           <p class="eyebrow">Cosmos3-Nano T2V acceleration project</p>
-          <h1 id="hero-title">Cosmos3-Nano T2V — Training-free 3.10x Acceleration</h1>
-          <p class="hero-subtitle">Stack cache, FP8 quantization, and sparse quantized attention to reduce text-to-video latency while preserving final8 quality gates.</p>
+          <h1 id="hero-title">Cosmos3-Nano T2V — Training-free 2.36x Acceleration</h1>
+          <p class="hero-subtitle">Stack a derivative cache, FP8 quantization, and quantized dense attention to reduce text-to-video latency while preserving final8 quality gates.</p>
           <div class="setup-banner" aria-label="Hardware and setup">
             <span>NVIDIA Cosmos3-Nano text-to-video</span>
             <span>720x1280</span>
@@ -78,18 +78,18 @@
           <p class="section-kicker">SECTION 0</p>
           <h2 id="background-title">Background &amp; Setup</h2>
         </div>
-        <p class="mechanism">Stack three orthogonal levers — a training-free derivative CACHE (TaylorSeer), weight+activation QUANTIZATION (M1, FP8), and attention QUANTIZATION + SPARSITY (M2 SageAttention2 dense + A2 window-anchor block-sparse) — to cut latency ~3.10x vs BF16 with no quality regression.</p>
+        <p class="mechanism">Stack three orthogonal training-free levers — a derivative CACHE (TaylorSeer), weight+activation QUANTIZATION (M1, FP8), and quantized dense ATTENTION (M2 SageAttention2) — to cut latency 2.36x vs BF16 with no quality regression. A fourth lever, block-sparse attention (A2), was explored but not shipped — it degraded large-object motion (see the appendix).</p>
         <div class="metric-callout">
-          <span class="metric-label">Project target</span>
-          <span class="metric-value">~3.10x vs BF16</span>
-          <span class="metric-note">quality-gated on final8</span>
+          <span class="metric-label">Delivered</span>
+          <span class="metric-value">2.36x vs BF16</span>
+          <span class="metric-note">cache + M1 + M2, quality-gated on final8</span>
         </div>
         <div class="info-panel">
-          <h3>Three orthogonal levers</h3>
+          <h3>Three orthogonal levers (delivered)</h3>
           <ol class="lever-list">
             <li><strong>Cache</strong> — TaylorSeer derivative cache (training-free).</li>
             <li><strong>Quant</strong> — M1 FP8 W8A8 + SmoothQuant.</li>
-            <li><strong>Attention</strong> — M2 SageAttention2 dense + A2 window-anchor block-sparse.</li>
+            <li><strong>Attention</strong> — M2 SageAttention2 dense (INT8-QK + FP8-PV).</li>
           </ol>
         </div>
 
@@ -193,39 +193,16 @@ export CUDA_HOME=/usr/local/cuda-12.8
         <div class="video-grid" data-video-grid aria-live="polite"></div>
       </section>
 
-      <section class="content-section video-section" id="a2" data-group="a2" data-left="+cache +M1 +M2" data-right="+cache +M1 +M2 +A2" aria-labelledby="a2-title">
+      <section class="content-section video-section" id="final" data-group="final" data-left="BF16" data-right="cache+M1+M2" aria-labelledby="final-title">
         <div class="section-heading">
           <p class="section-kicker">SECTION 4</p>
-          <h2 id="a2-title">A2 — window+anchor quant-sparse fused kernel</h2>
-        </div>
-        <p class="mechanism">A self-written quant + SPARSE fused attention: a static block-sparse mask gating layered onto the SageAttn2 INT8-QK + FP8-PV mainloop (precomputed int32 LUT, zero per-step overhead; mask-all-1 is bit-equivalent to dense; never touches the deadlocking fused PV-threshold path). The A2 mask = full local 2D spatial × a contiguous ±10-frame temporal window + 7 fixed global keyframe anchors {0,8,16,24,32,40,47}; ~50% block skip. Chosen via a 5-candidate sweep (sliding-tile / axial / dilated / window-anchor / content-adaptive): fixed keyframe anchors give a CONSISTENT global reference that avoids the ghosting/duplication that spatial sparsity and temporal striding cause on high-motion video.</p>
-        <div class="metric-callout">
-          <span class="metric-label">Speedup</span>
-          <span class="metric-value">1.31x over dense</span>
-          <span class="metric-note">1.93x over cache; 3.10x over BF16 (264s -> 85s); 8/8, high-motion 068/028 non-regressing</span>
-        </div>
-        <p class="config-note">= config D, prefixed with the anchor-sparse env and switching to the sparse runner script:</p>
-        <div class="code-panel">
-          <div class="code-toolbar">
-            <span>Repro — config E (A2)</span>
-            <button type="button" class="copy-btn" data-copy>Copy</button>
-          </div>
-          <pre><code>M2_PV_VARIANT=fp8 ANCHOR_SPARSE=1 ANC_WLOCAL=10 ANC_KEYFRAMES=0,8,16,24,32,40,47 \
-  venv/bin/python tools/diffusers_m1m2sparse_t2v_benchmark.py [base + M1 flags] --attention-backend sparge</code></pre>
-        </div>
-        <div class="video-grid" data-video-grid aria-live="polite"></div>
-      </section>
-
-      <section class="content-section video-section" id="final" data-group="final" data-left="BF16" data-right="+cache +M1 +M2 +A2" aria-labelledby="final-title">
-        <div class="section-heading">
-          <p class="section-kicker">SECTION 5</p>
           <h2 id="final-title">Final — full route &amp; time breakdown</h2>
         </div>
-        <p class="mechanism">BF16 → +cache (×1.61) → +M1 (×1.23) → +M2 (×1.20) → +A2 (×1.31) = 3.10x over BF16, 8/8 on the final8.</p>
+        <p class="mechanism">BF16 → +cache (×1.61) → +M1 (×1.23) → +M2 (×1.20) = 2.36x over BF16, 8/8 on the final8. The delivered pipeline ends at cache+M1+M2 (dense attention); sparse attention was explored but not shipped — see the appendix.</p>
         <div class="metric-callout">
-          <span class="metric-label">Final route</span>
-          <span class="metric-value">3.10x over BF16</span>
-          <span class="metric-note">8/8 on final8</span>
+          <span class="metric-label">Delivered route</span>
+          <span class="metric-value">~2.36x over BF16</span>
+          <span class="metric-note">cache + M1 + M2, 8/8 on final8</span>
         </div>
 
         <div class="table-wrap" aria-label="Cumulative speedup table">
@@ -268,23 +245,58 @@ export CUDA_HOME=/usr/local/cuda-12.8
                 <td class="cumulative">2.36x</td>
                 <td>8/8</td>
               </tr>
-              <tr>
-                <td>+A2</td>
-                <td>85.2</td>
-                <td>1.31x</td>
-                <td class="cumulative">3.10x</td>
-                <td>8/8</td>
-              </tr>
             </tbody>
           </table>
         </div>
 
         <div class="chart-panel" aria-label="Per-stage time breakdown chart">
           <div id="timeBreakdownChart" class="chart-mount"></div>
-          <p class="chart-caption">Attention dominates throughout. Cache halves every stage (skips ~half the steps); M1 collapses linear-GEMM 58-&gt;19 s and adds a ~9 s FP8-cast prologue; M2 then A2 progressively cut attention 84-&gt;61-&gt;34 s; VAE decode (~6.3 s) is fixed. GPU kernel time; wall-clock is slightly higher.</p>
+          <p class="chart-caption">Attention dominates throughout. Cache halves every stage (skips ~half the steps); M1 collapses linear-GEMM 58-&gt;19 s and adds a ~9 s FP8-cast prologue; M2 cuts dense attention 84-&gt;61 s; VAE decode (~6.3 s) is fixed. Total GPU kernel time falls 252.2 s -&gt; 108.2 s across the delivered ladder; wall-clock is slightly higher.</p>
         </div>
 
         <div class="video-grid" data-video-grid aria-live="polite"></div>
+      </section>
+
+      <section class="content-section video-section sparse-section" id="sparse" data-sparse-section data-left="dense cache+M1+M2" data-right="+A2 sparse" aria-labelledby="sparse-title">
+        <div class="section-heading">
+          <p class="section-kicker">APPENDIX · EXPLORED, NOT SHIPPED</p>
+          <h2 id="sparse-title">Sparse attention — explored, not shipped</h2>
+        </div>
+        <p class="mechanism">A self-written window+anchor quant-SPARSE fused kernel: a static block-sparse mask LUT layered on top of the SageAttn2 INT8-QK + FP8-PV mainloop. The mask keeps a contiguous temporal window (<code>ANC_WLOCAL</code>) around each query frame plus a set of fixed global keyframe anchors (<code>ANC_KEYFRAMES=0,8,16,24,32,40,47</code>); the int32 LUT is precomputed once, so per-step overhead is zero and mask-all-1 is bit-equivalent to dense. Shrinking the window raises the block-skip ratio and the speedup — but also the quality cost.</p>
+        <div class="metric-callout danger-callout">
+          <span class="metric-label">Outcome</span>
+          <span class="metric-value">not adopted</span>
+          <span class="metric-note">every config — down to the mildest 1.04x — loses dense motion; delivered pipeline stops at cache+M1+M2</span>
+        </div>
+
+        <div class="sparse-ladder" aria-label="Sparsity ladder">
+          <div class="ladder-title">
+            <span class="eyebrow">Sparsity ladder</span>
+            <strong>Slide from aggressive (worst) to mild — degradation persists throughout</strong>
+            <span class="picker-hint">Each step loads the dense cache+M1+M2 (LEFT) versus that sparse config (RIGHT) for the 4 selected prompts. Defaults to the most aggressive variant so the motion loss is immediately visible.</span>
+          </div>
+          <div class="chip-row ladder-row" id="sparseLadder" role="radiogroup" aria-label="Sparse config">
+            <button type="button" class="sparse-chip" data-sparse-tag="w10" role="radio">w10 · 1.32x dense · 50% skip<span class="chip-sub">3.10x / bf16</span></button>
+            <button type="button" class="sparse-chip" data-sparse-tag="w14" role="radio">w14 · 1.24x dense · 40% skip</button>
+            <button type="button" class="sparse-chip" data-sparse-tag="w18" role="radio">w18 · 1.16x dense · 31% skip</button>
+            <button type="button" class="sparse-chip" data-sparse-tag="w22" role="radio">w22 · 1.11x dense · 23% skip</button>
+            <button type="button" class="sparse-chip" data-sparse-tag="w32" role="radio">w32 · 1.04x dense · 8% skip<span class="chip-sub">2.45x / bf16</span></button>
+          </div>
+        </div>
+
+        <div class="video-grid" data-video-grid aria-live="polite"></div>
+
+        <p class="chart-caption sparse-conclusion">As sparsity and speedup rise, motion and quality degrade — large slow-moving subjects (the 049 steam train, the 079 ship) freeze or smear. Even the mildest config (w32, 1.04x over dense, only 8% block skip) does not fully restore the dense motion, so its quality loss is still not acceptable. This defect is invisible in single still frames — it is a cross-frame motion failure — and was only caught on video. Therefore sparse attention is NOT adopted; the delivered pipeline stops at cache+M1+M2. We also profiled the aggressive 1.3x sparse variant (w10): its per-stage trace shows it does cut attention further (61 -&gt; 34 s), but the motion/quality regression made it not worth shipping.</p>
+
+        <p class="config-note">= config D, prefixed with the anchor-sparse env and switching to the sparse runner script (<code>&lt;w&gt;</code> = the window value, e.g. 10):</p>
+        <div class="code-panel">
+          <div class="code-toolbar">
+            <span>Repro — config E (sparse, ANC_WLOCAL)</span>
+            <button type="button" class="copy-btn" data-copy>Copy</button>
+          </div>
+          <pre><code>M2_PV_VARIANT=fp8 ANCHOR_SPARSE=1 ANC_WLOCAL=&lt;w&gt; ANC_KEYFRAMES=0,8,16,24,32,40,47 \
+  venv/bin/python tools/diffusers_m1m2sparse_t2v_benchmark.py [base + M1 flags] --attention-backend sparge</code></pre>
+        </div>
       </section>
     </main>
 
