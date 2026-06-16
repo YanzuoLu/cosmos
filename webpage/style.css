@@ -249,13 +249,15 @@ button {
   width: min(var(--content), calc(100% - 32px));
   margin: 0 auto;
   padding: 12px 0;
-  display: grid;
-  grid-template-columns: minmax(170px, 0.65fr) minmax(270px, 1.35fr) minmax(310px, 0.9fr);
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 14px;
+  gap: 10px 22px;
 }
 
 .picker-title {
+  flex: 0 1 auto;
+  max-width: 400px;
   display: grid;
   gap: 2px;
 }
@@ -276,6 +278,7 @@ button {
 }
 
 .chip-row {
+  flex: 0 1 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
@@ -452,6 +455,8 @@ button {
 }
 
 .custom-picker {
+  flex: 1 1 300px;
+  min-width: 240px;
   display: grid;
   grid-template-columns: auto minmax(120px, 1fr) auto;
   align-items: center;
