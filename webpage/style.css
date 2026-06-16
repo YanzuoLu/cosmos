@@ -256,8 +256,8 @@ button {
 }
 
 .picker-title {
-  flex: 1 1 auto;
-  max-width: 620px;
+  flex: 0 1 auto;
+  max-width: 460px;
   display: grid;
   gap: 2px;
 }
