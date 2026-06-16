@@ -386,3 +386,22 @@ loss** manifesting as axis-line ghosting (vertical-stacked duplicates, horizonta
 Candidate-1 finding**: high-motion video requires FULL local 2D spatial coverage — the cross/plus axis-lines are
 insufficient. Thickening the axial bands toward full-spatial just converges back to STA, so axial is **not a
 distinct viable lever**. Remaining axial sweeps skipped.
+
+## Candidate 3 (dilated / strided temporal) — **NO-GO (high-motion temporal ghosting)**
+
+**Mechanism.** A new mask builder (`tools/dilated_mask.py:build_dilated_temporal_block_mask`) keeps **full spatial**
+coverage (WH=23, WW=40) but makes the **temporal** axis dilated: a contiguous near-frame **core** plus **strided far
+frames** out to a range. Driven through the **same** no_pv INT8-QK + FP8-PV LUT path and `m1m2::sparge_sta_static_sm90`
+custom_op as STA, selected via `DILATED_SPARSE=1` + `DIL_CORE`/`DIL_STRIDE`/`DIL_RANGE` (all-1 mask bit-equiv to dense;
+kernel-landed + NaN-free). Two configs: **D1** core10/stride2/range23 = **41.5% block skip** (~1.20x), **D2**
+core6/stride3/range23 = **57.2% block skip** (~1.33x) — both beat STA's 32.5% skip / 1.17x.
+
+**Binding-gate result.** The high-motion hardcase **068 collapses** with **temporal ghosting / cat duplication**:
+**D1 068 = [4,6]** (fail), **D2 068 = [6,7,6,5]** (3/4 raters fail — two distinct white-cat bodies, clearest frame 96).
+**028 passes both** (D1 [7,8], D2 [8,7]). The strided far frames (sees t-3,t-6 but not t-1,t-2,t-4,t-5) prevent the
+model from interpolating fast motion, so it ghosts/doubles the subject. This artifact is **absent in STA's contiguous
+window** (068 clean = 7) and **absent in dense** (068 = 7,8,8).
+
+**Verdict: NO-GO.** Dilated-temporal buys more skip/speed than STA and 028 passes, but high-motion binding needs
+**dense contiguous near-frame temporal context** — striding the far frames causes ghosting/duplication. **Contiguous
+STA (w20-20-34) stays best.**
