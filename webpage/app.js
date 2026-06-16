@@ -8,6 +8,7 @@
   const STALLED_TIMEOUT_MS = 4500;
 
   let selectedIds = [...DEFAULT_IDS];
+  let armedId = null;
   let videoObserver = null;
   const videoTimers = new WeakMap();
 
@@ -44,14 +45,29 @@
         if (!id) return;
 
         if (selectedIds.includes(id)) {
-          setPromptMessage("Exactly 4 prompts stay active; pick another id to replace one.");
+          // Active chip: arm it (mark to swap out), or un-arm if tapped again.
+          armedId = armedId === id ? null : id;
+          setPromptMessage(
+            armedId
+              ? `${id} marked to swap out — now tap an inactive prompt to swap it in.`
+              : "Swap cancelled."
+          );
+          syncPromptUi();
           return;
         }
 
-        const dropped = selectedIds[0];
-        selectedIds = [...selectedIds.slice(1), id];
+        // Inactive chip: it replaces the armed active chip (explicit swap).
+        if (!armedId) {
+          setPromptMessage("Tap one of the 4 active prompts first to mark it for replacement.");
+          pulseActiveChips();
+          return;
+        }
+
+        const swappedOut = armedId;
+        selectedIds = selectedIds.map((selected) => (selected === armedId ? id : selected));
+        armedId = null;
         input.removeAttribute("aria-invalid");
-        setPromptMessage(`Picked ${id}; dropped ${dropped}.`);
+        setPromptMessage(`Swapped ${swappedOut} → ${id}.`);
         syncPromptUi();
         renderVideos();
       });
@@ -68,6 +84,7 @@
       }
 
       selectedIds = parsed.ids;
+      armedId = null;
       input.removeAttribute("aria-invalid");
       setPromptMessage("Applied custom prompt ids.");
       syncPromptUi();
@@ -116,8 +133,11 @@
 
   function syncPromptUi() {
     document.querySelectorAll(".prompt-chip").forEach((button) => {
-      button.classList.toggle("is-active", selectedIds.includes(button.dataset.promptId));
-      button.setAttribute("aria-pressed", selectedIds.includes(button.dataset.promptId) ? "true" : "false");
+      const id = button.dataset.promptId;
+      const isActive = selectedIds.includes(id);
+      button.classList.toggle("is-active", isActive);
+      button.classList.toggle("is-armed", id === armedId);
+      button.setAttribute("aria-pressed", isActive ? "true" : "false");
     });
 
     const output = document.getElementById("selectedPromptOutput");
@@ -137,6 +157,15 @@
     if (!status) return;
     status.textContent = message;
     status.classList.toggle("is-error", Boolean(isError));
+  }
+
+  function pulseActiveChips() {
+    document.querySelectorAll(".prompt-chip.is-active").forEach((chip) => {
+      chip.classList.remove("pulse");
+      void chip.offsetWidth;
+      chip.classList.add("pulse");
+      window.setTimeout(() => chip.classList.remove("pulse"), 520);
+    });
   }
 
   function renderVideos() {

@@ -208,6 +208,29 @@ button {
   color: var(--accent);
 }
 
+.prompt-chip.is-armed {
+  border-color: rgba(231, 165, 109, 0.9);
+  background: rgba(231, 165, 109, 0.15);
+  color: #f0c089;
+  box-shadow: 0 0 0 2px rgba(231, 165, 109, 0.28);
+}
+
+.prompt-chip.is-armed::after {
+  content: " \21C4";
+  font-size: 0.82em;
+  opacity: 0.85;
+}
+
+@keyframes chipPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.09); }
+}
+
+.prompt-chip.pulse {
+  animation: chipPulse 0.45s ease;
+  border-color: var(--accent-line);
+}
+
 .custom-picker {
   display: grid;
   grid-template-columns: auto minmax(120px, 1fr) auto;
@@ -277,6 +300,16 @@ button {
 .picker-message {
   min-width: 0;
   color: var(--faint);
+}
+
+.picker-hint {
+  display: block;
+  margin-top: 5px;
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 .picker-message.is-error {
