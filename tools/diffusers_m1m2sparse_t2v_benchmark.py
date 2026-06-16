@@ -19,6 +19,11 @@ import time
 from pathlib import Path
 from typing import Any
 
+_TOOLS_DIR = Path(__file__).resolve().parent
+if str(_TOOLS_DIR) not in sys.path:
+    sys.path.insert(0, str(_TOOLS_DIR))
+from sta_mask import build_sta_block_mask
+
 
 QA_PROMPTS: list[dict[str, str]] = [
     {
@@ -968,8 +973,10 @@ _M1M2_SPARGE_BLOCKSPARSE_OP = None
 _M1M2_SPARGE_BLOCKSPARSE_TOPK_OP = None
 _M1M2_SPARGE_FP8_DENSE_OP = None
 _M1M2_SPARGE_PERLAYER_MIXED_OP = None
+_M1M2_SPARGE_STA_STATIC_OP = None
 _M1M2_ORIGINAL_SPARGE_BACKEND = None
 _M1M2_ORIGINAL_SPARGE_CONSTRAINTS = None
+_STA_LUT_CACHE: dict[tuple[Any, ...], tuple[Any, Any]] = {}
 _M1M2_PERLAYER_ATTENTION_STATS: list[dict[str, Any]] = []
 _M1M2_PERLAYER_LATEDENSE_STATE: dict[str, Any] = {
     "enabled": False,
@@ -1013,6 +1020,26 @@ def _restore_env_var(name: str, old_value: str | None) -> None:
         os.environ[name] = old_value
 
 
+def _sta_required_int_env(name: str) -> int:
+    text = os.environ.get(name)
+    if text is None or not text.strip():
+        raise ValueError(f"{name} must be set to an integer when STA_SPARSE=1")
+    try:
+        return int(text)
+    except ValueError as exc:
+        raise ValueError(f"{name} must be an integer, got {text!r}") from exc
+
+
+def _sta_optional_int_env(name: str, default: int) -> int:
+    text = os.environ.get(name)
+    if text is None or not text.strip():
+        return int(default)
+    try:
+        return int(text)
+    except ValueError as exc:
+        raise ValueError(f"{name} must be an integer, got {text!r}") from exc
+
+
 def _m1m2_expand_kv_for_gqa(query: Any, key: Any, value: Any) -> tuple[Any, Any]:
     num_heads_q = query.shape[2]
     num_heads_kv = key.shape[2]
@@ -1031,6 +1058,12 @@ def _m1m2_nhd_block_count(query: Any, key: Any) -> int:
     q_blocks = (int(query.shape[-3]) + 63) // 64
     k_blocks = (int(key.shape[-3]) + 127) // 128
     return leading * int(query.shape[-2]) * q_blocks * k_blocks
+
+
+def get_m1m2_sparge_fp8_dense_baseline_op():
+    from diffusers_m1m2_t2v_benchmark import get_m1m2_sparge_fp8_op
+
+    return get_m1m2_sparge_fp8_op()
 
 
 def reset_m1m2_perlayer_attention_stats() -> None:
@@ -1332,6 +1365,107 @@ def get_m1m2_sparge_blocksparse_op():
 
     _M1M2_SPARGE_BLOCKSPARSE_OP = sparge_blocksparse_adaptive_sm90
     return sparge_blocksparse_adaptive_sm90
+
+
+def get_m1m2_sparge_sta_static_op():
+    global _M1M2_SPARGE_STA_STATIC_OP
+    if _M1M2_SPARGE_STA_STATIC_OP is not None:
+        return _M1M2_SPARGE_STA_STATIC_OP
+
+    import torch
+
+    @torch.library.custom_op(
+        "m1m2::sparge_sta_static_sm90",
+        mutates_args=(),
+        device_types="cuda",
+        schema="(Tensor query, Tensor key, Tensor value, float? scale=None) -> Tensor",
+    )
+    def sparge_sta_static_sm90(
+        query: torch.Tensor,
+        key: torch.Tensor,
+        value: torch.Tensor,
+        scale: float | None = None,
+    ) -> torch.Tensor:
+        from spas_sage_attn.core import spas_sage2_attn_static_lut_cuda
+        from spas_sage_attn.utils import block_map_lut_triton
+
+        batch_size = int(query.shape[0])
+        q_len = int(query.shape[1])
+        kv_len = int(key.shape[1])
+        num_heads_q = int(query.shape[2])
+        wt = _sta_required_int_env("STA_WT")
+        wh = _sta_required_int_env("STA_WH")
+        ww = _sta_required_int_env("STA_WW")
+        t_lat = _sta_optional_int_env("STA_T_LAT", 48)
+        h_lat = _sta_optional_int_env("STA_H_LAT", 23)
+        w_lat = _sta_optional_int_env("STA_W_LAT", 40)
+        und_len = _sta_optional_int_env("STA_TEXT_TOKENS", kv_len - q_len)
+
+        if t_lat * h_lat * w_lat != q_len:
+            raise ValueError(
+                "STA latent geometry must match query length: "
+                f"STA_T_LAT*STA_H_LAT*STA_W_LAT={t_lat * h_lat * w_lat}, q_len={q_len}"
+            )
+        if kv_len - und_len != q_len:
+            raise ValueError(
+                "STA expects KV to be [text prefix, visual tokens]: "
+                f"kv_len={kv_len}, und_len={und_len}, q_len={q_len}"
+            )
+
+        cache_key = (
+            batch_size,
+            q_len,
+            kv_len,
+            wt,
+            wh,
+            ww,
+            und_len,
+            t_lat,
+            h_lat,
+            w_lat,
+            num_heads_q,
+            str(query.device),
+        )
+        cached = _STA_LUT_CACHE.get(cache_key)
+        if cached is None:
+            mask = build_sta_block_mask(
+                t_lat,
+                h_lat,
+                w_lat,
+                und_len,
+                q_len,
+                kv_len,
+                wt,
+                wh,
+                ww,
+                blkq=64,
+                blkk=128,
+                device=query.device,
+            )
+            block_map = mask[None, None, :, :].expand(batch_size, num_heads_q, -1, -1).contiguous()
+            cached = block_map_lut_triton(block_map)
+            _STA_LUT_CACHE[cache_key] = cached
+        lut, valid_block_num = cached
+
+        key, value = _m1m2_expand_kv_for_gqa(query, key, value)
+        return spas_sage2_attn_static_lut_cuda(
+            query,
+            key,
+            value,
+            lut,
+            valid_block_num,
+            is_causal=False,
+            tensor_layout="NHD",
+            sm_scale=scale,
+            output_dtype=query.dtype,
+        ).contiguous()
+
+    @sparge_sta_static_sm90.register_fake
+    def _(query, key, value, scale=None):
+        return query.new_empty(query.shape)
+
+    _M1M2_SPARGE_STA_STATIC_OP = sparge_sta_static_sm90
+    return sparge_sta_static_sm90
 
 
 def get_m1m2_sparge_fp8_dense_perlayer_op():
@@ -1828,7 +1962,8 @@ def install_m1m2_sparge_opaque_backend(sparse_tau: float, sparse_theta: float) -
     from diffusers.models import attention_dispatch
     from diffusers.models.attention_dispatch import AttentionBackendName
 
-    op = get_m1m2_sparge_blocksparse_op()
+    sta_sparse = os.environ.get("STA_SPARSE") == "1"
+    op = get_m1m2_sparge_sta_static_op() if sta_sparse else get_m1m2_sparge_fp8_dense_baseline_op()
     registry = attention_dispatch._AttentionBackendRegistry
     sparge_name = AttentionBackendName.SPARGE
     if _M1M2_ORIGINAL_SPARGE_BACKEND is None:
@@ -1870,24 +2005,30 @@ def install_m1m2_sparge_opaque_backend(sparse_tau: float, sparse_theta: float) -
                 _parallel_config=None,
             )
 
-        return op(query, key, value, float(sparse_tau), float(sparse_theta), scale)
+        return op(query, key, value, scale)
 
-    os.environ["SPARGE_COLLECT_BLOCKMAP_STATS"] = "1"
     registry._backends[sparge_name] = _m1m2_sparge_attention
     registry._constraints[sparge_name] = []
+    custom_op_name = "m1m2::sparge_sta_static_sm90" if sta_sparse else "m1m2::sparge_fp8_dense_sm90"
+    gen_path = "spas_sage2_attn_static_lut_cuda" if sta_sparse else "sageattn_qk_int8_pv_fp8_cuda_sm90"
     record = {
-        "event": "m1m2_sparge_blocksparse_opaque_backend_installed",
+        "event": "m1m2_sparge_opaque_backend_installed",
         "backend": sparge_name.value,
-        "custom_op": "m1m2::sparge_blocksparse_adaptive_sm90",
+        "custom_op": custom_op_name,
         "causal_path": "native_attention",
-        "gen_path": "spas_sage2_attn_meansim_topk_cuda",
-        "sm90_blocksparse_kernel": "no_pv",
-        "cdf_tau": float(sparse_tau),
-        "self_sim_theta": float(sparse_theta),
-        "topk_override": False,
-        "blockmap_stats": True,
+        "gen_path": gen_path,
+        "sta_sparse": sta_sparse,
         "constraints_disabled_for_compile": len(_M1M2_ORIGINAL_SPARGE_CONSTRAINTS),
     }
+    if sta_sparse:
+        record.update(
+            {
+                "sm90_blocksparse_kernel": "no_pv",
+                "sta_required_env": ["STA_WT", "STA_WH", "STA_WW"],
+                "sta_optional_env": ["STA_TEXT_TOKENS", "STA_T_LAT", "STA_H_LAT", "STA_W_LAT"],
+                "sta_lut_cache": True,
+            }
+        )
     print(json.dumps(record, sort_keys=True), flush=True)
     return record
 
