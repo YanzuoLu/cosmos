@@ -1040,6 +1040,22 @@ def _sta_optional_int_env(name: str, default: int) -> int:
         raise ValueError(f"{name} must be an integer, got {text!r}") from exc
 
 
+def _anc_keyframes_from_env() -> tuple[int, ...]:
+    text = os.environ.get("ANC_KEYFRAMES")
+    if text is None or not text.strip():
+        return tuple()
+    keyframes = []
+    for part in text.split(","):
+        part = part.strip()
+        if not part:
+            continue
+        try:
+            keyframes.append(int(part))
+        except ValueError as exc:
+            raise ValueError(f"ANC_KEYFRAMES must be a comma-separated list of integers, got {text!r}") from exc
+    return tuple(keyframes)
+
+
 def _m1m2_expand_kv_for_gqa(query: Any, key: Any, value: Any) -> tuple[Any, Any]:
     num_heads_q = query.shape[2]
     num_heads_kv = key.shape[2]
@@ -1395,11 +1411,16 @@ def get_m1m2_sparge_sta_static_op():
         num_heads_q = int(query.shape[2])
         axial_sparse = os.environ.get("AXIAL_SPARSE") == "1"
         dilated_sparse = os.environ.get("DILATED_SPARSE") == "1"
+        anchor_sparse = os.environ.get("ANCHOR_SPARSE") == "1"
         if dilated_sparse:
             wt = _sta_optional_int_env("STA_WT", 0)
             wh = _sta_optional_int_env("STA_WH", 0)
             ww = _sta_optional_int_env("STA_WW", 0)
         elif axial_sparse:
+            wt = _sta_optional_int_env("STA_WT", 0)
+            wh = _sta_optional_int_env("STA_WH", 0)
+            ww = _sta_optional_int_env("STA_WW", 0)
+        elif anchor_sparse:
             wt = _sta_optional_int_env("STA_WT", 0)
             wh = _sta_optional_int_env("STA_WH", 0)
             ww = _sta_optional_int_env("STA_WW", 0)
@@ -1415,6 +1436,12 @@ def get_m1m2_sparge_sta_static_op():
             dil_core = 0
             dil_stride = 1
             dil_range = 0
+        if anchor_sparse:
+            anc_wlocal = _sta_optional_int_env("ANC_WLOCAL", 0)
+            anc_keyframes = _anc_keyframes_from_env()
+        else:
+            anc_wlocal = 0
+            anc_keyframes = tuple()
         t_lat = _sta_optional_int_env("STA_T_LAT", 48)
         h_lat = _sta_optional_int_env("STA_H_LAT", 23)
         w_lat = _sta_optional_int_env("STA_W_LAT", 40)
@@ -1449,6 +1476,9 @@ def get_m1m2_sparge_sta_static_op():
             dil_core,
             dil_stride,
             dil_range,
+            anchor_sparse,
+            anc_wlocal,
+            anc_keyframes,
         )
         cached = _STA_LUT_CACHE.get(cache_key)
         if cached is None:
@@ -1479,6 +1509,22 @@ def get_m1m2_sparge_sta_static_op():
                     und_len,
                     q_len,
                     kv_len,
+                    blkq=64,
+                    blkk=128,
+                    device=query.device,
+                )
+            elif anchor_sparse:
+                from anchor_mask import build_window_anchor_block_mask
+
+                mask = build_window_anchor_block_mask(
+                    t_lat,
+                    h_lat,
+                    w_lat,
+                    und_len,
+                    q_len,
+                    kv_len,
+                    anc_wlocal,
+                    anc_keyframes,
                     blkq=64,
                     blkk=128,
                     device=query.device,
@@ -2021,7 +2067,8 @@ def install_m1m2_sparge_opaque_backend(sparse_tau: float, sparse_theta: float) -
     sta_sparse = os.environ.get("STA_SPARSE") == "1"
     axial_sparse = os.environ.get("AXIAL_SPARSE") == "1"
     dilated_sparse = os.environ.get("DILATED_SPARSE") == "1"
-    use_static = sta_sparse or axial_sparse or dilated_sparse
+    anchor_sparse = os.environ.get("ANCHOR_SPARSE") == "1"
+    use_static = sta_sparse or axial_sparse or dilated_sparse or anchor_sparse
     op = get_m1m2_sparge_sta_static_op() if use_static else get_m1m2_sparge_fp8_dense_baseline_op()
     registry = attention_dispatch._AttentionBackendRegistry
     sparge_name = AttentionBackendName.SPARGE
@@ -2079,13 +2126,16 @@ def install_m1m2_sparge_opaque_backend(sparse_tau: float, sparse_theta: float) -
         "sta_sparse": sta_sparse,
         "axial_sparse": axial_sparse,
         "dilated_sparse": dilated_sparse,
+        "anchor_sparse": anchor_sparse,
         "constraints_disabled_for_compile": len(_M1M2_ORIGINAL_SPARGE_CONSTRAINTS),
     }
     if use_static:
         record.update(
             {
                 "sm90_blocksparse_kernel": "no_pv",
-                "sta_required_env": [] if dilated_sparse else ["STA_WT", "STA_WH", "STA_WW"],
+                "sta_required_env": []
+                if dilated_sparse or axial_sparse or anchor_sparse
+                else ["STA_WT", "STA_WH", "STA_WW"],
                 "sta_optional_env": [
                     "STA_TEXT_TOKENS",
                     "STA_T_LAT",
