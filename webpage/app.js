@@ -3,6 +3,7 @@
 
   const HF_BASE = "https://huggingface.co/datasets/oliveryanzuolu/cosmos3-t2v-release/resolve/main/compare";
   const DEFAULT_IDS = ["039", "048", "049", "079"];
+  const SPARSE_IDS = ["039", "048", "049", "079"]; // sparse only has these 4 (fixed, decoupled from the global picker)
   const FINAL8_IDS = ["006", "014", "028", "039", "048", "049", "068", "079"];
   const SPARSE_TAGS = ["w10", "w14", "w18", "w22", "w32"];
   const DEFAULT_SPARSE_TAG = "w10";
@@ -456,10 +457,10 @@
     renderSparseSection();
   }
 
-  function renderGrid(grid, group, left, right) {
+  function renderGrid(grid, group, left, right, ids) {
     grid.replaceChildren();
 
-    selectedIds.forEach((id) => {
+    (ids || selectedIds).forEach((id) => {
       const card = createVideoCard({ group, id, left, right });
       grid.appendChild(card);
 
@@ -478,7 +479,7 @@
     if (!grid) return;
 
     const right = `${sparseTag} sparse`;
-    renderGrid(grid, `sparse/${sparseTag}`, SPARSE_LEFT, right);
+    renderGrid(grid, `sparse/${sparseTag}`, SPARSE_LEFT, right, SPARSE_IDS);
   }
 
   function createVideoCard({ group, id, left, right }) {
