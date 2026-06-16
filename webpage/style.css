@@ -490,60 +490,11 @@ button {
   color: var(--text);
 }
 
-.picker-state {
-  grid-column: 1 / -1;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 26px;
-  color: var(--faint);
-  font-size: 0.82rem;
-}
-
-#selectedPromptOutput {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.selected-token {
-  border: 1px solid var(--accent-line);
-  border-radius: 999px;
-  background: rgba(79, 209, 197, 0.08);
-  color: var(--text);
-  font-size: 0.76rem;
-  line-height: 1;
-  padding: 5px 8px;
-}
-
-.picker-message {
-  min-width: 0;
-  color: var(--faint);
-}
-
-.picker-reset {
-  margin-left: auto;
-  flex: 0 0 auto;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--chip-bg);
-  color: var(--text);
-  font-size: 0.78rem;
-  line-height: 1;
-  padding: 7px 13px;
-  cursor: pointer;
-  transition: border-color 160ms ease, background 160ms ease, color 160ms ease;
-}
-
-.picker-reset:hover {
+/* Toggle-custom pressed state mirrors a selected chip (.prompt-chip.is-active). */
+.custom-toggle.is-on {
   border-color: var(--accent-line);
-  background: var(--chip-bg-hover);
-  color: var(--accent);
-}
-
-.picker-reset:active {
   background: var(--accent-dim);
+  color: var(--accent);
 }
 
 .picker-hint {
@@ -659,10 +610,6 @@ button {
 
 body.lightbox-open {
   overflow: hidden;
-}
-
-.picker-message.is-error {
-  color: var(--danger);
 }
 
 main,
@@ -1097,10 +1044,6 @@ pre {
   .picker-inner {
     grid-template-columns: 1fr;
     align-items: stretch;
-  }
-
-  .picker-state {
-    grid-column: auto;
   }
 
   .custom-picker {

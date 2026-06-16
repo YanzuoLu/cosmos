@@ -120,7 +120,14 @@
     "100": "A young woman with vibrant red hair, adorned with a whimsical leafy crown, gazes off-camera with an expression of soft awe. Her freckled face is bathed in warm, golden sunlight, highlighting her porcelain complexion. The tousled strands of her hair dance in an unseen breeze, adding movement to the frame. A colorful, knitted scarf wraps her neck, contrasting with the serene blue waters visible in the background.",
   };
 
-  let selectedIds = sortIds([...DEFAULT_IDS]);
+  // Two-source selection for the MAIN sections:
+  //   chipIds      — the chip-managed "8-choose-4" set (default DEFAULT_IDS), edited by arm/swap.
+  //   customIds    — ids parsed from the custom input (validated), or null.
+  //   customActive — whether the custom set overrides the chip set.
+  // Effective ids = customActive && customIds ? customIds : chipIds.
+  let chipIds = sortIds([...DEFAULT_IDS]);
+  let customIds = null;
+  let customActive = false;
   let armedId = null;
   let sparseTag = DEFAULT_SPARSE_TAG;
   let currentLang = "en";
@@ -130,6 +137,11 @@
 
   function sortIds(ids) {
     return [...ids].sort((a, b) => Number(a) - Number(b));
+  }
+
+  // The ids the MAIN sections render: custom set when toggled on, else the chip set.
+  function effectiveIds() {
+    return customActive && customIds ? customIds : chipIds;
   }
 
   const posterSvg = [
@@ -266,73 +278,62 @@
         const id = button.dataset.promptId;
         if (!id) return;
 
-        if (selectedIds.includes(id)) {
+        // A chip edit always edits the chip set and un-presses the custom toggle,
+        // so the chip selection is shown and the user sees what toggling-off returns to.
+        let chipsChanged = false;
+
+        if (chipIds.includes(id)) {
           // Active chip: arm it (mark to swap out), or un-arm if tapped again.
           armedId = armedId === id ? null : id;
-          setPromptMessage(
-            armedId
-              ? tr(
-                  `${id} marked to swap out — now tap an inactive prompt to swap it in.`,
-                  `已标记 ${id} 待换出——现在点击一个未选提示词将其换入。`
-                )
-              : tr("Swap cancelled.", "已取消互换。")
-          );
-          syncPromptUi();
-          return;
-        }
-
-        // Inactive chip: it replaces the armed active chip (explicit swap).
-        if (!armedId) {
-          setPromptMessage(tr(
-            "Tap one of the 4 active prompts first to mark it for replacement.",
-            "请先点击 4 个已选提示词之一，将其标记为待替换。"
-          ));
+        } else if (!armedId) {
+          // Inactive chip with nothing armed: prompt the user to arm one first.
           pulseActiveChips();
           return;
+        } else {
+          // Inactive chip: it replaces the armed active chip (explicit swap).
+          chipIds = sortIds(chipIds.map((selected) => (selected === armedId ? id : selected)));
+          armedId = null;
+          chipsChanged = true;
         }
 
-        const swappedOut = armedId;
-        selectedIds = sortIds(selectedIds.map((selected) => (selected === armedId ? id : selected)));
-        armedId = null;
+        // Editing the chips un-presses custom; render whenever the effective set
+        // changes — i.e. the chips changed, or we just flipped custom off.
+        const wasCustom = customActive;
+        customActive = false;
         input.removeAttribute("aria-invalid");
-        setPromptMessage(tr(`Swapped ${swappedOut} → ${id}.`, `已互换 ${swappedOut} → ${id}。`));
         syncPromptUi();
-        renderVideos();
+        if (chipsChanged || wasCustom) renderVideos();
       });
     });
 
+    // The submit button is now a "Toggle custom" switch: press = apply custom ids
+    // (active/pressed style), press again = back to the chip selection.
     form.addEventListener("submit", (event) => {
       event.preventDefault();
-      const parsed = parsePromptIds(input.value);
 
-      if (!parsed.ok) {
-        input.setAttribute("aria-invalid", "true");
-        setPromptMessage(parsed.message, true);
+      if (customActive) {
+        // Toggle off: restore the preserved chip selection.
+        customActive = false;
+        input.removeAttribute("aria-invalid");
+        syncPromptUi();
+        renderVideos();
         return;
       }
 
-      selectedIds = sortIds(parsed.ids);
+      // Toggle on: validate, then override the main sections with the custom ids.
+      const parsed = parsePromptIds(input.value);
+      if (!parsed.ok) {
+        input.setAttribute("aria-invalid", "true");
+        return;
+      }
+
+      customIds = sortIds(parsed.ids);
+      customActive = true;
       armedId = null;
       input.removeAttribute("aria-invalid");
-      setPromptMessage(tr("Applied custom prompt ids.", "已应用自定义提示词编号。"));
       syncPromptUi();
       renderVideos();
     });
-
-    // Reset restores the default 4 (re-activating their chips) so the arm-then-swap
-    // picker stays usable even after applying custom ids that aren't in the chip set.
-    const resetButton = document.getElementById("resetPromptButton");
-    if (resetButton) {
-      resetButton.addEventListener("click", () => {
-        armedId = null;
-        selectedIds = sortIds([...DEFAULT_IDS]);
-        input.value = "";
-        input.removeAttribute("aria-invalid");
-        setPromptMessage(tr("Reset to the default 4 prompts.", "已重置为默认的 4 个提示词。"));
-        syncPromptUi();
-        renderVideos();
-      });
-    }
 
     syncPromptUi();
   }
@@ -375,31 +376,22 @@
   }
 
   function syncPromptUi() {
+    // Chip highlighting always reflects the chip set, so the user can see what
+    // toggling custom off will return to.
     document.querySelectorAll(".prompt-chip").forEach((button) => {
       const id = button.dataset.promptId;
-      const isActive = selectedIds.includes(id);
+      const isActive = chipIds.includes(id);
       button.classList.toggle("is-active", isActive);
       button.classList.toggle("is-armed", id === armedId);
       button.setAttribute("aria-pressed", isActive ? "true" : "false");
     });
 
-    const output = document.getElementById("selectedPromptOutput");
-    if (!output) return;
-    output.replaceChildren(
-      ...selectedIds.map((id) => {
-        const token = document.createElement("span");
-        token.className = "selected-token";
-        token.textContent = id;
-        return token;
-      })
-    );
-  }
-
-  function setPromptMessage(message, isError) {
-    const status = document.getElementById("promptStatus");
-    if (!status) return;
-    status.textContent = message;
-    status.classList.toggle("is-error", Boolean(isError));
+    // The toggle button wears the selected-chip look while custom is active.
+    const toggle = document.getElementById("toggleCustomButton");
+    if (toggle) {
+      toggle.classList.toggle("is-on", customActive);
+      toggle.setAttribute("aria-pressed", customActive ? "true" : "false");
+    }
   }
 
   function pulseActiveChips() {
@@ -460,7 +452,7 @@
   function renderGrid(grid, group, left, right, ids) {
     grid.replaceChildren();
 
-    (ids || selectedIds).forEach((id) => {
+    (ids || effectiveIds()).forEach((id) => {
       const card = createVideoCard({ group, id, left, right });
       grid.appendChild(card);
 

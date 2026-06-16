@@ -30,7 +30,8 @@
       <div class="picker-inner">
         <div class="picker-title">
           <span class="eyebrow" data-en="Prompt picker" data-zh="提示词选择器">Prompt picker</span>
-          <strong data-en="One global 4-prompt view" data-zh="全局统一的 4 提示词视图">One global 4-prompt view</strong>
+          <strong data-en="Global 4-prompt view (cache / M1 / M2 / final)" data-zh="全局 4 提示词视图（cache / M1 / M2 / final）">Global 4-prompt view (cache / M1 / M2 / final)</strong>
+          <span class="picker-hint" data-en="Applies to the cache / M1 / M2 / final comparisons. The Sparse appendix uses a fixed 4-prompt sample." data-zh="作用于 cache / M1 / M2 / final 对照；Sparse 附录使用固定的 4 提示词样例。">Applies to the cache / M1 / M2 / final comparisons. The Sparse appendix uses a fixed 4-prompt sample.</span>
           <span class="picker-hint" data-en="Tap an active prompt to mark it (⇄), then tap an inactive one to swap them." data-zh="点击一个已选提示词将其标记（⇄），再点击一个未选提示词即可互换。">Tap an active prompt to mark it (⇄), then tap an inactive one to swap them.</span>
         </div>
         <div class="chip-row" id="promptChips" aria-label="Final8 quick picks">
@@ -46,14 +47,8 @@
         <form class="custom-picker" id="customPromptForm">
           <label for="customPromptInput" data-en="Custom ids" data-zh="自定义编号">Custom ids</label>
           <input id="customPromptInput" name="promptIds" type="text" inputmode="numeric" autocomplete="off" placeholder="012, 050, 077, 100">
-          <button type="submit" data-en="Apply" data-zh="应用">Apply</button>
+          <button type="submit" id="toggleCustomButton" class="custom-toggle" aria-pressed="false" data-en="Toggle custom" data-zh="切换自定义">Toggle custom</button>
         </form>
-        <div class="picker-state" aria-live="polite">
-          <span data-en="Selected" data-zh="已选">Selected</span>
-          <output id="selectedPromptOutput">039 · 048 · 049 · 079</output>
-          <span class="picker-message" id="promptStatus"></span>
-          <button type="button" id="resetPromptButton" class="picker-reset" data-en="Reset" data-zh="重置">Reset</button>
-        </div>
       </div>
     </aside>
 
